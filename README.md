@@ -149,6 +149,11 @@ These wireframes were created using Balsamiq:
 
 [Guitar Game](/assets/images/readme-images/guitar-game-wireframe.png)
 
+### Prototype
+
+This prototype of index.html was created on figma.com.
+
+[Index Prototype](/assets/images/readme-images/figma-prototype.png)
 
 ### Q and A of Potential Users
 
@@ -244,7 +249,7 @@ Person with relative/friend of someone who struggles:
 
 Who else is there local to Leicester that has similar goals? Well, I found a few guitar teachers, but none near Leicester aimed specifically towards younger people. Here are three examples.
 
-[John Joslin](johnjoslinguitarlessonsleicester.com/)
+[John Joslin](https://johnjoslinguitarlessonsleicester.com/)
 
 Pros:
 
