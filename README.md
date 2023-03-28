@@ -138,19 +138,16 @@ Image
 Image
 
 ### Wireframes
-Example
-<!-->
+
 These wireframes were created using Balsamiq:
 
-[Homepage](/assets/images/readme-images/homepage-wireframe.png)
+[Homepage](/assets/images/readme-images/index-wireframe.png)
 
-[Benefits](/assets/images/readme-images/benefits-wireframe.png)
+[Lessons](/assets/images/readme-images/lessons-wireframe.png)
 
-[Classes](/assets/images/readme-images/classes-wireframe.png)
+[Grown Ups](/assets/images/readme-images/grown-ups-wireframe.png)
 
-[Stories](/assets/images/readme-images/stories-wireframe.png)
-
-[Sign Up](/assets/images/readme-images/sign-up-wireframe.png)-->
+[Guitar Game](/assets/images/readme-images/guitar-game-wireframe.png)
 
 
 ### Q and A of Potential Users
