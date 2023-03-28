@@ -18,31 +18,15 @@ Most children will see this web application being used by parents, or from curio
 
 It would be too easy to create a product entirely for children but if young teenagers approach it they will be put off by things too chldish looking.
 
-For kids
-
-- Bright colours
-- Simple imagery, not too busy, basic shapes
-- Appropriate content, no improper language usage or slang
-- A game to interact with
-- A Physical helper maybe?
-
-For Teens
-
-- Information as to why music could be good to learn
-- One-to-one session availability, so they know that no kids will be running around on their session and escape from parents
-- The bright colours and game will interact with their younger side
-- To learn guitar, this is a cool thing to teens
+- Learn how to play guitar
+- Have fun
 
 #### Parent Goals
 
 Parents most importantly need to know their children will be safe in this environment. They also need some knowledge of what their children will learn, and to know the benefits for their child.
 
-- Information on lessons taught
-- Why should my child learn this?
-- Checks done on tutors
-- Child monitoring
-- Site and parking information
-- Friendly looking application that encourages them to contact with questions and worries
+- To place my child in a safe learning environment
+- To feel at ease with my choice of tutor
 
 #### Developer and Business Goals
 
@@ -61,22 +45,60 @@ Kids need to be able to see the benefits of learning, and how it can open doors 
 
 ### User Stories
 
-As a child, I want:
-- To know that this is going to be fun
-- Lots of bright colours and exciting imagery
-- None of the sentences to be overcomplicated
+As a child, I want to see:
+- Bright colours
+- A game to interact with
+- Simple imagery, not too busy, basic shapes
+- Appropriate content, no improper language usage or slang
+- No complicated sentences
 
-As a parent I want:
-- Someone to contact if I have any questions
-- Information about classes, where they are and what my child will learn
-- A safe environment
+I want to:
+- Click and play
+- Learn instruments
 
-<!-- Look at other User Stories, this is already written! -->
+So that:
+- I have fun
+- I can play my favourite songs
 
+For Teens
+
+- Information as to why music could be good to learn
+- One-to-one session availability, so they know that no kids will be running around on their session and escape from parents
+- The bright colours and game will interact with their younger side
+- To learn guitar, this is a cool thing to teens
+
+As a parent I want to see:
+- Interactive learning on the app
+- Basic music knowledge on screen
+- A child-friendly webpage
+
+I want:
+- To be able to contact with questions and worries
+- Safety information
+- Information on lessons taught
+- Site and parking information
+- Professionalism
+- To know the benefits of learning guitar
+- Checks done on tutors
+
+So that:
+- I can rest knowing my children are safe
+- I know my childs time is being used optimally
 
 ### Design Choices
 
-The overall experience needs to be fun, colourful and exciting.
+The overall experience needs to be fun, colourful and exciting. I have looked at the following sites for inspiration:
+
+[Fun Bain](https://www.funbrain.com/)
+[The Kidz Page](http://thekidzpage.com/)
+[Starfall](https://www.starfall.com/h/)
+[National Geographic](https://kids.nationalgeographic.com/)
+[PBS Kids](https://pbskids.org/)
+[Coolmath.com](https://www.coolmath.com/)
+
+From these I can see a consistency in colours, using greens, yellows and blues. Bright solid colours are often used on backgrounds.
+I can also see fun, large smooth bubble letters in the fonts used.
+Some of these sites even have audio to grab the kids attention.
 
 #### Fonts
 
@@ -223,13 +245,43 @@ Person with relative/friend of someone who struggles:
 
 ### Competitor Review
 
-Who else is there local to ... that has similar goals?
+Who else is there local to Leicester that has similar goals? Well, I found a few guitar teachers, but none near Leicester aimed specifically towards younger people. Here are three examples.
 
-<!-- EXAMPLE [Tarakmc](https://tarakmc.org/branch-classes/)-->
+[John Joslin](johnjoslinguitarlessonsleicester.com/)
 
-pros and cons
+Pros:
 
-2 or 3 examples
+- Looks professional through it's use of colours, not a lot of colour, but stylish greys.
+- Excellent reviews section.
+- Background images relevant and works well.
+
+Cons:
+
+- Wix.com bar along the top makes it look amateur.
+- The word "Teacher" is written at the top left and this is clearly an error of some sort.
+- All of the information is on one page. The navigation doesn't take you to another page, so if you are on a section, you have to scroll to get back to where you were apart from one button at the very bottom which says back to top.
+
+
+[Your Guitar Academy](https://yourguitaracademy.com/guitar-lessons-locations/leicester/)
+
+Cons:
+
+- Couldn't even access the site because of a message that says fully booked, which you can't get past unless you enter details. If you haven't engaged the audience, why would they sign up to you?
+- Whether they are booked or not, the site should still attempt to show content of some sort. At the very least the fully booked box should have a close tab.
+
+[Intasound](https://www.intasound-music.co.uk/our-services/music-lessons/guitar-lessons/)
+
+Pros:
+
+- The page boasts an extensive list of tutors.
+
+Cons:
+
+- Like looking at a Wikipedia page. All text and space, not much colour or imagery.
+- Looks boring, not very artistic.
+- Only has basic information about tutors. Some have email links, some don't.
+
+Contacts could've had clickable divs with an image on the front to help sell the tutor.
 
 ### Roadmap
 
