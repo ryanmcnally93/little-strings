@@ -1,6 +1,6 @@
 # Little Strings
 
-<!--ABOUT-->
+Little Strings is a small business located in Leicester that teaches children and young adults how to play the guitar.
 
 I have used markdown format for the headers and bullets, links and tables on this readme, but found the img element to be more useful when controlling picture sizes on this document.
 
@@ -10,45 +10,68 @@ I have used markdown format for the headers and bullets, links and tables on thi
 
 ### Project Goal
 
-GOAL
+To engage children and young people with music, showing them how easy it is to learn and fun it is to play.
 
-#### Patient Goals
+#### Student Goals
 
-GOAL
+Most children will see this web application being used by parents, or from curiosity will have searched google for it themselves. Either way, they will likely be bored by information in writing and lose interest if things aren't colourful and exciting. The more excited they become about the application, the more likely they are to ask their parents about it, if they don't already know of it.
 
-- GOAL FORMAT
+It would be too easy to create a product entirely for children but if young teenagers approach it they will be put off by things too chldish looking.
 
-#### Carer Goals
+For kids
 
-GOAL
+- Bright colours
+- Simple imagery, not too busy, basic shapes
+- Appropriate content, no improper language usage or slang
+- A game to interact with
+- A Physical helper maybe?
 
-- GOAL FORMAT
+For Teens
+
+- Information as to why music could be good to learn
+- One-to-one session availability, so they know that no kids will be running around on their session and escape from parents
+- The bright colours and game will interact with their younger side
+- To learn guitar, this is a cool thing to teens
+
+#### Parent Goals
+
+Parents most importantly need to know their children will be safe in this environment. They also need some knowledge of what their children will learn, and to know the benefits for their child.
+
+- Information on lessons taught
+- Why should my child learn this?
+- Checks done on tutors
+- Child monitoring
+- Site and parking information
+- Friendly looking application that encourages them to contact with questions and worries
 
 #### Developer and Business Goals
 
-GOALS
+Many young children are lost in YouTube and TikTok videos and many parents struggle to find affordable childcare when life means they have to work long hours of the day. This is where Little Strings comes in.
 
-- GOAL FORMATS
+Little Strings is passionate about using that valuable time kids aren't in school or with their parents, to show them that learning is still important away from those environments, and can be really fun.
+
+So many young people aren't sure what they want to be when they grow up or where they want to go. By learning simple chords kids can play along to their favourite songs and it's a skill that they can take with them in life to either perform, teach or work in in other ways in their future.
+
+Kids need to be able to see the benefits of learning, and how it can open doors for them.
+
+- To attract the attention of young people and children
+- To teach wherever possible on the web application
+- To reassure parents that their children are in a safe, learning environment
+- To teach users basic music knowledge like chord shapes
 
 ### User Stories
 
-Example
+As a child, I want:
+- To know that this is going to be fun
+- Lots of bright colours and exciting imagery
+- None of the sentences to be overcomplicated
 
-<!--As someone who struggles with anxiety, I want:
-- Calming, spacious UX that isn't cluttered and therefore stressful
-- Peace inducing colours to subconsciously add to the sites serenity.
-- To learn a bit about why I feel the way I feel and how to get better
-- To know where my classes are and how to get there, so I feel safe
+As a parent I want:
+- Someone to contact if I have any questions
+- Information about classes, where they are and what my child will learn
+- A safe environment
 
-As someone who struggles with depression, I want:
-- To know that I'm not alone, through images and tutor information
-- To be ensured that people gain happiness from the classes
-- Something that regularly makes me feel good as opposed to a one-time fix, something that stays with me for longer
-
-As a relative or friend of someone who struggles, I want:
-- To know where classes are and what times they are
-- To know that my friend/relative is going to have an educational but fun experience
-- To learn a bit myself so I can be of better help to my friend/relative-->
+<!-- Look at other User Stories, this is already written! -->
 
 
 ### Design Choices
@@ -271,7 +294,13 @@ Responsive testing, does each screen work with all three sizes same as before, I
 
 ### Test Driven Development
 
+JEST LESSON AUTO TESTING
+
+MANUAL TESTING
+
 ### Behaviour Driven Development
+
+I have the link: https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#Full-Testing provided by Jubril to help and comments from Pasqual.
 
 ### Validator Testing 
 
@@ -295,7 +324,7 @@ Responsive testing, does each screen work with all three sizes same as before, I
 
 This is a detailed log of the issues I ran into whilst coding my first project, and how I overcame them.
 
-1). Issue Image Fix Image was the formula last time, but I have the link: https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#Full-Testing provided by Jubril to help and comments from Pasqual.
+1). Issue Image Fix Image was the formula last time
 
 ### Unfixed Bugs
 
