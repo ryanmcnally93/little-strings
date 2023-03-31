@@ -8,9 +8,18 @@
     margin: 42.5px 0 0 42.5px;
     width: 400px;
     position: absolute;
+    display: block;
     /*
-    Re-do image, cannot see the "Little Strings" text
+    Image size
     Colour change on hover? */
+}
+
+.collapse {
+    margin: auto;
+}
+
+.logo:hover {
+    background: url(/assets/images/different50.png) no-repeat center left;
 }
 
 header {
@@ -70,6 +79,7 @@ li {
 section {
     background-color: #fafafa;
     color: white;
+    padding-bottom: 40px;
 }
 
 /* Homepage */
@@ -81,10 +91,10 @@ section {
     background-color: yellow;
     grid-area: oval;
     text-align: center;
-    padding-top: 35px;
     color:rgb(73, 133, 28);
     font-size: 40px;
     font-weight: 600px;
+    border: 2px solid rgb(73, 133, 28);
 }
 
 .ovals-image {
@@ -111,9 +121,21 @@ section {
     height: 160px;
     padding: 25px;
     position: absolute;
+    border: 2px solid rgb(73, 133, 28);
 }
 
-.ovals-text a {
+#ovals-text-two {
+    margin: 20px 0 0 0;
+    width: 360px;
+    background-color: lightblue;
+    border-radius: 25px;
+    height: 160px;
+    padding: 25px;
+    position: relative;
+    border: 2px solid rgb(73, 133, 28);
+}
+
+#homepage-more-info {
     right: 0;
     position: absolute;
     bottom: 0;
@@ -125,6 +147,25 @@ section {
     color:rgb(73, 133, 28);
     border: 2px solid;
     padding: 5px 6px;
+}
+
+#homepage-grownups {
+    left: 0;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+    height: 50px;
+    width: 140px;
+    font-size: 24px;
+    background-color: yellow;
+    color:rgb(73, 133, 28);
+    border: 2px solid;
+    padding: 5px 6px;
+}
+
+#homepage-grownups:hover, #homepage-more-info:hover {
+    background-color: rgb(73, 133, 28);
+    color: yellow;
 }
 
 .homepage-first {
@@ -149,6 +190,7 @@ section {
     position: relative;
     padding-bottom: 20px;
     font-family: 'Balsamiq Sans', cursive;
+    padding-top: 20px;
 }
 
 #home-image-one {
@@ -167,6 +209,7 @@ section {
     position: absolute;
     right: 0;
     margin-right: 30px;
+    padding-top: 40px;
 }
 
 #text-one {
@@ -177,10 +220,37 @@ section {
 
 #oval-two {
     margin-left: 30px;
+    padding-top: 35px;
 }
 
 #text-two {
+    position: relative;
     margin-left: 30px;
+    padding-left: 20px;
+}
+
+.guitar-button {
+    width: 800px;
+    height: 200px;
+    background-color: yellow;
+    border: 10px solid;
+    color: rgb(73, 133, 28);
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 48px;
+    text-align: center;
+    border-radius: 25px;
+    display: flex;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.guitar-button span {
+    margin: auto;
+}
+
+.guitar-button:hover {
+    background-color: rgb(73, 133, 28);
+    color: yellow;
 }
 
 /* Footer */
