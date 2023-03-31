@@ -468,7 +468,9 @@ EXAMPLE
 
 This is a detailed log of the issues I ran into whilst coding my first project, and how I overcame them.
 
-1). Issue Image Fix Image was the formula last time
+My header and footer elements were relatively straight forward to put together. I looked at my first project and how I had gotten the list to display in a line with no decoration rather than top to bottom with bullet points and underlining. I also found that using bootstrap to divide the logo and navbar links into 5|7 rather than 4|8 or 6|6 gave the page more of a centered feel due to the width of both items.
+
+1). The first issue I found was trying to create the grid layout on my homepage. I spent a while changing classes and moving elements only to realise I'd forgotten to identify the classes as grid areas in css. I then noticed when this still didn't work, that my closing div tag of the homepage-one div was inline with the opening tag, rather than after the content. Fixing this corrected the issue.
 
 ### Unfixed Bugs
 

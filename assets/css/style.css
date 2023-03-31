@@ -15,18 +15,16 @@ header {
     height: 140px;
 }
 
-.navbar {
-    padding: 0;
-    float: left;
-    width: 500px;
-}
-
 .navbar-toggler {
     background-color: rgb(73, 133, 28);
     height: 80px;
     width: 80px;
     margin: 25px 10px;
     border-radius: 25px;
+}
+
+.navbar {
+    padding: 0;
 }
 
 .ml-auto {
@@ -61,11 +59,95 @@ li {
     list-style-type: none;
 }
 
-/* Homepage Section */
+/* Sections */
 section {
     background-color: rgb(73, 133, 28);
     color: white;
-    height: 600px;
+}
+
+/* Homepage */
+
+.oval {
+    width: 400px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: yellow;
+    grid-area: oval;
+    text-align: center;
+    padding-top: 35px;
+    color:rgb(73, 133, 28);
+    font-size: 40px;
+    font-weight: 600px;
+}
+
+.ovals-image {
+    border-radius: 50px;
+    width: 400px;
+    height: 400px;
+    grid-area: ovals-image;
+}
+
+.ovals-text {
+    width: 400px;
+    height: 190px;
+    background-color: lightblue;
+    grid-area: ovals-text;
+    border-radius: 25px;
+    margin-top: 10px;
+}
+
+.homepage-first {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "oval ovals-image"
+        "ovals-text ovals-image";
+    position: relative;
+    padding: 50px;
+}
+
+.homepage-second {
+    display: grid;
+    gap: 0;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "ovals-image oval"
+        "ovals-image ovals-text";
+    position: relative;
+    padding-bottom: 20px;
+}
+
+#home-image-one {
+    background: url(/assets/images/home-one.png);
+    margin-left: 30px;
+}
+
+#home-image-two {
+    background: url(/assets/images/home-two.png);
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+#oval-one {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+#text-one {
+    position: absolute;
+    right: 0;
+    margin-right: 30px;
+}
+
+#oval-two {
+    margin-left: 30px;
+}
+
+#text-two {
+    margin-left: 30px;
 }
 
 /* Footer */
