@@ -3,7 +3,7 @@
 /* Header */
 
 .logo {
-    background: url(/assets/images/logo40.png) no-repeat center left;
+    background: url(/assets/images/logo.png) no-repeat center left;
     height: 120px;
     margin: 30px 0 0 42.5px;
     width: 290px;
@@ -19,7 +19,7 @@
 }
 
 .logo:hover {
-    background: url(/assets/images/changed40.png) no-repeat center left;
+    background: url(/assets/images/logo-color-change.png) no-repeat center left;
 }
 
 header {
@@ -80,6 +80,27 @@ section {
     background-color: #fafafa;
     color: white;
     padding-bottom: 40px;
+}
+
+.orange {
+    background: url(/assets/images/orange-paint.png) no-repeat center center;
+    position: absolute;
+    left: 0;
+    top: 150px;
+    width: 800px;
+    height: 800px;
+    z-index: 0;
+}
+
+.blue {
+    background: url(/assets/images/blue-paint.png) no-repeat center center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 800px;
+    height: 800px;
+    z-index: 0;
+    margin-top: 600px;
 }
 
 /* Homepage */
@@ -178,6 +199,7 @@ section {
     position: relative;
     padding: 50px;
     font-family: 'Balsamiq Sans', cursive;
+    z-index: 1;
 }
 
 .homepage-second {
@@ -191,6 +213,7 @@ section {
     padding-bottom: 20px;
     font-family: 'Balsamiq Sans', cursive;
     padding-top: 20px;
+    z-index: 1;
 }
 
 #home-image-one {
@@ -242,6 +265,8 @@ section {
     display: flex;
     margin: auto;
     margin-top: 30px;
+    z-index: 1;
+    position: relative;
 }
 
 .guitar-button span {
