@@ -3,10 +3,10 @@
 /* Header */
 
 .logo {
-    background: url(/assets/images/logo.png) no-repeat center left;
-    height: 95px;
-    margin: 42.5px 0 0 42.5px;
-    width: 400px;
+    background: url(/assets/images/logo40.png) no-repeat center left;
+    height: 120px;
+    margin: 30px 0 0 42.5px;
+    width: 290px;
     position: absolute;
     display: block;
     /*
@@ -19,7 +19,7 @@
 }
 
 .logo:hover {
-    background: url(/assets/images/different50.png) no-repeat center left;
+    background: url(/assets/images/changed40.png) no-repeat center left;
 }
 
 header {
@@ -265,6 +265,11 @@ footer {
     border-radius: 25px;
     color: yellow;
     margin: 30px 50px;
+}
+
+#contactus-button:hover {
+    background-color: lightblue;
+    color:rgb(73, 133, 28);
 }
 
 footer p {
