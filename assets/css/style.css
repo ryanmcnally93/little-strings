@@ -9,13 +9,6 @@
     width: 290px;
     position: absolute;
     display: block;
-    /*
-    Image size
-    Colour change on hover? */
-}
-
-.collapse {
-    margin: auto;
 }
 
 .logo:hover {
@@ -35,12 +28,12 @@ header {
     border-radius: 25px;
 }
 
-.page-links {
-    margin: auto;
-}
-
 .navbar {
     padding-top: 56px;
+}
+
+.page-links {
+    margin: auto;
 }
 
 .ml-auto {
@@ -63,7 +56,7 @@ body {
     font-weight: 700;
     margin: 10px;
     font-family: 'Balsamiq Sans', cursive;
-    font-size: 32px;
+    font-size: 28px;
     color: rgb(73, 133, 28);
 }
 
