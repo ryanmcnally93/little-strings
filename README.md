@@ -90,10 +90,15 @@ So that:
 The overall experience needs to be fun, colourful and exciting. I have looked at the following sites for inspiration:
 
 [Fun Bain](https://www.funbrain.com/)
+
 [The Kidz Page](http://thekidzpage.com/)
+
 [Starfall](https://www.starfall.com/h/)
+
 [National Geographic](https://kids.nationalgeographic.com/)
+
 [PBS Kids](https://pbskids.org/)
+
 [Coolmath.com](https://www.coolmath.com/)
 
 From these I can see a consistency in colours, using greens, yellows and blues. Bright solid colours are often used on backgrounds.
@@ -344,35 +349,120 @@ Image
 
 ## Testing 
 
-Responsive testing, does each screen work with all three sizes same as before, I believe this is the part that Pasqual was referring to in his comments, some repeating is happening, how can we stop it?
+CONTENTS?
 
-### Test Driven Development
+### Automated Testing
 
-JEST LESSON AUTO TESTING
+### W3C Validation
 
-MANUAL TESTING
+- HTML [W3C validator](https://validator.w3.org/)
 
-### Behaviour Driven Development
+  - RESULTS
 
-I have the link: https://github.com/kera-cudmore/TheQuizArms/blob/main/TESTING.md#Full-Testing provided by Jubril to help and comments from Pasqual.
+- CSS [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
 
-### Validator Testing 
+- RESULTS
 
-- HTML
-  - Some errors were found when going through the W3C validator. [W3C validator](https://validator.w3.org/)
-
-  - Explain if so, don't if not
-
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
-
-<p>
+<!--<p>
   <a href="http://jigsaw.w3.org/css-validator/check/referer">
     <img  style="border:0;width:88px;height:31px;margin:auto;display:flex;"
           src="http://jigsaw.w3.org/css-validator/images/vcss"
           alt="Valid CSS!" />
     </a>
-</p>
+</p>-->
+
+### Javascript Validation
+
+TESTING_DOCUMENTS.JS
+
+### Lighthouse
+
+RESULTS
+
+#### Mobile Lighthouse
+
+RESULTS
+
+### Manual Testing
+
+#### STUDENT GOALS
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+| STUDENT GOAL 1 | Stuff |
+| STUDENT GOAL 2 | Stuff |
+| STUDENT GOAL 3 | Stuff |
+
+#### PARENTS GOALS
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+| PARENT GOAL 1 | Stuff |
+| PARENT GOAL 2 | Stuff |
+| PARENT GOAL 3 | Stuff |
+
+#### DEVELOPER GOALS
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+| DEV GOAL 1 | Stuff |
+| DEV GOAL 2 | Stuff |
+| DEV GOAL 3 | Stuff |
+
+#### Components
+
+This project has been tested using the following browsers:
+EXAMPLE
+On the following devices
+EXAMPLE
+
+`Homepage`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| F1 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F2 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F3 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F4 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F5 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F6 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F7 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+
+`Lessons`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| F1 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F2 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F3 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F4 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F5 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F6 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F7 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+
+`Grown Ups`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| F1 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F2 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F3 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F4 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F5 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F6 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F7 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+
+`Guitar Game`
+
+| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
+| --- | --- | --- | --- | --- |
+| F1 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F2 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F3 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F4 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F5 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F6 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| F7 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
 
 ### Fixed Bugs
 

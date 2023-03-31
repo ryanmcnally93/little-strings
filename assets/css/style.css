@@ -1,0 +1,89 @@
+/* Header */
+
+.logo {
+    background: url(/assets/images/50percent.png) no-repeat center right;
+    height: 95px;
+    margin: 20px 0;
+    opacity: 85%;
+    /*
+    Re-do image, cannot see the "Little Strings" text
+    Colour change on hover? */
+}
+
+header {
+    background-color: yellow;
+    height: 140px;
+}
+
+.navbar {
+    padding: 0;
+    float: left;
+    width: 500px;
+}
+
+.navbar-toggler {
+    background-color: rgb(73, 133, 28);
+    height: 80px;
+    width: 80px;
+    margin: 25px 10px;
+    border-radius: 25px;
+}
+
+.ml-auto {
+    margin-left: 20px!important;
+}
+
+.active {
+    border-bottom-style: solid;
+}
+
+body {
+    margin: 0;
+}
+
+.pages {
+    text-decoration: none;
+    float: right;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 500;
+    margin: 10px;
+    font-family: "Exo", sans-serif;
+    font-size: 20px;
+    color: rgb(73, 133, 28);
+}
+
+a:not([href]):not([tabindex]) {
+    color: rgb(73, 133, 28);
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Homepage Section */
+section {
+    background-color: rgb(73, 133, 28);
+    color: white;
+    height: 600px;
+}
+
+/* Footer */
+
+footer {
+    background-color: yellow;
+    height: 140px;
+}
+
+#contactus-button {
+    background-color: rgb(73, 133, 28);
+    border-radius: 25px;
+    color: yellow;
+    margin: 30px 50px;
+}
+
+footer p {
+    text-align: center;
+    color: rgb(73, 133, 28);
+    font-weight: 600;
+}
