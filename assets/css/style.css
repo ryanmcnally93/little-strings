@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Exo&display=swap');
+
 /* Header */
 
 .logo {
-    background: url(/assets/images/50percent.png) no-repeat center right;
+    background: url(/assets/images/logo.png) no-repeat center left;
     height: 95px;
-    margin: 20px 0;
-    opacity: 85%;
+    margin: 42.5px 0 0 42.5px;
+    width: 400px;
+    position: absolute;
     /*
     Re-do image, cannot see the "Little Strings" text
     Colour change on hover? */
@@ -12,7 +15,7 @@
 
 header {
     background-color: yellow;
-    height: 140px;
+    height: 180px;
 }
 
 .navbar-toggler {
@@ -23,8 +26,12 @@ header {
     border-radius: 25px;
 }
 
+.page-links {
+    margin: auto;
+}
+
 .navbar {
-    padding: 0;
+    padding-top: 56px;
 }
 
 .ml-auto {
@@ -44,10 +51,10 @@ body {
     float: right;
     border-radius: 25px;
     text-align: center;
-    font-weight: 500;
+    font-weight: 700;
     margin: 10px;
-    font-family: "Exo", sans-serif;
-    font-size: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 32px;
     color: rgb(73, 133, 28);
 }
 
@@ -61,7 +68,7 @@ li {
 
 /* Sections */
 section {
-    background-color: rgb(73, 133, 28);
+    background-color: #fafafa;
     color: white;
 }
 
@@ -88,12 +95,36 @@ section {
 }
 
 .ovals-text {
-    width: 400px;
-    height: 190px;
-    background-color: lightblue;
+    width: 380px;
+    height: 200px;
     grid-area: ovals-text;
+    color:rgb(73, 133, 28);
+    font-size: 32px;
+    text-align: center;
+}
+
+#ovals-text-one {
+    margin: 20px 0 0 0;
+    width: 360px;
+    background-color: lightblue;
     border-radius: 25px;
-    margin-top: 10px;
+    height: 160px;
+    padding: 25px;
+    position: absolute;
+}
+
+.ovals-text a {
+    right: 0;
+    position: absolute;
+    bottom: 0;
+    border-radius: 20px;
+    height: 50px;
+    width: 140px;
+    font-size: 24px;
+    background-color: yellow;
+    color:rgb(73, 133, 28);
+    border: 2px solid;
+    padding: 5px 6px;
 }
 
 .homepage-first {
@@ -105,6 +136,7 @@ section {
         "ovals-text ovals-image";
     position: relative;
     padding: 50px;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 .homepage-second {
@@ -116,15 +148,16 @@ section {
         "ovals-image ovals-text";
     position: relative;
     padding-bottom: 20px;
+    font-family: 'Balsamiq Sans', cursive;
 }
 
 #home-image-one {
-    background: url(/assets/images/home-one.png);
+    background: url(/assets/images/home-one.png) no-repeat bottom center;
     margin-left: 30px;
 }
 
 #home-image-two {
-    background: url(/assets/images/home-two.png);
+    background: url(/assets/images/home-two.png) no-repeat bottom center;
     position: absolute;
     right: 0;
     margin-right: 30px;
