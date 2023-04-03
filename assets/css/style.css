@@ -68,10 +68,15 @@ li {
     list-style-type: none;
 }
 
+/* Bootstrap row fix */
+.row {
+    margin-left: 0;
+    margin-right: 0;
+}
+
 /* Sections */
 section {
     background-color: #fafafa;
-    color: white;
     padding-bottom: 40px;
 }
 
@@ -269,6 +274,37 @@ section {
 .guitar-button:hover {
     background-color: rgb(73, 133, 28);
     color: yellow;
+}
+
+/*Lessons*/
+
+.page-titles {
+    color:rgb(73, 133, 28);
+    text-align: center;
+    font-size: 48px;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 20px;
+}
+
+#myCarousel {
+    width: 50%;
+}
+
+.carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive,.thumbnail a>img,.thumbnail>img {
+    -webkit-transition: 0.2s ease-in-out left;
+    -moz-transition: 0.2s ease-in-out left;
+    -o-transition: 0.2s ease-in-out left;
+    transition: 0.2s ease-in-out left;
+}
+
+.carousel-box {
+    margin: auto;
+    width: 75%;
+}
+
+.carousel-textbox {
+    border: 5px solid rgb(73, 133, 28);
+    width: 50%;
 }
 
 /* Footer */
