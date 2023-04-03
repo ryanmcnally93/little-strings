@@ -346,6 +346,16 @@ section {
 #select-key, #select-key-2 {
     text-align: center;
 }
+#select-key-2 {
+    width: 60px;
+}
+
+.chord-a {
+    background: url(/assets/images/A.png) no-repeat center center;
+    width: 350px;
+    height: 350px;
+    margin: 20px;
+}
 
 select {
     -webkit-appearance: none;
@@ -476,11 +486,12 @@ select {
     height: 4rem;
     color: rgb(73, 133, 28);
     border-radius: 5px;
-    margin: 4%;
+    margin: 0 4%;
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
     padding-top: 5px;
+    background-color: white;
 }
 
 .chord:hover {
@@ -489,17 +500,22 @@ select {
     border: 2px solid rgb(73, 133, 28);
 }
 
-#chord-box, #show-chords {
+#chord-box, #show-chords, #chord-box-2 {
     text-align: center;
     width: 75%;
     margin: auto;
+}
+
+#chord-box {
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
 
 .show-chords {
     display: inline-block;
 }
 
-.change-chords {
+.score {
     border: 2px solid;
     width: 8rem;
     height: 8rem;
@@ -510,24 +526,31 @@ select {
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
     padding-top: 10px;
-}
-
-.change-chords:hover {
-    color: yellow;
-    background-color: rgb(73, 133, 28);
-    border: 2px solid rgb(73, 133, 28);
-}
-
-#chord-shown {
-/* CREATE GRID */
+    background-color: lightblue;
 }
 
 #my-guess {
-
+    /* JavaScript */
 }
 
 #play-button {
+    border: 2px solid;
+    width: 8rem;
+    height: 4rem;
+    color: rgb(73, 133, 28);
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 32px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 800;
+    padding-top: 5px;
+    background-color: white;
+}
 
+#play-button:hover {
+    color: yellow;
+    border: 2px solid rgb(73, 133, 28);
+    background-color: rgb(73, 133, 28);
 }
 
 /* Footer */

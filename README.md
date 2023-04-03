@@ -573,3 +573,4 @@ This readme.md was spellchecked using the spell checker extension for Chrome. WH
 
 
 ACCORDION AND CAROUSEL FROM W3C
+https://www.iloveimg.com/crop-image
