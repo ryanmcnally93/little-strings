@@ -11,6 +11,15 @@
     display: block;
 }
 
+.list-inline>li {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#lessons-navbar {
+    padding-top: 51px;
+}
+
 .logo:hover {
     background: url(/assets/images/logo-color-change.png) no-repeat center left;
 }
@@ -581,4 +590,5 @@ footer p {
     text-align: center;
     color: rgb(73, 133, 28);
     font-weight: 600;
+    font-size: 16px;
 }
