@@ -286,8 +286,39 @@ section {
     margin: 20px;
 }
 
-#myCarousel {
+.item.active {
+    border-bottom: none;
+}
+
+#lessons-image-one {
     width: 50%;
+    display: inline-block;
+}
+
+#lessons-image-two {
+    width: 50%;
+    display: inline-block;
+}
+
+#lessons-image-three {
+    width: 50%;
+    display: inline-block;
+}
+
+.carousel-textbox {
+    border: 5px solid rgb(73, 133, 28);
+    display: inline-block;
+    vertical-align: middle;
+    padding: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+    color:rgb(73, 133, 28);
+    width: 49%;
+    margin-left: 0.4%;
+    margin-right: 0.1%;
+}
+
+.item {
+    text-align: center;
 }
 
 .carousel-inner>.item>a>img,.carousel-inner>.item>img,.img-responsive,.thumbnail a>img,.thumbnail>img {
@@ -302,9 +333,56 @@ section {
     width: 75%;
 }
 
-.carousel-textbox {
-    border: 5px solid rgb(73, 133, 28);
-    width: 50%;
+#myCarousel {
+    margin-bottom: 20px;
+}
+
+.key-interact {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#select-key {
+    text-align: center;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 10px;
+    font-size: 32px;
+}
+
+.javascript-key {
+    margin: 30px;
+}
+
+.interested {
+    color:rgb(73, 133, 28);
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Balsamiq Sans', cursive;
+    margin: 20px;
+}
+
+.empty {
+    margin-top: 30px;
+    height: 30px;
+    margin-bottom: 70px;
+}
+
+#contactus-button-lessons {
+    background-color: rgb(73, 133, 28);
+    border-radius: 25px;
+    color: yellow;
+    margin: 30px 50px 30px 70px;
+    font-size: 24px;
+}
+
+#contactus-button-lessons:hover {
+    background-color: lightblue;
+    color:rgb(73, 133, 28);
 }
 
 /* Footer */

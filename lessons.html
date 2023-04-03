@@ -16,12 +16,11 @@
     <header>
         <div class="row no-gutters navbar-expand-lg navbar-light">
             <a class="logo" href="index.html"></a>
-
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse col-md-12" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="page-links">
                     <nav class="navbar">
                         <ul class="list-inline navbar-nav">
@@ -42,9 +41,9 @@
             </div>
         </div>
     </header>
+
     <h2 class="page-titles">Lessons</h2>
     <div class="row carousel-box">
-        <div class="carousel-textbox"><p>THIS IS GOING TO BE FILLED WITH INFO REGARDING IMAGE</p></div>
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
             <ol class="carousel-indicators">
@@ -52,19 +51,33 @@
               <li data-target="#myCarousel" data-slide-to="1"></li>
               <li data-target="#myCarousel" data-slide-to="2"></li>
             </ol>
-          
+            
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
               <div class="item active">
-                <img src="/assets/images/one-on-one-lesson.jpg" alt="One-on-one lessons">
+                <!--Text side-->
+                <div class="carousel-textbox">
+                    <h2>One-to-one Learning!</h2>
+                    <p>Lessons designed personally to fit your childs needs in a more peaceful, relaxed environment.</p>
+                </div>
+                <!--Image side-->
+                <img id="lessons-image-one" src="/assets/images/one-on-one-lesson.jpg" alt="One-on-one lessons">
               </div>
           
               <div class="item">
-                <img src="/assets/images/group-lesson.jpg" alt="Group lessons">
+                <div class="carousel-textbox">
+                    <h2>Group Learning!</h2>
+                    <p>We teach up to groups of five children with three qualified tutors in a fun-to-learn environment.</p>
+                </div>
+                <img id="lessons-image-two" src="/assets/images/group-lesson.jpg" alt="Group lessons">
               </div>
           
               <div class="item">
-                <img src="/assets/images/home-lesson.jpg" alt="Learning at home">
+                <div class="carousel-textbox">
+                    <h2>Learn at home!</h2>
+                    <p>Encourage and enjoy watching your child play along with their favourite songs, or even come up with songs of their own!</p>
+                </div>
+                <img id="lessons-image-three" src="/assets/images/home-lesson.jpg" alt="Learning at home">
               </div>
             </div>
           
@@ -79,10 +92,33 @@
             </a>
           </div>
         </div>
+
+        <h2 class="key-interact page-titles">What chords<br>can we use<br>in the key<br>of
+        <select id="select-key">
+            <option value="A">A</option>
+            <option value="A#">A#</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="C#">C#</option>
+            <option value="D">D</option>
+            <option value="D#">D#</option>
+            <option value="E">E</option>
+            <option value="F">F</option>
+            <option value="F#">F#</option>
+            <option value="G">G</option>
+            <option value="G#">G#</option>
+        </select>
+        </h2>
+
+        <h2 class="javascript-key page-titles">JAVASCRIPT OUTPUT</h2>
+
+        <h2 class="interested">Interested in our lessons?
+            <a class="btn" href="grown-ups.html" id="contactus-button-lessons">Contact Us</a>
+        </h2>
     
     <footer>
-        <a class="btn" href="grown-ups.html" id="contactus-button">Contact Us</a>
-        <p>Copyright @ 2013-2023 Little Strings Limited. All rights reserved.</p>
+        <div class="empty"></div>
+        <p class="lessons-footer">Copyright @ 2013-2023 Little Strings Limited. All rights reserved.</p>
     </footer>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
