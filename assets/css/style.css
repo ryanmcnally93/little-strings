@@ -343,7 +343,7 @@ section {
     margin-bottom: 20px;
 }
 
-#select-key {
+#select-key, #select-key-2 {
     text-align: center;
 }
 
@@ -353,6 +353,9 @@ select {
     appearance: none;
     padding: 10px;
     font-size: 32px;
+    color: inherit;
+    border: 2px solid rgb(73, 133, 28);
+    border-radius: 5px;
 }
 
 .javascript-key {
@@ -462,6 +465,69 @@ select {
     background-color: #fafafa;
     display: none;
     overflow: hidden;
+}
+
+/* Guitar Game */
+
+.chord {
+    display: inline-block;
+    border: 2px solid;
+    width: 4rem;
+    height: 4rem;
+    color: rgb(73, 133, 28);
+    border-radius: 5px;
+    margin: 4%;
+    font-size: 32px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 800;
+    padding-top: 5px;
+}
+
+.chord:hover {
+    color: yellow;
+    background-color: rgb(73, 133, 28);
+    border: 2px solid rgb(73, 133, 28);
+}
+
+#chord-box, #show-chords {
+    text-align: center;
+    width: 75%;
+    margin: auto;
+}
+
+.show-chords {
+    display: inline-block;
+}
+
+.change-chords {
+    border: 2px solid;
+    width: 8rem;
+    height: 8rem;
+    color: rgb(73, 133, 28);
+    border-radius: 5px;
+    margin: 4%;
+    font-size: 32px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 800;
+    padding-top: 10px;
+}
+
+.change-chords:hover {
+    color: yellow;
+    background-color: rgb(73, 133, 28);
+    border: 2px solid rgb(73, 133, 28);
+}
+
+#chord-shown {
+/* CREATE GRID */
+}
+
+#my-guess {
+
+}
+
+#play-button {
+
 }
 
 /* Footer */
