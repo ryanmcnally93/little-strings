@@ -283,7 +283,8 @@ section {
     text-align: center;
     font-size: 48px;
     font-family: 'Balsamiq Sans', cursive;
-    margin: 20px;
+    margin: 0 20px 0 20px;
+    padding: 20px 0;
 }
 
 .item.active {
@@ -367,7 +368,6 @@ select {
 }
 
 .empty {
-    margin-top: 30px;
     height: 30px;
     margin-bottom: 70px;
 }
@@ -383,6 +383,85 @@ select {
 #contactus-button-lessons:hover {
     background-color: lightblue;
     color:rgb(73, 133, 28);
+}
+
+/* Grown Ups */
+
+.my-h2 {
+    color:rgb(73, 133, 28);
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Style the buttons that are used to open and close the accordion panel */
+.accordion {
+    background-color: lightblue;
+    color: rgb(73, 133, 28);
+    cursor: pointer;
+    padding: 18px;
+    width: 75%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    margin: auto;
+    display: inherit;
+    font-family: 'Balsamiq Sans', cursive;
+}
+#last-question {
+    margin-bottom: 40px;
+}
+
+.contactus-form {
+    margin: auto;
+    width: 33%;
+}
+
+.contactus-form input, #message {
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#message {
+    margin-bottom: 0;
+}
+
+#submit {
+    width: 20%;
+    padding: 5px;
+    float: right;
+    margin-bottom: 0;
+    border-radius: 25px;
+    background-color: yellow;
+    color: rgb(73, 133, 28);
+    border: 2px solid rgb(73, 133, 28);
+    height: 50px;
+    width: 140px;
+    padding: 5px 6px;
+    font-size: 24px;
+}
+
+#submit:hover {
+    background-color: rgb(73, 133, 28);
+    color: yellow;
+}
+
+#phone {
+    margin-top: 50px;
+}
+  
+.panel .active, .accordion:hover {
+    background-color: rgb(73, 133, 28);
+    color: yellow;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: #fafafa;
+    display: none;
+    overflow: hidden;
 }
 
 /* Footer */

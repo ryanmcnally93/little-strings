@@ -570,3 +570,6 @@ EXAMPLE
 [Sign up](/assets/images/readme-images/signup-lighthouse.png)-->
 
 This readme.md was spellchecked using the spell checker extension for Chrome. WHEN IT IS.
+
+
+ACCORDION AND CAROUSEL FROM W3C
