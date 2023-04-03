@@ -339,7 +339,7 @@ section {
 }
 
 .key-interact {
-    margin-top: 20px;
+    margin-top: 0;
     margin-bottom: 20px;
 }
 
@@ -348,13 +348,6 @@ section {
 }
 #select-key-2 {
     width: 60px;
-}
-
-.chord-a {
-    background: url(/assets/images/A.png) no-repeat center center;
-    width: 350px;
-    height: 350px;
-    margin: 20px;
 }
 
 select {
@@ -486,7 +479,7 @@ select {
     height: 4rem;
     color: rgb(73, 133, 28);
     border-radius: 5px;
-    margin: 0 4%;
+    margin: 0 2%;
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
@@ -500,7 +493,7 @@ select {
     border: 2px solid rgb(73, 133, 28);
 }
 
-#chord-box, #show-chords, #chord-box-2 {
+#chord-box, #chord-box-2 {
     text-align: center;
     width: 75%;
     margin: auto;
@@ -511,8 +504,10 @@ select {
     margin-top: 30px;
 }
 
-.show-chords {
-    display: inline-block;
+#show-chords {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .score {
@@ -527,10 +522,18 @@ select {
     font-weight: 800;
     padding-top: 10px;
     background-color: lightblue;
+    display: inline-block;
+    margin-top: 150px;
 }
 
-#my-guess {
-    /* JavaScript */
+.chord-a {
+    background: url(/assets/images/A.png) no-repeat bottom center;
+    width: 350px;
+    height: 350px;
+    margin: 20px 4%;
+    border: 2px solid rgb(73, 133, 28);
+    display: inline-block;
+    border-radius: 25px;
 }
 
 #play-button {
@@ -545,6 +548,8 @@ select {
     font-weight: 800;
     padding-top: 5px;
     background-color: white;
+    text-align: center;
+    margin: auto;
 }
 
 #play-button:hover {

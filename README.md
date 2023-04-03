@@ -420,49 +420,44 @@ EXAMPLE
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| F1 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F2 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F3 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F4 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F5 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F6 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F7 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| The five Homepage buttons (including icon) | Take user to the correct page, CSS changes on hover | Clicked Buttons | Contact Us Fail | Fail |
+| Navbar links | Links take user to correct pages, CSS changes on hover | Clicked Links | All four links work, CSS changes on hover | Pass
 
 `Lessons`
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| F1 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F2 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F3 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F4 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F5 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F6 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F7 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| The two Lessons buttons (including icon) | Take user to the correct page, hover changes CSS | Clicked Buttons | Contact Us Fail | Fail |
+| Navbar links | Links take user to correct pages, CSS changes on hover | Clicked Links | All four links work, CSS changes on hover | Pass
+| Carousel | Rolls on its own | Waiting upon loading page | Carousel rolls through items | Pass |
+| Carousel | Left and Right buttons navigate correctly | Clicked left and right controls | Navigates correctly | Pass |
+| Selector | Has options A, C, D, E, G | Clicked Selector | Has correct options | Pass |
+
+Correct results will be tested automatically.
 
 `Grown Ups`
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| F1 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F2 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F3 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F4 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F5 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F6 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F7 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| The logo Grown Ups button | Take user to the Homepage, hover changes css | Clicked Buttons | Links correctly, CSS changed | Pass |
+| Navbar links | Links take user to correct pages, hover changes CSS | Clicked Links | All four links work, CSS changes on hover | Pass
+| Submit Button | Send's data, hover changes CSS | Clicked Button | N/A | N/A |
+| Form | Must have data in all 3 inputs | Tried to submit without | Shows correct error message | Pass |
+| Form | Must not accept incorrect email format | Typed different format | Shows correct error message | Pass |
+| Accordion | CSS changes on hover | Hovered over options | CSS changes | Pass |
+
+Accordion testing has been done automatically.
 
 `Guitar Game`
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| F1 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F2 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F3 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F4 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F5 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F6 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
-| F7 | Go's somewhere | Clicked Element | Goes somewhere | Pass |
+| The Guitar Game logo and Contact Us button | Take user to correct pages, hover changes css | Clicked Buttons | Contact Us doesn't work, CSS changed | Fail |
+| Navbar links | Links take user to correct pages, hover changes CSS | Clicked Links | All four links work, CSS changes on hover | Pass
+| Five chord buttons, play button | CSS changes on hover | Clicked Element | CSS changes | Pass |
+| "My Guess" selector | Has correct five options | Clicked Element | Has correct options | Pass |
+
+Guitar Game testing has been done automatically
 
 ### Fixed Bugs
 
