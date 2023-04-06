@@ -1,0 +1,23 @@
+{
+  "name": "project-two-little-strings",
+  "version": "1.0.0",
+  "description": "Little Strings is a small business located in Leicester that teaches children and young adults how to play the guitar.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ryanmcnally93/project-two-little-strings.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ryanmcnally93/project-two-little-strings/issues"
+  },
+  "homepage": "https://github.com/ryanmcnally93/project-two-little-strings#readme",
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "jest-environment-jsdom": "^29.5.0"
+  }
+}

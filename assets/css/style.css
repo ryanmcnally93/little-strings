@@ -535,14 +535,33 @@ select {
     margin-top: 150px;
 }
 
-.chord-a {
-    background: url(/assets/images/A.png) no-repeat bottom center;
+.game-chord {
     width: 350px;
     height: 350px;
     margin: 20px 4%;
     border: 2px solid rgb(73, 133, 28);
     display: inline-block;
     border-radius: 25px;
+}
+
+.a {
+    background: url(/assets/images/a.png) no-repeat bottom center;
+}
+
+.c {
+    background: url(/assets/images/c.png) no-repeat bottom center;
+}
+
+.d {
+    background: url(/assets/images/d.png) no-repeat bottom center;
+}
+
+.e {
+    background: url(/assets/images/e.png) no-repeat bottom center;
+}
+
+.g {
+    background: url(/assets/images/g.png) no-repeat bottom center;
 }
 
 #play-button {
