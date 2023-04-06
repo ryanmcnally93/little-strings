@@ -570,3 +570,8 @@ This readme.md was spellchecked using the spell checker extension for Chrome. WH
 ACCORDION AND CAROUSEL FROM W3C
 https://www.iloveimg.com/crop-image
 lessons navbar bug fix
+console logging array, was array, was saying push and splice werent functions,
+The console logs showed me the code was working but the test was wrong, so I reworded the test and now it is working.
+
+manual console log to test if classes being added and taken away
+

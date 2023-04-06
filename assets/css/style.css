@@ -564,6 +564,13 @@ select {
     background: url(/assets/images/g.png) no-repeat bottom center;
 }
 
+#chord {
+    /* I ONLY WANT THIS WHEN CHORD CHANGES! */
+    box-shadow: 0 0 10px green;
+    -moz-box-shadow: 0 0 10px green;
+    -webkit-box-shadow: 0 0 10px green;
+}
+
 #play-button {
     border: 2px solid;
     width: 8rem;

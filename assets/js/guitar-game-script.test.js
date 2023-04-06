@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { game, newGame, updateScore, changeChord } = require("./guitar-game-script");
+const { game, newGame, updateScore, changeChord, cssChange } = require("./guitar-game-script");
 
 beforeAll(() => {
     let fs = require("fs");
@@ -18,6 +18,9 @@ describe("game object contains correct keys", () => {
     });
     test("gameTurn key exists", () => {
         expect("gameTurn" in game).toBe(true);
+    });
+    test("chordChange key exists", () => {
+        expect("chordChange" in game).toBe(true);
     });
     test("currentChord key exists", () => {
         expect("currentChord" in game).toBe(true);
@@ -46,7 +49,7 @@ describe("newGame works correctly", () => {
     });
     test("should be a chord in currentChord", () => {
         expect(game.currentChord.length).toEqual(1);
-    })
+    });
     test("should set gameTurn to zero", () => {
         expect(game.gameTurn).toEqual(0);
     });
@@ -66,4 +69,16 @@ describe("changeChord works correctly", () => {
     test("should set playerMove to zero", () => {
         expect(game.playerMove.length).toEqual(0);
     });
-})
+});
+//check chord pop?
+
+describe("cssChange works correctly", () => {
+    beforeAll(() => {
+        game.chordChange = "a";
+        changeChord();
+    });
+    test("cssChange has added chordChange value to classList", () => {
+        expect(game.chordChange[0] in document.getElementById('chord').classList);
+    })
+    // test if a class is removed and added?
+});
