@@ -1,3 +1,12 @@
+document.addEventListener("DOMContentLoaded", function() {
+//insert css changes in display: none items on page load.
+    document.getElementById("answer-box").addEventListener("keydown", function(event) {
+        if (event.key === "Enter") {
+            checkAnswer();
+        }
+    });
+});
+
 let game = {
     score: 0,
     gameTurn: 0,
@@ -12,6 +21,8 @@ function newGame() {
     game.playerMove = [];
     updateScore();
     changeChord();
+    document.getElementById("answer-box").value = "";
+    document.getElementById("answer-box").focus();
     let button = document.getElementById('submit-game');
     button.addEventListener("click", function() {
         checkAnswer();
@@ -33,6 +44,8 @@ function changeChord() {
     cssChange()
     game.gameTurn++;
     updateScore();
+    document.getElementById("answer-box").value = "";
+    document.getElementById("answer-box").focus();
 }
 
 function cssChange() {
