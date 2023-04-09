@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { game, newGame, updateScore, changeChord, cssChange } = require("./guitar-game-script");
+const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, gameFinished } = require("./guitar-game-script");
 
 beforeAll(() => {
     let fs = require("fs");
@@ -18,9 +18,6 @@ describe("game object contains correct keys", () => {
     });
     test("gameTurn key exists", () => {
         expect("gameTurn" in game).toBe(true);
-    });
-    test("chordChange key exists", () => {
-        expect("chordChange" in game).toBe(true);
     });
     test("currentChord key exists", () => {
         expect("currentChord" in game).toBe(true);
@@ -50,16 +47,17 @@ describe("newGame works correctly", () => {
     test("should be a chord in currentChord", () => {
         expect(game.currentChord.length).toEqual(1);
     });
-    test("should set gameTurn to zero", () => {
-        expect(game.gameTurn).toEqual(0);
+    test("should set gameTurn to one", () => {
+        expect(game.gameTurn).toEqual(1);
     });
     test("should set playerMove to zero", () => {
         expect(game.playerMove.length).toEqual(0);
     });
     test("p with id of score should display zero", () => {
         expect(document.getElementById('score').innerText).toBe(0);
-    })
+    });
 });
+//gameturn goes up
 
 describe("changeChord works correctly", () => {
     beforeAll(() => {
@@ -70,15 +68,15 @@ describe("changeChord works correctly", () => {
         expect(game.playerMove.length).toEqual(0);
     });
 });
-//check chord pop?
 
 describe("cssChange works correctly", () => {
     beforeAll(() => {
-        game.chordChange = "a";
+        newGame();
         changeChord();
     });
-    test("cssChange has added chordChange value to classList", () => {
-        expect(game.chordChange[0] in document.getElementById('chord').classList);
-    })
-    // test if a class is removed and added?
+    test("cssChange has added currentChord value to classList", () => {
+        expect(game.currentChord).toEqual(document.getElementById('chord').classList[2]);
+    });
+    // test if a class is removed
+    //check chord shadow transition once fixed
 });

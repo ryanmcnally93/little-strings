@@ -54,19 +54,14 @@
 
         <div id="show-chords">
             <div class="game game-chord a" id="chord"></div>
-            <div class="game score">Score<br><p id="score">0</p></div>
+            <div class="game score">Score<br><p id="score">0</p>/10</div>
         </div>
 
         <div id="my-guess-sentence">
             <div><p id="my-guess" class="key-interact my-h2">My guess is
-            <select id="select-key-2">
-                <option id="a" value="A">A</option>
-                <option id="c" value="C">C</option>
-                <option id="d" value="D">D</option>
-                <option id="e" value="E">E</option>
-                <option id="g" value="G">G</option>
-            </select></p></div>
-            <div id="play-button">Play</div>
+                <input id="answer-box" type="text">
+                <button data-type="submit" class="btn" id="submit-game">Submit Answer</button>
+            <div id="play-button" onclick="newGame()">Play</div>
         </div>
 
     </section>

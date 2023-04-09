@@ -575,3 +575,4 @@ The console logs showed me the code was working but the test was wrong, so I rew
 
 manual console log to test if classes being added and taken away
 
+originally, i was using an array, and push and splice. Then I used string and = BUG.

@@ -1,8 +1,7 @@
 let game = {
     score: 0,
     gameTurn: 0,
-    currentChord: [],
-    chordChange: [],
+    currentChord: "",
     playerMove: [],
     choices: ["a","c","d","e","g"],
 }
@@ -11,10 +10,18 @@ function newGame() {
     game.score = 0;
     game.gameTurn = 0;
     game.playerMove = [];
-    game.currentChord = document.getElementById('chord').classList[2];
     updateScore();
     changeChord();
+    let button = document.getElementById('submit-game');
+    button.addEventListener("click", function() {
+        checkAnswer();
+    });
+    if (game.gameTurn === 10) {
+            alert("Congratulations! You scored (score)/10!");
+    }
 }
+
+//add data-listener to event listener buttons
 
 function updateScore() {
     document.getElementById('score').innerText = game.score;
@@ -22,27 +29,53 @@ function updateScore() {
 
 function changeChord() {
     game.playerMove = [];
-    game.chordChange.push(game.choices[(Math.floor(Math.random() * 5))]);
+    game.currentChord = game.choices[(Math.floor(Math.random() * 5))];
     cssChange()
-    game.chordChange.splice(0, 1);
+    game.gameTurn++;
+    updateScore();
 }
 
 function cssChange() {
-    if (game.chordChange == "a") {
+    if (game.currentChord == "a") {
         document.getElementById('chord').classList.remove("c", "d", "e", "g");
-    } else if (game.chordChange == "c") {
+    } else if (game.currentChord == "c") {
         document.getElementById('chord').classList.remove("a", "d", "e", "g");
-    } else if (game.chordChange == "d") {
+    } else if (game.currentChord == "d") {
         document.getElementById('chord').classList.remove("a", "c", "e", "g");
-    } else if (game.chordChange == "e") {
+    } else if (game.currentChord == "e") {
         document.getElementById('chord').classList.remove("a", "c", "d", "g");
     } else {
         document.getElementById('chord').classList.remove("a", "c", "d", "e");
     }
-    document.getElementById('chord').classList.add(game.chordChange[0]);
+    document.getElementById('chord').classList.add(game.currentChord);
+    //improve!
 }
 
-module.exports = { game, newGame, updateScore, changeChord, cssChange };
+function checkAnswer() {
+    let userAnswer = document.getElementById("answer-box").value;
+    let actualAnswer = game.currentChord;
+    let isCorrect = userAnswer == actualAnswer;
+
+    if (isCorrect) {
+        alert("Correct!");
+        game.score++;
+        changeChord();
+        document.getElementById('chord').classList.add('chord-shadow-green');
+        setTimeout(() => {
+            document.getElementById('chord').classList.remove('chord-shadow-green');
+        }, 400);
+    } else {
+        alert("Wrong!");
+        changeChord();
+        document.getElementById('chord').classList.add('chord-shadow-red');
+        setTimeout(() => {
+            document.getElementById('chord').classList.remove('chord-shadow-red');
+        }, 400);
+    }
+    //change to dinosaur!
+}
+
+module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer };
 
 /*
 userTurn()

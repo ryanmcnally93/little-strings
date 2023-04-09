@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Exo&display=swap');
+@keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
 
 /* Header */
 
@@ -352,11 +360,8 @@ section {
     margin-bottom: 20px;
 }
 
-#select-key, #select-key-2 {
+#select-key {
     text-align: center;
-}
-#select-key-2 {
-    width: 60px;
 }
 
 select {
@@ -534,6 +539,9 @@ select {
     display: inline-block;
     margin-top: 150px;
 }
+#score {
+    display: inline;
+}
 
 .game-chord {
     width: 350px;
@@ -564,11 +572,16 @@ select {
     background: url(/assets/images/g.png) no-repeat bottom center;
 }
 
-#chord {
-    /* I ONLY WANT THIS WHEN CHORD CHANGES! */
+.chord-shadow-green {
     box-shadow: 0 0 10px green;
     -moz-box-shadow: 0 0 10px green;
     -webkit-box-shadow: 0 0 10px green;
+}
+
+.chord-shadow-red {
+    box-shadow: 0 0 10px red;
+    -moz-box-shadow: 0 0 10px red;
+    -webkit-box-shadow: 0 0 10px red;
 }
 
 #play-button {
@@ -588,6 +601,28 @@ select {
 }
 
 #play-button:hover {
+    color: yellow;
+    border: 2px solid rgb(73, 133, 28);
+    background-color: rgb(73, 133, 28);
+}
+
+#answer-box {
+    width: 60px;
+    color: rgb(73, 133, 28);
+    text-align: center;
+    margin-left: 10px;
+}
+
+#submit-game {
+    margin-left: 30px;
+    color: rgb(73, 133, 28);
+    background-color: #fafafa;
+    border-radius: 5px;
+    border: 2px solid;
+    margin-bottom: 5px;
+}
+
+#submit-game:hover {
     color: yellow;
     border: 2px solid rgb(73, 133, 28);
     background-color: rgb(73, 133, 28);
