@@ -64,7 +64,7 @@ describe("changeChord works correctly", () => {
         game.playerMove = "c";
         changeChord();
     });
-    test("should set playerMove to zero", () => {
+    test("should set length of playerMove to zero", () => {
         expect(game.playerMove.length).toEqual(0);
     });
 });

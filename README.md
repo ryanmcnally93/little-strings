@@ -107,8 +107,7 @@ Some of these sites even have audio to grab the kids attention.
 
 #### Fonts
 
-- Primary
-- Secondary
+- When I put together my project in Balsamiq Wireframes, I was instantly very fond of the default font Balsamiq Sans. It looks like a playful, child-friendly text and goes well with the web application.
 
 Image of font
 
@@ -120,7 +119,8 @@ Image of icons
 
 #### Colours
 
-- What did I use where and why?
+- Throughout the sites I looked at, I noticed primary colours being used in spaces that would normally be off-white. Any space deemed "boring" by kids but professional by adults is filled with exciting imagery and colours, and my web application is no exception!
+- I have chosen green and yellow to grab kids attention, as well as darker greens on the yellow for text and borders, which change when you hover over them.
 
 Image of colours example
 
@@ -293,17 +293,17 @@ Contacts could've had clickable divs with an image on the front to help sell the
 ### Roadmap
 
 This roadmap indicates the importance and viability of specific opportunities.
-EXAMPLE
-<!--
+
 | Opportunities/Problems      | Importance | Viability   |
 | ----------- | ----------- | ----------- |
-| Teach users how to stop a panic attack      | 5       | 4
-| Encourage them to sign uo to newsletter   | 4        | 5
-| Encourage them to interact with classes   | 5        | 4
-| Showcase images from classes   | 1        | 1
-| Show them positive feedback from other users   | 4        | 1
+| Carousel advertising options      | 4       | 5
+| Chord search api   | 3        | 4
+| Q&A section for grown ups   | 5        | 5
+| Contact form for parents   | 5        | 5
+| Game to introduce kids to the guitar   | 4        | 4
 
-As mentioned before, the stories page isn't necessary just yet as we don't have previous users feedback to use yet. So that and images from classes aren't necessary yet.-->
+<!-- ADD Missing Features -->
+
 
 ## Features 
 
@@ -323,25 +323,62 @@ Image
 
 - __Logo__
 
+  - I created the logo using Canva. I wanted a coloured guitar silhouette with the words "Little Strings" inside, using the font used across the site. This logo isn't too complicated, is to the point, is consistent in colour and text, and looks fun.
+
+Image
+
+- __The landing page images__
+
   - 
 
 Image
 
-- __The landing page hero image__
+- __The landing page info boxes__
 
   - 
 
 Image
 
-- __First section__
+- __The landing page guitar game button__
 
   - 
 
 Image
+
+- __The lessons page Carousel__
+
+  - 
+
+Image
+
+- __The lessons page chord API searcher__
+
+  - 
+
+Image
+
+- __The grown ups page accordion__
+
+  - 
+
+Image
+
+- __The grown ups page contact form__
+
+  - 
+
+Image
+
+- __The guitar game__
+
+  - 
+
+Image
+
 
 ### Features Left to Implement
 
-- __Stories Section__
+- __Other Section__
 
   What else could you add to this?
 
@@ -467,6 +504,32 @@ My header and footer elements were relatively straight forward to put together. 
 
 1). The first issue I found was trying to create the grid layout on my homepage. I spent a while changing classes and moving elements only to realise I'd forgotten to identify the classes as grid areas in css. I then noticed when this still didn't work, that my closing div tag of the homepage-one div was inline with the opening tag, rather than after the content. Fixing this corrected the issue.
 
+IMAGES.
+
+2). The next thing I noticed was that my lessons navbar styling was appearing different than my other pages, even though it had the same code. This is because I've been using bootstrap on my navbar, and have inherited some of its properties. This was only proving to be an issue on my lessons page because in order to get my carousel working, I had to paste a different version of bootstrap into my html's head element. I used dev tools to identify the different styling that was effecting my lessons navbar and corrected the issue that way.
+
+IMAGES.
+
+3). A bit issue I had with coding the guitar game, came when I tried to use push and splice on an array in JavaScript. Every google fix was the same, make sure you're using the function on an array! I was indeed using the functions on an array, but when I tested the code, I had a fail saying that the push and splice functions didn't exist. I used console.log to try and figure out what was wrong, but it confirmed that I was definitely testing an array.
+
+In the end I used the help of a tutor to get to the bottom of the issue, which wasn't my code, but the test itself. The test was using the beforeall function to set the array, which was only containing one piece of data, and I had it set to a string. By setting the array to a string in the test, the test was failing. I changed this to an array, and actually realised later on that this array would only ever hold one piece of data, and so a string was the right way to go about it in the end. I got rid of the push and splice functions and used the equals sign instead.
+
+IMAGES
+
+4). During the game sequence, I needed to take my chord image div, and change it. To do so I had to take away the previous class added and add a new one, which proved to be particularly difficult. I used console.log before and after the function so I could see step by step what my code was doing and managed to fix the issue using an if statement. The statement checks the value of new class added, and gets rid of any other potential chord classes, making sure that only the correct chord class is in effect.
+
+IMAGES
+
+5). Navbar responsiveness.
+
+IMAGES
+
+6). Contact us buttons, going down the page.
+
+IMAGES
+
+7). 
+
 ### Unfixed Bugs
 
 There are no bugs unfixed to my knowledge.
@@ -537,7 +600,11 @@ The site had no broken links, but the images wouldn't show initially. I had to c
 
 ### Content 
 
-- What and where and why.
+- The code I used for the accordion, I got from [W3S.](https://www.w3schools.com/howto/howto_js_accordion.asp) I used their template and added my own questions and answers.
+
+- The carousel code was also found on [W3S.](https://www.w3schools.com/bootstrap/bootstrap_carousel.asp) This code uses bootstrap classes to achieve the carousel. I decided to create the divs inside the carousel to split it in half, with information as well as pictures, but the code that makes it work is from bootstrap.
+
+- Whenever I needed to crop an image quickly, I used [iloveimg.](https://www.iloveimg.com/crop-image)
 
 ### Media
 EXAMPLES
@@ -565,14 +632,3 @@ EXAMPLE
 [Sign up](/assets/images/readme-images/signup-lighthouse.png)-->
 
 This readme.md was spellchecked using the spell checker extension for Chrome. WHEN IT IS.
-
-
-ACCORDION AND CAROUSEL FROM W3C
-https://www.iloveimg.com/crop-image
-lessons navbar bug fix
-console logging array, was array, was saying push and splice werent functions,
-The console logs showed me the code was working but the test was wrong, so I reworded the test and now it is working.
-
-manual console log to test if classes being added and taken away
-
-originally, i was using an array, and push and splice. Then I used string and = BUG.
