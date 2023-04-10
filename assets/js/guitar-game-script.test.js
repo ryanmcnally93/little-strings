@@ -43,18 +43,54 @@ describe("newGame works correctly", () => {
     test("should be a chord in currentChord", () => {
         expect(game.currentChord.length).toEqual(1);
     });
-    test("should set gameTurn to one", () => {
+    test("should set gameTurn to zero, but the chordChange function inside makes the first chord gameTurn 1", () => {
         expect(game.gameTurn).toEqual(1);
     });
     test("p with id of score should display zero", () => {
         expect(document.getElementById('score').innerText).toBe(0);
     });
+    test("newGame should contain checkAnswer function", () => {
+        expect(checkAnswer).toHaveBeenCalled;
+    })
 });
 //gameturn goes up
 
+describe("updateScore works correctly", () => {
+    beforeAll(() => {
+        game.score = 3;
+        game.score++;
+        updateScore();
+    });
+    test("Update score should have changed game.score to 4", () => {
+        expect(game.score).toEqual(4);
+    });
+    test("The innertext for the element with the if of score should have changed", () => {
+        expect(document.getElementById('score').innerText).toBe(4);
+    });
+});
+
 describe("changeChord works correctly", () => {
     beforeAll(() => {
+        game.gameTurn = 0;
         changeChord();
+    });
+    test("cssChange function has been called", () => {
+        expect(cssChange).toHaveBeenCalled;
+    });
+    test("updateScore function has been called", () => {
+        expect(updateScore).toHaveBeenCalled;
+    });
+    test("finishGame function has been called, which only acts on gameTurn 11", () => {
+        expect(finishGame).toHaveBeenCalled;
+    });
+    test("currentChord has a length of 1, this doesn't happen on page load so we know it's come from the function", () => {
+        expect(game.currentChord.length).toBe(1);
+    });
+    test("The function should have added to gameTurn, which should now be 1", () => {
+        expect(game.gameTurn).toEqual(1);
+    });
+    test("answer.value should be reset, giving the user an empty input box for the next turn", () => {
+        expect(document.getElementById("answer-box").value).toEqual("");
     });
 });
 
