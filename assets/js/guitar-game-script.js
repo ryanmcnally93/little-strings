@@ -11,25 +11,17 @@ let game = {
     score: 0,
     gameTurn: 0,
     currentChord: "",
-    playerMove: [],
     choices: ["a","c","d","e","g"],
 }
 
 function newGame() {
     game.score = 0;
     game.gameTurn = 0;
-    game.playerMove = [];
-    updateScore();
     changeChord();
-    document.getElementById("answer-box").value = "";
-    document.getElementById("answer-box").focus();
     let button = document.getElementById('submit-game');
     button.addEventListener("click", function() {
         checkAnswer();
     });
-    if (game.gameTurn === 10) {
-            alert("Congratulations! You scored (score)/10!");
-    }
 }
 
 //add data-listener to event listener buttons
@@ -39,13 +31,14 @@ function updateScore() {
 }
 
 function changeChord() {
-    game.playerMove = [];
     game.currentChord = game.choices[(Math.floor(Math.random() * 5))];
     cssChange()
     game.gameTurn++;
     updateScore();
-    document.getElementById("answer-box").value = "";
-    document.getElementById("answer-box").focus();
+    let answer = document.getElementById("answer-box");
+    answer.value = "";
+    answer.focus();
+    finishGame();
 }
 
 function cssChange() {
@@ -83,12 +76,19 @@ function checkAnswer() {
         document.getElementById('chord').classList.add('chord-shadow-red');
         setTimeout(() => {
             document.getElementById('chord').classList.remove('chord-shadow-red');
-        }, 400);
+        }, 500);
     }
     //change to dinosaur!
 }
 
-module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer };
+function finishGame() {
+    if (game.gameTurn == 11) {
+        alert("Congratulations! You've scored " + game.score + "/10!");
+        newGame();
+    }
+}
+
+module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame };
 
 /*
 userTurn()

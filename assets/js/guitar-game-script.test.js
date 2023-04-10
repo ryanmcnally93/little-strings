@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, gameFinished } = require("./guitar-game-script");
+const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame } = require("./guitar-game-script");
 
 beforeAll(() => {
     let fs = require("fs");
@@ -22,9 +22,6 @@ describe("game object contains correct keys", () => {
     test("currentChord key exists", () => {
         expect("currentChord" in game).toBe(true);
     });
-    test("playerMove key exists", () => {
-        expect("playerMove" in game).toBe(true);
-    });
     test("choices key exists", () => {
         expect("choices" in game).toBe(true);
     });
@@ -37,7 +34,6 @@ describe("newGame works correctly", () => {
     beforeAll(() => {
         game.score = 14;
         game.gameTurn = 9;
-        game.playerMove = "a";
         document.getElementById('score').innerText = '42';
         newGame();
     });
@@ -50,9 +46,6 @@ describe("newGame works correctly", () => {
     test("should set gameTurn to one", () => {
         expect(game.gameTurn).toEqual(1);
     });
-    test("should set playerMove to zero", () => {
-        expect(game.playerMove.length).toEqual(0);
-    });
     test("p with id of score should display zero", () => {
         expect(document.getElementById('score').innerText).toBe(0);
     });
@@ -61,11 +54,7 @@ describe("newGame works correctly", () => {
 
 describe("changeChord works correctly", () => {
     beforeAll(() => {
-        game.playerMove = "c";
         changeChord();
-    });
-    test("should set length of playerMove to zero", () => {
-        expect(game.playerMove.length).toEqual(0);
     });
 });
 
