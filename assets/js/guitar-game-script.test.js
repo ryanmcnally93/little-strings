@@ -97,11 +97,36 @@ describe("changeChord works correctly", () => {
 describe("cssChange works correctly", () => {
     beforeAll(() => {
         newGame();
-        changeChord();
+        game.currentChord = "c";
+        cssChange();
     });
     test("cssChange has added currentChord value to classList", () => {
         expect(game.currentChord).toEqual(document.getElementById('chord').classList[2]);
     });
-    // test if a class is removed
-    //check chord shadow transition once fixed
+    test("None of the following classes should be in the classList 'a', 'd', 'e', 'g' - but 'c' should", () => {
+        expect(document.getElementById('chord').classList.contains("a")).toBe(false);
+        expect(document.getElementById('chord').classList.contains("c")).toBe(true);
+        expect(document.getElementById('chord').classList.contains("d")).toBe(false);
+        expect(document.getElementById('chord').classList.contains("e")).toBe(false);
+        expect(document.getElementById('chord').classList.contains("g")).toBe(false);
+    });
+    
+describe("checkAnswer works correctly", () => {
+    beforeAll(() => {
+        game.score = 0;
+        game.currentChord == "a";
+        document.getElementById("answer-box").value == "a";
+        checkAnswer();
+    });
+    test('game.score should have increased, as the two values are the same', () => {
+        expect(game.score).toEqual(1);
+    });
+});
+
+// checks to see if the text entered is the same as the actual answer
+// when answer is correct, turns shadow green
+// when answer is correct, returns 'Correct!' message
+// when answer is wrong, turns shadow red
+// when answer is wrong, returns 'Wrong' message
+
 });

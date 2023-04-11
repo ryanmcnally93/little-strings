@@ -54,7 +54,6 @@ function cssChange() {
         document.getElementById('chord').classList.remove("a", "c", "d", "e");
     }
     document.getElementById('chord').classList.add(game.currentChord);
-    //improve!
 }
 
 function checkAnswer() {
@@ -78,7 +77,6 @@ function checkAnswer() {
             document.getElementById('chord').classList.remove('chord-shadow-red');
         }, 500);
     }
-    //change to dinosaur!
 }
 
 function finishGame() {
