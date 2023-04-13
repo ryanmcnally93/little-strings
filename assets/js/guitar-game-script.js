@@ -68,7 +68,7 @@ function checkAnswer() {
         document.getElementById('chord').classList.add('chord-shadow-green');
         setTimeout(() => {
             document.getElementById('chord').classList.remove('chord-shadow-green');
-        }, 400);
+        }, 500);
     } else {
         alert("Wrong!");
         changeChord();

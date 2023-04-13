@@ -2,6 +2,7 @@
  * @jest-environment jsdom
  */
 
+const { createTestScheduler } = require("jest");
 const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame } = require("./guitar-game-script");
 
 beforeAll(() => {
@@ -114,19 +115,40 @@ describe("cssChange works correctly", () => {
 describe("checkAnswer works correctly", () => {
     beforeAll(() => {
         game.score = 0;
-        game.currentChord == "a";
-        document.getElementById("answer-box").value == "a";
+        game.currentChord = "a";
+        document.getElementById("answer-box").value = "a";
+        jest.spyOn(window, 'alert').mockImplementation(() => {});
         checkAnswer();
     });
     test('game.score should have increased, as the two values are the same', () => {
         expect(game.score).toEqual(1);
     });
+    test("Alert containing the message 'Correct!' was called", () => {
+        expect(window.alert).toBeCalledWith('Correct!');
+    });
+    beforeEach(() => {
+        game.currentChord = 'a';
+        document.getElementById('answer-box').value = 'c';
+        checkAnswer();
+    });
+    test('Alert containing the message "Wrong!" was called', () => {
+        expect(window.alert).toBeCalledWith('Wrong!');
+    });
 });
 
-// checks to see if the text entered is the same as the actual answer
+describe("finishGame works correctly", () => {
+    beforeAll(() => {
+        finishGame();
+    });
+    test('finishGame should call the newGame function', () => {
+        expect(newGame).toHaveBeenCalled;
+    });
+});
+
+});
+
+//visual tests
+
 // when answer is correct, turns shadow green
-// when answer is correct, returns 'Correct!' message
 // when answer is wrong, turns shadow red
-// when answer is wrong, returns 'Wrong' message
-
-});
+// congratulations message
