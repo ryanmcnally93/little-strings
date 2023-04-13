@@ -636,3 +636,6 @@ This readme.md was spellchecked using the spell checker extension for Chrome. WH
 Overflow: hidden helped when setting my grid on guitar game, means things can overlap so speech bubble can overlap larry
 struggled with concept of columns and rows and realised i had wrong calling - speech instead of larrys speech
 margin left was pushing page on smaller screens, needed percentage instead
+lowerAnswer = userAnswer.toLowerCase(); fixed the issue of capital letters not being accepted
+used the for loop to iterate through the three correct and wrong answers and make sure the correct message is being shown, rather than use the long-winded way used earlier.
+blue border after click, because of :focus outline, set to 0 and give rgb property

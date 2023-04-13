@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 game.currentChord = "g";
                 cssChange();
             } else {
-                //404 message
+                alert("Error! A button has been clicked that should not exist.");
+                console.log("Error! A button has been clicked that should not exist.");
             }
         });
     }
@@ -47,11 +48,6 @@ let game = {
     gameTurn: 0,
     currentChord: "",
     choices: ["a","c","d","e","g"],
-    //CAPITALS AREN'T ACCEPTED?!
-}
-
-function practiceChords() {
-    //Click on chord letter and it produces chord!
 }
 
 function betweenGameAppearance() {
@@ -108,8 +104,9 @@ function cssChange() {
 
 function checkAnswer() {
     let userAnswer = document.getElementById("answer-box").value;
+    lowerAnswer = userAnswer.toLowerCase();
     let actualAnswer = game.currentChord;
-    let isCorrect = userAnswer == actualAnswer;
+    let isCorrect = lowerAnswer == actualAnswer;
     document.getElementById('larry-first-move').style.display = "none";
 
     if (isCorrect) {
@@ -149,10 +146,27 @@ function larryMessage() {
 function finishGame() {
     if (game.gameTurn == 11) {
         let message = document.getElementById('larry-welcome');
-        message.innerText ="Congratulations! You've scored " + game.score + "/10!";
-        message.style.display = "block";
-        message.style.marginTop = "60px";
-        betweenGameAppearance();
+        if (game.score < 5) {
+            message.innerText ="Practice makes perfect! You've scored " + game.score + "/10!";
+            message.style.display = "block";
+            message.style.marginTop = "60px";
+            betweenGameAppearance();
+        } else if (game.score >= 5 && game.score < 8) {
+            message.innerText ="Good Score! See if you can beat it! You've scored " + game.score + "/10!";
+            message.style.display = "block";
+            message.style.marginTop = "60px";
+            betweenGameAppearance();
+        } else if (game.score >= 8 && game.score < 10) {
+            message.innerText ="Almost perfect! You've scored " + game.score + "/10!";
+            message.style.display = "block";
+            message.style.marginTop = "60px";
+            betweenGameAppearance();
+        } else {
+            message.innerText ="Wow! Congratulations! You've scored " + game.score + "/10!";
+            message.style.display = "block";
+            message.style.marginTop = "60px";
+            betweenGameAppearance();
+        }
     }
 }
 

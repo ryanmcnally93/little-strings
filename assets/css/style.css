@@ -524,6 +524,12 @@ select {
     background-color: white;
     margin: 30px;
     display: inline-block;
+    cursor: pointer;
+}
+
+.chord:focus {
+    outline: none;
+    border: 2px solid rgb(73, 133, 28);
 }
 
 #chord {
@@ -671,6 +677,7 @@ select {
     text-align: center;
     display: block;
     margin: 90px 0 20px 30px;
+    cursor: pointer;
 }
 
 #play-button:hover {
