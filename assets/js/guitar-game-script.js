@@ -10,6 +10,23 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
+            } else if (this == document.getElementById("a-chord")) {
+                game.currentChord = "a";
+                cssChange();
+            } else if (this == document.getElementById("c-chord")) {
+                game.currentChord = "c";
+                cssChange();
+            } else if (this == document.getElementById("d-chord")) {
+                game.currentChord = "d";
+                cssChange();
+            } else if (this == document.getElementById("e-chord")) {
+                game.currentChord = "e";
+                cssChange();
+            } else if (this == document.getElementById("g-chord")) {
+                game.currentChord = "g";
+                cssChange();
+            } else {
+                //404 message
             }
         });
     }
@@ -31,6 +48,10 @@ let game = {
     currentChord: "",
     choices: ["a","c","d","e","g"],
     //CAPITALS AREN'T ACCEPTED?!
+}
+
+function practiceChords() {
+    //Click on chord letter and it produces chord!
 }
 
 function betweenGameAppearance() {
