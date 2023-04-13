@@ -632,3 +632,7 @@ EXAMPLE
 [Sign up](/assets/images/readme-images/signup-lighthouse.png)-->
 
 This readme.md was spellchecked using the spell checker extension for Chrome. WHEN IT IS.
+
+Overflow: hidden helped when setting my grid on guitar game, means things can overlap so speech bubble can overlap larry
+struggled with concept of columns and rows and realised i had wrong calling - speech instead of larrys speech
+margin left was pushing page on smaller screens, needed percentage instead

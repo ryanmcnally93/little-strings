@@ -1,10 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
-//insert css changes in display: none items on page load.
+    betweenGameAppearance();
     document.getElementById("answer-box").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
             checkAnswer();
         }
     });
+    let buttons = document.getElementsByTagName("button");
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "submit") {
+                checkAnswer();
+            }
+        });
+    }
 });
 
 let game = {
@@ -14,14 +22,24 @@ let game = {
     choices: ["a","c","d","e","g"],
 }
 
+function betweenGameAppearance() {
+    document.getElementById('play-button').style.display = null;
+    document.getElementById('chords-appear').style.display = null;
+    document.getElementById('larry-welcome').style.display = "block";
+    document.getElementById('my-guess').style.display = "none";
+    document.getElementById('score-box').style.display = "none";
+}
+
 function newGame() {
+    document.getElementById('my-guess').style.display = null;
+    document.getElementById('score-box').style.display = null;
+    document.getElementById('larry-welcome').style.display = "none";
+    document.getElementById('larry-first-move').style.display = "block";
+    document.getElementById('play-button').style.display = "none";
+    document.getElementById('chords-appear').style.display = "none";
     game.score = 0;
     game.gameTurn = 0;
     changeChord();
-    let button = document.getElementById('submit-game');
-    button.addEventListener("click", function() {
-        checkAnswer();
-    });
 }
 
 //add data-listener to event listener buttons
@@ -82,11 +100,20 @@ function checkAnswer() {
 function finishGame() {
     if (game.gameTurn == 11) {
         alert("Congratulations! You've scored " + game.score + "/10!");
-        newGame();
+        betweenGameAppearance();
     }
 }
 
-module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame };
+module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance };
+
+// On page load
+// #my-guess needs to be invisible
+// #score-box needs to be invisible
+
+//On newGame()
+// The same two need to now be visible
+// The play button needs to be invisible
+// #chords-appear needs to disappear
 
 /*
 userTurn()

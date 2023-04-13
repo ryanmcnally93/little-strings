@@ -486,42 +486,116 @@ select {
 
 /* Guitar Game */
 
-.chord {
-    display: inline-block;
-    border: 2px solid;
-    width: 4rem;
-    height: 4rem;
-    color: rgb(73, 133, 28);
-    border-radius: 5px;
-    margin: 0 2%;
-    font-size: 32px;
-    font-family: 'Balsamiq Sans', cursive;
-    font-weight: 800;
-    padding-top: 5px;
-    background-color: white;
-}
-
 .chord:hover {
     color: yellow;
     background-color: rgb(73, 133, 28);
     border: 2px solid rgb(73, 133, 28);
 }
 
-#chord-box, #chord-box-2 {
+.chord-box {
     text-align: center;
     width: 75%;
     margin: auto;
-}
-
-#chord-box {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 #show-chords {
-    display: flex;
+    display: grid;
+    gap: 0;
+    grid-template-columns: 5fr 1fr 4fr;
+    grid-template-rows: 0.5fr 1fr;
+    grid-template-areas:
+    "chord score larrys-speech"
+    "chord larry larry";
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.chord {
+    border: 2px solid;
+    width: 4rem;
+    height: 4rem;
+    color: rgb(73, 133, 28);
+    border-radius: 5px;
+    font-size: 32px;
+    font-family: 'Balsamiq Sans', cursive;
+    font-weight: 800;
+    padding-top: 5px;
+    background-color: white;
+    margin: 30px;
+    display: inline-block;
+}
+
+#chord {
+    grid-area: chord;
+    margin-left: 55%;
+}
+
+#larry {
+    grid-area: larry;
+    width: 300px;
+}
+
+#speech {
+    width: 250px;
+    margin-top: 1%;
+    overflow: hidden;
+    position: absolute;
+}
+
+#larrys-speech {
+    grid-area: larrys-speech;
+    width: 250px;
+    margin-top: 7%;
+    overflow: hidden;
+}
+
+#larry-welcome {
+    margin-top: 30px;
+}
+
+#larry-first-move {
+    margin-top: 60px;
+}
+
+#larry-correct-one {
+    margin-top: 65px;
+}
+
+#larry-correct-two {
+    margin-top: 60px;
+}
+
+#larry-correct-three {
+    margin-top: 60px;
+}
+
+#larry-wrong-one {
+    margin-top: 60px;
+}
+
+#larry-wrong-two {
+    margin-top: 60px;
+}
+
+#larry-wrong-three {
+    margin-top: 65px;
+}
+
+.larry-messages {
+    width: 270px;
     text-align: center;
-    justify-content: center;
+    color: rgb(73, 133, 28);
+    font-family: 'Balsamiq Sans', cursive;
+    padding: 17px 40px 20px 40px;
+    overflow: hidden;
+    position: absolute;
+    display: none;
+}
+
+#score-box {
+    grid-area: score;
 }
 
 .score {
@@ -530,14 +604,14 @@ select {
     height: 8rem;
     color: rgb(73, 133, 28);
     border-radius: 5px;
-    margin: 4%;
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
     padding-top: 10px;
     background-color: lightblue;
     display: inline-block;
-    margin-top: 150px;
+    margin: 60px auto 0 auto;
+    text-align: center;
 }
 #score {
     display: inline;
@@ -546,7 +620,7 @@ select {
 .game-chord {
     width: 350px;
     height: 350px;
-    margin: 20px 4%;
+    margin: 50px 70px 0 0;
     border: 2px solid rgb(73, 133, 28);
     display: inline-block;
     border-radius: 25px;
@@ -590,14 +664,14 @@ select {
     height: 4rem;
     color: rgb(73, 133, 28);
     border-radius: 5px;
-    margin: 10px;
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
     padding-top: 5px;
     background-color: white;
     text-align: center;
-    margin: auto;
+    display: block;
+    margin: 90px 0 20px 30px;
 }
 
 #play-button:hover {

@@ -3,7 +3,7 @@
  */
 
 const { createTestScheduler } = require("jest");
-const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame } = require("./guitar-game-script");
+const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance } = require("./guitar-game-script");
 
 beforeAll(() => {
     let fs = require("fs");
@@ -140,8 +140,8 @@ describe("finishGame works correctly", () => {
     beforeAll(() => {
         finishGame();
     });
-    test('finishGame should call the newGame function', () => {
-        expect(newGame).toHaveBeenCalled;
+    test('finishGame should call the betweenGameAppearance function', () => {
+        expect(betweenGameAppearance).toHaveBeenCalled;
     });
 });
 
