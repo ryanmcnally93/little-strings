@@ -301,7 +301,7 @@ section {
     font-size: 48px;
     font-family: 'Balsamiq Sans', cursive;
     margin: 0 20px 0 20px;
-    padding: 20px 0;
+    padding: 20px 0 0 0;
 }
 
 .item.active {
@@ -508,8 +508,7 @@ select {
     grid-template-areas:
     "chord score larrys-speech"
     "chord larry larry";
-    height: 450px;
-    margin-bottom: 20px;
+    height: 425px;
 }
 
 .chord {

@@ -15,19 +15,32 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
+let C1 = document.getElementById('larry-correct-one');
+let C2 = document.getElementById('larry-correct-two');
+let C3 = document.getElementById('larry-correct-three');
+let W1 = document.getElementById('larry-wrong-one');
+let W2 = document.getElementById('larry-wrong-two');
+let W3 = document.getElementById('larry-wrong-three');
+
 let game = {
     score: 0,
+    larrysMessage: "",
+    larryCorrectChoice: [C1, C2, C3],
+    larryWrongChoice: [W1, W2, W3],
     gameTurn: 0,
     currentChord: "",
     choices: ["a","c","d","e","g"],
+    //CAPITALS AREN'T ACCEPTED?!
 }
 
 function betweenGameAppearance() {
+    game.larrysMessage = "";
     document.getElementById('play-button').style.display = null;
     document.getElementById('chords-appear').style.display = null;
     document.getElementById('larry-welcome').style.display = "block";
     document.getElementById('my-guess').style.display = "none";
     document.getElementById('score-box').style.display = "none";
+    larryMessage();
 }
 
 function newGame() {
@@ -41,8 +54,6 @@ function newGame() {
     game.gameTurn = 0;
     changeChord();
 }
-
-//add data-listener to event listener buttons
 
 function updateScore() {
     document.getElementById('score').innerText = game.score;
@@ -78,9 +89,10 @@ function checkAnswer() {
     let userAnswer = document.getElementById("answer-box").value;
     let actualAnswer = game.currentChord;
     let isCorrect = userAnswer == actualAnswer;
+    document.getElementById('larry-first-move').style.display = "none";
 
     if (isCorrect) {
-        alert("Correct!");
+        game.larrysMessage = game.larryCorrectChoice[(Math.floor(Math.random() * 3))];
         game.score++;
         changeChord();
         document.getElementById('chord').classList.add('chord-shadow-green');
@@ -88,32 +100,42 @@ function checkAnswer() {
             document.getElementById('chord').classList.remove('chord-shadow-green');
         }, 500);
     } else {
-        alert("Wrong!");
+        game.larrysMessage = game.larryWrongChoice[(Math.floor(Math.random() * 3))];
         changeChord();
         document.getElementById('chord').classList.add('chord-shadow-red');
         setTimeout(() => {
             document.getElementById('chord').classList.remove('chord-shadow-red');
         }, 500);
     }
+    larryMessage();
+}
+
+function larryMessage() {
+    for (i = 0; i < game.larryCorrectChoice.length; i++) {
+        if (game.larryCorrectChoice[i] === game.larrysMessage) {
+            game.larryCorrectChoice[i].style.display = "block";
+        } else
+            game.larryCorrectChoice[i].style.display = "none";
+    }
+    for (i = 0; i < game.larryWrongChoice.length; i++) {
+        if (game.larryWrongChoice[i] === game.larrysMessage) {
+            game.larryWrongChoice[i].style.display = "block";
+        } else
+            game.larryWrongChoice[i].style.display = "none";
+    }
 }
 
 function finishGame() {
     if (game.gameTurn == 11) {
-        alert("Congratulations! You've scored " + game.score + "/10!");
+        let message = document.getElementById('larry-welcome');
+        message.innerText ="Congratulations! You've scored " + game.score + "/10!";
+        message.style.display = "block";
+        message.style.marginTop = "60px";
         betweenGameAppearance();
     }
 }
 
-module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance };
-
-// On page load
-// #my-guess needs to be invisible
-// #score-box needs to be invisible
-
-//On newGame()
-// The same two need to now be visible
-// The play button needs to be invisible
-// #chords-appear needs to disappear
+module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage };
 
 /*
 userTurn()

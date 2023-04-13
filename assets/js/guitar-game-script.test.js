@@ -2,8 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { createTestScheduler } = require("jest");
-const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance } = require("./guitar-game-script");
+const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage } = require("./guitar-game-script");
 
 beforeAll(() => {
     let fs = require("fs");
