@@ -146,22 +146,22 @@ function finishGame() {
     if (game.gameTurn == 11) {
         let message = document.getElementById('larry-welcome');
         if (game.score < 5) {
-            message.innerText ="Practice makes perfect! You've scored " + game.score + "/10!";
+            message.textContent ="Practice makes perfect! You've scored " + game.score + "/10!";
             message.style.display = "block";
             message.style.marginTop = "60px";
             betweenGameAppearance();
         } else if (game.score >= 5 && game.score < 8) {
-            message.innerText ="Good Score! See if you can beat it! You've scored " + game.score + "/10!";
+            message.textContent ="Good Score! See if you can beat it! You've scored " + game.score + "/10!";
             message.style.display = "block";
             message.style.marginTop = "60px";
             betweenGameAppearance();
         } else if (game.score >= 8 && game.score < 10) {
-            message.innerText ="Almost perfect! You've scored " + game.score + "/10!";
+            message.textContent ="Almost perfect! You've scored " + game.score + "/10!";
             message.style.display = "block";
             message.style.marginTop = "60px";
             betweenGameAppearance();
         } else {
-            message.innerText ="Wow! Congratulations! You've scored " + game.score + "/10!";
+            message.textContent ="Wow! Congratulations! You've scored " + game.score + "/10!";
             message.style.display = "block";
             message.style.marginTop = "60px";
             betweenGameAppearance();

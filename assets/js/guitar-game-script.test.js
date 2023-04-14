@@ -50,12 +50,13 @@ describe("game object contains correct keys", () => {
         expect(game.choices).toEqual(["a","c","d","e","g"]);
     });
     test("larryCorrectChoice contains correct options", () => {
-        console.log(game.larryCorrectChoice);
+        expect(game.larryCorrectChoice).toEqual([C1, C2, C3]);
     });
     test("larryWrongChoice contains correct options", () => {
-        console.log(game.larryWrongChoice);
+        expect(game.larryWrongChoice).toEqual([W1, W2, W3]);
     });
 });
+//ISSUE WITH ARRAYS
 
 describe("betweenGameAppearance works correctly", () => {
     beforeAll(() => {
@@ -138,6 +139,7 @@ describe("updateScore works correctly", () => {
         expect(document.getElementById('score').innerText).toBe(4);
     });
 });
+//DONE
 
 describe("changeChord works correctly", () => {
     beforeAll(() => {
@@ -162,7 +164,11 @@ describe("changeChord works correctly", () => {
     test("answer.value should be reset, giving the user an empty input box for the next turn", () => {
         expect(document.getElementById("answer-box").value).toEqual("");
     });
+    test('#answer-box has focus', () => {
+        expect(document.getElementById("answer-box").focus());
+    });
 });
+//DONE
 
 describe("cssChange works correctly", () => {
     beforeAll(() => {
@@ -180,43 +186,103 @@ describe("cssChange works correctly", () => {
         expect(document.getElementById('chord').classList.contains("e")).toBe(false);
         expect(document.getElementById('chord').classList.contains("g")).toBe(false);
     });
-    
+});
+//DONE
+
 describe("checkAnswer works correctly", () => {
     beforeAll(() => {
-        game.score = 0;
-        game.currentChord = "a";
-        document.getElementById("answer-box").value = "a";
-        jest.spyOn(window, 'alert').mockImplementation(() => {});
+        game.currentChord = "c";
+        document.getElementById("answer-box").value = "C";
         checkAnswer();
     });
-    test('game.score should have increased, as the two values are the same', () => {
-        expect(game.score).toEqual(1);
+    test("#answer-box value has been changed to lowercase result", () => {
+        expect(document.getElementById("answer-box").value).toEqual("c");
     });
-    test("Alert containing the message 'Correct!' was called", () => {
-        expect(window.alert).toBeCalledWith('Correct!');
+    test("#larry-first-move display set to none, making it invisible", () => {
+        expect(document.getElementById('larry-first-move').style.display).toBe("none");
     });
-    beforeEach(() => {
-        game.currentChord = 'a';
-        document.getElementById('answer-box').value = 'c';
-        checkAnswer();
+    test("game.score increases", () => {
+        expect(game.score).toBe(1);
     });
-    test('Alert containing the message "Wrong!" was called', () => {
-        expect(window.alert).toBeCalledWith('Wrong!');
+    test("changeChord function has been called", () => {
+        expect(changeChord).toHaveBeenCalled;
+    });
+    test("larryMessage function has been called", () => {
+        expect(larryMessage).toHaveBeenCalled;
+    });
+    test("Should display a correct message", () => {
+        expect(game.larrysMessage == game.larryCorrectChoice[i]);
     });
 });
+//DOESN'T WORK BECAUSE OF ISSUE WITH ARRAYS
+
+describe("checkAnswer works correctly with wrong answers", () => {
+    beforeAll(() => {
+        game.currentChord = "d";
+        document.getElementById("answer-box").value = "g";
+        checkAnswer();
+    });
+    test("Should display a wrong message", () => {
+        expect(game.larrysMessage == game.larryWrongChoice[i]);
+    });
+});
+//DOESN'T WORK BECAUSE OF ISSUE WITH ARRAYS
 
 describe("finishGame works correctly", () => {
-    beforeAll(() => {
-        finishGame();
+    test("Correct message should be shown when score is 0", () => {
+        newGame();
+        game.score = 0;
+        game.gameTurn = 10;
+        changeChord();
+        expect(document.getElementById('larry-welcome').textContent).toBe("Practice makes perfect! You've scored " + game.score + "/10!");
     });
     test('finishGame should call the betweenGameAppearance function', () => {
         expect(betweenGameAppearance).toHaveBeenCalled;
     });
+    test("Correct message should be shown when score is 4", () => {
+        newGame()
+        game.score = 4
+        game.gameTurn = 10
+        changeChord();
+        expect(document.getElementById('larry-welcome').textContent).toEqual("Practice makes perfect! You've scored " + game.score + "/10!");
+    });
+    test("Correct message should be shown when score is 5", () => {
+        newGame()
+        game.score = 5
+        game.gameTurn = 10
+        changeChord();
+        expect(document.getElementById('larry-welcome').textContent).toEqual("Good Score! See if you can beat it! You've scored " + game.score + "/10!");
+    });
+    test("Correct message should be shown when score is 7", () => {
+        newGame()
+        game.score = 7
+        game.gameTurn = 10
+        changeChord();
+        expect(document.getElementById('larry-welcome').textContent).toEqual("Good Score! See if you can beat it! You've scored " + game.score + "/10!");
+    });
+    test("Correct message should be shown when score is 8", () => {
+        newGame();
+        game.score = 8
+        game.gameTurn = 10
+        changeChord();
+        expect(document.getElementById('larry-welcome').textContent).toEqual("Almost perfect! You've scored " + game.score + "/10!");
+    });
+    test("Correct message should be shown when score is 10", () => {
+        newGame()
+        game.score = 10
+        game.gameTurn = 10
+        changeChord();
+        expect(document.getElementById('larry-welcome').textContent).toEqual("Wow! Congratulations! You've scored " + game.score + "/10!");
+    });
 });
+//DONE
 
-});
+//DOESN'T WORK BECAUSE OF ISSUE WITH ARRAYS
 
-//visual tests
+// MAKE SURE ERROR MESSAGES WORK AND ANY INPUT IS COVERED.
+// OUTSIDE THE BOX TESTS
 
-//shadows on chordbox
-//
+// Visual tests
+
+// Shadows on chordbox
+// Correct messages being shown
