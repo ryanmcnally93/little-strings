@@ -25,10 +25,62 @@ describe("game object contains correct keys", () => {
     test("choices key exists", () => {
         expect("choices" in game).toBe(true);
     });
+    test("larrysMessage key exists", () => {
+        expect("larrysMessage" in game).toBe(true);
+    });
+    test("larryCorrectChoice key exists", () => {
+        expect("larryCorrectChoice" in game).toBe(true);
+    });
+    test("larryWrongChoice key exists", () => {
+        expect("larryWrongChoice" in game).toBe(true);
+    });
+    test("score set to 0", () => {
+        expect(game.score).toEqual(0);
+    });
+    test("gameTurn set to 0", () => {
+        expect(game.gameTurn).toEqual(0);
+    });
+    test("larrysMessage set to empty string", () => {
+        expect(game.larrysMessage).toEqual("");
+    });
+    test("currentChord set to empty string", () => {
+        expect(game.currentChord).toEqual("");
+    });
     test("choices contains correct options", () => {
         expect(game.choices).toEqual(["a","c","d","e","g"]);
     });
+    test("larryCorrectChoice contains correct options", () => {
+        console.log(game.larryCorrectChoice);
+    });
+    test("larryWrongChoice contains correct options", () => {
+        console.log(game.larryWrongChoice);
+    });
 });
+
+describe("betweenGameAppearance works correctly", () => {
+    beforeAll(() => {
+        betweenGameAppearance();
+    });
+    test('larrysMessage is an empty string', () => {
+        expect(game.larrysMessage).toEqual("");
+    });
+    test('#play-button display property should be empty, cancelling out the previous display: none property', () => {
+        expect(document.getElementById('play-button').style.display).toBe("");
+    });
+    test('#chords-appear display property should be empty, cancelling out the previous display: none property', () => {
+        expect(document.getElementById('chords-appear').style.display).toBe("");
+    });
+    test('#larry-welcome display property should be block', () => {
+        expect(document.getElementById('larry-welcome').style.display).toBe("block");
+    });
+    test('#my-guess display property should be none, making it invisible', () => {
+        expect(document.getElementById('my-guess').style.display).toBe("none");
+    });
+    test('#score-box display property should be none, making it invisible', () => {
+        expect(document.getElementById('score-box').style.display).toBe("none");
+    });
+});
+//DONE
 
 describe("newGame works correctly", () => {
     beforeAll(() => {
@@ -46,14 +98,32 @@ describe("newGame works correctly", () => {
     test("should set gameTurn to zero, but the chordChange function inside makes the first chord gameTurn 1", () => {
         expect(game.gameTurn).toEqual(1);
     });
+    test("changeChord function has been called", () => {
+        expect(changeChord).toHaveBeenCalled;
+    });
     test("p with id of score should display zero", () => {
         expect(document.getElementById('score').innerText).toBe(0);
     });
-    test("newGame should contain checkAnswer function", () => {
-        expect(checkAnswer).toHaveBeenCalled;
-    })
+    test('#larry-welcome display property should be none, making it invisible', () => {
+        expect(document.getElementById('larry-welcome').style.display).toBe("none");
+    });
+    test('#play-button display property should be none, making it invisible', () => {
+        expect(document.getElementById('play-button').style.display).toBe("none");
+    });
+    test('#chords-appear display property should be none, making it invisible', () => {
+        expect(document.getElementById('chords-appear').style.display).toBe("none");
+    });
+    test('#score-box display property should be an empty string, making it visible', () => {
+        expect(document.getElementById('score-box').style.display).toBe("");
+    });
+    test('#my-guess display property should be an empty string, making it visible', () => {
+        expect(document.getElementById('my-guess').style.display).toBe("");
+    });
+    test('#larry-first-move display property should set to "block", making it visible', () => {
+        expect(document.getElementById('larry-first-move').style.display).toBe("block");
+    });
 });
-//gameturn goes up
+//DONE
 
 describe("updateScore works correctly", () => {
     beforeAll(() => {
@@ -148,6 +218,5 @@ describe("finishGame works correctly", () => {
 
 //visual tests
 
-// when answer is correct, turns shadow green
-// when answer is wrong, turns shadow red
-// congratulations message
+//shadows on chordbox
+//

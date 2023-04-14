@@ -57,7 +57,6 @@ function betweenGameAppearance() {
     document.getElementById('larry-welcome').style.display = "block";
     document.getElementById('my-guess').style.display = "none";
     document.getElementById('score-box').style.display = "none";
-    larryMessage();
 }
 
 function newGame() {

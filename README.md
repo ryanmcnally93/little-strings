@@ -640,3 +640,7 @@ lowerAnswer = userAnswer.toLowerCase(); fixed the issue of capital letters not b
 used the for loop to iterate through the three correct and wrong answers and make sure the correct message is being shown, rather than use the long-winded way used earlier.
 blue border after click, because of :focus outline, set to 0 and give rgb property
 accordion https://www.w3schools.com/howto/howto_js_accordion.asp
+ccsChange // I have used a longer if statement ass opposed to a for loop due to the fact that there are two important classes that I don't want removed.
+    // I could still have used a for loop but would probably have been as complicated as this is, and I wanted to show I could achieve the same result
+    // in two different ways.
+Two tests not working for containing variables in correct and wrong answer arrays.
