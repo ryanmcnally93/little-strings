@@ -171,10 +171,3 @@ function finishGame() {
 }
 
 module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage };
-
-/*
-userTurn()
-
-assign id from current game array to 'button'
-
-*/ 

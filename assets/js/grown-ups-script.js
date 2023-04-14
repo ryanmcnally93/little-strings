@@ -17,4 +17,4 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-/* SO FAR ALL WRITTEN BY W3CSchools */
+/*This code was written by www.w3schools.com.*/

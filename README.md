@@ -639,3 +639,4 @@ margin left was pushing page on smaller screens, needed percentage instead
 lowerAnswer = userAnswer.toLowerCase(); fixed the issue of capital letters not being accepted
 used the for loop to iterate through the three correct and wrong answers and make sure the correct message is being shown, rather than use the long-winded way used earlier.
 blue border after click, because of :focus outline, set to 0 and give rgb property
+accordion https://www.w3schools.com/howto/howto_js_accordion.asp
