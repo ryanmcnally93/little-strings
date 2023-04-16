@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage } = require("./guitar-game-script");
+const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage, randomChordGenerator, randomCorrectGenerator, randomWrongGenerator } = require("./guitar-game-script");
 
 beforeAll(() => {
     let fs = require("fs");
@@ -99,8 +99,8 @@ describe("newGame works correctly", () => {
     test("should set gameTurn to zero, but the chordChange function inside makes the first chord gameTurn 1", () => {
         expect(game.gameTurn).toEqual(1);
     });
-    test("changeChord function has been called", () => {
-        expect(changeChord).toHaveBeenCalled;
+    test("randomChordGenerator function has been called", () => {
+        expect(randomChordGenerator).toHaveBeenCalled;
     });
     test("p with id of score should display zero", () => {
         expect(document.getElementById('score').innerText).toBe(0);
@@ -141,10 +141,10 @@ describe("updateScore works correctly", () => {
 });
 //DONE
 
-describe("changeChord works correctly", () => {
+describe("randomChordGenerator and changeChord work correctly together", () => {
     beforeAll(() => {
         game.gameTurn = 0;
-        changeChord();
+        randomChordGenerator();
     });
     test("cssChange function has been called", () => {
         expect(cssChange).toHaveBeenCalled;
@@ -203,9 +203,6 @@ describe("checkAnswer works correctly", () => {
     });
     test("game.score increases", () => {
         expect(game.score).toBe(1);
-    });
-    test("changeChord function has been called", () => {
-        expect(changeChord).toHaveBeenCalled;
     });
     test("larryMessage function has been called", () => {
         expect(larryMessage).toHaveBeenCalled;
@@ -277,8 +274,6 @@ describe("finishGame works correctly", () => {
 });
 //DONE
 
-//DOESN'T WORK BECAUSE OF ISSUE WITH ARRAYS
-
 // MAKE SURE ERROR MESSAGES WORK AND ANY INPUT IS COVERED.
 // OUTSIDE THE BOX TESTS
 
@@ -286,3 +281,4 @@ describe("finishGame works correctly", () => {
 
 // Shadows on chordbox
 // Correct messages being shown
+// 3 Random generators produce different results everytime

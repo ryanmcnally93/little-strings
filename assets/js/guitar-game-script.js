@@ -33,18 +33,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-let C1 = document.getElementById('larry-correct-one');
-let C2 = document.getElementById('larry-correct-two');
-let C3 = document.getElementById('larry-correct-three');
-let W1 = document.getElementById('larry-wrong-one');
-let W2 = document.getElementById('larry-wrong-two');
-let W3 = document.getElementById('larry-wrong-three');
-
 let game = {
     score: 0,
     larrysMessage: "",
-    larryCorrectChoice: [C1, C2, C3],
-    larryWrongChoice: [W1, W2, W3],
+    larryCorrectChoice: [C1 = document.getElementById('larry-correct-one'), C2 = document.getElementById('larry-correct-two'), C3 = document.getElementById('larry-correct-three')],
+    larryWrongChoice: [W1 = document.getElementById('larry-wrong-one'), W2 = document.getElementById('larry-wrong-two'), W3 = document.getElementById('larry-wrong-three')],
     gameTurn: 0,
     currentChord: "",
     choices: ["a","c","d","e","g"],
@@ -68,15 +61,25 @@ function newGame() {
     document.getElementById('chords-appear').style.display = "none";
     game.score = 0;
     game.gameTurn = 0;
-    changeChord();
+    randomChordGenerator();
 }
 
 function updateScore() {
     document.getElementById('score').innerText = game.score;
 }
 
+function randomChordGenerator() {
+    let previousChord = game.currentChord;
+    let newChord = game.choices[(Math.floor(Math.random() * 5))];
+    if (newChord == previousChord) {
+        randomChordGenerator();
+    } else {
+        game.currentChord = newChord;
+        changeChord();
+    }
+}
+
 function changeChord() {
-    game.currentChord = game.choices[(Math.floor(Math.random() * 5))];
     cssChange()
     game.gameTurn++;
     updateScore();
@@ -101,6 +104,26 @@ function cssChange() {
     document.getElementById('chord').classList.add(game.currentChord);
 }
 
+function randomCorrectGenerator() {
+    let previousMessage = game.larrysMessage;
+    let newMessage = game.larryCorrectChoice[(Math.floor(Math.random() * 3))];
+    if (newMessage == previousMessage) {
+        randomCorrectGenerator();
+    } else {
+        game.larrysMessage = newMessage;
+    }
+}
+
+function randomWrongGenerator() {
+    let previousMessage = game.larrysMessage;
+    let newMessage = game.larryWrongChoice[(Math.floor(Math.random() * 3))];
+    if (newMessage == previousMessage) {
+        randomWrongGenerator();
+    } else {
+        game.larrysMessage = newMessage;
+    }
+}
+
 function checkAnswer() {
     let userAnswer = document.getElementById("answer-box").value;
     lowerAnswer = userAnswer.toLowerCase();
@@ -109,16 +132,16 @@ function checkAnswer() {
     document.getElementById('larry-first-move').style.display = "none";
 
     if (isCorrect) {
-        game.larrysMessage = game.larryCorrectChoice[(Math.floor(Math.random() * 3))];
+        randomCorrectGenerator()
         game.score++;
-        changeChord();
+        randomChordGenerator();
         document.getElementById('chord').classList.add('chord-shadow-green');
         setTimeout(() => {
             document.getElementById('chord').classList.remove('chord-shadow-green');
         }, 500);
     } else {
-        game.larrysMessage = game.larryWrongChoice[(Math.floor(Math.random() * 3))];
-        changeChord();
+        randomWrongGenerator()
+        randomChordGenerator();
         document.getElementById('chord').classList.add('chord-shadow-red');
         setTimeout(() => {
             document.getElementById('chord').classList.remove('chord-shadow-red');
@@ -169,4 +192,4 @@ function finishGame() {
     }
 }
 
-module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage };
+module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage, randomChordGenerator, randomCorrectGenerator, randomWrongGenerator };
