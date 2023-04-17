@@ -8,20 +8,6 @@
     }
   }
 
-  .accordion:after {
-    content: '+';
-    font-size: 16px;
-    color: rgb(73, 133, 28);
-    float: right;
-    margin-left: 5px;
-  }
-  
-  .active:after {
-    content: '—' ;
-    color: rgb(73, 133, 28);
-    font-size: 13px;
-  }
-
 /* Header */
 
 .logo {
@@ -449,8 +435,26 @@ select {
     font-family: 'Balsamiq Sans', cursive;
 }
 
-.panel .active, .accordion:hover {
+.panel .active-accordion, .accordion:hover {
     background-color: rgb(73, 133, 28);
+    color: #fafafa;
+}
+
+.accordion:after {
+    content: '+';
+    font-size: 16px;
+    color: rgb(73, 133, 28);
+    float: right;
+    margin-left: 5px;
+}
+  
+.active-accordion:after {
+    content: '—' ;
+    color: rgb(73, 133, 28);
+    font-size: 13px;
+}
+
+.accordion:hover:after {
     color: #fafafa;
 }
 
@@ -465,6 +469,29 @@ select {
     padding-top: 10px;
     font-family: 'Balsamiq Sans', cursive;
     color: rgb(73, 133, 28);
+}
+
+.carousel .carousel-indicators li {
+    background-color: lightblue;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+}
+  
+.carousel .carousel-indicators li.active {
+    background-color: rgb(73, 133, 28);
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    margin: 1px 3px;
+}
+
+.carousel-indicators {
+    margin: auto;
+    margin-bottom: 20px;
+}
+.carousel-indicators li {
+    border: none;
 }
 
 #contact-us {
