@@ -643,4 +643,10 @@ accordion https://www.w3schools.com/howto/howto_js_accordion.asp
 ccsChange // I have used a longer if statement ass opposed to a for loop due to the fact that there are two important classes that I don't want removed.
     // I could still have used a for loop but would probably have been as complicated as this is, and I wanted to show I could achieve the same result
     // in two different ways.
-Two tests not working for containing variables in correct and wrong answer arrays. I have screenshot for this one, using tutor to fix.
+Two tests not working for containing variables in correct and wrong answer arrays. I have screenshot for this one.
+
+I had to create two more states in the object game, old message, and new message.
+I used strings rather than variables in the correct and wrong choices arrays, defining what they were in the functions instead.
+I then created the random message generators, one for wrong, one for right, and two check functions to see if the results obtained were the same as before.
+Now, whenever a message is returned that is the same as before, the generator is run again, meaning that the same message does not appear twice in a row.
+There may well be a much less exhausting way to do this! But this is the way that I fixed the issue.

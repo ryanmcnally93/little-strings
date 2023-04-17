@@ -36,11 +36,13 @@ document.addEventListener("DOMContentLoaded", function() {
 let game = {
     score: 0,
     larrysMessage: "",
-    larryCorrectChoice: [C1 = document.getElementById('larry-correct-one'), C2 = document.getElementById('larry-correct-two'), C3 = document.getElementById('larry-correct-three')],
-    larryWrongChoice: [W1 = document.getElementById('larry-wrong-one'), W2 = document.getElementById('larry-wrong-two'), W3 = document.getElementById('larry-wrong-three')],
+    larryCorrectChoice: ["C1", "C2", "C3"],
+    larryWrongChoice: ["W1", "W2", "W3"],
     gameTurn: 0,
     currentChord: "",
     choices: ["a","c","d","e","g"],
+    oldMessage: "",
+    newMessage: "",
 }
 
 function betweenGameAppearance() {
@@ -105,22 +107,47 @@ function cssChange() {
 }
 
 function randomCorrectGenerator() {
-    let previousMessage = game.larrysMessage;
-    let newMessage = game.larryCorrectChoice[(Math.floor(Math.random() * 3))];
-    if (newMessage == previousMessage) {
+    game.newMessage = game.larryCorrectChoice[(Math.floor(Math.random() * 3))];
+    if (game.larrysMessage == document.getElementById('larry-correct-one') || game.larrysMessage == "C1") {
+        game.oldMessage = "C1";
+    } else if (game.larrysMessage == document.getElementById('larry-correct-two') || game.larrysMessage == "C2") {
+        game.oldMessage = "C2";
+    } else if (game.larrysMessage == document.getElementById('larry-correct-three') || game.larrysMessage == "C3") {
+        game.oldMessage = "C3";
+    } else {
+        game.oldMessage = "A wrong answer";
+    }
+    checkIfCorrectIsSame()
+}
+
+function checkIfCorrectIsSame() {
+    if (game.newMessage == game.oldMessage) {
         randomCorrectGenerator();
     } else {
-        game.larrysMessage = newMessage;
+        game.larrysMessage = game.newMessage;
     }
 }
 
 function randomWrongGenerator() {
-    let previousMessage = game.larrysMessage;
-    let newMessage = game.larryWrongChoice[(Math.floor(Math.random() * 3))];
-    if (newMessage == previousMessage) {
+    game.newMessage = game.larryWrongChoice[(Math.floor(Math.random() * 3))];
+    if (game.larrysMessage == document.getElementById('larry-wrong-one') || game.larrysMessage == "W1") {
+        game.oldMessage = "W1";
+    } else if (game.larrysMessage == document.getElementById('larry-wrong-two') || game.larrysMessage == "W2") {
+        game.oldMessage = "W2";
+    } else if (game.larrysMessage == document.getElementById('larry-wrong-three') || game.larrysMessage == "W3") {
+        game.oldMessage = "W3";
+    } else {
+        game.oldMessage = "A correct answer";
+    }
+    checkIfWrongIsSame()
+}
+
+function checkIfWrongIsSame() {
+    if (game.newMessage == game.oldMessage) {
         randomWrongGenerator();
     } else {
-        game.larrysMessage = newMessage;
+        console.log(game.larrysMessage);
+        game.larrysMessage = game.newMessage;
     }
 }
 
@@ -133,6 +160,13 @@ function checkAnswer() {
 
     if (isCorrect) {
         randomCorrectGenerator()
+        if (game.larrysMessage === "C1") {
+            game.larrysMessage = document.getElementById('larry-correct-one');
+        } else if (game.larrysMessage === "C2") {
+            game.larrysMessage = document.getElementById('larry-correct-two');
+        } else {
+            game.larrysMessage = document.getElementById('larry-correct-three');
+        }
         game.score++;
         randomChordGenerator();
         document.getElementById('chord').classList.add('chord-shadow-green');
@@ -141,6 +175,13 @@ function checkAnswer() {
         }, 500);
     } else {
         randomWrongGenerator()
+        if (game.larrysMessage === "W1") {
+            game.larrysMessage = document.getElementById('larry-wrong-one');
+        } else if (game.larrysMessage === "W2") {
+            game.larrysMessage = document.getElementById('larry-wrong-two');
+        } else {
+            game.larrysMessage = document.getElementById('larry-wrong-three');
+        }
         randomChordGenerator();
         document.getElementById('chord').classList.add('chord-shadow-red');
         setTimeout(() => {
@@ -151,17 +192,26 @@ function checkAnswer() {
 }
 
 function larryMessage() {
-    for (i = 0; i < game.larryCorrectChoice.length; i++) {
-        if (game.larryCorrectChoice[i] === game.larrysMessage) {
-            game.larryCorrectChoice[i].style.display = "block";
+    let C1 = document.getElementById('larry-correct-one');
+    let C2 = document.getElementById('larry-correct-two');
+    let C3 = document.getElementById('larry-correct-three');
+    let corrects = [C1, C2, C3];
+    let W1 = document.getElementById('larry-wrong-one');
+    let W2 = document.getElementById('larry-wrong-two');
+    let W3 = document.getElementById('larry-wrong-three');
+    let wrongs = [W1, W2, W3];
+
+    for (i = 0; i < corrects.length; i++) {
+        if (corrects[i] == game.larrysMessage) {
+            corrects[i].style.display = "block";
         } else
-            game.larryCorrectChoice[i].style.display = "none";
+            corrects[i].style.display = "none";
     }
-    for (i = 0; i < game.larryWrongChoice.length; i++) {
-        if (game.larryWrongChoice[i] === game.larrysMessage) {
-            game.larryWrongChoice[i].style.display = "block";
+    for (i = 0; i < wrongs.length; i++) {
+        if (wrongs[i] == game.larrysMessage) {
+            wrongs[i].style.display = "block";
         } else
-            game.larryWrongChoice[i].style.display = "none";
+            wrongs[i].style.display = "none";
     }
 }
 
@@ -192,4 +242,4 @@ function finishGame() {
     }
 }
 
-module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage, randomChordGenerator, randomCorrectGenerator, randomWrongGenerator };
+module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage, randomChordGenerator, randomCorrectGenerator, randomWrongGenerator, checkIfCorrectIsSame, checkIfWrongIsSame };
