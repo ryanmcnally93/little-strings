@@ -650,3 +650,5 @@ I used strings rather than variables in the correct and wrong choices arrays, de
 I then created the random message generators, one for wrong, one for right, and two check functions to see if the results obtained were the same as before.
 Now, whenever a message is returned that is the same as before, the generator is run again, meaning that the same message does not appear twice in a row.
 There may well be a much less exhausting way to do this! But this is the way that I fixed the issue.
+
+I had an issue where the accordion just flash showed the result. I added the jquery script to my grown ups page and changed the javascript originally written by W3Schools, adding the jquery code so that they slide up and down instead.

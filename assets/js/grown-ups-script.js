@@ -10,11 +10,12 @@ for (i = 0; i < acc.length; i++) {
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
     if (panel.style.display === "block") {
-      panel.style.display = "none";
+      $(panel).slideUp();
     } else {
-      panel.style.display = "block";
+      $(panel).slideDown();
     }
   });
 }
 
-/*This code was written by www.w3schools.com.*/
+/* This code was written by www.w3schools.com
+The JQuery parts were written by me. */
