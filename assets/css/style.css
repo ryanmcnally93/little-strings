@@ -13,10 +13,29 @@
 .logo {
     background: url(/assets/images/logo.png) no-repeat center left;
     height: 120px;
-    margin: 30px 0 0 42.5px;
+    margin: auto;
     width: 290px;
-    position: absolute;
     display: block;
+}
+
+.logo:hover {
+    background: url(/assets/images/logo-color-change.png) no-repeat center left;
+}
+
+#navbarNavDropdown {
+    margin-top: 20px;
+}
+
+.page-links {
+    background-color: lightblue;
+    width: 66%;
+    border-radius: 25px;
+    margin: auto;
+    height: 78px;
+}
+
+.navbar {
+    justify-content: center;
 }
 
 .list-inline>li {
@@ -24,17 +43,10 @@
     padding-right: 0;
 }
 
-#lessons-navbar {
-    padding-top: 51px;
-}
-
-.logo:hover {
-    background: url(/assets/images/logo-color-change.png) no-repeat center left;
-}
-
 header {
-    background-color: yellow;
-    height: 180px;
+    background-color: #fafafa;
+    height: 220px;
+    padding-top: 20px;
 }
 
 .navbar-toggler {
@@ -43,14 +55,6 @@ header {
     width: 80px;
     margin: 25px 10px;
     border-radius: 25px;
-}
-
-.navbar {
-    padding-top: 56px;
-}
-
-.page-links {
-    margin: auto;
 }
 
 .ml-auto {
@@ -77,9 +81,9 @@ body {
     color: rgb(73, 133, 28);
 }
 
-.pages:hover {
+.nav-item:hover {
     text-decoration: none;
-    color: lightblue;
+    color: yellow;
 }
 
 a:not([href]):not([tabindex]) {
@@ -106,7 +110,7 @@ section {
     background: url(/assets/images/orange-paint.png) no-repeat center center;
     position: absolute;
     left: 0;
-    top: 150px;
+    top: 220px;
     width: 800px;
     height: 800px;
     z-index: 0;
@@ -306,8 +310,8 @@ section {
     text-align: center;
     font-size: 48px;
     font-family: 'Balsamiq Sans', cursive;
-    margin: 0 20px 0 20px;
-    padding: 20px 0 0 0;
+    margin: 0 0 20px 0;
+    padding: 40px 0 0 0;
 }
 
 .item.active {
@@ -763,19 +767,31 @@ select {
 /* Footer */
 
 footer {
-    background-color: yellow;
+    background-color: #fafafa;
+    padding-bottom: 10px;
+}
+
+#footer-box {
+    background-color: lightblue;
     height: 140px;
+    width: 75%;
+    border-radius: 25px;
+    margin: auto;
+    padding-top: 30px;
 }
 
 #contactus-button {
     background-color: rgb(73, 133, 28);
     border-radius: 25px;
     color: yellow;
-    margin: 30px 50px;
+    margin: auto;
+    margin-bottom: 30px;
+    display: block;
+    width: 130px;
 }
 
 #contactus-button:hover {
-    background-color: lightblue;
+    background-color: yellow;
     color:rgb(73, 133, 28);
 }
 

@@ -652,3 +652,5 @@ Now, whenever a message is returned that is the same as before, the generator is
 There may well be a much less exhausting way to do this! But this is the way that I fixed the issue.
 
 I had an issue where the accordion just flash showed the result. I added the jquery script to my grown ups page and changed the javascript originally written by W3Schools, adding the jquery code so that they slide up and down instead.
+
+On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference betweem this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this css version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
