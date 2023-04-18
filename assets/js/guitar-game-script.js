@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     betweenGameAppearance();
     document.getElementById("answer-box").addEventListener("keydown", function(event) {
         if (event.key === "Enter") {
+            // Runs the check answer function when 'enter' is pressed
             checkAnswer();
         }
     });
@@ -35,18 +36,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
 let game = {
     score: 0,
+    // This is the current message
     larrysMessage: "",
+    // This is the three different 'correct' responses
     larryCorrectChoice: ["C1", "C2", "C3"],
+    // This is the three different 'wrong' responses
     larryWrongChoice: ["W1", "W2", "W3"],
     gameTurn: 0,
     currentChord: "",
+    // These are the guitar chord posibilities
     choices: ["a","c","d","e","g"],
+    // This is the last message 'Larry' said
     oldMessage: "",
+    // This is what the new message will be, unless it is the same as before.
+    // In that case, a new value will be generated
     newMessage: "",
 }
 
 function betweenGameAppearance() {
     game.larrysMessage = "";
+    // Making the game components invisible and displaying the chords, so the user can practice
     document.getElementById('play-button').style.display = null;
     document.getElementById('chords-appear').style.display = null;
     document.getElementById('larry-welcome').style.display = "block";
@@ -55,24 +64,33 @@ function betweenGameAppearance() {
 }
 
 function newGame() {
+    // Making the score, and answer box visible
     document.getElementById('my-guess').style.display = null;
     document.getElementById('score-box').style.display = null;
     document.getElementById('larry-welcome').style.display = "none";
     document.getElementById('larry-first-move').style.display = "block";
     document.getElementById('play-button').style.display = "none";
+    // Taking away the chords so the user cannot cheat
     document.getElementById('chords-appear').style.display = "none";
+    // Reseting the game state
     game.score = 0;
     game.gameTurn = 0;
+    // Generating the first chord
     randomChordGenerator();
 }
 
 function updateScore() {
+    // Making the number in the score box go up with correct answers
     document.getElementById('score').innerText = game.score;
 }
 
 function randomChordGenerator() {
+    // Setting the current chord as the old one, as we are about to create a new one
     let previousChord = game.currentChord;
+    // This is the creation of a new chord
     let newChord = game.choices[(Math.floor(Math.random() * 5))];
+    // If we have the same chord as last time, start the function again
+    // If not then we're good to play
     if (newChord == previousChord) {
         randomChordGenerator();
     } else {
@@ -82,16 +100,21 @@ function randomChordGenerator() {
 }
 
 function changeChord() {
+    // Changes the chord image
     cssChange()
     game.gameTurn++;
     updateScore();
+    // Sets an empty value in the answer box, so the user doesn't have to keep deleting the old answer
     let answer = document.getElementById("answer-box");
     answer.value = "";
+    // Makes the answer box ready to type on each new turn, meaning we don't have to click on the box to enter our next answer
     answer.focus();
+    // Has an if statement for gameturn 11, so this does nothing until the end of the game
     finishGame();
 }
 
 function cssChange() {
+    // This if statement removes the old classes, meaning that the image cannot be what it was before
     if (game.currentChord == "a") {
         document.getElementById('chord').classList.remove("c", "d", "e", "g");
     } else if (game.currentChord == "c") {
@@ -103,10 +126,58 @@ function cssChange() {
     } else {
         document.getElementById('chord').classList.remove("a", "c", "d", "e");
     }
+    // This sets the new image class, for the new chord created
     document.getElementById('chord').classList.add(game.currentChord);
 }
 
+function checkAnswer() {
+    let userAnswer = document.getElementById("answer-box").value;
+    // Makes sure that if uppercase correct answers are inserted, they are still accepted
+    lowerAnswer = userAnswer.toLowerCase();
+    let actualAnswer = game.currentChord;
+    let isCorrect = lowerAnswer == actualAnswer;
+    // Gets rid of the 'question' message given on the first chord
+    document.getElementById('larry-first-move').style.display = "none";
+
+    if (isCorrect) {
+        randomCorrectGenerator()
+        // This if statement takes the values given in the larry correct array, and assigns them to the correct id's
+        if (game.larrysMessage === "C1") {
+            game.larrysMessage = document.getElementById('larry-correct-one');
+        } else if (game.larrysMessage === "C2") {
+            game.larrysMessage = document.getElementById('larry-correct-two');
+        } else {
+            game.larrysMessage = document.getElementById('larry-correct-three');
+        }
+        // The answer is correct, so the score is increased
+        game.score++;
+        // Starting the next move
+        randomChordGenerator();
+        // Green shadow on the image, more verification that the answer inserted was correct.
+        document.getElementById('chord').classList.add('chord-shadow-green');
+        setTimeout(() => {
+            document.getElementById('chord').classList.remove('chord-shadow-green');
+        }, 500);
+    } else {
+        randomWrongGenerator()
+        if (game.larrysMessage === "W1") {
+            game.larrysMessage = document.getElementById('larry-wrong-one');
+        } else if (game.larrysMessage === "W2") {
+            game.larrysMessage = document.getElementById('larry-wrong-two');
+        } else {
+            game.larrysMessage = document.getElementById('larry-wrong-three');
+        }
+        randomChordGenerator();
+        document.getElementById('chord').classList.add('chord-shadow-red');
+        setTimeout(() => {
+            document.getElementById('chord').classList.remove('chord-shadow-red');
+        }, 500);
+    }
+    larryMessage();
+}
+
 function randomCorrectGenerator() {
+    // This code generates a random correct answer
     game.newMessage = game.larryCorrectChoice[(Math.floor(Math.random() * 3))];
     if (game.larrysMessage == document.getElementById('larry-correct-one') || game.larrysMessage == "C1") {
         game.oldMessage = "C1";
@@ -121,6 +192,7 @@ function randomCorrectGenerator() {
 }
 
 function checkIfCorrectIsSame() {
+    // Does exactly what is said, testing to see if the generator needs to be called again to return a different message
     if (game.newMessage == game.oldMessage) {
         randomCorrectGenerator();
     } else {
@@ -151,46 +223,6 @@ function checkIfWrongIsSame() {
     }
 }
 
-function checkAnswer() {
-    let userAnswer = document.getElementById("answer-box").value;
-    lowerAnswer = userAnswer.toLowerCase();
-    let actualAnswer = game.currentChord;
-    let isCorrect = lowerAnswer == actualAnswer;
-    document.getElementById('larry-first-move').style.display = "none";
-
-    if (isCorrect) {
-        randomCorrectGenerator()
-        if (game.larrysMessage === "C1") {
-            game.larrysMessage = document.getElementById('larry-correct-one');
-        } else if (game.larrysMessage === "C2") {
-            game.larrysMessage = document.getElementById('larry-correct-two');
-        } else {
-            game.larrysMessage = document.getElementById('larry-correct-three');
-        }
-        game.score++;
-        randomChordGenerator();
-        document.getElementById('chord').classList.add('chord-shadow-green');
-        setTimeout(() => {
-            document.getElementById('chord').classList.remove('chord-shadow-green');
-        }, 500);
-    } else {
-        randomWrongGenerator()
-        if (game.larrysMessage === "W1") {
-            game.larrysMessage = document.getElementById('larry-wrong-one');
-        } else if (game.larrysMessage === "W2") {
-            game.larrysMessage = document.getElementById('larry-wrong-two');
-        } else {
-            game.larrysMessage = document.getElementById('larry-wrong-three');
-        }
-        randomChordGenerator();
-        document.getElementById('chord').classList.add('chord-shadow-red');
-        setTimeout(() => {
-            document.getElementById('chord').classList.remove('chord-shadow-red');
-        }, 500);
-    }
-    larryMessage();
-}
-
 function larryMessage() {
     let C1 = document.getElementById('larry-correct-one');
     let C2 = document.getElementById('larry-correct-two');
@@ -201,6 +233,7 @@ function larryMessage() {
     let W3 = document.getElementById('larry-wrong-three');
     let wrongs = [W1, W2, W3];
 
+    // This for loop looks for the message that larrysmessage has been assigned, and makes it visible, and the previous message invisible
     for (i = 0; i < corrects.length; i++) {
         if (corrects[i] == game.larrysMessage) {
             corrects[i].style.display = "block";
@@ -216,6 +249,8 @@ function larryMessage() {
 }
 
 function finishGame() {
+    // This if statement controls the finishing statement made by Larry
+    // The response he produces depends on the end score of the user
     if (game.gameTurn == 11) {
         let message = document.getElementById('larry-welcome');
         if (game.score < 5) {
