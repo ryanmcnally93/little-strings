@@ -656,3 +656,5 @@ I had an issue where the accordion just flash showed the result. I added the jqu
 On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference betweem this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this css version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
 
 Lessons navbar displaying differently, because of all the bootstrap differences. I added some styling to parts of the navbar (padding right and left on navbardropdown to 0, padding-top 5% to list items, height declarations to stop there being differences on different pages).
+
+Tomislav_5P Helped with issue regarding the keys not updating the text underneath on lessons page. adding the change event listener solved this issue.
