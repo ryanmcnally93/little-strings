@@ -24,6 +24,8 @@
 
 #navbarNavDropdown {
     margin-top: 20px;
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .page-links {
@@ -36,11 +38,17 @@
 
 .navbar {
     justify-content: center;
+    height: 78px;
 }
 
 .list-inline>li {
     padding-left: 0;
     padding-right: 0;
+    height: 62px;
+}
+
+.lessons-li {
+    padding-top: 5px;
 }
 
 header {
@@ -78,7 +86,14 @@ body {
     margin: 10px;
     font-family: 'Balsamiq Sans', cursive;
     font-size: 28px;
+    padding: 0;
     color: rgb(73, 133, 28);
+}
+
+@media (min-width: 768px) {
+ .navbar-nav>li>a {
+    padding: 0;
+ }
 }
 
 .nav-item:hover {
