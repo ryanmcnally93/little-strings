@@ -120,7 +120,7 @@ body {
 
 .nav-item:hover {
     text-decoration: none;
-    color: #813405;
+    color: #0F4457;
 }
 
 a:not([href]):not([tabindex]) {
@@ -356,10 +356,10 @@ section {
 }
 
 .guitar-button:hover {
-    background-color: #3C6916;
-    color: #E2F89C;
+    background-color: #9ED0E6;
     border: 10px solid #3C6916;
     text-decoration: none;
+    color: #3C6916;
 }
 
 /*Lessons*/
@@ -410,42 +410,52 @@ body {
     margin-right: 0.1%;
     z-index: 3;
     position: relative;
-    background-color: #fafafa;
+    background-color: #E2F89C;
+}
+
+.carousel-h2 {
+    font-size: 24px;
+}
+
+.carousel-p {
+    font-size: 16px;
+    margin-bottom: 0;
 }
 
 .blue {
-    width: 150px;
+    width: 12%;
     position: absolute;
     z-index: 3;
     transform: rotate(350deg);
-    left: 30px;
+    left: 5%;
+    top: 5%;
 }
 
-.#E2F89C {
-    width: 100px;
+.yellow {
+    width: 10%;
     position: absolute;
     z-index: 2;
     transform: rotate(325deg);
-    left: 280px;
-    top: 200px;
+    left: 30%;
+    top: 65%;
 }
 
 .pink {
-    width: 50px;
+    width: 7%;
     position: absolute;
     z-index: 3;
-    left: 340px;
-    top: 20px;
+    left: 35%;
+    top: 7%;
     transform: rotate(10deg);
 }
 
 .green {
-    width: 100px;
+    width: 10%;
     position: absolute;
     z-index: 3;
     transform: rotate(20deg);
-    left: 60px;
-    top: 190px;
+    left: 10%;
+    top: 55%;
 }
 
 .item {
@@ -459,12 +469,16 @@ body {
     transition: 0.2s ease-in-out left;
 }
 
+.carousel-control.right, .carousel-control.left, .carousel-inner, #myCarousel, .carousel-box {
+    border-radius: 50px;
+}
+
 .carousel-box {
     margin: auto;
     width: 75%;
     z-index: 1;
     position: relative;
-    background:#fafafa;
+    background:#B1DEF2;
 }
 
 .key-interact {
@@ -557,7 +571,7 @@ select {
 }
 
 .accordion {
-    background-color: #C2E6F5;
+    background-color: #E2F89C;
     color: #3C6916;
     cursor: pointer;
     padding: 18px;
@@ -579,8 +593,9 @@ button:focus {
 }
 
 .panel .active-accordion, .accordion:hover {
-    background-color: #3C6916;
-    color: #fafafa;
+    background-color: #B1DEF2;
+    color: #0F4457;
+    border: 2px solid #0F4457;
 }
 
 .accordion:after {
@@ -598,23 +613,26 @@ button:focus {
 }
 
 .accordion:hover:after {
-    color: #fafafa;
+    color: #0F4457;
 }
 
 .panel {
-    padding: 0 18px;
+    padding: 20px 20px 20px 20px;
     background-color: #fafafa;
     display: none;
     overflow: hidden;
     width: 75%;
     margin: auto;
-    border: 2px solid #3C6916;
-    padding-top: 10px;
+    border: 2px solid #0F4457;
     font-family: 'Balsamiq Sans', cursive;
-    color: #3C6916;
+    color: #0F4457;
     z-index: 2;
     position: relative;
     border-radius: 5px;
+}
+
+.panel p {
+    margin-bottom: 0;
 }
 
 .carousel .carousel-indicators li {
@@ -772,7 +790,7 @@ button:focus {
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
     padding-top: 5px;
-    background-color: white;
+    background-color: #E2F89C;
     margin: 30px;
     display: inline-block;
     cursor: pointer;
@@ -926,7 +944,7 @@ button:focus {
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
     padding-top: 5px;
-    background-color: white;
+    background-color: #E2F89C;
     text-align: center;
     display: block;
     margin: 90px 0 20px 30px;

@@ -1,8 +1,8 @@
 function mouseOver() {
-    document.getElementById('circle-one').style.backgroundColor = "#813405";
-    document.getElementById('circle-two').style.backgroundColor = "#813405";
-    document.getElementById('circle-three').style.backgroundColor = "#813405";
-    document.getElementById('circle-four').style.backgroundColor = "#813405";
+    document.getElementById('circle-one').style.backgroundColor = "#E2F89C";
+    document.getElementById('circle-two').style.backgroundColor = "#E2F89C";
+    document.getElementById('circle-three').style.backgroundColor = "#E2F89C";
+    document.getElementById('circle-four').style.backgroundColor = "#E2F89C";
 }
 
 function mouseOut() {
