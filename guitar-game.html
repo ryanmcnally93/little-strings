@@ -38,24 +38,25 @@
     </header>
 
     <section>
-        <h2 class="page-titles">Guitar Game</h2>
-        <h2 class="my-h2">With Larry the guitar playing T-Rex!</h2>
+        <div class="title-box"><h2 class="page-titles">Guitar Game</h2></div>
+        <div class="other-box" id="width-title"><h2 class="my-h2" id="title-larry">With Larry the guitar playing T-Rex!</h2></div>
 
+        <div class="game-box"></div>
         <div id="show-chords">
-            <div class="game game-chord a" id="chord"></div>
-            <div id ="score-box" class="game score">Score<br><p id="score">0</p>/10</div>
-            <div id="play-button" onclick="newGame()">Play</div>
-            <div id="larrys-speech"><img src="/assets/images/speech.png" alt="Larrys' speech bubble" id="speech">
-                <p id="larry-welcome" class="larry-messages">Welcome to the guitar game! Memorise the five chords below and when you're confident, press play!</p>
-                <p id="larry-first-move" class="larry-messages">Can you figure out this chord?</p>
-                <p id="larry-correct-one" class="larry-messages">Wow! Look at you go!</p>
-                <p id="larry-correct-two" class="larry-messages">Incredible! You smashed that one!</p>
-                <p id="larry-correct-three" class="larry-messages">Amazing! That one was really hard!</p>
-                <p id="larry-wrong-one" class="larry-messages">Oh dear! That was the wrong chord</p>
-                <p id="larry-wrong-two" class="larry-messages">Oh no! Better luck with the next one</p>
-                <p id="larry-wrong-three" class="larry-messages">That's wrong I'm afraid!</p>
-            </div>
-            <img src="/assets/images/larry.png" alt="Larry, a guitar playing dinosaur" id="larry">
+                <div class="game game-chord a" id="chord"></div>
+                <div id ="score-box" class="game score">Score<br><p id="score">0</p>/10</div>
+                <div id="play-button" onclick="newGame()">Play</div>
+                <div id="larrys-speech"><img src="/assets/images/speech.png" alt="Larrys' speech bubble" id="speech">
+                    <p id="larry-welcome" class="larry-messages">Welcome to the guitar game! Memorise the five chords below and when you're confident, press play!</p>
+                    <p id="larry-first-move" class="larry-messages">Can you figure out this chord?</p>
+                    <p id="larry-correct-one" class="larry-messages">Wow! Look at you go!</p>
+                    <p id="larry-correct-two" class="larry-messages">Incredible! You smashed that one!</p>
+                    <p id="larry-correct-three" class="larry-messages">Amazing! That one was really hard!</p>
+                    <p id="larry-wrong-one" class="larry-messages">Oh dear! That was the wrong chord</p>
+                    <p id="larry-wrong-two" class="larry-messages">Oh no! Better luck with the next one</p>
+                    <p id="larry-wrong-three" class="larry-messages">That's wrong I'm afraid!</p>
+                </div>
+                <img src="/assets/images/larry.png" alt="Larry, a guitar playing dinosaur" id="larry">
         </div>
 
         <div id="chords-appear" class="chord-box">
@@ -70,9 +71,9 @@
             <div><p id="my-guess" class="key-interact my-h2">My guess is
                 <input id="answer-box" type="text">
                 <button data-type="submit" class="btn" id="submit-game">Submit Answer</button>
+            </div>
         </div>
-        
-
+        <div class="background-image"></div>
     </section>
     
     <footer>

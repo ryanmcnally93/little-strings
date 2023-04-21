@@ -50,7 +50,7 @@
 }
 
 .page-links {
-    background-color: lightblue;
+    background-color: #9CFFFA;
     width: 66%;
     border-radius: 25px;
     margin: auto;
@@ -120,7 +120,7 @@ body {
 
 .nav-item:hover {
     text-decoration: none;
-    color: yellow;
+    color: blue;
 }
 
 a:not([href]):not([tabindex]) {
@@ -176,7 +176,7 @@ section {
 #ovals-text-one {
     margin: 20px 0 0 0;
     width: 360px;
-    background-color: lightblue;
+    background-color: #9CFFFA;
     border-radius: 25px;
     height: 160px;
     padding: 25px;
@@ -187,7 +187,7 @@ section {
 #ovals-text-two {
     margin: 20px 0 0 0;
     width: 360px;
-    background-color: lightblue;
+    background-color: #9CFFFA;
     border-radius: 25px;
     height: 160px;
     padding: 25px;
@@ -313,7 +313,7 @@ section {
 
 .circle {
     border-radius: 50%;
-    background-color: lightblue;
+    background-color: #9CFFFA;
     position: absolute;
     z-index: 1;
 }
@@ -480,7 +480,7 @@ select {
 }
 
 #contactus-button-lessons:hover {
-    background-color: lightblue;
+    background-color: #9CFFFA;
     color:rgb(73, 133, 28);
 }
 
@@ -518,7 +518,7 @@ select {
 }
 
 .accordion {
-    background-color: lightblue;
+    background-color: #9CFFFA;
     color: rgb(73, 133, 28);
     cursor: pointer;
     padding: 18px;
@@ -573,7 +573,7 @@ select {
 }
 
 .carousel .carousel-indicators li {
-    background-color: lightblue;
+    background-color: #9CFFFA;
     border-radius: 50%;
     width: 12px;
     height: 12px;
@@ -658,6 +658,18 @@ select {
 
 /* Guitar Game */
 
+.game-box {
+    position: absolute;
+    background-color: rgb(250, 250, 250, 0.95);
+    width: 65%;
+    height: 550px;
+    border-radius: 50px;
+    margin: auto;
+    z-index: 1;
+    left: 50%;
+    margin-left: -30%;
+}
+
 .chord:hover {
     color: yellow;
     background-color: rgb(73, 133, 28);
@@ -681,6 +693,28 @@ select {
     "chord score larrys-speech"
     "chord larry larry";
     height: 425px;
+    z-index: 2;
+    position: relative;
+}
+
+#title-larry {
+    padding-top: 5px;
+    height: 50px;
+    width: auto;
+}
+
+#width-title {
+    width: 40%;
+}
+
+#my-guess-sentence {
+    z-index: 2;
+    position: relative;
+}
+
+#chords-appear {
+    z-index: 2;
+    position: relative;
 }
 
 .chord {
@@ -712,6 +746,8 @@ select {
 #larry {
     grid-area: larry;
     width: 300px;
+    z-index: 2;
+    position: relative;
 }
 
 #speech {
@@ -785,7 +821,7 @@ select {
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
     padding-top: 10px;
-    background-color: lightblue;
+    background-color: #9CFFFA;
     display: inline-block;
     margin: 60px auto 0 auto;
     text-align: center;
@@ -888,7 +924,7 @@ footer {
 }
 
 #footer-box {
-    background-color: lightblue;
+    background-color: #9CFFFA;
     height: 140px;
     width: 75%;
     border-radius: 25px;
