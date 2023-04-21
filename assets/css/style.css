@@ -16,7 +16,7 @@
     top: 0;
     z-index: 0;
     width: 100%;
-    height: 700px;
+    height: 800px;
     overflow: hidden;
 }
 
@@ -475,6 +475,10 @@ select {
     font-size: 24px;
 }
 
+#contact-us {
+    margin-bottom: 70px;
+}
+
 #contactus-button-lessons:hover {
     background-color: lightblue;
     color:rgb(73, 133, 28);
@@ -565,6 +569,7 @@ select {
     font-family: 'Balsamiq Sans', cursive;
     color: rgb(73, 133, 28);
     z-index: 2;
+    position: relative;
 }
 
 .carousel .carousel-indicators li {
@@ -590,16 +595,12 @@ select {
     border: none;
 }
 
-#contact-us {
-    margin-top: 50px;
-}
-
 .guitar-of-notes-box {
     height: 600px;
     width: 33%;
     display: inline-block;
-    top: 725px;
-    position: absolute;
+    position: relative;
+    margin-top: 20px;
 }
 
 #right-guitar {
@@ -616,13 +617,14 @@ select {
     margin: auto;
     width: 33%;
     height: 300px;
-    margin-top: 50px;
     position: relative;
     z-index: 2;
+    display: inline-block;
+    bottom: 60px;
 }
 
 #phone {
-    margin: 0 auto 15px auto;
+    margin: 70px auto 15px auto;
 }
 
 .contactus-form input, #message {

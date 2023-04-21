@@ -659,3 +659,4 @@ Lessons navbar displaying differently, because of all the bootstrap differences.
 
 Tomislav_5P Helped with issue regarding the keys not updating the text underneath on lessons page. adding the change event listener solved this issue.
 
+Guitars either side of the form were absolute, which worked fine but when the accordions were clicked, and the form pushed down, the guitars stayed where they were, ruining the layout. I wanted the guitars to not appear above and below the titles, but rather be at the side of them, so I decided to put the titles inside the form, which had width: 33%, meaning the guitars could be position: relative and would move with the accordions.
