@@ -50,7 +50,7 @@
 }
 
 .page-links {
-    background-color: #9CFFFA;
+    background-color: #C2E6F5;
     width: 66%;
     border-radius: 25px;
     margin: auto;
@@ -80,7 +80,7 @@ header {
 }
 
 .navbar-toggler {
-    background-color: #ACF39D;
+    background-color: #3C6916;
     height: 80px;
     width: 80px;
     margin: 25px 10px;
@@ -109,7 +109,7 @@ body {
     font-family: 'Balsamiq Sans', cursive;
     font-size: 28px;
     padding: 0;
-    color: #ACF39D;
+    color: #3C6916;
 }
 
 @media (min-width: 768px) {
@@ -120,11 +120,11 @@ body {
 
 .nav-item:hover {
     text-decoration: none;
-    color: blue;
+    color: #813405;
 }
 
 a:not([href]):not([tabindex]) {
-    color: #ACF39D;
+    color: #3C6916;
 }
 
 li {
@@ -148,12 +148,12 @@ section {
 .oval {
     width: 400px;
     height: 200px;
-    background-color: yellow;
+    background-color: #E2F89C;
     grid-area: oval;
     text-align: center;
-    color:#ACF39D;
+    color:#3C6916;
     font-size: 40px;
-    border: 2px solid #ACF39D;
+    border: 2px solid #3C6916;
     border-radius: 50%;
 }
 
@@ -168,7 +168,7 @@ section {
     width: 380px;
     height: 200px;
     grid-area: ovals-text;
-    color:#ACF39D;
+    color:#3C6916;
     font-size: 32px;
     text-align: center;
 }
@@ -176,23 +176,23 @@ section {
 #ovals-text-one {
     margin: 20px 0 0 0;
     width: 360px;
-    background-color: #9CFFFA;
+    background-color: #C2E6F5;
     border-radius: 25px;
     height: 160px;
     padding: 25px;
     position: absolute;
-    border: 2px solid #ACF39D;
+    border: 2px solid #3C6916;
 }
 
 #ovals-text-two {
     margin: 20px 0 0 0;
     width: 360px;
-    background-color: #9CFFFA;
+    background-color: #C2E6F5;
     border-radius: 25px;
     height: 160px;
     padding: 25px;
     position: relative;
-    border: 2px solid #ACF39D;
+    border: 2px solid #3C6916;
 }
 
 #homepage-more-info {
@@ -203,8 +203,8 @@ section {
     height: 50px;
     width: 140px;
     font-size: 24px;
-    background-color: yellow;
-    color:#ACF39D;
+    background-color: #E2F89C;
+    color:#3C6916;
     border: 2px solid;
     padding: 5px 6px;
     z-index: 2;
@@ -218,16 +218,16 @@ section {
     height: 50px;
     width: 140px;
     font-size: 24px;
-    background-color: yellow;
-    color:#ACF39D;
+    background-color: #E2F89C;
+    color:#3C6916;
     border: 2px solid;
     padding: 5px 6px;
 }
 
 #homepage-grownups:hover, #homepage-more-info:hover {
-    background-color: #ACF39D;
-    color: yellow;
-    border: 2px solid #ACF39D;
+    background-color: #3C6916;
+    color: #E2F89C;
+    border: 2px solid #3C6916;
 }
 
 .homepage-first {
@@ -296,9 +296,9 @@ section {
 .guitar-button {
     width: 800px;
     height: 200px;
-    background-color: yellow;
+    background-color: #E2F89C;
     border: 10px solid;
-    color: #ACF39D;
+    color: #3C6916;
     font-family: 'Balsamiq Sans', cursive;
     font-size: 40px;
     text-align: center;
@@ -313,7 +313,7 @@ section {
 
 .circle {
     border-radius: 50%;
-    background-color: #9CFFFA;
+    background-color: #C2E6F5;
     position: absolute;
     z-index: 1;
 }
@@ -356,9 +356,10 @@ section {
 }
 
 .guitar-button:hover {
-    background-color: #ACF39D;
-    color: yellow;
-    border: 10px solid #ACF39D;
+    background-color: #3C6916;
+    color: #E2F89C;
+    border: 10px solid #3C6916;
+    text-decoration: none;
 }
 
 /*Lessons*/
@@ -368,7 +369,7 @@ body {
 }
 
 .page-titles {
-    color:#ACF39D;
+    color:#3C6916;
     text-align: center;
     font-size: 48px;
     font-family: 'Balsamiq Sans', cursive;
@@ -398,12 +399,12 @@ body {
 }
 
 .carousel-textbox {
-    border: 5px solid #ACF39D;
+    border: 5px solid #3C6916;
     display: inline-block;
     vertical-align: middle;
     padding: 20px;
     font-family: 'Balsamiq Sans', cursive;
-    color:#ACF39D;
+    color:#3C6916;
     width: 49%;
     margin-left: 0.4%;
     margin-right: 0.1%;
@@ -420,7 +421,7 @@ body {
     left: 30px;
 }
 
-.yellow {
+.#E2F89C {
     width: 100px;
     position: absolute;
     z-index: 2;
@@ -482,7 +483,7 @@ select {
     padding: 10px;
     font-size: 32px;
     color: inherit;
-    border: 2px solid #ACF39D;
+    border: 2px solid #3C6916;
     border-radius: 5px;
 }
 
@@ -491,7 +492,7 @@ select {
 }
 
 .interested {
-    color:#ACF39D;
+    color:#3C6916;
     text-align: center;
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
@@ -506,9 +507,9 @@ select {
 }
 
 #contactus-button-lessons {
-    background-color: #ACF39D;
+    background-color: #3C6916;
     border-radius: 25px;
-    color: yellow;
+    color: #E2F89C;
     margin: 30px 50px 30px 70px;
     font-size: 24px;
 }
@@ -518,8 +519,8 @@ select {
 }
 
 #contactus-button-lessons:hover {
-    background-color: #9CFFFA;
-    color:#ACF39D;
+    background-color: #C2E6F5;
+    color:#3C6916;
 }
 
 /* Grown Ups */
@@ -546,7 +547,7 @@ select {
 }
 
 .my-h2 {
-    color:#ACF39D;
+    color:#3C6916;
     text-align: center;
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
@@ -556,13 +557,13 @@ select {
 }
 
 .accordion {
-    background-color: #9CFFFA;
-    color: #ACF39D;
+    background-color: #C2E6F5;
+    color: #3C6916;
     cursor: pointer;
     padding: 18px;
     width: 75%;
     text-align: left;
-    border: 2px solid #ACF39D;
+    border: 2px solid #3C6916;
     outline: none;
     transition: 0.4s;
     margin: auto;
@@ -578,21 +579,21 @@ button:focus {
 }
 
 .panel .active-accordion, .accordion:hover {
-    background-color: #ACF39D;
+    background-color: #3C6916;
     color: #fafafa;
 }
 
 .accordion:after {
     content: '+';
     font-size: 16px;
-    color: #ACF39D;
+    color: #3C6916;
     float: right;
     margin-left: 5px;
 }
   
 .active-accordion:after {
     content: '—' ;
-    color: #ACF39D;
+    color: #3C6916;
     font-size: 13px;
 }
 
@@ -607,24 +608,24 @@ button:focus {
     overflow: hidden;
     width: 75%;
     margin: auto;
-    border: 2px solid #ACF39D;
+    border: 2px solid #3C6916;
     padding-top: 10px;
     font-family: 'Balsamiq Sans', cursive;
-    color: #ACF39D;
+    color: #3C6916;
     z-index: 2;
     position: relative;
     border-radius: 5px;
 }
 
 .carousel .carousel-indicators li {
-    background-color: #9CFFFA;
+    background-color: #C2E6F5;
     border-radius: 50%;
     width: 12px;
     height: 12px;
 }
   
 .carousel .carousel-indicators li.active {
-    background-color: #ACF39D;
+    background-color: #3C6916;
     border-radius: 50%;
     width: 12px;
     height: 12px;
@@ -686,8 +687,8 @@ button:focus {
     margin-bottom: 0;
     border-radius: 25px;
     background-color: #fafafa;
-    color: #ACF39D;
-    border: 2px solid #ACF39D;
+    color: #3C6916;
+    border: 2px solid #3C6916;
     height: 40px;
     width: 110px;
     padding: 5px 6px;
@@ -696,7 +697,7 @@ button:focus {
 }
 
 #submit:hover {
-    background-color: #ACF39D;
+    background-color: #3C6916;
     color: #fafafa;
 }
 
@@ -715,9 +716,9 @@ button:focus {
 }
 
 .chord:hover {
-    color: yellow;
-    background-color: #ACF39D;
-    border: 2px solid #ACF39D;
+    color: #E2F89C;
+    background-color: #3C6916;
+    border: 2px solid #3C6916;
 }
 
 .chord-box {
@@ -765,7 +766,7 @@ button:focus {
     border: 2px solid;
     width: 4rem;
     height: 4rem;
-    color: #ACF39D;
+    color: #3C6916;
     border-radius: 5px;
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
@@ -779,7 +780,7 @@ button:focus {
 
 .chord:focus {
     outline: none;
-    border: 2px solid #ACF39D;
+    border: 2px solid #3C6916;
 }
 
 #chord {
@@ -843,7 +844,7 @@ button:focus {
 .larry-messages {
     width: 270px;
     text-align: center;
-    color: #ACF39D;
+    color: #3C6916;
     font-family: 'Balsamiq Sans', cursive;
     padding: 17px 40px 20px 40px;
     overflow: hidden;
@@ -859,13 +860,13 @@ button:focus {
     border: 2px solid;
     width: 8rem;
     height: 8rem;
-    color: #ACF39D;
+    color: #3C6916;
     border-radius: 5px;
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
     font-weight: 800;
     padding-top: 10px;
-    background-color: #9CFFFA;
+    background-color: #C2E6F5;
     display: inline-block;
     margin: 60px auto 0 auto;
     text-align: center;
@@ -878,7 +879,7 @@ button:focus {
     width: 350px;
     height: 350px;
     margin: 50px 70px 0 0;
-    border: 2px solid #ACF39D;
+    border: 2px solid #3C6916;
     display: inline-block;
     border-radius: 25px;
 }
@@ -919,7 +920,7 @@ button:focus {
     border: 2px solid;
     width: 8rem;
     height: 4rem;
-    color: #ACF39D;
+    color: #3C6916;
     border-radius: 5px;
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
@@ -933,21 +934,21 @@ button:focus {
 }
 
 #play-button:hover {
-    color: yellow;
-    border: 2px solid #ACF39D;
-    background-color: #ACF39D;
+    color: #E2F89C;
+    border: 2px solid #3C6916;
+    background-color: #3C6916;
 }
 
 #answer-box {
     width: 60px;
-    color: #ACF39D;
+    color: #3C6916;
     text-align: center;
     margin-left: 10px;
 }
 
 #submit-game {
     margin-left: 30px;
-    color: #ACF39D;
+    color: #3C6916;
     background-color: #fafafa;
     border-radius: 5px;
     border: 2px solid;
@@ -955,9 +956,9 @@ button:focus {
 }
 
 #submit-game:hover {
-    color: yellow;
-    border: 2px solid #ACF39D;
-    background-color: #ACF39D;
+    color: #E2F89C;
+    border: 2px solid #3C6916;
+    background-color: #3C6916;
 }
 
 /* Footer */
@@ -968,7 +969,7 @@ footer {
 }
 
 #footer-box {
-    background-color: #9CFFFA;
+    background-color: #C2E6F5;
     height: 140px;
     width: 75%;
     border-radius: 25px;
@@ -979,9 +980,9 @@ footer {
 }
 
 #contactus-button {
-    background-color: #ACF39D;
+    background-color: #3C6916;
     border-radius: 25px;
-    color: yellow;
+    color: #E2F89C;
     margin: auto;
     margin-bottom: 30px;
     display: block;
@@ -989,13 +990,13 @@ footer {
 }
 
 #contactus-button:hover {
-    background-color: yellow;
-    color:#ACF39D;
+    background-color: #E2F89C;
+    color:#3C6916;
 }
 
 footer p {
     text-align: center;
-    color: #ACF39D;
+    color: #3C6916;
     font-weight: 600;
     font-size: 16px;
 }
