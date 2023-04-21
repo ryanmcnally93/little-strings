@@ -658,3 +658,4 @@ On the lessons page, the guitar logo changed colour only when hovered on the ver
 Lessons navbar displaying differently, because of all the bootstrap differences. I added some styling to parts of the navbar (padding right and left on navbardropdown to 0, padding-top 5% to list items, height declarations to stop there being differences on different pages).
 
 Tomislav_5P Helped with issue regarding the keys not updating the text underneath on lessons page. adding the change event listener solved this issue.
+
