@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="index.html"></a>
+        <div id="logo-box"><a class="logo" href="index.html"></a></div>
         <div class="row no-gutters navbar-expand-lg navbar-light">
             
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -40,8 +40,10 @@
     </header>
 
     <section>
-        <h2 class="page-titles">Grown Ups</h2>
-        <p class="my-h2">Regularly asked questions</p>
+        <div class="title-box"><h2 class="page-titles">Grown Ups</h2></div>
+        <div class="title-box">
+            <p class="my-h2">Regularly asked questions</p>
+        </div>
         <button class="accordion">Why should my child learn the guitar?</button>
         <div class="panel">
             <p>Learning an instrument at an early age helps children with reading and math skills whilst also developing their self-confidence!</p>
@@ -68,22 +70,21 @@
         </div>
 
         <div>
-            <p id="contact-us" class="my-h2">Still need help?<br>Contact Us!</p>
-            <div class="row">
-                <div id="guitar-of-notes-box">
-                    <img src="/assets/images/guitar-of-notes.png" alt="A guitar shape made entirely of musical notes" id="guitar-of-notes">
-                </div>
-                <form class="contactus-form">
-                    <input type="text" placeholder="Full Name" required><br></fieldset>
-                    <input type="email" placeholder="Email Address" required><br>
-                    <textarea rows="4" placeholder="Message" id="message" required></textarea>
-                    <input type="submit" value="Submit" id="submit">
-                </form>
-                <div id="guitar-of-notes-box">
+            <div class="title-box"><p id="contact-us" class="my-h2">Still need help?<br>Contact Us!</p></div>
+            <div class="guitar-of-notes-box">
+                <img src="/assets/images/guitar-of-notes.png" alt="A guitar shape made entirely of musical notes" class="guitar-of-notes">
             </div>
-            <p class="my-h2" id="phone">Or Phone<br>0123 456 7890</p>
-        </div>
-
+            <form class="contactus-form">
+                <input type="text" placeholder="Full Name" required><br></fieldset>
+                <input type="email" placeholder="Email Address" required><br>
+                <textarea rows="4" placeholder="Message" id="message" required></textarea>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+            <div class="guitar-of-notes-box" id="right-guitar">
+                <img src="/assets/images/guitar-of-notes.png" alt="A guitar shape made entirely of musical notes" class="guitar-of-notes">
+            </div>
+        <div class="title-box"><p class="my-h2" id="phone">Or Phone<br>0123 456 7890</p></div>
+        <div class="background-image"></div>
     </section>
     
     <footer>

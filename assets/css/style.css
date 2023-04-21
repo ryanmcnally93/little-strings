@@ -10,13 +10,23 @@
 
 /* Header */
 
-#index-background {
+.background-image {
     background: url(/assets/images/background-notes.png) no-repeat center center;
     position: fixed;
-    bottom: 0;
+    top: 0;
     z-index: 0;
     width: 100%;
-    height: 100%;
+    height: 700px;
+    overflow: hidden;
+}
+
+#logo-box {
+    background-color: rgba(250,250,250,0.85);
+    width: 300px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    border-radius: 25px;
 }
 
 .logo {
@@ -348,9 +358,14 @@ section {
 .guitar-button:hover {
     background-color: rgb(73, 133, 28);
     color: yellow;
+    border: 10px solid rgb(73, 133, 28);
 }
 
 /*Lessons*/
+
+body {
+    background-color: #fafafa;
+}
 
 .page-titles {
     color:rgb(73, 133, 28);
@@ -358,7 +373,9 @@ section {
     font-size: 48px;
     font-family: 'Balsamiq Sans', cursive;
     margin: 0 0 20px 0;
-    padding: 40px 0 0 0;
+    margin-top: 40px;
+    z-index: 2;
+    position: relative;
 }
 
 .item.active {
@@ -406,10 +423,9 @@ section {
 .carousel-box {
     margin: auto;
     width: 75%;
-}
-
-#myCarousel {
-    margin-bottom: 20px;
+    z-index: 1;
+    position: relative;
+    background-color: #fafafa;
 }
 
 .key-interact {
@@ -442,6 +458,8 @@ select {
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
     margin: 20px;
+    z-index: 2;
+    position: relative;
 }
 
 .empty {
@@ -464,11 +482,35 @@ select {
 
 /* Grown Ups */
 
+.title-box {
+    background-color: rgba(250,250,250,0.85);
+    width: 500px;
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    border-radius: 25px;
+}
+
+.empty-space {
+    height: 30px;
+}
+
+.other-box {
+    background-color: rgba(250,250,250,0.85);
+    margin: auto;
+    z-index: 2;
+    position: relative;
+    border-radius: 25px;
+}
+
 .my-h2 {
     color:rgb(73, 133, 28);
     text-align: center;
     font-size: 32px;
     font-family: 'Balsamiq Sans', cursive;
+    z-index: 2;
+    position: relative;
+    opacity: 100%;
 }
 
 .accordion {
@@ -484,6 +526,8 @@ select {
     margin: auto;
     display: inherit;
     font-family: 'Balsamiq Sans', cursive;
+    z-index: 2;
+    position: relative;
 }
 
 .panel .active-accordion, .accordion:hover {
@@ -520,6 +564,7 @@ select {
     padding-top: 10px;
     font-family: 'Balsamiq Sans', cursive;
     color: rgb(73, 133, 28);
+    z-index: 2;
 }
 
 .carousel .carousel-indicators li {
@@ -546,16 +591,22 @@ select {
 }
 
 #contact-us {
-    margin-top: 40px;
+    margin-top: 50px;
 }
 
-#guitar-of-notes-box {
-    height: 300px;
+.guitar-of-notes-box {
+    height: 600px;
     width: 33%;
     display: inline-block;
+    top: 725px;
+    position: absolute;
 }
 
-#guitar-of-notes {
+#right-guitar {
+    right: 0;
+}
+
+.guitar-of-notes {
     height: 100%;
     margin: auto;
     display: flex;
@@ -564,14 +615,14 @@ select {
 .contactus-form {
     margin: auto;
     width: 33%;
-    display: inline-block;
     height: 300px;
-    margin-top: 30px;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
 }
 
 #phone {
-    margin-top: 50px;
-    margin: auto;
+    margin: 0 auto 15px auto;
 }
 
 .contactus-form input, #message {
