@@ -10,12 +10,23 @@
 
 /* Header */
 
+#index-background {
+    background: url(/assets/images/background-notes.png) no-repeat center center;
+    position: fixed;
+    bottom: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+}
+
 .logo {
     background: url(/assets/images/logo.png) no-repeat center left;
     height: 120px;
     margin: auto;
     width: 290px;
     display: block;
+    z-index: 2;
+    position: relative;
 }
 
 .logo:hover {
@@ -34,6 +45,7 @@
     border-radius: 25px;
     margin: auto;
     height: 78px;
+    z-index: 2;
 }
 
 .navbar {
@@ -121,40 +133,18 @@ section {
     padding-bottom: 40px;
 }
 
-.orange {
-    background: url(/assets/images/orange-paint.png) no-repeat center center;
-    position: absolute;
-    left: 0;
-    top: 220px;
-    width: 800px;
-    height: 800px;
-    z-index: 0;
-}
-
-.blue {
-    background: url(/assets/images/blue-paint.png) no-repeat center center;
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 800px;
-    height: 800px;
-    z-index: 0;
-    margin-top: 600px;
-}
-
 /* Homepage */
 
 .oval {
     width: 400px;
     height: 200px;
-    border-radius: 50%;
     background-color: yellow;
     grid-area: oval;
     text-align: center;
     color:rgb(73, 133, 28);
     font-size: 40px;
-    font-weight: 600px;
     border: 2px solid rgb(73, 133, 28);
+    border-radius: 50%;
 }
 
 .ovals-image {
@@ -207,6 +197,7 @@ section {
     color:rgb(73, 133, 28);
     border: 2px solid;
     padding: 5px 6px;
+    z-index: 2;
 }
 
 #homepage-grownups {
@@ -558,9 +549,29 @@ select {
     margin-top: 40px;
 }
 
+#guitar-of-notes-box {
+    height: 300px;
+    width: 33%;
+    display: inline-block;
+}
+
+#guitar-of-notes {
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+
 .contactus-form {
     margin: auto;
     width: 33%;
+    display: inline-block;
+    height: 300px;
+    margin-top: 30px;
+}
+
+#phone {
+    margin-top: 50px;
+    margin: auto;
 }
 
 .contactus-form input, #message {
@@ -590,10 +601,6 @@ select {
 #submit:hover {
     background-color: rgb(73, 133, 28);
     color: #fafafa;
-}
-
-#phone {
-    margin-top: 50px;
 }
 
 /* Guitar Game */
@@ -834,6 +841,8 @@ footer {
     border-radius: 25px;
     margin: auto;
     padding-top: 30px;
+    z-index: 2;
+    position: relative;
 }
 
 #contactus-button {
