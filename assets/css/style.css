@@ -530,6 +530,25 @@ select {
 
 #contact-us {
     margin-bottom: 70px;
+    margin-top: 80px;
+}
+
+#submit-message {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+#email-sent {
+    color: green;
+    display: none;
+    margin-top: 10px;
+}
+
+#email-not-sent {
+    color: red;
+    display: none;
+    margin-top: 10px;
 }
 
 #contactus-button-lessons:hover {
@@ -701,7 +720,9 @@ button:focus {
 }
 
 #submit {
-    float: right;
+    display: flex;
+    margin: auto;
+    padding-left: 22px;
     margin-bottom: 0;
     border-radius: 25px;
     background-color: #fafafa;
@@ -709,7 +730,7 @@ button:focus {
     border: 2px solid #3C6916;
     height: 40px;
     width: 110px;
-    padding: 5px 6px;
+    padding: 5px 6px 5px 22px;
     font-size: 20px;
     cursor: pointer;
 }
