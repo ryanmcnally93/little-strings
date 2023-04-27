@@ -4,7 +4,7 @@ Little Strings is a small business located in Leicester that teaches children an
 
 I have used markdown format for the headers and bullets, links and tables on this readme, but found the img element to be more useful when controlling picture sizes on this document.
 
-<!--MAIN IMAGE-->
+<!--MAIN IMAGE NEED TO DO RESPONSIVE DESIGN-->
 
 ## UX
 
@@ -16,7 +16,7 @@ To engage children and young people with music, showing them how easy it is to l
 
 Most children will see this web application being used by parents, or from curiosity will have searched google for it themselves. Either way, they will likely be bored by information in writing and lose interest if things aren't colourful and exciting. The more excited they become about the application, the more likely they are to ask their parents about it, if they don't already know of it.
 
-It would be too easy to create a product entirely for children but if young teenagers approach it they will be put off by things too chldish looking.
+Rather than creating this product entirely for children it would be good to also target young teenagers, as if they approach it they will be put off by things too chldish looking.
 
 - Learn how to play guitar
 - Have fun
@@ -109,38 +109,61 @@ Some of these sites even have audio to grab the kids attention.
 
 - When I put together my project in Balsamiq Wireframes, I was instantly very fond of the default font Balsamiq Sans. It looks like a playful, child-friendly text and goes well with the web application.
 
-Image of font
+<img src="assets/images/readme-images/font.png" width="40%" alt="This is the balsamiq font, used throughout my web application" style="margin: 0 5%;">
 
 #### Icons
 
-- Description
+- I have decided to use icons in the navbar, which accurately illustrate the word(s) they are next to, and make things easier for children to understand.
 
-Image of icons
+<img src="assets/images/readme-images/navbar-icons.png" width="100%" alt="The navbar icons used">
 
 #### Colours
 
-- Throughout the sites I looked at, I noticed primary colours being used in spaces that would normally be off-white. Any space deemed "boring" by kids but professional by adults is filled with exciting imagery and colours, and my web application is no exception!
-- I have chosen green and yellow to grab kids attention, as well as darker greens on the yellow for text and borders, which change when you hover over them.
+- Throughout the sites I looked at, I noticed primary colours being used heavily throughout. Any space deemed "boring" by kids but professional by adults is filled with exciting imagery and colours, and my web application is no exception!
+- I have chosen green and blue to grab kids attention, as well as a darker green and blue for text and borders, which change when you hover over them.
+- Some elements have also had the green and blue swapped around, to add some difference to the site, and the guitar button of the homepage changes from one to the other when you hover on it.
+- The exact shades I used were decided using [Coolors](https://coolors.co/).
+- I then used the contrast checker on [Webaim](https://webaim.org/resources/contrastchecker/) to ensure the text was readable.
 
-Image of colours example
+<img src="assets/images/readme-images/colours.png" width="100%" alt="An image of my colours, picked in coolors">
+
+<img src="assets/images/readme-images/contrast.png" width="100%" alt="The contrast checker, checking my colour contrast">
 
 #### Styling
 
-- What and why
+- Curved edges are used a lot, but other shapes have been added to make it more fun. There are oval shapes on the homepage and guitar shapes on the homepage and grown ups page.
 
-Image of styling
+- Most of the content is central, with some exceptions appearing on the sides like the guitars on the grown ups page.
+
+- The navbar is more fun with the added icons, and both that and the footer don't take up unnecessary space. Exclamation marks are used throughout the messages to seem more playful.
+
+<img src="assets/images/readme-images/styling.png" width="100%" alt="An image showing the different shapes used">
 
 #### Backgrounds
 
-- What and why
+- An image of a circle of colourful musical notes has been added to each page. The image is interesting and also focusing the users attention to the elements which are mostly in the middle of the page. It is fixed so it remains on screen on all devices.
 
-Image
+- Divs with opacity at 0.85% have been put around titles so that the image isn't distracting over them.
+
+<img src="assets/images/background-notes.png" width="100%" alt="The background image, used throughout my web application">
 
 #### Images
 
-- What and why
+- The guitar game chord images were created by me on canva, illustrating each chord from A to G, with bright colours.
 
-Image
+<img src="assets/images/g.png" width="50%" alt="The G chord, an image created by me on Canva" style="border-radius: 25px;">
+
+- There is an image of a dinosaur playing the guitar, who I've given the name Larry, for fun.
+
+<img src="assets/images/larry.png" width="50%" alt="Larry, the guitar playing dinosaur" style="background-color: #fafafa; border-radius: 25px;">
+
+- There are guitars made of notes, and relevant images in the carousel. The first is a child being taught, the second, is a group of children in a class, whilst the third is a child practicing at home.
+
+<img src="assets/images/guitar-of-notes.png" width="40%" alt="A guitar made of musical notes" style="background-color: #fafafa; border-radius: 25px; padding: 10px;">
+
+- The images on the front are also related to children and young people playing and learning the guitar.
+
+<img src="assets/images/home-one.png" width="100%" alt="A young girl playing a very small guitar">
 
 ### Wireframes
 
@@ -162,93 +185,105 @@ This prototype of index.html was created on figma.com.
 
 ### Q and A of Potential Users
 
-I spoke to three different potential users regarding the website. I showed them what I had made and asked them the following questions:
+I spoke to three different potential users regarding the website. One was a parent of a young child, one was a 10 year old, and the other was a music teacher. I showed them what I had made and asked them the following questions:
 
-#### Q1 What makes a good website experience?
-REVIEW QUESTIONS
+#### Q1 What makes a good website experience for children?
 
-<!--
-Person with Depression:
+Parent of a young child:
 
-- "When a website is easy to use and navigate through different pages."
+- "Response"
 
-Person with Anxiety:
+Younger person:
 
-- "Familiarity within groups on social media sites. To be able to click on a link and find the information you need easily."
+- "Response"
 
-Person with relative/friend of someone who struggles:
+Teacher:
 
-- "A good website experience for someone not tech savvy like me is something self explanatory and easy to navigate, it's being able to know where a link is and what it does."
+- "Response"
 
-#### Q2 What information are you looking for?
+#### Q2 What information would you be looking for?
 
-Person with Depression:
+Parent of a young child:
 
-- "I would be interested in the classes information, and would look for where the classes are."
+- "Response"
 
-Person with Anxiety:
+Younger person:
 
-- "Group activities that can be experienced online as well as in person if I am unable to leave the house."
+- "Response"
 
-Person with relative/friend of someone who struggles:
+Teacher:
 
-- "I would be looking for ways to help my friend manage their symptoms and how to find professionals to offer help and advice."
+- "Response"
 
-#### Q3 Where, on a site, do you visit first?
+#### Q3 Would you use this?
 
-Person with Depression:
+Parent of a young child:
 
-- "I like to visit each page individually and read through, then go to the page that suits my needs most."
+- "Response"
 
-Person with Anxiety:
+Younger person:
 
-- "Social media pages to see how many followers the business has."
+- "Response"
 
-Person with relative/friend of someone who struggles:
+Teacher:
 
-- "When I use a website the first place I use is the menu option to see the list of everything on the site and what I need to look for."
+- "Response"
 
-#### Q4 Would you use this?
+#### Q4 Why?
 
-Person with Depression:
+Parent of a young child:
 
-- "Yes."
+- "Response"
 
-Person with Anxiety:
+Younger person:
 
-- "Yes."
+- "Response"
 
-Person with relative/friend of someone who struggles:
+Teacher:
 
-- "Yes."
+- "Response"
 
-#### Q5 Why?
+#### Q5 What changes can I make?
 
-Person with Depression:
+Parent of a young child:
 
-- "I would use it to book and find the location of classes. I'd also sign up for the newsletter for up to date information, hints and tips."
+- "Response"
 
-Person with Anxiety:
+Younger person:
 
-- "If the website was available then I would use it and recommend it to friends and family who I know struggle, looking for helplines and other people who have similar feelings."
+- "Response"
 
-Person with relative/friend of someone who struggles:
+Teacher:
 
-- "I would use the site to get information on anxiety and tips on how to help people in the case I ever saw somebody having a panic attack and needing assistance."
+- "Response"
 
-#### Q6 What changes can I make?
+#### Q6 What other questions might parents have?
 
-Person with Depression:
+Parent of a young child:
 
-- "You could add contact information for mental health organisations such as Samaritans or Mind in the 'if you experience a panic attack' section."
+- "Response"
 
-Person with Anxiety:
+Younger person:
 
-- "Have more interaction on the site for users to get to know each other."
+- "Response"
 
-Person with relative/friend of someone who struggles:
+Teacher:
 
-- "A change to make to the website would be maybe including an alternative display option for example a dark screen alternative for people with colour blindness or an Audio Description choice for visually impared so that when you hover over an icon it says out loud what you are about to click."-->
+- "Response"
+
+#### Q7 What did you think of the game? Could it be improved?
+
+Parent of a young child:
+
+- "Response"
+
+Younger person:
+
+- "Response"
+
+Teacher:
+
+- "Response"
 
 ### Competitor Review
 
@@ -297,12 +332,13 @@ This roadmap indicates the importance and viability of specific opportunities.
 | Opportunities/Problems      | Importance | Viability   |
 | ----------- | ----------- | ----------- |
 | Carousel advertising options      | 4       | 5
-| Chord search api   | 3        | 4
+| Gallery of images from classes    | 2 |5
+| Key to chord info   | 3        | 4
 | Q&A section for grown ups   | 5        | 5
 | Contact form for parents   | 5        | 5
 | Game to introduce kids to the guitar   | 4        | 4
 
-<!-- ADD Missing Features -->
+<!-- Add other Features -->
 
 
 ## Features 
@@ -410,7 +446,17 @@ CONTENTS?
 
 ### Javascript Validation
 
-TESTING_DOCUMENTS.JS
+This test.js contains 62 automatic tests for the guitar game, which all currently pass.
+
+[Guitar Game Jest Test File](/assets/js/guitar-game-script.test.js)
+
+GROWN-UPS TEST SCRIPT
+
+INDEX TEST SCRIPT
+
+LESSONS TEST SCRIPT
+
+EMAIL TEST SCRIPT
 
 ### Lighthouse
 
@@ -528,7 +574,39 @@ IMAGES
 
 IMAGES
 
-7). 
+7). Overflow: hidden helped when setting my grid on guitar game, means things can overlap so speech bubble can overlap larry
+
+8). struggled with concept of columns and rows and realised i had wrong calling - speech instead of larrys speech
+
+9). lowerAnswer = userAnswer.toLowerCase(); fixed the issue of capital letters not being accepted
+
+10). used the for loop to iterate through the three correct and wrong answers and make sure the correct message is being shown, rather than use the long-winded way used earlier.
+
+11). blue border after click, because of :focus outline, set to 0 and give rgb property
+
+
+12). ccsChange // I have used a longer if statement ass opposed to a for loop due to the fact that there are two important classes that I don't want removed.
+    // I could still have used a for loop but would probably have been as complicated as this is, and I wanted to show I could achieve the same result
+    // in two different ways.
+Two tests not working for containing variables in correct and wrong answer arrays. I have screenshot for this one.
+
+13). I had to create two more states in the object game, old message, and new message.
+I used strings rather than variables in the correct and wrong choices arrays, defining what they were in the functions instead.
+I then created the random message generators, one for wrong, one for right, and two check functions to see if the results obtained were the same as before.
+Now, whenever a message is returned that is the same as before, the generator is run again, meaning that the same message does not appear twice in a row.
+There may well be a much less exhausting way to do this! But this is the way that I fixed the issue.
+
+14). I had an issue where the accordion just flash showed the result. I added the jquery script to my grown ups page and changed the javascript originally written by W3Schools, adding the jquery code so that they slide up and down instead.
+
+15). On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference betweem this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this css version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
+
+16). Lessons navbar displaying differently, because of all the bootstrap differences. I added some styling to parts of the navbar (padding right and left on navbardropdown to 0, padding-top 5% to list items, height declarations to stop there being differences on different pages).
+
+17). Tomislav_5P Helped with issue regarding the keys not updating the text underneath on lessons page. adding the change event listener solved this issue.
+
+18). Guitars either side of the form were absolute, which worked fine but when the accordions were clicked, and the form pushed down, the guitars stayed where they were, ruining the layout. I wanted the guitars to not appear above and below the titles, but rather be at the side of them, so I decided to put the titles inside the form, which had width: 33%, meaning the guitars could be position: relative and would move with the accordions.
+
+19). Explain how and why of mouse over and out on index page! Could affect the circles when hovering over the button.
 
 ### Unfixed Bugs
 
@@ -606,19 +684,24 @@ The site had no broken links, but the images wouldn't show initially. I had to c
 
 - Whenever I needed to crop an image quickly, I used [iloveimg.](https://www.iloveimg.com/crop-image)
 
+- The accordion was originally copied and pasted from [W3S.](https://www.w3schools.com/howto/howto_js_accordion.asp), although changes were made afterwards.
+
+- The email javascipt was written as I followed the Code Institute course videos, and have a lot of similarities.
+
 ### Media
 EXAMPLES
 - All of the following images are from pexels.com, below is a list of the image names and the author who posted them on [pexels.com.](https://pexels.com)
 <!--
 - index-hero.jpeg, small-index.jpeg - [Gustavo Fring.](https://www.pexels.com/@gustavo-fring/)-->
+- Don't forget Larry!
 
 ### Acknowledgements
 
 -   My Mentor Jubril Akolade for continuous helpful feedback.
 
--   My college contact Pasquale Fasulo for his support throughout. 
+-   My college contacts Ben Smith and Pasquale Fasulo for his support throughout. 
 
--   Tutor support and the Slack community at Code Institute for their help too. CANNOT BE SAME SURELY???
+-   Tutor support and the Slack community at Code Institute for their help too.
 
 ## Lighthouse Scores
 EXAMPLE
@@ -631,34 +714,4 @@ EXAMPLE
 
 [Sign up](/assets/images/readme-images/signup-lighthouse.png)-->
 
-This readme.md was spellchecked using the spell checker extension for Chrome. WHEN IT IS.
-
-Overflow: hidden helped when setting my grid on guitar game, means things can overlap so speech bubble can overlap larry
-struggled with concept of columns and rows and realised i had wrong calling - speech instead of larrys speech
-margin left was pushing page on smaller screens, needed percentage instead
-lowerAnswer = userAnswer.toLowerCase(); fixed the issue of capital letters not being accepted
-used the for loop to iterate through the three correct and wrong answers and make sure the correct message is being shown, rather than use the long-winded way used earlier.
-blue border after click, because of :focus outline, set to 0 and give rgb property
-accordion https://www.w3schools.com/howto/howto_js_accordion.asp
-ccsChange // I have used a longer if statement ass opposed to a for loop due to the fact that there are two important classes that I don't want removed.
-    // I could still have used a for loop but would probably have been as complicated as this is, and I wanted to show I could achieve the same result
-    // in two different ways.
-Two tests not working for containing variables in correct and wrong answer arrays. I have screenshot for this one.
-
-I had to create two more states in the object game, old message, and new message.
-I used strings rather than variables in the correct and wrong choices arrays, defining what they were in the functions instead.
-I then created the random message generators, one for wrong, one for right, and two check functions to see if the results obtained were the same as before.
-Now, whenever a message is returned that is the same as before, the generator is run again, meaning that the same message does not appear twice in a row.
-There may well be a much less exhausting way to do this! But this is the way that I fixed the issue.
-
-I had an issue where the accordion just flash showed the result. I added the jquery script to my grown ups page and changed the javascript originally written by W3Schools, adding the jquery code so that they slide up and down instead.
-
-On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference betweem this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this css version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
-
-Lessons navbar displaying differently, because of all the bootstrap differences. I added some styling to parts of the navbar (padding right and left on navbardropdown to 0, padding-top 5% to list items, height declarations to stop there being differences on different pages).
-
-Tomislav_5P Helped with issue regarding the keys not updating the text underneath on lessons page. adding the change event listener solved this issue.
-
-Guitars either side of the form were absolute, which worked fine but when the accordions were clicked, and the form pushed down, the guitars stayed where they were, ruining the layout. I wanted the guitars to not appear above and below the titles, but rather be at the side of them, so I decided to put the titles inside the form, which had width: 33%, meaning the guitars could be position: relative and would move with the accordions.
-
-Explain how and why of mouse over and out on index page! Could affect the circles when hovering over the button.
+This readme.md was spellchecked using the spell checker extension for Chrome.
