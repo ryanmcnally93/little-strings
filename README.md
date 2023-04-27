@@ -347,47 +347,51 @@ This roadmap indicates the importance and viability of specific opportunities.
 
 - __Navigation Bar__
 
-  - What and why
-
-Image
+  - I've opted this time to use a navbar that sits under the logo. The responsiveness of a navbar that sits at the top of a page can be tricky, but also I wanted the options on this page to be more visible than hidden away in a corner, as young children may be using this web application.
 
 - __Footer__
 
-  - 
+  - I wanted the footer to be fairly symmetrical to the navbar, so gave it the save width, and curved edges.
+  
+  - On pages where there isn't a link to the contact us section, I've placed a button in the footer.
 
-  Image
+<img src="assets/images/readme-images/footer.png" width="100%" alt="The web application's footer element">
 
 - __Logo__
 
   - I created the logo using Canva. I wanted a coloured guitar silhouette with the words "Little Strings" inside, using the font used across the site. This logo isn't too complicated, is to the point, is consistent in colour and text, and looks fun.
 
-Image
-
-- __The landing page images__
-
-  - 
-
-Image
+  - The colour darkens whenever hovered over.
+<div style="display: flex;">
+<img src="assets/images/logo.png" width="40%" alt="The web application's footer element" style="background-color: #fafafa; border-radius: 25px; margin-left: 5%; margin-right: 5%">
+<img src="assets/images/logo-color-change.png" width="40%" alt="The web application's footer element" style="background-color: #fafafa; border-radius: 25px; margin-left: 5%; margin-right: 5%">
+</div>
 
 - __The landing page info boxes__
 
-  - 
-
-Image
+  - Short sentences, to the point, nothing too complicated for children, with large font.
 
 - __The landing page guitar game button__
 
-  - 
+  - The guitar game button is massive. It is designed to attract the attention of the younger audience, with the dinosaur image inserted and a colour change on hover.
 
-Image
+  - Getting the circles to change colour when hovered was very difficult in css, so I instead wrote some javascript code to get it working.
+
+<img src="assets/images/readme-images/guitar-button-green.png" width="100%" alt="The guitar button on the homepage">
+
+<img src="assets/images/readme-images/guitar-button-blue.png" width="100%" alt="The guitar button hover effect">
 
 - __The lessons page Carousel__
 
-  - 
+  - I used the W3Schools bootstrap carousel page for the initial template of my carousel.
 
+  - I decided to split it down the middle and have image on one side and text on the other, so that the images wouldn't distract the text, but also to add some fun illustration to the text side.
+
+  - I added musical notes of varying colours and kept the colour scheme used throughout the site for the text and textbox.
+  
 Image
 
-- __The lessons page chord API searcher__
+- __The lessons page key to chord searcher__
 
   - 
 
@@ -427,6 +431,7 @@ CONTENTS?
 ### Automated Testing
 
 ### W3C Validation
+<!-- DO AT THE END -->
 
 - HTML [W3C validator](https://validator.w3.org/)
 
@@ -545,8 +550,6 @@ Guitar Game testing has been done automatically
 ### Fixed Bugs
 
 This is a detailed log of the issues I ran into whilst coding my first project, and how I overcame them.
-
-My header and footer elements were relatively straight forward to put together. I looked at my first project and how I had gotten the list to display in a line with no decoration rather than top to bottom with bullet points and underlining. I also found that using bootstrap to divide the logo and navbar links into 5|7 rather than 4|8 or 6|6 gave the page more of a centered feel due to the width of both items.
 
 1). The first issue I found was trying to create the grid layout on my homepage. I spent a while changing classes and moving elements only to realise I'd forgotten to identify the classes as grid areas in css. I then noticed when this still didn't work, that my closing div tag of the homepage-one div was inline with the opening tag, rather than after the content. Fixing this corrected the issue.
 
