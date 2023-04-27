@@ -389,44 +389,75 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - I added musical notes of varying colours and kept the colour scheme used throughout the site for the text and textbox.
   
-Image
+<img src="assets/images/readme-images/carousel.png" width="100%" alt="The lessons page bootstrap carousel">
 
 - __The lessons page key to chord searcher__
 
-  - 
+  - Learning the guitar really is as easy as remembering the six chords you can use in the key you're playing in. As the key you're playing in progresses, so does the chords.
 
-Image
+  - I decided to illustrate this in my lessons page, showing to the viewer just how easy it is to understand, from this information we can listen to music, determine what key it is being played in, and play along.
+
+  - As the user clicks on a key, the chords update. If the user has had some lessons and knows how to play these chords, they can play along to their favourite songs!
+
+<img src="assets/images/readme-images/key-to-chord.png" width="100%" alt="The lessons page bootstrap carousel">
 
 - __The grown ups page accordion__
 
-  - 
+  - As expected once the question is clicked on the + changes to a - and the message is displayed underneath.
 
-Image
+  - I've added some jquery to make the message slide down rather than flash on and off.
+
+  - I've also added some hover css, changing the light colour over from green to blue but keeping the darker colour the same.
+
+<img src="assets/images/readme-images/accordion.png" width="100%" alt="The accordion, with one of the questions clicked on">
 
 - __The grown ups page contact form__
 
-  - 
+  - The contact form sits centrally between two guitars made of musical notes.
 
-Image
+  - The form works, and sends an email to my email address ryanmcnallymusic@outlook.com.
+
+  - The form also produces a message in green or red to say that the message was sent sucessfully.
+
+<img src="assets/images/readme-images/contactus.png" width="100%" alt="The contact form for parents">
 
 - __The guitar game__
 
-  - 
+  - This is the opening page, which calls the betweenGameAppearance function:
 
-Image
+<img src="assets/images/readme-images/newgame.png" width="100%" alt="The guitar game">
 
+- The user has the choice to select any of the chords, which changes the chord image to its corresponding selection.
+
+- As 'Larry' explains, once the user is comfortable then can click 'Play', which triggers the newGame function. Once the game starts, the chord buttons disappear so the user can't cheat, the play button disappears as it is no longer needed, and the score box becomes visible. There is also a my guess box, which is already focused on and listens for the enter key to be pressed.
+
+- The randomChordGenerator function creates a chord that is different to the last one used, and the changeChord function changes the image so it matches.
+
+<img src="assets/images/readme-images/first-move.png" width="100%" alt="The guitar game, first move">
+
+- The first move always displays the same message, and as the user enters correct or incorrect guesses, the checkAnswer function checks the guess and a message is displayed, which again, is different to the last message displayed. This is to let the user know definitely that their answer was indeed checked, there is also a brief shadow property which flashes either green or red depending on the answer given.
+
+<img src="assets/images/readme-images/game-working.png" width="100%" alt="The guitar game, mid game">
+
+- At the end, the finishGame function looks at the score and gives a supportive message regardless of the outcome, but is different depending on the score.
+
+- Finishing the game also brings back the betweenGameAppearance function, meaning the user can practice and give the game another go if they wish.
+
+<img src="assets/images/readme-images/game-finished.png" width="100%" alt="The guitar game, finished">
 
 ### Features Left to Implement
 
-- __Other Section__
+- __Other Instruments__
 
-  What else could you add to this?
+    - We could eventually add learning other instruments to the business. The other 'gateway' instrument being keys, which are also easy to learn and used heavily in music MIDI production.
 
-  Keyboard?
+- __Videos__
+
+    - We could add instructive videos to the application so users can learn a little more before committing to the in-person lessons.
 
 ## Testing 
 
-CONTENTS?
+I have tested my web application automatically and manually using Test Driven Development and Behaviour Driven Development.
 
 ### Automated Testing
 
@@ -465,11 +496,11 @@ EMAIL TEST SCRIPT
 
 ### Lighthouse
 
-RESULTS
+<!--AT END RESULTS-->
 
 #### Mobile Lighthouse
 
-RESULTS
+<!--AT END RESULTS-->
 
 ### Manual Testing
 
@@ -477,32 +508,33 @@ RESULTS
 
 | Goals | How are they achieved? |
 | :--- | :--- |
-| STUDENT GOAL 1 | Stuff |
-| STUDENT GOAL 2 | Stuff |
-| STUDENT GOAL 3 | Stuff |
+| Learn how to play guitar | The key to chord javascript teaches students what chords we can use in every key, the game also teaches students the most basic chord shapes. |
+| Have fun | The colours and design features have this in mind, and the game also adds fun to the web application too. |
 
 #### PARENTS GOALS
 
 | Goals | How are they achieved? |
 | :--- | :--- |
-| PARENT GOAL 1 | Stuff |
-| PARENT GOAL 2 | Stuff |
-| PARENT GOAL 3 | Stuff |
+| To place my child in a safe learning environment | On the homepage it's explained that the company has over 10 years of experience, any there are questions answered on the accordion. |
+| To feel at ease with my choice of tutor | If the parent is not happy with the amount of information given regarding safegarding of tutors they can ask more questions on the contact form. |
 
 #### DEVELOPER GOALS
 
 | Goals | How are they achieved? |
 | :--- | :--- |
-| DEV GOAL 1 | Stuff |
-| DEV GOAL 2 | Stuff |
-| DEV GOAL 3 | Stuff |
+| To attract the attention of young people and children | The design elements are all aimed towards being fun, and the guitar playing dinosaur in particular will be fun for kids|
+| To teach wherever possible on the web application | The key to chord selector mixed with the game page have this covered |
+| To reassure parents that their children are in a safe, learning environment | Most relevant questions are on the site, and a contact form is there if needed |
+| To teach users basic music knowledge like chord shapes | The game successfully teaches users the basic shapes associated with guitar playing, these shapes can be used up and down the fretboard to produce even more chords |
 
 #### Components
 
 This project has been tested using the following browsers:
-EXAMPLE
+<!--Chrome, Safari & Edge-->
 On the following devices
-EXAMPLE
+Desktop Macbook
+Ipad Simulator on Dev Tools
+Smallest phone size IPhone 5/SE on Dev Tools
 
 `Homepage`
 
