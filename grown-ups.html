@@ -23,7 +23,7 @@
 <body>
     <header>
         <div id="logo-box"><a class="logo" href="index.html"></a></div>
-        <div class="row no-gutters navbar-expand-lg navbar-light">
+        <div class="row no-gutters navbar-expand-md navbar-light">
             
             <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -78,13 +78,13 @@
             <p>Sadly not, we specialise in teaching children and young people up to and including the age of 16.</p>
         </div>
 
-        <div>
+        <div class="row">
             <div class="guitar-of-notes-box">
                 <img src="/assets/images/guitar-of-notes.png" alt="A guitar shape made entirely of musical notes" class="guitar-of-notes">
             </div>
 
             <form class="contactus-form" onsubmit="return sendMail(this);" method="POST">
-                <div class="title-box"><p id="contact-us" class="my-h2">Still need help?<br>Contact Us!</p></div>
+                <div class="title-box" id="form-title-1"><p id="contact-us" class="my-h2">Still need help?<br>Contact Us!</p></div>
                 <input type="text" placeholder="Full Name" name="name" id="fullname" required><br></fieldset>
                 <input type="email" placeholder="Email Address" name="emailaddress" id="email" required><br>
                 <textarea rows="4" placeholder="Message" id="message" name="message" required></textarea>
@@ -93,7 +93,7 @@
                     <p id="email-sent">Thank you! We will be back in touch as soon as possible!</p>
                     <p id="email-not-sent">Error. We're sorry but your message wasn't sent due to an error. Please try again later.</p>
                 </div>
-                <div class="title-box"><p class="my-h2" id="phone">Or Phone<br>0123 456 7890</p></div>
+                <div class="title-box" id="form-title-2"><p class="my-h2" id="phone">Or Phone<br>0123 456 7890</p></div>
             </form>
             <div class="guitar-of-notes-box" id="right-guitar">
                 <img src="/assets/images/guitar-of-notes.png" alt="A guitar shape made entirely of musical notes" class="guitar-of-notes">
