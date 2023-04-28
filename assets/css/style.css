@@ -49,6 +49,19 @@
     padding-right: 0;
 }
 
+.navbar-expand-md {
+    z-index: 2;
+    position: relative;
+}
+
+.list-inline>li {
+    display: flex;
+}
+
+.navbar {
+    justify-content: flex-start !important;
+}
+
 .page-links {
     background-color: #C2E6F5;
     border-radius: 25px;
@@ -58,9 +71,34 @@
     width: 768px;
 }
 
+@media (max-width: 768px) {
+    .page-links {
+        background: none;
+    }
+    .navbar-nav {
+        background-color: #C2E6F5;
+        border-radius: 25px;
+        width: 275px;
+        padding: 5px 20px;
+        border: 2px solid #3C6916;
+    }
+    .navbar-dark {
+        position: fixed;
+        top: 10px;
+        z-index: 3;
+    }
+    .navbar-nav>li {
+        z-index: 3;
+    }
+}
+
 .navbar {
     justify-content: center;
     height: 78px;
+}
+
+#navbarNavDropdown {
+    margin-top: 0;
 }
 
 .list-inline>li {
@@ -83,7 +121,7 @@ header {
     background-color: #3C6916;
     height: 80px;
     width: 80px;
-    margin: 25px 10px;
+    margin: 10px 10px;
     border-radius: 25px;
 }
 
@@ -153,8 +191,10 @@ li {
 }
 
 /* Index page IPhone responsiveness */
-@media (max-width: 320px) {
-    /* Change grid layout */
+@media (max-width: 768px) {
+    #home-image-one, #home-image-two, #oval-one, #oval-two, #text-one, #text-two, #ovals-text-one, #ovals-text-two {
+        width: 80% !important;
+    }
 }
 
 /* Lessons page IPad responsiveness */
@@ -280,6 +320,21 @@ section {
     padding: 50px;
     font-family: 'Balsamiq Sans', cursive;
     z-index: 1;
+}
+
+@media (max-width: 768px) {
+    .homepage-first, .homepage-second {
+        grid-template-columns: 1fr !important;
+        grid-template-areas:
+            "oval"
+            "ovals-image"
+            "ovals-text" !important;
+        padding: 30px !important;
+    }
+    #home-image-one, #home-image-two, #oval-one, #oval-two, #text-one, #text-two, #ovals-text-one, #ovals-text-two {
+        position: relative !important;
+        margin: auto !important;
+    }
 }
 
 .homepage-second {
@@ -1134,6 +1189,8 @@ button:focus {
 footer {
     background-color: #fafafa;
     padding-bottom: 10px;
+    z-index: 1;
+    position: relative;
 }
 
 #footer-box {
@@ -1167,5 +1224,11 @@ footer p {
     color: #3C6916;
     font-weight: 600;
     font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    #footer-box {
+        width: 100%;
+    }
 }
 /*rgb(73, 133, 28)*/
