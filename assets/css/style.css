@@ -810,13 +810,13 @@ button:focus {
 .game-box {
     position: absolute;
     background-color: rgb(250, 250, 250, 0.95);
-    width: 65%;
-    height: 550px;
+    width: 760px;
+    height: 600px;
     border-radius: 50px;
     margin: auto;
     z-index: 1;
     left: 50%;
-    margin-left: -30%;
+    margin-left: -380px;
 }
 
 .chord:hover {
@@ -827,7 +827,6 @@ button:focus {
 
 .chord-box {
     text-align: center;
-    width: 75%;
     margin: auto;
     padding-left: 40px;
     padding-right: 40px;
@@ -848,7 +847,6 @@ button:focus {
 
 #title-larry {
     padding-top: 5px;
-    height: 50px;
     width: auto;
 }
 
@@ -889,7 +887,8 @@ button:focus {
 
 #chord {
     grid-area: chord;
-    margin-left: 55%;
+    position: absolute;
+    right: 0;
 }
 
 #larry {
@@ -982,7 +981,7 @@ button:focus {
 .game-chord {
     width: 350px;
     height: 350px;
-    margin: 50px 70px 0 0;
+    margin: 50px 0 0 0;
     border: 2px solid #3C6916;
     display: inline-block;
     border-radius: 25px;
@@ -1035,6 +1034,71 @@ button:focus {
     display: block;
     margin: 90px 0 20px 30px;
     cursor: pointer;
+    grid-area: score;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #show-chords {
+        margin-bottom: 60px;
+    }
+    #play-button {
+        grid-area: none;
+        position: absolute;
+        bottom: -82px;
+        left: 50%;
+        margin-left: -4rem;
+    }
+    #larry {
+        bottom: -30px;
+    }
+    #larrys-speech {
+        margin-left: 30px;
+    }
+    .score {
+        width: 14rem;
+        height: 4rem;
+    }
+    #score-box {
+        bottom: -50px;
+        position: absolute;
+        left: 50%;
+        margin-left: -7rem;
+        grid-area: none;
+    }
+    #score-break {
+        display: none;
+    }
+    #larry-welcome {
+        margin-top: 26px;
+    }
+    #larry-first-move {
+        margin-top: 55px;
+    }
+    #larry-correct-one {
+        margin-top: 55px;
+    }
+    #larry-correct-two {
+        margin-top: 55px;
+    }
+    #larry-correct-three {
+        margin-top: 55px;
+    }
+    #larry-wrong-one {
+        margin-top: 55px;
+    }
+    #larry-wrong-two {
+        margin-top: 55px;
+    }
+    #larry-wrong-three {
+        margin-top: 55px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .game-box {
+        height: 550px;
+        width: 800px;
+    }
 }
 
 #play-button:hover {

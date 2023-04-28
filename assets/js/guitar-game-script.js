@@ -256,22 +256,22 @@ function finishGame() {
         if (game.score < 5) {
             message.textContent ="Practice makes perfect! You've scored " + game.score + "/10!";
             message.style.display = "block";
-            message.style.marginTop = "60px";
+            message.style.marginTop = "55px";
             betweenGameAppearance();
         } else if (game.score >= 5 && game.score < 8) {
             message.textContent ="Good Score! See if you can beat it! You've scored " + game.score + "/10!";
             message.style.display = "block";
-            message.style.marginTop = "60px";
+            message.style.marginTop = "55px";
             betweenGameAppearance();
         } else if (game.score >= 8 && game.score < 10) {
             message.textContent ="Almost perfect! You've scored " + game.score + "/10!";
             message.style.display = "block";
-            message.style.marginTop = "60px";
+            message.style.marginTop = "55px";
             betweenGameAppearance();
         } else {
             message.textContent ="Wow! Congratulations! You've scored " + game.score + "/10!";
             message.style.display = "block";
-            message.style.marginTop = "60px";
+            message.style.marginTop = "55px";
             betweenGameAppearance();
         }
     }
