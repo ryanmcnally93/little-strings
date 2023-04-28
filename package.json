@@ -21,6 +21,7 @@
     "jest-environment-jsdom": "^29.5.0"
   },
   "dependencies": {
-    "chordsheetjs": "^7.17.0"
+    "chordsheetjs": "^7.17.0",
+    "cors": "^2.8.5"
   }
 }

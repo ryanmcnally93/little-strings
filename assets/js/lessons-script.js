@@ -38,3 +38,39 @@ function viewChordsInKey() {
         display.innerText = "Error 404";
     }
 }
+
+// This code was provided from Ben Smith, who discoved it on Chatgpt
+const songTitle = "Wonderwall"; // replace with the song title you want to search for
+const apiUrl = `https://www.songsterr.com/a/ra/songs.json?pattern=${songTitle}`;
+
+
+/*fetch(apiUrl)
+  .then(response => response.json())
+  .then(data => {
+    // get the first song ID from the API response
+    const songId = data[0].id;
+
+    // use the song ID to retrieve chord data
+    const chordUrl = `https://www.songsterr.com/a/wa/song?id=${songId}&instrument=any&inst=voice`;
+
+ 
+
+    fetch(chordUrl)
+      .then(response => response.json())
+      .then(chordData => {
+        // do something with the chord data
+        console.log(chordData);
+      })
+      .catch(error => console.error(error));
+  })
+  .catch(error => console.error(error));*/
+
+// Set up the API endpoint
+const apiBaseUrl = 'https://www.songsterr.com/a/wa/api/';
+const apiKey = 'AIzaSyDQjYZj-V3e4rOM6gWZod4RCiMhc2tPmGU';
+const songId = 2;
+
+// Make a request for song data
+fetch(`${apiBaseUrl}/songs/${songId}?apikey=${apiKey}`)
+  .then(response => response.json())
+  .then(data => console.log(data));

@@ -51,11 +51,11 @@
 
 .page-links {
     background-color: #C2E6F5;
-    width: 66%;
     border-radius: 25px;
     margin: auto;
     height: 78px;
     z-index: 2;
+    width: 768px;
 }
 
 .navbar {
@@ -131,6 +131,32 @@ li {
     list-style-type: none;
 }
 
+/* Index page IPad responsiveness */
+@media (min-width: 768px) and (max-width: 950px) {
+    #home-image-two, #text-one, #oval-one {
+        margin-right: 2% !important;
+    }
+        
+    #text-two, #oval-two, #home-image-one {
+        margin-left: 2% !important;
+    }
+    
+    .homepage-first {
+        padding: 50px 0 !important;
+    }
+}
+
+@media (min-width: 950px) {
+    .page-links, #footer-box {
+        width: 808px !important;
+    }
+}
+
+/* Index page IPhone responsiveness */
+@media (max-width: 320px) {
+    /* Change grid layout */
+}
+
 /* Bootstrap row fix */
 .row {
     margin-left: 0;
@@ -146,8 +172,8 @@ section {
 /* Homepage */
 
 .oval {
-    width: 400px;
-    height: 200px;
+    width: 372px;
+    height: 186px;
     background-color: #E2F89C;
     grid-area: oval;
     text-align: center;
@@ -159,13 +185,13 @@ section {
 
 .ovals-image {
     border-radius: 50px;
-    width: 400px;
-    height: 400px;
+    width: 372px;
+    height: 372px;
     grid-area: ovals-image;
 }
 
 .ovals-text {
-    width: 380px;
+    width: 375px;
     height: 200px;
     grid-area: ovals-text;
     color:#3C6916;
@@ -175,7 +201,7 @@ section {
 
 #ovals-text-one {
     margin: 20px 0 0 0;
-    width: 360px;
+    width: 355px;
     background-color: #C2E6F5;
     border-radius: 25px;
     height: 160px;
@@ -186,7 +212,7 @@ section {
 
 #ovals-text-two {
     margin: 20px 0 0 0;
-    width: 360px;
+    width: 355px;
     background-color: #C2E6F5;
     border-radius: 25px;
     height: 160px;
@@ -259,42 +285,43 @@ section {
 
 #home-image-one {
     background: url(/assets/images/home-one.png) no-repeat bottom center;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 #home-image-two {
     background: url(/assets/images/home-two.png) no-repeat bottom center;
     position: absolute;
     right: 0;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 #oval-one {
     position: absolute;
     right: 0;
-    margin-right: 30px;
+    margin-right: 40px;
     padding-top: 40px;
 }
 
 #text-one {
     position: absolute;
     right: 0;
-    margin-right: 30px;
+    margin-right: 40px;
 }
 
 #oval-two {
-    margin-left: 30px;
+    margin-left: 40px;
     padding-top: 35px;
 }
 
 #text-two {
     position: relative;
-    margin-left: 30px;
+    margin-left: 40px;
     padding-left: 20px;
 }
 
 .guitar-button {
-    width: 800px;
+    width: 95%;
+    max-width: 800px;
     height: 200px;
     background-color: #E2F89C;
     border: 10px solid;
@@ -1010,7 +1037,7 @@ footer {
 #footer-box {
     background-color: #C2E6F5;
     height: 140px;
-    width: 75%;
+    width: 768px;
     border-radius: 25px;
     margin: auto;
     padding-top: 30px;
