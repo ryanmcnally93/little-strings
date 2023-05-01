@@ -68,10 +68,10 @@
     margin: auto;
     height: 78px;
     z-index: 2;
-    width: 768px;
+    width: 767px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .page-links {
         background: none;
     }
@@ -89,6 +89,21 @@
     }
     .navbar-nav>li {
         z-index: 3;
+    }
+    #logo-box {
+        width: 210px;
+        float: right;
+    }
+    .logo {
+        width: 200px;
+        float: right;
+        margin-right: 10px;
+    }
+    header {
+        height: 150px !important;
+    }
+    #footer-box {
+        padding-top: 20px !important;
     }
 }
 
@@ -127,6 +142,7 @@ header {
 
 .ml-auto {
     margin-left: 20px!important;
+    margin-top: 35px;
 }
 
 .active2 {
@@ -150,7 +166,7 @@ body {
     color: #3C6916;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767px) {
  .navbar-nav>li>a {
     padding: 0;
  }
@@ -191,9 +207,9 @@ li {
 }
 
 /* Index page IPhone responsiveness */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #home-image-one, #home-image-two, #oval-one, #oval-two, #text-one, #text-two, #ovals-text-one, #ovals-text-two {
-        width: 80% !important;
+        width: 90% !important;
     }
 }
 
@@ -322,19 +338,64 @@ section {
     z-index: 1;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     .homepage-first, .homepage-second {
         grid-template-columns: 1fr !important;
         grid-template-areas:
             "oval"
             "ovals-image"
             "ovals-text" !important;
-        padding: 30px !important;
+        padding: 20px !important;
+        width: 100%;
     }
-    #home-image-one, #home-image-two, #oval-one, #oval-two, #text-one, #text-two, #ovals-text-one, #ovals-text-two {
+    #oval-one, #oval-two, #text-one, #text-two, #ovals-text-one, #ovals-text-two {
         position: relative !important;
         margin: auto !important;
     }
+    #ovals-text-one, #ovals-text-two {
+        padding: 5px;   
+    }
+    .oval {
+        font-size: 30px;
+        padding-top: 20px;
+    }
+    #oval-one, #oval-two {
+        padding-top: 44px !important;
+    }
+    .ovals-image {
+        margin: 20px auto !important;
+        position: relative !important;
+    }
+    .large-guitar-button {
+        display: none;
+    }
+    .small-guitar-button {
+        display: block !important;
+    }
+    #larry-two {
+        height: 140px;
+        right: 35px;
+        position: relative;
+        top: 20px;
+    }
+
+    .logo {
+        background: url(/assets/images/logosmaller.png) no-repeat center left;
+    }
+    
+    .logo:hover {
+        background: url(/assets/images/changedlogosmaller.png) no-repeat center left;
+    }
+}
+
+@media (max-width: 530px) {
+    .circle {
+        display: none;
+    }
+}
+
+.small-guitar-button {
+    display: none;
 }
 
 .homepage-second {
@@ -1196,7 +1257,7 @@ footer {
 #footer-box {
     background-color: #C2E6F5;
     height: 140px;
-    width: 768px;
+    width: 767px;
     border-radius: 25px;
     margin: auto;
     padding-top: 30px;
@@ -1226,7 +1287,7 @@ footer p {
     font-size: 16px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     #footer-box {
         width: 100%;
     }
