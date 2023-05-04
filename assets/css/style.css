@@ -1079,8 +1079,8 @@ button:focus {
         grid-template-areas:
         "chords-appear chords-appear"
         "chord score"
-        "chord larry"
-        "larrys-speech larrys-speech"
+        "chord score"
+        "larry larrys-speech"
     }
     #chord {
         position: relative !important;
@@ -1095,19 +1095,19 @@ button:focus {
     }
     #larry {
         width: 140px !important;
+        top: 40px;
     }
     #larrys-speech {
-        width: 320px !important;
+        width: 200px !important;
     }
     .game-box {
         width: 100%;
     }
-    #speech {
-        width: 200px !important;
-        /* CHANGE SPEECH BUBBLE! */
-    }
     .larry-messages {
-        width: 320px !important;
+        width: 280px !important;
+        bottom: -8%;
+        left: 100px;
+        padding: 17px 20px 20px 20px !important;
     }
     #play-button {
         width: 5rem !important;
@@ -1123,6 +1123,12 @@ button:focus {
     }
     .game-chord {
         margin: 0 !important;
+    }
+    #speech {
+        display: none;
+    }
+    #speech-two {
+        display: block !important;
     }
 }
 
@@ -1185,6 +1191,15 @@ button:focus {
     margin-top: 1%;
     overflow: hidden;
     position: absolute;
+}
+
+#speech-two {
+    width: 80%;
+    margin-top: 1%;
+    overflow: hidden;
+    position: absolute;
+    display: none;
+    left: 0;
 }
 
 #larrys-speech {
