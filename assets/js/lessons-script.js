@@ -1,5 +1,13 @@
 document.addEventListener("DOMContentLoaded", function() { 
     viewChordsInKey();
+    document.getElementById("smallscreen-nav").addEventListener("click", function(event) {
+        let dropdown = document.getElementById('navbarNavDropdown');
+        if (dropdown.classList[2] == 'show') {
+            dropdown.classList.remove('show');
+        } else {
+            dropdown.classList.add('show');
+        }
+    });
 });
 
 document.addEventListener("change", function() { 
@@ -39,12 +47,12 @@ function viewChordsInKey() {
     }
 }
 
-// This code was provided from Ben Smith, who discoved it on Chatgpt
+/* This code was provided from Ben Smith, who discoved it on Chatgpt
 const songTitle = "Wonderwall"; // replace with the song title you want to search for
 const apiUrl = `https://www.songsterr.com/a/ra/songs.json?pattern=${songTitle}`;
 
 
-/*fetch(apiUrl)
+fetch(apiUrl)
   .then(response => response.json())
   .then(data => {
     // get the first song ID from the API response
@@ -63,7 +71,7 @@ const apiUrl = `https://www.songsterr.com/a/ra/songs.json?pattern=${songTitle}`;
       })
       .catch(error => console.error(error));
   })
-  .catch(error => console.error(error));*/
+  .catch(error => console.error(error));
 
 // Set up the API endpoint
 const apiBaseUrl = 'https://www.songsterr.com/a/wa/api/';
@@ -73,4 +81,4 @@ const songId = 2;
 // Make a request for song data
 fetch(`${apiBaseUrl}/songs/${songId}?apikey=${apiKey}`)
   .then(response => response.json())
-  .then(data => console.log(data));
+  .then(data => console.log(data));*/
