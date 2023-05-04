@@ -11,7 +11,7 @@
 /* Header */
 
 .background-image {
-    background: url(/assets/images/background-notes.png) no-repeat center center;
+    background: url(./assets/images/background-notes.png) no-repeat center center;
     position: fixed;
     top: 0;
     z-index: 0;
@@ -30,7 +30,7 @@
 }
 
 .logo {
-    background: url(/assets/images/logo.png) no-repeat center left;
+    background: url(./assets/images/logo.png) no-repeat center left;
     height: 120px;
     margin: auto;
     width: 290px;
@@ -40,7 +40,7 @@
 }
 
 .logo:hover {
-    background: url(/assets/images/logo-color-change.png) no-repeat center left;
+    background: url(./assets/images/logo-color-change.png) no-repeat center left;
 }
 
 #navbarNavDropdown {
@@ -380,11 +380,11 @@ section {
     }
 
     .logo {
-        background: url(/assets/images/logosmaller.png) no-repeat center left;
+        background: url(./assets/images/logosmaller.png) no-repeat center left;
     }
     
     .logo:hover {
-        background: url(/assets/images/changedlogosmaller.png) no-repeat center left;
+        background: url(./assets/images/changedlogosmaller.png) no-repeat center left;
     }
 }
 
@@ -413,12 +413,12 @@ section {
 }
 
 #home-image-one {
-    background: url(/assets/images/home-one.png) no-repeat bottom center;
+    background: url(./assets/images/home-one.png) no-repeat bottom center;
     margin-left: 40px;
 }
 
 #home-image-two {
-    background: url(/assets/images/home-two.png) no-repeat bottom center;
+    background: url(./assets/images/home-two.png) no-repeat bottom center;
     position: absolute;
     right: 0;
     margin-right: 40px;
@@ -1158,23 +1158,23 @@ button:focus {
 }
 
 .a {
-    background: url(/assets/images/a.png) no-repeat bottom center;
+    background: url(./assets/images/a.png) no-repeat bottom center;
 }
 
 .c {
-    background: url(/assets/images/c.png) no-repeat bottom center;
+    background: url(./assets/images/c.png) no-repeat bottom center;
 }
 
 .d {
-    background: url(/assets/images/d.png) no-repeat bottom center;
+    background: url(./assets/images/d.png) no-repeat bottom center;
 }
 
 .e {
-    background: url(/assets/images/e.png) no-repeat bottom center;
+    background: url(./assets/images/e.png) no-repeat bottom center;
 }
 
 .g {
-    background: url(/assets/images/g.png) no-repeat bottom center;
+    background: url(./assets/images/g.png) no-repeat bottom center;
 }
 
 .chord-shadow-green {
