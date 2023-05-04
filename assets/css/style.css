@@ -10,6 +10,10 @@
 
 /* Header */
 
+.navbar-toggler-icon {
+    width: 1.2em;
+}
+
 .background-image {
     background: url(../images/background-notes.png) no-repeat center center;
     position: fixed;
@@ -78,7 +82,7 @@
     .navbar-nav {
         background-color: #C2E6F5;
         border-radius: 25px;
-        width: 275px;
+        width: 206px;
         padding: 5px 20px;
         border: 2px solid #3C6916;
     }
@@ -89,6 +93,7 @@
     }
     .navbar-nav>li {
         z-index: 3;
+        height: 48px !important;
     }
     #logo-box {
         width: 210px;
@@ -104,6 +109,15 @@
     }
     #footer-box {
         padding-top: 20px !important;
+    }
+    .pages {
+        font-size: 20px !important;
+    }
+    .guitar-button {
+        font-size: 32px !important;
+    }
+    .small-guitar-button {
+        margin: 40px 15px !important;
     }
 }
 
@@ -134,15 +148,15 @@ header {
 
 .navbar-toggler {
     background-color: #3C6916;
-    height: 80px;
-    width: 80px;
+    height: 50px;
+    width: 50px;
     margin: 10px 10px;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .ml-auto {
     margin-left: 20px!important;
-    margin-top: 35px;
+    margin-top: 30px;
 }
 
 .active2 {
@@ -564,6 +578,9 @@ section {
     #javascript-key {
         font-size: 32px;
     }
+    .lessons-pages {
+        margin: 0;
+    }
 }
 
 body {
@@ -680,8 +697,14 @@ body {
     transition: 0.2s ease-in-out left;
 }
 
-.carousel-control.right, .carousel-control.left, .carousel-inner, #myCarousel, .carousel-box {
+.carousel-inner, #myCarousel, .carousel-box {
     border-radius: 50px;
+}
+
+.carousel-control.right, .carousel-control.left {
+    border-radius: 30px;
+    height: 314px;
+    top: 16px;
 }
 
 .carousel-box {
@@ -775,6 +798,24 @@ select {
 }
 
 /* Grown Ups */
+
+@media (max-width: 767px) {
+    .guitar-of-notes, .guitar-of-notes-box {
+        display: none !important;
+    }
+    .contactus-form {
+        width: 75% !important;
+        height: 675px;
+        bottom: 50px;
+    }
+}
+
+@media (min-width: 768px) {
+    .contactus-form {
+        height: 300px;
+        bottom: 220px;
+    }
+}
 
 .title-box {
     background-color: rgba(250,250,250,0.85);
@@ -933,11 +974,9 @@ button:focus {
 .contactus-form {
     margin: auto;
     width: 32%;
-    height: 300px;
     position: relative;
     z-index: 2;
     display: inline-block;
-    bottom: 220px;
 }
 
 #phone {
@@ -1006,13 +1045,85 @@ button:focus {
     display: grid;
     gap: 0;
     grid-template-columns: 5fr 1fr 4fr;
-    grid-template-rows: 0.5fr 1fr;
+    grid-template-rows: 0.5fr 1fr 1fr;
     grid-template-areas:
     "chord score larrys-speech"
-    "chord larry larry";
-    height: 425px;
+    "chord larry larry"
+    "chords-appear chords-appear chords-appear";
+    height: 500px;
     z-index: 2;
     position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    #show-chords {
+        grid-template-columns: 5fr 1.5fr 4fr;
+        grid-template-rows: 0.5fr 1fr 0.5fr;
+        height: 520px;
+    }
+    .score {
+        margin: 0 auto 0 -7rem !important;
+    }
+    #score-box {
+        bottom: 30px !important;
+    }
+    #my-guess-sentence {
+        bottom: 60px;
+    }
+}
+
+@media (max-width: 767px) {
+    #show-chords {
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: 2fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "chords-appear chords-appear"
+        "chord score"
+        "chord larry"
+        "larrys-speech larrys-speech"
+    }
+    #chord {
+        position: relative !important;
+        height: 190px;
+        width: 180px;
+    }
+    #width-title {
+        width: 80% !important;
+    }
+    .chord-box {
+        padding: 0 !important;
+    }
+    #larry {
+        width: 140px !important;
+    }
+    #larrys-speech {
+        width: 320px !important;
+    }
+    .game-box {
+        width: 100%;
+    }
+    #speech {
+        width: 200px !important;
+        /* CHANGE SPEECH BUBBLE! */
+    }
+    .larry-messages {
+        width: 320px !important;
+    }
+    #play-button {
+        width: 5rem !important;
+        height: 3rem !important;
+        font-size: 24px !important;
+        margin: 10px !important;
+    }
+    .chord {
+        height: 3rem !important;
+        width: 3rem !important;
+        font-size: 24px !important;
+        margin: 2% !important;
+    }
+    .game-chord {
+        margin: 0 !important;
+    }
 }
 
 #title-larry {
@@ -1030,6 +1141,7 @@ button:focus {
 }
 
 #chords-appear {
+    grid-area: chords-appear;
     z-index: 2;
     position: relative;
 }
@@ -1346,4 +1458,3 @@ footer p {
         width: 100%;
     }
 }
-/*rgb(73, 133, 28)*/
