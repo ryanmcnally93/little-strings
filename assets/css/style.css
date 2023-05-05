@@ -701,12 +701,6 @@ body {
     border-radius: 50px;
 }
 
-.carousel-control.right, .carousel-control.left {
-    border-radius: 30px;
-    height: 314px;
-    top: 16px;
-}
-
 .carousel-box {
     margin: auto;
     z-index: 1;
@@ -741,6 +735,8 @@ select {
     color: inherit;
     border: 2px solid #3C6916;
     border-radius: 5px;
+    outline-color: #0F4457;
+    background-color: #fafafa;
 }
 
 .javascript-key {
@@ -797,6 +793,10 @@ select {
     color:#3C6916;
 }
 
+.carousel-control.right, .carousel-control.left {
+    border-radius: 50px;
+}
+
 /* Grown Ups */
 
 @media (max-width: 767px) {
@@ -807,6 +807,11 @@ select {
         width: 75% !important;
         height: 675px;
         bottom: 50px;
+    }
+    .carousel-control.right, .carousel-control.left {
+        border-radius: 30px;
+        height: 314px;
+        top: 16px;
     }
 }
 
@@ -1074,16 +1079,18 @@ button:focus {
 
 @media (max-width: 767px) {
     #show-chords {
-        grid-template-columns: 3fr 2fr;
-        grid-template-rows: 2fr 1fr 1fr 1fr;
+        grid-template-columns: 2.5fr 2fr;
+        grid-template-rows: 2fr 1fr 1.5fr 2fr 2fr;
         grid-template-areas:
         "chords-appear chords-appear"
         "chord score"
         "chord score"
-        "larry larrys-speech"
+        "larrys-speech larrys-speech"
+        "larry larry";
+        margin-bottom: 60px;
     }
     #chord {
-        position: relative !important;
+        right: 10px !important;
         height: 190px;
         width: 180px;
     }
@@ -1095,25 +1102,30 @@ button:focus {
     }
     #larry {
         width: 140px !important;
-        top: 40px;
+        top: 80%;
+        left: 50%;
+        margin-left: -140px;
     }
     #larrys-speech {
         width: 200px !important;
     }
     .game-box {
         width: 100%;
+        left: 0 !important;
+        margin: auto !important;
     }
     .larry-messages {
-        width: 280px !important;
-        bottom: -8%;
-        left: 100px;
+        width: 275px !important;
+        bottom: 4%;
+        left: 50%;
         padding: 17px 20px 20px 20px !important;
+        margin-left: -137px;
     }
     #play-button {
         width: 5rem !important;
         height: 3rem !important;
         font-size: 24px !important;
-        margin: 10px !important;
+        margin: 20px 10px !important;
     }
     .chord {
         height: 3rem !important;
@@ -1194,12 +1206,11 @@ button:focus {
 }
 
 #speech-two {
-    width: 80%;
-    margin-top: 1%;
-    overflow: hidden;
+    width: 288px;
     position: absolute;
     display: none;
-    left: 0;
+    left: 50%;
+    margin-left: -144px !important;
 }
 
 #larrys-speech {
