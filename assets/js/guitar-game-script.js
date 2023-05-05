@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
             checkAnswer();
         }
     });
+
     let buttons = document.getElementsByTagName("button");
     for (let button of buttons) {
         button.addEventListener("click", function() {

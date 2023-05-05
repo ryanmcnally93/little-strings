@@ -1079,7 +1079,7 @@ button:focus {
 
 @media (max-width: 767px) {
     #show-chords {
-        grid-template-columns: 2.5fr 2fr;
+        grid-template-columns: 3fr 2fr;
         grid-template-rows: 2fr 1fr 1.5fr 2fr 2fr;
         grid-template-areas:
         "chords-appear chords-appear"
@@ -1091,7 +1091,7 @@ button:focus {
     }
     #chord {
         right: 10px !important;
-        height: 190px;
+        height: 182px;
         width: 180px;
     }
     #width-title {
@@ -1141,6 +1141,21 @@ button:focus {
     }
     #speech-two {
         display: block !important;
+    }
+    .a {
+        background: url(../images/a-smaller.png) no-repeat bottom center !important;
+    }
+    .c {
+        background: url(../images/c-smaller.png) no-repeat bottom center !important;
+    }
+    .d {
+        background: url(../images/d-smaller.png) no-repeat bottom center !important;
+    }
+    .e {
+        background: url(../images/e-smaller.png) no-repeat bottom center !important;
+    }
+    .g {
+        background: url(../images/g-smaller.png) no-repeat bottom center !important;
     }
 }
 
@@ -1211,6 +1226,7 @@ button:focus {
     display: none;
     left: 50%;
     margin-left: -144px !important;
+    bottom: -60px;
 }
 
 #larrys-speech {
