@@ -86,6 +86,7 @@ function newGame() {
 function updateScore() {
     // Making the number in the score box go up with correct answers
     document.getElementById('score').innerText = game.score;
+    document.getElementById('round').innerText = game.gameTurn;
 }
 
 function randomChordGenerator() {
