@@ -1116,10 +1116,16 @@ button:focus {
     }
     .larry-messages {
         width: 275px !important;
-        bottom: 4%;
         left: 50%;
         padding: 17px 20px 20px 20px !important;
         margin-left: -137px;
+    }
+    #larry-first-move, #larry-correct-one, #larry-wrong-three {
+        margin-top: 45px !important;
+        margin-bottom: none !important;
+    }
+    #larry-correct-three, #larry-correct-two, #larry-wrong-one, #larry-wrong-two {
+        margin-top: 42px !important;
     }
     #play-button {
         width: 5rem !important;
@@ -1180,6 +1186,12 @@ button:focus {
         left: 10px;
         position: absolute;
     }
+    #larry-welcome {
+        bottom: 4%;
+    }
+    .finished-game-message-margin-small {
+        bottom: 10% !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 950px) {
@@ -1212,7 +1224,7 @@ button:focus {
 
 #chords-appear {
     grid-area: chords-appear;
-    z-index: 2;
+    z-index: 3;
     position: relative;
 }
 
@@ -1269,7 +1281,7 @@ button:focus {
 #larrys-speech {
     grid-area: larrys-speech;
     width: 250px;
-    margin-top: 7%;
+    margin-top: 45px;
     overflow: hidden;
 }
 
@@ -1278,7 +1290,7 @@ button:focus {
 }
 
 #larry-first-move {
-    margin-top: 60px;
+    margin-top: 4%;
 }
 
 #larry-correct-one {
@@ -1461,6 +1473,9 @@ button:focus {
 @media (min-width: 1200px) {
     .game-box {
         height: 550px;
+    }
+    #score-box {
+        margin-left: 10px;
     }
 }
 
