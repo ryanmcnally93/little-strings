@@ -15,7 +15,11 @@
 }
 
 .navbar-toggler-icon {
-    width: 1.2em;
+    width: 30px;
+    height: 25px;
+    left: 30px;
+    position: absolute;
+    top: 43px;
 }
 
 .background-image {
@@ -203,6 +207,15 @@ a:not([href]):not([tabindex]) {
 
 li {
     list-style-type: none;
+}
+
+@media (max-width: 767px) {
+    #home-image-one, #home-image-two, #oval-one, #oval-two, #text-one, #text-two, #ovals-text-one, #ovals-text-two {
+        width: 280px !important;
+    }
+    #text-two {
+        padding-left: 0 !important;
+    }
 }
 
 /* Index page IPad responsiveness */
@@ -535,7 +548,7 @@ section {
 }
 
 .guitar-button:hover {
-    background-color: #9ED0E6;
+    background-color: #C2E6F5;
     border: 10px solid #3C6916;
     text-decoration: none;
     color: #3C6916;
@@ -1499,6 +1512,9 @@ button:focus {
     color: #3C6916;
     text-align: center;
     margin-left: 10px;
+    outline-color: #0F4457;
+    border: 2px solid #0F4457;
+    border-radius: 10px;
 }
 
 #submit-game {

@@ -6,8 +6,8 @@ function mouseOver() {
 }
 
 function mouseOut() {
-    document.getElementById('circle-one').style.backgroundColor = "#9ED0E6";
-    document.getElementById('circle-two').style.backgroundColor = "#9ED0E6";
-    document.getElementById('circle-three').style.backgroundColor = "#9ED0E6";
-    document.getElementById('circle-four').style.backgroundColor = "#9ED0E6";
+    document.getElementById('circle-one').style.backgroundColor = "#C2E6F5";
+    document.getElementById('circle-two').style.backgroundColor = "#C2E6F5";
+    document.getElementById('circle-three').style.backgroundColor = "#C2E6F5";
+    document.getElementById('circle-four').style.backgroundColor = "#C2E6F5";
 }
