@@ -1229,6 +1229,9 @@ button:focus {
     #my-guess-sentence {
         grid-area: chords-appear;
     }
+    #navbarNavDropdown {
+        margin-top: 20px !important;
+    }
 }
 
 #title-larry {
