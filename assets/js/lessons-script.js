@@ -2,10 +2,13 @@ document.addEventListener("DOMContentLoaded", function() {
     viewChordsInKey();
     document.getElementById("smallscreen-nav").addEventListener("click", function(event) {
         let dropdown = document.getElementById('navbarNavDropdown');
-        if (dropdown.classList[2] == 'show') {
+        if (dropdown.classList.contains('show')) {
             dropdown.classList.remove('show');
+            console.log('taking away show class');
         } else {
             dropdown.classList.add('show');
+            console.log('adding show class');
+            dropdown.classList.remove('in');
         }
     });
 });

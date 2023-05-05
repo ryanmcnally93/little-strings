@@ -10,6 +10,10 @@
 
 /* Header */
 
+.navbar-collapse.in {
+    overflow-y: visible;
+}
+
 .navbar-toggler-icon {
     width: 1.2em;
 }
