@@ -117,7 +117,9 @@
         font-size: 32px !important;
     }
     .small-guitar-button {
-        margin: 40px 15px !important;
+        margin: 40px auto !important;
+        right: 50%;
+        position: absolute;
     }
 }
 
@@ -217,13 +219,6 @@ li {
 @media (min-width: 950px) {
     .page-links, #footer-box {
         width: 808px !important;
-    }
-}
-
-/* Index page IPhone responsiveness */
-@media (max-width: 767px) {
-    #home-image-one, #home-image-two, #oval-one, #oval-two, #text-one, #text-two, #ovals-text-one, #ovals-text-two {
-        width: 90% !important;
     }
 }
 
@@ -388,8 +383,8 @@ section {
     }
     #larry-two {
         height: 140px;
-        right: 35px;
-        position: relative;
+        left: 50%;
+        position: absolute;
         top: 20px;
     }
 
@@ -405,6 +400,9 @@ section {
 @media (max-width: 530px) {
     .circle {
         display: none;
+    }
+    .guitar-button {
+        width: 95%;
     }
 }
 
@@ -460,6 +458,13 @@ section {
     position: relative;
     margin-left: 40px;
     padding-left: 20px;
+}
+
+@media (min-width: 531px) and (max-width: 767px) {
+    .guitar-button {
+        width: 75% !important;
+        max-width: 800px !important;
+    }
 }
 
 .guitar-button {
