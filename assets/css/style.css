@@ -900,7 +900,7 @@ select {
     margin: auto;
     display: inherit;
     font-family: 'Balsamiq Sans', cursive;
-    z-index: 2;
+    z-index: 3;
     position: relative;
     border-radius: 5px;
 }
