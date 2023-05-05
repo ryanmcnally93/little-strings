@@ -72,6 +72,7 @@
 
 .navbar {
     justify-content: flex-start !important;
+    padding: 8px 16px;
 }
 
 .page-links {
@@ -115,7 +116,7 @@
     header {
         height: 150px !important;
     }
-    #footer-box {
+    .footer-box {
         padding-top: 20px !important;
     }
     .pages {
@@ -148,6 +149,11 @@
 
 .lessons-li {
     padding-top: 5px;
+}
+
+#lessons-navbar {
+    margin-left: 14px;
+    margin-top: -9px;
 }
 
 header {
@@ -234,7 +240,7 @@ li {
 }
 
 @media (min-width: 950px) {
-    .page-links, #footer-box {
+    .page-links, .footer-box {
         width: 808px !important;
     }
 }
@@ -773,11 +779,6 @@ select {
     margin: 20px;
     z-index: 2;
     position: relative;
-}
-
-.empty {
-    height: 30px;
-    margin-bottom: 35px;
 }
 
 #contactus-button-lessons {
@@ -1541,7 +1542,7 @@ footer {
     position: relative;
 }
 
-#footer-box {
+.footer-box {
     background-color: #C2E6F5;
     height: 140px;
     width: 767px;
@@ -1550,6 +1551,14 @@ footer {
     padding-top: 30px;
     z-index: 2;
     position: relative;
+}
+
+#lessons-footer-box {
+    height: 90px;
+}
+
+#grown-ups-footer-box {
+    height: 90px;
 }
 
 #contactus-button {
@@ -1575,7 +1584,7 @@ footer p {
 }
 
 @media (max-width: 767px) {
-    #footer-box {
+    .footer-box {
         width: 100%;
     }
 }
