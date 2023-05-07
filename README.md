@@ -20,8 +20,6 @@ The site contains information about the classes on offer, a Q&A section with a c
 
 ![GitHub pages deployment](https://img.shields.io/github/deployments/ryanmcnally93/project-two-little-strings/github-pages)
 
-<!--MAIN IMAGE NEED TO DO RESPONSIVE DESIGN-->
-
 ## UX
 
 ### Project Goal
@@ -125,7 +123,7 @@ Some of these sites even have audio to grab the kids attention.
 
 - When I put together my project in Balsamiq Wireframes, I was instantly very fond of the default font Balsamiq Sans. It looks like a playful, child-friendly text and goes well with the web application.
 
-<img src="assets/images/readme-images/font.png" width="40%" alt="This is the balsamiq font, used throughout my web application" style="margin: 0 5%;">
+<img src="assets/images/readme-images/font.png" width="40%" alt="This is the balsamiq font, used throughout my web application" style="justify-content: center; display: inherit;">
 
 #### Icons
 
@@ -153,7 +151,7 @@ Some of these sites even have audio to grab the kids attention.
 
 - The navbar is more fun with the added icons, and both that and the footer don't take up unnecessary space. Exclamation marks are used throughout the messages to seem more playful.
 
-<img src="assets/images/readme-images/styling.png" width="100%" alt="An image showing the different shapes used">
+<img src="assets/images/readme-images/styling.png" width="40%" alt="An image showing the different shapes used" style="display: inherit; margin: auto; border-radius: 25px;">
 
 #### Backgrounds
 
@@ -161,7 +159,7 @@ Some of these sites even have audio to grab the kids attention.
 
 - Divs with opacity at 0.85% have been put around titles so that the image isn't distracting over them.
 
-<img src="assets/images/background-notes.png" width="100%" alt="The background image, used throughout my web application">
+<img src="assets/images/background-notes.png" width="80%" alt="The background image, used throughout my web application" style="display: inherit; margin: auto;">
 
 #### Images
 
@@ -175,11 +173,11 @@ Some of these sites even have audio to grab the kids attention.
 
 - There are guitars made of notes, and relevant images in the carousel. The first is a child being taught, the second, is a group of children in a class, whilst the third is a child practicing at home.
 
-<img src="assets/images/guitar-of-notes.png" width="40%" alt="A guitar made of musical notes" style="background-color: #fafafa; border-radius: 25px; padding: 10px;">
+<img src="assets/images/guitar-of-notes.png" width="20%" alt="A guitar made of musical notes" style="background-color: #fafafa; border-radius: 25px; padding: 10px;">
 
 - The images on the front are also related to children and young people playing and learning the guitar.
 
-<img src="assets/images/home-one.png" width="100%" alt="A young girl playing a very small guitar">
+<img src="assets/images/home-one.png" width="75%" alt="A young girl playing a very small guitar">
 
 ### Wireframes
 
@@ -204,6 +202,8 @@ This prototype of index.html was created on figma.com.
 I spoke to three different potential users regarding the website. One was a parent of a young child, one was a 10 year old, and the other was a music teacher. I showed them what I had made and asked them the following questions:
 
 #### Q1 What makes a good website experience for children?
+
+TO DO
 
 Parent of a young child:
 
@@ -316,7 +316,7 @@ Pros:
 Cons:
 
 - Wix.com bar along the top makes it look amateur.
-- The word "Teacher" is written at the top left and this is clearly an error of some sort.
+- The title "Guitar Teacher" is written at the top left and this is clearly an error of some sort as it dissappears letter by letter when made smaller.
 - All of the information is on one page. The navigation doesn't take you to another page, so if you are on a section, you have to scroll to get back to where you were apart from one button at the very bottom which says back to top.
 
 
@@ -353,8 +353,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 | Q&A section for grown ups   | 5        | 5
 | Contact form for parents   | 5        | 5
 | Game to introduce kids to the guitar   | 4        | 4
-
-<!-- Add other Features -->
+| Keyboard game | 3     | 3
 
 
 ## Features 
@@ -371,7 +370,7 @@ This roadmap indicates the importance and viability of specific opportunities.
   
   - On pages where there isn't a link to the contact us section, I've placed a button in the footer.
 
-<img src="assets/images/readme-images/footer.png" width="100%" alt="The web application's footer element">
+<img src="assets/images/readme-images/footer.png" width="75%" alt="The web application's footer element">
 
 - __Logo__
 
@@ -393,9 +392,11 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - Getting the circles to change colour when hovered was very difficult in css, so I instead wrote some javascript code to get it working.
 
-<img src="assets/images/readme-images/guitar-button-green.png" width="100%" alt="The guitar button on the homepage">
+<img src="assets/images/readme-images/guitar-button-green.png" width="75%" alt="The guitar button on the homepage">
 
-<img src="assets/images/readme-images/guitar-button-blue.png" width="100%" alt="The guitar button hover effect">
+<br>
+
+<img src="assets/images/readme-images/guitar-button-blue.png" width="75%" alt="The guitar button hover effect">
 
 - __The lessons page Carousel__
 
@@ -556,31 +557,36 @@ Smallest phone size IPhone 5/SE on Dev Tools
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| The five Homepage buttons (including icon) | Take user to the correct page, CSS changes on hover | Clicked Buttons | Contact Us Fail | Fail |
 | Navbar links | Links take user to correct pages, CSS changes on hover | Clicked Links | All four links work, CSS changes on hover | Pass
+| All five other buttons (including logo) | Take user to the correct page, CSS changes on hover | Clicked Buttons | All links work and change colour when hovered over | Pass |
+| Burger icon on IPhone 5/SE | Item is clickable and navbar readable | Clicked burger icon | Navbar opens vertically, links work | Pass |
+| Page layout | Layout changes to accomodate for smaller devices | Opened site on IPhone 5/SE simulator | Every element visible through scrolling, links work | Pass |
 
 `Lessons`
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| The two Lessons buttons (including icon) | Take user to the correct page, hover changes CSS | Clicked Buttons | Contact Us Fail | Fail |
-| Navbar links | Links take user to correct pages, CSS changes on hover | Clicked Links | All four links work, CSS changes on hover | Pass
+| The same buttons from Homepage | Take user to the correct page, hover changes CSS | Clicked Buttons | All work, same as homepage | Pass |
 | Carousel | Rolls on its own | Waiting upon loading page | Carousel rolls through items | Pass |
 | Carousel | Left and Right buttons navigate correctly | Clicked left and right controls | Navigates correctly | Pass |
 | Selector | Has options A, C, D, E, G | Clicked Selector | Has correct options | Pass |
-
-Correct results will be tested automatically.
+| Selector output | When a user chooses a key, the correct chords appear on the line below | Clicked C | The correct 6 chords were shown | Pass |
+| IPhone 5/SE carousel | Only has the text side showing, to make content readable | Opened webpage on simulator | Carousel textbox is visible, images are not, carousel works as should | Pass |
 
 `Grown Ups`
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| The logo Grown Ups button | Take user to the Homepage, hover changes css | Clicked Buttons | Links correctly, CSS changed | Pass |
-| Navbar links | Links take user to correct pages, hover changes CSS | Clicked Links | All four links work, CSS changes on hover | Pass
-| Submit Button | Send's data, hover changes CSS | Clicked Button | N/A | N/A |
+| The same buttons from Homepage | Take user to the correct page, hover changes CSS | Clicked Buttons | All work, same as homepage | Pass |
+| Accordion | CSS changes on hover | Hovered over options | CSS changes | Pass |
+| Accordions open | When clicked, accordion slides open its input | Clicked on accordion | CSS changes | Pass |
+| Accordions close | When opened, clicking on accordion closes them | Clicked on open accordion | It closed | Pass |
+| Contact Form and images | They move down when the accordion is opened | Clicked accordions open | The elements moved down with the open accordions | Pass |
 | Form | Must have data in all 3 inputs | Tried to submit without | Shows correct error message | Pass |
 | Form | Must not accept incorrect email format | Typed different format | Shows correct error message | Pass |
-| Accordion | CSS changes on hover | Hovered over options | CSS changes | Pass |
+| Submit Button | Send's data, hover changes CSS | Clicked Button | CSS changed, data sent to my email address | Pass |
+| Submit Button text | Green successful message is displayed when email is sent | Sent a message | Green message was displayed | Pass |
+| IPhone 5/SE contact form section | The guitar of notes images disappear on smaller screens | Opened webpage on simulator | Images were not visible | Pass |
 
 Accordion testing has been done automatically.
 
@@ -588,8 +594,7 @@ Accordion testing has been done automatically.
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
-| The Guitar Game logo and Contact Us button | Take user to correct pages, hover changes css | Clicked Buttons | Contact Us doesn't work, CSS changed | Fail |
-| Navbar links | Links take user to correct pages, hover changes CSS | Clicked Links | All four links work, CSS changes on hover | Pass
+| The same buttons from Homepage | Take user to the correct page, hover changes CSS | Clicked Buttons | All work, same as homepage | Pass |
 | Five chord buttons, play button | CSS changes on hover | Clicked Element | CSS changes | Pass |
 | "My Guess" selector | Has correct five options | Clicked Element | Has correct options | Pass |
 
