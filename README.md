@@ -1,8 +1,24 @@
 # Little Strings
 
+![Little Strings opened on different devices](./assets/images/readme-images/different-devices.png)
+
 Little Strings is a small business located in Leicester that teaches children and young adults how to play the guitar.
 
-I have used markdown format for the headers and bullets, links and tables on this readme, but found the img element to be more useful when controlling picture sizes on this document.
+The site contains information about the classes on offer, a Q&A section with a contact form for parents and a fun guitar game for kids!
+
+![Stars](https://img.shields.io/github/stars/ryanmcnally93/project-two-little-strings?style=social)
+
+![Size of repo](https://img.shields.io/github/repo-size/ryanmcnally93/project-two-little-strings)
+
+![Open issues](https://img.shields.io/github/issues-raw/ryanmcnally93/project-two-little-strings)
+
+![GitHub last commit](https://img.shields.io/github/last-commit/ryanmcnally93/project-two-little-strings?color=green&style=for-the-badge)
+
+## Deployment
+
+[Little Strings](https://ryanmcnally93.github.io/project-two-little-strings/)
+
+![GitHub pages deployment](https://img.shields.io/github/deployments/ryanmcnally93/project-two-little-strings/github-pages)
 
 <!--MAIN IMAGE NEED TO DO RESPONSIVE DESIGN-->
 
@@ -722,6 +738,10 @@ The site had no broken links, but the images wouldn't show initially. I had to c
 - The accordion was originally copied and pasted from [W3S.](https://www.w3schools.com/howto/howto_js_accordion.asp), although changes were made afterwards.
 
 - The email javascipt was written as I followed the Code Institute course videos, and have a lot of similarities.
+
+https://github.com/kera-cudmore/TheQuizArms
+
+https://shields.io/category/analysis
 
 ### Media
 EXAMPLES
