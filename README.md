@@ -16,6 +16,10 @@ The site contains information about the classes on offer, a Q&A section with a c
 
 ## Deployment
 
+This web application was built using Gitpod at first, and then moving onto Code Anywhere. Both workspaces were using to git add, commit and push to my repository on GitHub.
+
+Once I had neared completion, I clicked settings and GitHub Pages, changed branch to "Main" and saved. I then placed the URL on my repos description.
+
 [Little Strings](https://ryanmcnally93.github.io/project-two-little-strings/)
 
 ![GitHub pages deployment](https://img.shields.io/github/deployments/ryanmcnally93/project-two-little-strings/github-pages)
@@ -35,12 +39,22 @@ Rather than creating this product entirely for children it would be good to also
 - Learn how to play guitar
 - Have fun
 
+| Goals | How are they achieved? |
+| :--- | :--- |
+| Learn how to play guitar | The key to chord javascript teaches students what chords we can use in every key, the game also teaches students the most basic chord shapes. |
+| Have fun | The colours and design features have this in mind, and the game also adds fun to the web application too. |
+
 #### Parent Goals
 
 Parents most importantly need to know their children will be safe in this environment. They also need some knowledge of what their children will learn, and to know the benefits for their child.
 
 - To place my child in a safe learning environment
 - To feel at ease with my choice of tutor
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+| To place my child in a safe learning environment | On the homepage it's explained that the company has over 10 years of experience, any there are questions answered on the accordion. |
+| To feel at ease with my choice of tutor | If the parent is not happy with the amount of information given regarding safegarding of tutors they can ask more questions on the contact form. |
 
 #### Developer and Business Goals
 
@@ -56,6 +70,13 @@ Kids need to be able to see the benefits of learning, and how it can open doors 
 - To teach wherever possible on the web application
 - To reassure parents that their children are in a safe, learning environment
 - To teach users basic music knowledge like chord shapes
+
+| Goals | How are they achieved? |
+| :--- | :--- |
+| To attract the attention of young people and children | The design elements are all aimed towards being fun, and the guitar playing dinosaur in particular will be fun for kids|
+| To teach wherever possible on the web application | The key to chord selector mixed with the game page have this covered |
+| To reassure parents that their children are in a safe, learning environment | Most relevant questions are on the site, and a contact form is there if needed |
+| To teach users basic music knowledge like chord shapes | The game successfully teaches users the basic shapes associated with guitar playing, these shapes can be used up and down the fretboard to produce even more chords |
 
 ### User Stories
 
@@ -123,13 +144,13 @@ Some of these sites even have audio to grab the kids attention.
 
 - When I put together my project in Balsamiq Wireframes, I was instantly very fond of the default font Balsamiq Sans. It looks like a playful, child-friendly text and goes well with the web application.
 
-<img src="assets/images/readme-images/font.png" width="40%" alt="This is the balsamiq font, used throughout my web application" style="justify-content: center; display: inherit;">
+<img src="assets/images/readme-images/font.png" width="40%" alt="This is the balsamiq font, used throughout my web application" style="margin: auto; display: inherit; border-radius: 25px;">
 
 #### Icons
 
 - I have decided to use icons in the navbar, which accurately illustrate the word(s) they are next to, and make things easier for children to understand.
 
-<img src="assets/images/readme-images/navbar-icons.png" width="100%" alt="The navbar icons used">
+<img src="assets/images/readme-images/navbar-icons.png" width="100%" alt="The navbar icons used" style="border-radius: 25px;">
 
 #### Colours
 
@@ -139,9 +160,11 @@ Some of these sites even have audio to grab the kids attention.
 - The exact shades I used were decided using [Coolors](https://coolors.co/).
 - I then used the contrast checker on [Webaim](https://webaim.org/resources/contrastchecker/) to ensure the text was readable.
 
-<img src="assets/images/readme-images/colours.png" width="100%" alt="An image of my colours, picked in coolors">
+<img src="assets/images/readme-images/colours.png" width="75%" alt="An image of my colours, picked in coolors" style="display: inherit; margin: auto;">
 
-<img src="assets/images/readme-images/contrast.png" width="100%" alt="The contrast checker, checking my colour contrast">
+<br>
+
+<img src="assets/images/readme-images/contrast.png" width="75%" alt="The contrast checker, checking my colour contrast" style="display: inherit; margin: auto;">
 
 #### Styling
 
@@ -165,23 +188,23 @@ Some of these sites even have audio to grab the kids attention.
 
 - The guitar game chord images were created by me on canva, illustrating each chord from A to G, with bright colours.
 
-<img src="assets/images/g.png" width="50%" alt="The G chord, an image created by me on Canva" style="border-radius: 25px;">
+<img src="assets/images/g.png" width="50%" alt="The G chord, an image created by me on Canva" style="border-radius: 25px; display: inherit; margin: auto;">
 
 - There is an image of a dinosaur playing the guitar, who I've given the name Larry, for fun.
 
-<img src="assets/images/larry.png" width="50%" alt="Larry, the guitar playing dinosaur" style="background-color: #fafafa; border-radius: 25px;">
+<img src="assets/images/larry.png" width="50%" alt="Larry, the guitar playing dinosaur" style="background-color: #fafafa; border-radius: 25px; display: inherit; margin: auto;">
 
 - There are guitars made of notes, and relevant images in the carousel. The first is a child being taught, the second, is a group of children in a class, whilst the third is a child practicing at home.
 
-<img src="assets/images/guitar-of-notes.png" width="20%" alt="A guitar made of musical notes" style="background-color: #fafafa; border-radius: 25px; padding: 10px;">
+<img src="assets/images/guitar-of-notes.png" width="20%" alt="A guitar made of musical notes" style="background-color: #fafafa; border-radius: 25px; padding: 10px; display: inherit; margin: auto;">
 
 - The images on the front are also related to children and young people playing and learning the guitar.
 
-<img src="assets/images/home-one.png" width="75%" alt="A young girl playing a very small guitar">
+<img src="assets/images/home-one.png" width="50%" alt="A young girl playing a very small guitar" style="display: inherit; margin: auto;">
 
 ### Wireframes
 
-These wireframes were created using Balsamiq:
+These wireframes were created using [Balsamiq Wireframes:](https://balsamiq.com/wireframes/?gad=1&gclid=Cj0KCQjwmN2iBhCrARIsAG_G2i4B-7yK8ylaMm-EgPZyIat6rzJi5BBNRLhY50Ej2SbjAHbQF2LMZocaAj9nEALw_wcB)
 
 [Homepage](/assets/images/readme-images/index-wireframe.png)
 
@@ -193,7 +216,7 @@ These wireframes were created using Balsamiq:
 
 ### Prototype
 
-This prototype of index.html was created on figma.com.
+This prototype of index.html was created on figma.com. From this I designed the original header and footer and colours, a lot of which would later change but gave me something to get started on. I did however keep the styling properties of the divs and of course, the logo.
 
 [Index Prototype](/assets/images/readme-images/figma-prototype.png)
 
@@ -370,7 +393,7 @@ This roadmap indicates the importance and viability of specific opportunities.
   
   - On pages where there isn't a link to the contact us section, I've placed a button in the footer.
 
-<img src="assets/images/readme-images/footer.png" width="75%" alt="The web application's footer element">
+<img src="assets/images/readme-images/footer.png" width="75%" alt="The web application's footer element" style="display: inherit; margin: auto; border-radius: 25px;">
 
 - __Logo__
 
@@ -392,11 +415,11 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - Getting the circles to change colour when hovered was very difficult in css, so I instead wrote some javascript code to get it working.
 
-<img src="assets/images/readme-images/guitar-button-green.png" width="75%" alt="The guitar button on the homepage">
+<img src="assets/images/readme-images/guitar-button-green.png" width="75%" alt="The guitar button on the homepage" style="display: inherit; margin: auto; border-radius: 25px;">
 
 <br>
 
-<img src="assets/images/readme-images/guitar-button-blue.png" width="75%" alt="The guitar button hover effect">
+<img src="assets/images/readme-images/guitar-button-blue.png" width="75%" alt="The guitar button hover effect" style="display: inherit; margin: auto; border-radius: 25px;">
 
 - __The lessons page Carousel__
 
@@ -406,7 +429,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - I added musical notes of varying colours and kept the colour scheme used throughout the site for the text and textbox.
   
-<img src="assets/images/readme-images/carousel.png" width="100%" alt="The lessons page bootstrap carousel">
+<img src="assets/images/readme-images/carousel.png" width="100%" alt="The lessons page bootstrap carousel" style="display: inherit; margin: auto; border-radius: 25px;">
 
 - __The lessons page key to chord searcher__
 
@@ -416,7 +439,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - As the user clicks on a key, the chords update. If the user has had some lessons and knows how to play these chords, they can play along to their favourite songs!
 
-<img src="assets/images/readme-images/key-to-chord.png" width="100%" alt="The lessons page bootstrap carousel">
+<img src="assets/images/readme-images/key-to-chord.png" width="100%" alt="The lessons page bootstrap carousel" style="display: inherit; margin: auto; border-radius: 25px;">
 
 - __The grown ups page accordion__
 
@@ -426,7 +449,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - I've also added some hover css, changing the light colour over from green to blue but keeping the darker colour the same.
 
-<img src="assets/images/readme-images/accordion.png" width="100%" alt="The accordion, with one of the questions clicked on">
+<img src="assets/images/readme-images/accordion.png" width="80%" alt="The accordion, with one of the questions clicked on" style="display: inherit; margin: auto;">
 
 - __The grown ups page contact form__
 
@@ -436,13 +459,13 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - The form also produces a message in green or red to say that the message was sent sucessfully.
 
-<img src="assets/images/readme-images/contactus.png" width="100%" alt="The contact form for parents">
+<img src="assets/images/readme-images/contactus.png" width="80%" alt="The contact form for parents" style="display: inherit; margin: auto;">
 
 - __The guitar game__
 
   - This is the opening page, which calls the betweenGameAppearance function:
 
-<img src="assets/images/readme-images/newgame.png" width="100%" alt="The guitar game">
+<img src="assets/images/readme-images/newgame.png" width="75%" alt="The guitar game" style="display: inherit; margin: auto; border-radius: 25px;">
 
 - The user has the choice to select any of the chords, which changes the chord image to its corresponding selection.
 
@@ -450,17 +473,17 @@ This roadmap indicates the importance and viability of specific opportunities.
 
 - The randomChordGenerator function creates a chord that is different to the last one used, and the changeChord function changes the image so it matches.
 
-<img src="assets/images/readme-images/first-move.png" width="100%" alt="The guitar game, first move">
+<img src="assets/images/readme-images/first-move.png" width="75%" alt="The guitar game, first move" style="display: inherit; margin: auto; border-radius: 25px;">
 
 - The first move always displays the same message, and as the user enters correct or incorrect guesses, the checkAnswer function checks the guess and a message is displayed, which again, is different to the last message displayed. This is to let the user know definitely that their answer was indeed checked, there is also a brief shadow property which flashes either green or red depending on the answer given.
 
-<img src="assets/images/readme-images/game-working.png" width="100%" alt="The guitar game, mid game">
+<img src="assets/images/readme-images/game-working.png" width="75%" alt="The guitar game, mid game" style="display: inherit; margin: auto; border-radius: 25px;">
 
 - At the end, the finishGame function looks at the score and gives a supportive message regardless of the outcome, but is different depending on the score.
 
 - Finishing the game also brings back the betweenGameAppearance function, meaning the user can practice and give the game another go if they wish.
 
-<img src="assets/images/readme-images/game-finished.png" width="100%" alt="The guitar game, finished">
+<img src="assets/images/readme-images/game-finished.png" width="75%" alt="The guitar game, finished" style="display: inherit; margin: auto; border-radius: 25px;">
 
 ### Features Left to Implement
 
@@ -521,37 +544,12 @@ EMAIL TEST SCRIPT
 
 ### Manual Testing
 
-#### STUDENT GOALS
-
-| Goals | How are they achieved? |
-| :--- | :--- |
-| Learn how to play guitar | The key to chord javascript teaches students what chords we can use in every key, the game also teaches students the most basic chord shapes. |
-| Have fun | The colours and design features have this in mind, and the game also adds fun to the web application too. |
-
-#### PARENTS GOALS
-
-| Goals | How are they achieved? |
-| :--- | :--- |
-| To place my child in a safe learning environment | On the homepage it's explained that the company has over 10 years of experience, any there are questions answered on the accordion. |
-| To feel at ease with my choice of tutor | If the parent is not happy with the amount of information given regarding safegarding of tutors they can ask more questions on the contact form. |
-
-#### DEVELOPER GOALS
-
-| Goals | How are they achieved? |
-| :--- | :--- |
-| To attract the attention of young people and children | The design elements are all aimed towards being fun, and the guitar playing dinosaur in particular will be fun for kids|
-| To teach wherever possible on the web application | The key to chord selector mixed with the game page have this covered |
-| To reassure parents that their children are in a safe, learning environment | Most relevant questions are on the site, and a contact form is there if needed |
-| To teach users basic music knowledge like chord shapes | The game successfully teaches users the basic shapes associated with guitar playing, these shapes can be used up and down the fretboard to produce even more chords |
-
-#### Components
-
 This project has been tested using the following browsers:
 <!--Chrome, Safari & Edge-->
 On the following devices
 Desktop Macbook
-Ipad Simulator on Dev Tools
-Smallest phone size IPhone 5/SE on Dev Tools
+Ipad Air Simulator on Dev Tools
+Smallest phone size IPhone 5/SE simulator on Dev Tools
 
 `Homepage`
 
@@ -588,17 +586,17 @@ Smallest phone size IPhone 5/SE on Dev Tools
 | Submit Button text | Green successful message is displayed when email is sent | Sent a message | Green message was displayed | Pass |
 | IPhone 5/SE contact form section | The guitar of notes images disappear on smaller screens | Opened webpage on simulator | Images were not visible | Pass |
 
-Accordion testing has been done automatically.
+Accordion testing has also been done automatically.
 
 `Guitar Game`
 
 | Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
 | --- | --- | --- | --- | --- |
 | The same buttons from Homepage | Take user to the correct page, hover changes CSS | Clicked Buttons | All work, same as homepage | Pass |
-| Five chord buttons, play button | CSS changes on hover | Clicked Element | CSS changes | Pass |
-| "My Guess" selector | Has correct five options | Clicked Element | Has correct options | Pass |
+| Five chord buttons, play button | CSS changes on hover | Hovered over Element | CSS changes | Pass |
+| Five chord buttons, play button | Activate when clicked | Clicked buttons | Chords change image, play button sarts the game | Pass |
 
-Guitar Game testing has been done automatically
+All Guitar Game testing has been done automatically
 
 ### Fixed Bugs
 
@@ -664,71 +662,40 @@ There may well be a much less exhausting way to do this! But this is the way tha
 
 19). Explain how and why of mouse over and out on index page! Could affect the circles when hovering over the button.
 
+20). I noticed that the burger icon lines were dark originally, not mixing well with my dark green background colour, I fixed this by changing one of the bootstrap classes from "navbar-light" to "navbar-dark", which gave the icon white lines. The button also didn't work, as it was calling on JQuery and that wasn't included within my head element, this has now been fixed.
+
+Once clicked, the items originally presented themselves with the blue background going across the whole page, I fixed this by placing the background colour attibute to the navbar-nav element instead and adding border, padding and width to it.
+
+21). width property on page titles was pushing whole content phone sizes
+
+22). Added javascript for show and in on bootstrap lessons navbar
+
+Game-box made pink, issues with centralisation using trick with %es (https://thoughtbot.com/blog/positioning)
+Larry bottom -30px; larrys-speech margin-left 30px;
+
 ### Unfixed Bugs
 
-There are no bugs unfixed to my knowledge.
+I would have preferred when playing the game on smaller screen sizes, for the whole game including Larry to be visible. As the keyboard rises taking half the screen away, this unfortunately is not possible.
 
-## Deployment
-<!--
-THIS MAY HAVE TO BE THE SAME?!
+### Responsive Design
 
-This project was developed using Gitpod, committed to git and pushed using the built in function within Gitpod.
+#### Ipad Air screen resolution
 
-To deploy this page, I followed the following steps.
+The index page was mostly kept the same, I changed the width of the navbar so it would accomodate smallest IPad sizes. The only change I made on the lessons page was adding a "br" element to the sentence, which display changes to block when screen size is medium, as at times the question mark was appearing alone on the lower line.
 
-1. Log into GitHub.
+The grown ups page just needed width properties as percentages to make them responsive, the contact form has plenty of room to fill. The guitar game's score box and play button moves underneath the game, so the messages and larry can move closer together.
 
-2. Select project-one-relieve from list of repositories.
+#### IPhone 5/SE screen resolution
 
-3. From the top menu items, select settings.
+As the burger icon needed space on the left and there isn't much room available, I placed the logo and its box to the right, and both the original image and the hovered one, are also smaller.
 
-4. Select Pages from the left hand side menu.
+On the index page I made all the content central, whilst also making one div show at a time using the grid-template-column and with a percentage width to make it responsive on different phones. On the guitar button I created a second shorter message that displays instead of the original and added some CSS to move the dinosaur and text with the page size until larger.
 
-5. Under Source click the drop-down menu labelled None and select main.
+With the lessons page, I had issues throughout because of the different bootstrap callings made in the head element, that I had to use to get the carousel working. These bootstrap callings were interfering with my original one, and producing different results to that of the other pages. I got rid of the images on the carousel, giving room for the textboxes as they were more important, I also made the text smaller on the key-to-chords section to better suit smaller screen sizes.
 
-6. On selecting main the page is automatically refreshed, the website is now deployed.
+The grown ups page was a lot simpler, I removed the guitar of notes to give more room for the contact form, and the accordion worked fine already.
 
-7. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
-
-At the time of submitting this project, the Development Branch and Master Branch were identical.
-
-To clone you will need
-
-1. A [GitHub](https://github.com/) account.
-
-2. The [Chrome](https://www.google.com/intl/en_uk/chrome/) browser.
-
-Then follow the following steps:
-
-1. Install the Gitpod Browser Extension for Chrome.
-
-2. After installation, restart the browser.
-
-3. Log into Gitpod with your account.
-
-4. Navigate to the Project GitHub repository.
-
-5. Click the green Gitpod button in the top right corner of the repository.
-
-6. A new Gitpod workplace will created from the code in github where you can work locally.
-
-To work on the project code within a local IDE such as VSCode, Python, etc.
-
-1. Follow [this link](https://github.com/ryanmcnally93/project-one-relieve) to the Project GitHub repository.
-
-2. Under the repository name, click "Clone the download".
-
-3. In the clone with HTTPs section, copy the clone URL for the repository.
-
-4. In your local IDE open the terminal.
-
-5. Change the current working directory to the location where you want the cloned directory to be made.
-
-6. Type git clone, and then paste the URL you copied in Step 3.
-
-7. Press Enter. Your local clone will be created.
-
-The site had no broken links, but the images wouldn't show initially. I had to change the style.css background URL's to include "/project-one-relieve/" and after that they worked correctly.-->
+Making the guitar game available on small screens posed a lot of challenges. I first had to change the grid layout to allow for the score, game turn, chord image and answer box to be visible at once. I also made text and images smaller. With Larry, I had to create a different speech bubble. I chose one that sits above him and fills most of the screens width, so to give room to the messages inside.
 
 ## Credits 
 
@@ -751,30 +718,23 @@ https://shields.io/category/analysis
 ### Media
 EXAMPLES
 - All of the following images are from pexels.com, below is a list of the image names and the author who posted them on [pexels.com.](https://pexels.com)
-<!--
-- index-hero.jpeg, small-index.jpeg - [Gustavo Fring.](https://www.pexels.com/@gustavo-fring/)-->
-- Don't forget Larry!
+
+- 
+
+- All of the following images are from pngwing.com/ below is a list of the image names and the author who posted them on [pngwing.com.](https://pexels.com)
+
+- 
+
+- Canva creations, chords and logos.
 
 ### Acknowledgements
 
 -   My Mentor Jubril Akolade for continuous helpful feedback.
 
--   My college contacts Ben Smith and Pasquale Fasulo for his support throughout. 
+-   My college contact Ben Smith.
 
--   Tutor support and the Slack community at Code Institute for their help too.
+-   My other college contact Pasquale Fasulo for his support throughout.
 
-## Lighthouse Scores
-EXAMPLE
-<!--
-[Homepage](/assets/images/readme-images/home-lighthouse.png)
-
-[Benefits](/assets/images/readme-images/benefits-lighthouse.png)
-
-[Classes](/assets/images/readme-images/classes-lighthouse.png)
-
-[Sign up](/assets/images/readme-images/signup-lighthouse.png)-->
+-   Tutor support and the Slack community at Code Institute for their help too, namely Tomislav 5P, OTHERS? and Kera Cudmore who helped answer my questions regularly.
 
 This readme.md was spellchecked using the spell checker extension for Chrome.
-
-820 wide ipad air
-320 wide iphone
