@@ -455,7 +455,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - The contact form sits centrally between two guitars made of musical notes.
 
-  - The form works, and sends an email to my email address ryanmcnallymusic@outlook.com.
+  - The form works, and sends an email to my email address ryanwinton6@gmail.com.
 
   - The form also produces a message in green or red to say that the message was sent sucessfully.
 
@@ -595,45 +595,69 @@ Accordion testing has also been done automatically.
 | The same buttons from Homepage | Take user to the correct page, hover changes CSS | Clicked Buttons | All work, same as homepage | Pass |
 | Five chord buttons, play button | CSS changes on hover | Hovered over Element | CSS changes | Pass |
 | Five chord buttons, play button | Activate when clicked | Clicked buttons | Chords change image, play button sarts the game | Pass |
+| Picture of chord | Green shadow is added when answer is right | Typed in A on a chord | Green shadow was added | Pass |
+| Picture of chord | Red shadow is added when answer is wrong | Typed in C on e chord | Red shadow was added | Pass |
+| The a chord | Answer is still accepted in uppercase | Typed in "A" on a chord | Game recognised "A" as correct answer | Pass |
+
+In order to test the correct and wrong messages displaying correctly and not repeating, I had to continually test the game by playing it and adding deliberately correct or incorrect answers in a row to see the outcome over 3 games.
+
+The same was done with the random chord generator.
 
 All Guitar Game testing has been done automatically
 
-// Visual tests
+Manual testing was also completed on the sending of the emails. I have sent various messages using the contact form and receive them at my email address ryanwinton6@gmail.com.
 
-// Shadows on chordbox
-// Correct messages being shown
-// 3 Random generators produce different results everytime
-// Answer has been accepted which means uppercase also works!
+<img src="assets/images/readme-images/email-test.png" width="75%" alt="Email being sent on contact form" style="display: inherit; margin: auto; border-radius: 25px;">
+
+<br>
+
+<img src="assets/images/readme-images/email-sent.png" width="75%" alt="My received email" style="display: inherit; margin: auto; border-radius: 25px;">
 
 ### Fixed Bugs
 
 This is a detailed log of the issues I ran into whilst coding my first project, and how I overcame them.
 
-1). The first issue I found was trying to create the grid layout on my homepage. I spent a while changing classes and moving elements only to realise I'd forgotten to identify the classes as grid areas in css. I then noticed when this still didn't work, that my closing div tag of the homepage-one div was inline with the opening tag, rather than after the content. Fixing this corrected the issue.
+1). The first issue I found was trying to create the grid layout on my homepage. I spent a while changing classes and moving elements only to realise I'd forgotten to identify the classes as grid areas in css. I then noticed when this still didn't work, that my closing div tag of the homepage-one div was inline with the opening tag, rather than after the content.
 
-IMAGES.
+<img src="assets/images/readme-images/bug-1.png" width="75%" alt="Incorrect grid layout" style="display: inherit; margin: auto; border-radius: 25px;">
+
+As you can see the images bunched together overlapping and needed fixing.
+
+<img src="assets/images/readme-images/fix-1.png" width="75%" alt="Index page fixed" style="display: inherit; margin: auto; border-radius: 25px;">
 
 2). The next thing I noticed was that my lessons navbar styling was appearing different than my other pages, even though it had the same code. This is because I've been using bootstrap on my navbar, and have inherited some of its properties. This was only proving to be an issue on my lessons page because in order to get my carousel working, I had to paste a different version of bootstrap into my html's head element. I used dev tools to identify the different styling that was effecting my lessons navbar and corrected the issue that way.
 
-IMAGES.
+<img src="assets/images/readme-images/bug-2.png" width="75%" alt="An example of one of the changes made by Bootstrap" style="display: inherit; margin: auto; border-radius: 25px;">
 
-3). A bit issue I had with coding the guitar game, came when I tried to use push and splice on an array in JavaScript. Every google fix was the same, make sure you're using the function on an array! I was indeed using the functions on an array, but when I tested the code, I had a fail saying that the push and splice functions didn't exist. I used console.log to try and figure out what was wrong, but it confirmed that I was definitely testing an array.
+As you can see, the items are at the top of the element, not centered. The issue was fixed after adding this code:
+
+<img src="assets/images/readme-images/fix-2.png" width="75%" alt="Code used for fix" style="display: inherit; margin: auto; border-radius: 25px;">
+
+3). A big issue I had with coding the guitar game, came when I tried to use push and splice on an array in JavaScript. Every google fix was the same, make sure you're using the function on an array! I was indeed using the functions on an array, but when I tested the code, I had a fail saying that the push and splice functions didn't exist. I used console.log to try and figure out what was wrong, but it confirmed that I was definitely testing an array.
+
+<img src="assets/images/readme-images/bug-3.png" width="75%" alt="The array was an array" style="display: inherit; margin: auto; border-radius: 25px;">
 
 In the end I used the help of a tutor to get to the bottom of the issue, which wasn't my code, but the test itself. The test was using the beforeall function to set the array, which was only containing one piece of data, and I had it set to a string. By setting the array to a string in the test, the test was failing. I changed this to an array, and actually realised later on that this array would only ever hold one piece of data, and so a string was the right way to go about it in the end. I got rid of the push and splice functions and used the equals sign instead.
 
-IMAGES
+After this the test passed.
 
 4). During the game sequence, I needed to take my chord image div, and change it. To do so I had to take away the previous class added and add a new one, which proved to be particularly difficult. I used console.log before and after the function so I could see step by step what my code was doing and managed to fix the issue using an if statement. The statement checks the value of new class added, and gets rid of any other potential chord classes, making sure that only the correct chord class is in effect.
 
-IMAGES
+<img src="assets/images/readme-images/fix-4.png" width="75%" alt="If statement that fixed issue" style="display: inherit; margin: auto; border-radius: 25px;">
 
-5). Navbar responsiveness.
+5). My navbars initial repsonsiveness was a nightmare, when I made the screemn size smaller, I'd lose some of the text to the left. When made central it didn't sit right with the logo and at times even overlapped it.
 
-IMAGES
+<img src="assets/images/readme-images/bug-5.1.png" width="75%" alt="Navbar responsiveness issues" style="display: inherit; margin: auto; border-radius: 25px;">
 
-6). Contact us buttons, going down the page.
+<br>
 
-IMAGES
+<img src="assets/images/readme-images/bug-5.2.png" width="75%" alt="Navbar responsiveness issues" style="display: inherit; margin: auto; border-radius: 25px;">
+
+I eventually decided that I wanted a different style of navbar to the one I used in project one anyway. By making the bar 768px including all the items and centering it, it looked great on both IPad and Desktop screens, before being condensed by the burger icon on small screens.
+
+6). I had an issue when trying to make the contact us button travel not just to a different page, but to a specific section on that page. For a while all of my attempts at getting this to work either returned a 404 as I had travelled to a page that didn't exist, or I arrived at the top of the grown-ups page, rather than on the right section.
+
+The fix that finally worked was putting the href "grown-ups.html#contact-us", which now I read it like this, makes a lot of sense!
 
 7). Overflow: hidden helped when setting my grid on guitar game, means things can overlap so speech bubble can overlap larry
 

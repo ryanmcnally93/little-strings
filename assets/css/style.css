@@ -70,11 +70,6 @@
     display: flex;
 }
 
-.navbar {
-    justify-content: flex-start !important;
-    padding: 8px 16px;
-}
-
 .page-links {
     background-color: #C2E6F5;
     border-radius: 25px;
@@ -130,6 +125,10 @@
         right: 50%;
         position: absolute;
     }
+    .navbar {
+        justify-content: flex-start !important;
+        padding: 8px 16px;
+    }
 }
 
 .navbar {
@@ -149,11 +148,6 @@
 
 .lessons-li {
     padding-top: 5px;
-}
-
-#lessons-navbar {
-    margin-left: 14px;
-    margin-top: -9px;
 }
 
 header {
