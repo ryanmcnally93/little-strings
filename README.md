@@ -659,13 +659,23 @@ I eventually decided that I wanted a different style of navbar to the one I used
 
 The fix that finally worked was putting the href "grown-ups.html#contact-us", which now I read it like this, makes a lot of sense!
 
-7). Overflow: hidden helped when setting my grid on guitar game, means things can overlap so speech bubble can overlap larry
+7). As I created the layout for the guitar game. I had an issue with the speech bubble overlapping Larry. Once I made larry's position "relative" there was an issue with the one element pushing the other down, and eventually this issue.
 
-8). struggled with concept of columns and rows and realised i had wrong calling - speech instead of larrys speech
+<img src="assets/images/readme-images/bug-7.png" width="75%" alt="Larry is overlapping his message" style="display: inherit; margin: auto; border-radius: 25px;">
 
-9). lowerAnswer = userAnswer.toLowerCase(); fixed the issue of capital letters not being accepted
+As you can see the speech image is now behind larry. I fixed this by adding position: "absolute" to this and overflow: "hidden".
 
-10). used the for loop to iterate through the three correct and wrong answers and make sure the correct message is being shown, rather than use the long-winded way used earlier.
+<img src="assets/images/readme-images/fix-7.png" width="75%" alt="Correct layout" style="display: inherit; margin: auto; border-radius: 25px;">
+
+9). When testing the game, I noticed that entering the answers in capital letters (which is how they are displayed throughout the site so may well be how they are entered by users) gave a wrong answer and was not accepted.
+
+I fixed this by adding "lowerAnswer = userAnswer.toLowerCase();" and continuing the code using the output. This worked and both upper and lower case answers are now accepted.
+
+10). The if statement mentioned in bug 4 I felt was a little long-winded. Especially when we have for loops we can use.
+
+In larrysMessage I decided to use a for loop to iterate through the three correct and wrong answers and make sure the correct message is being shown. I expect there is probably a way of doing this with less code but the result is the same either way.
+
+<img src="assets/images/readme-images/fix-10.png" width="75%" alt="For loop used instead" style="display: inherit; margin: auto; border-radius: 25px;">
 
 11). blue border after click, because of :focus outline, set to 0 and give rgb property
 
