@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() { 
     viewChordsInKey();
+    /* This code has been created to ensure the navbar opens when the burger icon is clicked */
+    /* It also closes the navbar when clicked again */
     document.getElementById("smallscreen-nav").addEventListener("click", function(event) {
         let dropdown = document.getElementById('navbarNavDropdown');
         if (dropdown.classList.contains('show')) {
@@ -34,7 +36,7 @@ function viewChordsInKey() {
     } else if (selectedKey == "D") {
         display.innerText = "D - G - A - Bm - Em - F#m";
     } else if (selectedKey == "D#") {
-        display.innerText = "D - G# - A# - Cm - Fm - Gm";
+        display.innerText = "D# - G# - A# - Cm - Fm - Gm";
     } else if (selectedKey == "E") {
         display.innerText = "E - A - B - C#m - F#m - G#m";
     } else if (selectedKey == "F") {
@@ -47,41 +49,6 @@ function viewChordsInKey() {
         display.innerText = "G# - C# - D# - Fm - A#m - Cm";
     } else {
         display.innerText = "Error 404";
+        console.log('A selection has been made that should not be possible');
     }
 }
-
-/* This code was provided from Ben Smith, who discoved it on Chatgpt
-const songTitle = "Wonderwall"; // replace with the song title you want to search for
-const apiUrl = `https://www.songsterr.com/a/ra/songs.json?pattern=${songTitle}`;
-
-
-fetch(apiUrl)
-  .then(response => response.json())
-  .then(data => {
-    // get the first song ID from the API response
-    const songId = data[0].id;
-
-    // use the song ID to retrieve chord data
-    const chordUrl = `https://www.songsterr.com/a/wa/song?id=${songId}&instrument=any&inst=voice`;
-
- 
-
-    fetch(chordUrl)
-      .then(response => response.json())
-      .then(chordData => {
-        // do something with the chord data
-        console.log(chordData);
-      })
-      .catch(error => console.error(error));
-  })
-  .catch(error => console.error(error));
-
-// Set up the API endpoint
-const apiBaseUrl = 'https://www.songsterr.com/a/wa/api/';
-const apiKey = 'AIzaSyDQjYZj-V3e4rOM6gWZod4RCiMhc2tPmGU';
-const songId = 2;
-
-// Make a request for song data
-fetch(`${apiBaseUrl}/songs/${songId}?apikey=${apiKey}`)
-  .then(response => response.json())
-  .then(data => console.log(data));*/
