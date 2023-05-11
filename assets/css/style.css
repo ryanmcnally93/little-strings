@@ -87,8 +87,16 @@
         background-color: #C2E6F5;
         border-radius: 25px;
         width: 206px;
-        padding: 5px 20px;
+        padding: 5px 10px;
         border: 2px solid #3C6916;
+        left: 5px;
+        position: absolute;
+        top: 8px;
+    }
+    #lessons-navbar-nav {
+        left: 19px !important;
+        padding: 5px 20px !important;
+        top: -1px !important;
     }
     .navbar-dark {
         position: fixed;
