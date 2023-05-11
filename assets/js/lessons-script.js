@@ -52,3 +52,5 @@ function viewChordsInKey() {
         console.log('A selection has been made that should not be possible');
     }
 }
+
+module.exports = { viewChordsInKey };

@@ -18,4 +18,4 @@ for (i = 0; i < acc.length; i++) {
 }
 
 /* This code was written by www.w3schools.com
-The JQuery parts were written by me. */
+The JQuery parts were written by me, to make the accordions slide open rather than flash */
