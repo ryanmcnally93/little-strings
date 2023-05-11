@@ -607,11 +607,11 @@ All Guitar Game testing has been done automatically
 
 Manual testing was also completed on the sending of the emails. I have sent various messages using the contact form and receive them at my email address ryanwinton6@gmail.com.
 
-<img src="assets/images/readme-images/email-test.png" width="75%" alt="Email being sent on contact form" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/email-test.png" width="65%" alt="Email being sent on contact form" style="display: inherit; margin: auto; border-radius: 25px;">
 
 <br>
 
-<img src="assets/images/readme-images/email-sent.png" width="75%" alt="My received email" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/email-sent.png" width="65%" alt="My received email" style="display: inherit; margin: auto; border-radius: 25px;">
 
 ### Fixed Bugs
 
@@ -619,23 +619,23 @@ This is a detailed log of the issues I ran into whilst coding my first project, 
 
 1). The first issue I found was trying to create the grid layout on my homepage. I spent a while changing classes and moving elements only to realise I'd forgotten to identify the classes as grid areas in css. I then noticed when this still didn't work, that my closing div tag of the homepage-one div was inline with the opening tag, rather than after the content.
 
-<img src="assets/images/readme-images/bug-1.png" width="75%" alt="Incorrect grid layout" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-1.png" width="65%" alt="Incorrect grid layout" style="display: inherit; margin: auto; border-radius: 25px;">
 
 As you can see the images bunched together overlapping and needed fixing.
 
-<img src="assets/images/readme-images/fix-1.png" width="75%" alt="Index page fixed" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/fix-1.png" width="65%" alt="Index page fixed" style="display: inherit; margin: auto; border-radius: 25px;">
 
 2). The next thing I noticed was that my lessons navbar styling was appearing different than my other pages, even though it had the same code. This is because I've been using bootstrap on my navbar, and have inherited some of its properties. This was only proving to be an issue on my lessons page because in order to get my carousel working, I had to paste a different version of bootstrap into my html's head element. I used dev tools to identify the different styling that was effecting my lessons navbar and corrected the issue that way.
 
-<img src="assets/images/readme-images/bug-2.png" width="75%" alt="An example of one of the changes made by Bootstrap" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-2.png" width="100%" alt="An example of one of the changes made by Bootstrap" style="display: inherit; margin: auto; border-radius: 25px;">
 
 As you can see, the items are at the top of the element, not centered. The issue was fixed after adding this code:
 
-<img src="assets/images/readme-images/fix-2.png" width="75%" alt="Code used for fix" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/fix-2.png" width="50%" alt="Code used for fix" style="display: inherit; margin: auto; border-radius: 25px;">
 
 3). A big issue I had with coding the guitar game, came when I tried to use push and splice on an array in JavaScript. Every google fix was the same, make sure you're using the function on an array! I was indeed using the functions on an array, but when I tested the code, I had a fail saying that the push and splice functions didn't exist. I used console.log to try and figure out what was wrong, but it confirmed that I was definitely testing an array.
 
-<img src="assets/images/readme-images/bug-3.png" width="75%" alt="The array was an array" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-3.png" width="65%" alt="The array was an array" style="display: inherit; margin: auto; border-radius: 25px;">
 
 In the end I used the help of a tutor to get to the bottom of the issue, which wasn't my code, but the test itself. The test was using the beforeall function to set the array, which was only containing one piece of data, and I had it set to a string. By setting the array to a string in the test, the test was failing. I changed this to an array, and actually realised later on that this array would only ever hold one piece of data, and so a string was the right way to go about it in the end. I got rid of the push and splice functions and used the equals sign instead.
 
@@ -647,11 +647,11 @@ After this the test passed.
 
 5). My navbars initial repsonsiveness was a nightmare, when I made the screemn size smaller, I'd lose some of the text to the left. When made central it didn't sit right with the logo and at times even overlapped it.
 
-<img src="assets/images/readme-images/bug-5.1.png" width="75%" alt="Navbar responsiveness issues" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-5.1.png" width="100%" alt="Navbar responsiveness issues" style="display: inherit; margin: auto; border-radius: 25px;">
 
 <br>
 
-<img src="assets/images/readme-images/bug-5.2.png" width="75%" alt="Navbar responsiveness issues" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-5.2.png" width="65%" alt="Navbar responsiveness issues" style="display: inherit; margin: auto; border-radius: 25px;">
 
 I eventually decided that I wanted a different style of navbar to the one I used in project one anyway. By making the bar 768px including all the items and centering it, it looked great on both IPad and Desktop screens, before being condensed by the burger icon on small screens.
 
@@ -675,7 +675,7 @@ I fixed this by adding "lowerAnswer = userAnswer.toLowerCase();" and continuing 
 
 In larrysMessage I decided to use a for loop to iterate through the three correct and wrong answers and make sure the correct message is being shown. I expect there is probably a way of doing this with less code but the result is the same either way.
 
-<img src="assets/images/readme-images/fix-9.png" width="75%" alt="For loop used instead" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/fix-9.png" width="50%" alt="For loop used instead" style="display: inherit; margin: auto; border-radius: 25px;">
 
 10). I noticed a few of my elements had a border change to the colour blue after they were clicked on and focused on. The border properties however were completely normal so this was coming from somewhere else. This shade of blue wasn't in keeping with the rest of the site colours.
 
@@ -687,7 +687,7 @@ Using Dev tools I eventually figured out this was a property called outline. On 
 
 11). Two tests continuously not working for the variables in correct and wrong answer arrays. The tests did not like the fact that they were variables, and I kept having issues with them not being declared in functions. Any time I tried to write code for the array of variables, it would return the following image, because the array had an "undefined" value.
 
-<img src="assets/images/readme-images/bug-11.png" width="75%" alt="Element is undefined" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-11.png" width="100%" alt="Element is undefined" style="display: inherit; margin: auto; border-radius: 25px;">
 
 I wanted the generator to give me a different answer every time.
 
@@ -699,15 +699,15 @@ There may well be a much less exhausting way to do this! But this is the way tha
 
 12). I had an issue where the accordion just flash showing the inputs underneath when clicked. I added the jquery script to my grown ups page and changed the javascript originally written by W3Schools, adding the jquery code so that they slide up and down instead.
 
-<img src="assets/images/readme-images/fix-12.png" width="75%" alt="The code that helped me" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/fix-12.png" width="50%" alt="The code that helped me" style="display: inherit; margin: auto; border-radius: 25px;">
 
 13). On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference betweem this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this css version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
 
-<img src="assets/images/readme-images/bug-13.png" width="75%" alt="Bad indicators" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-13.png" width="50%" alt="Bad indicators" style="display: inherit; margin: auto; border-radius: 25px;">
 
 <br>
 
-<img src="assets/images/readme-images/fix-13.png" width="75%" alt="Good Indicators" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/fix-13.png" width="50%" alt="Good Indicators" style="display: inherit; margin: auto; border-radius: 25px;">
 
 14). Tomislav_5P on Slack helped with an issue regarding the key-to-chord element not updating on lessons page. The code I had originally worked in the sense that the desired outcome was decided upon correctly, but the way in which I was event listening was wrong.
 
@@ -715,11 +715,11 @@ Adding the "change" event listener solved this issue.
 
 15). Guitars either side of the form were absolute, which worked fine but when the accordions were clicked, and the form pushed down, the guitars stayed where they were, ruining the layout. I wanted the guitars to not appear above and below the titles, but rather be at the side of them, so I decided to put the titles inside the form, which had width: 33%, meaning the guitars could be position: relative and would move with the accordions.
 
-<img src="assets/images/readme-images/bug-15.png" width="75%" alt="Guitar-of-notes element covered by accordion" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-15.png" width="100%" alt="Guitar-of-notes element covered by accordion" style="display: inherit; margin: auto; border-radius: 25px;">
 
 <br>
 
-<img src="assets/images/readme-images/fix-15.png" width="75%" alt="All elements visible" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/fix-15.png" width="100%" alt="All elements visible" style="display: inherit; margin: auto; border-radius: 25px;">
 
 16). I wanted the guitar-game button on the index page to react in a fun way to kids when hovered over. Simple CSS hover changes were simply not working. I tried to say that when one element was hovered over it affected another, as although the button is hovered over, the circles change colour too.
 
@@ -729,7 +729,7 @@ I decided the best way to achieve this was to write some JavaScript for the circ
 
 17). I noticed that the burger icon lines were dark originally, not mixing well with my dark green background colour, I fixed this by changing one of the bootstrap classes from "navbar-light" to "navbar-dark", which gave the icon white lines. The button also didn't work, as it was calling on JQuery and that wasn't included within my head element, this has now been fixed.
 
-<img src="assets/images/readme-images/bug-17.png" width="75%" alt="Toggler navbar original appearance" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-17.png" width="50%" alt="Toggler navbar original appearance" style="display: inherit; margin: auto; border-radius: 25px;">
 
 Once clicked, the items originally presented themselves with the blue background going across the whole page, I fixed this by removing the background colour and adding it to the navbar-nav element instead, adding border, padding and width to it.
 
@@ -737,7 +737,7 @@ Once clicked, the items originally presented themselves with the blue background
 
 18). On the lessons page, clicking the navbar toggler made the menu appear for a split second and then it disappeared again. I noticed after some DevTools digging that the class of "show" was not being added to navbarNavDropdown but instead, a class of "in", which would most likely be because of the extra bootstrap callings.
 
-<img src="assets/images/readme-images/bug-18.png" width="75%" alt="The 'in' class has been given" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-18.png" width="100%" alt="The 'in' class has been given" style="display: inherit; margin: auto; border-radius: 25px;">
 
 I decided to again add some JavaScript, which looked out for the "in" class being added and removed it, as well as adding the "show" class. A second click removes the "show" class making the menu invisible again.
 
@@ -753,11 +753,11 @@ I used the idea mentioned within [this link](https://thoughtbot.com/blog/positio
 
 20). The most frustrating issue I had with this project was I forgot to use a template, so the gitignore file was not here. When doing the npm testing, I realised my applications speed reduced dramatically. The port preview speed was also affected. After spending hours waiting for loading times I finally got in touch with a tutor, who managed to get to the bottom of the issue. Node_modules had been pushed to my repository, making it huge in file size.
 
-<img src="assets/images/readme-images/bug-20.png" width="75%" alt="The node_modules folder was causing issues" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-20.png" width="65%" alt="The node_modules folder was causing issues" style="display: inherit; margin: auto; border-radius: 25px;">
 
 The tutor helped me un-push it and after closing my workspace and restarting everything, I could see it was gone and the speed issues were rectified.
 
-<img src="assets/images/readme-images/fix-20.png" width="75%" alt="The repository without the node_modules folder" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/fix-20.png" width="65%" alt="The repository without the node_modules folder" style="display: inherit; margin: auto; border-radius: 25px;">
 
 21). I attempted to add an image to my workspace that simply would not be accepted. Code Anywhere did not like it, so I posted in slack and received help from jo_ci, who told me my image file sizes were too large and gave me [this link](https://tinypng.com/) to fix the issue, which worked brilliantly.
 
@@ -769,7 +769,7 @@ The tutor helped me un-push it and after closing my workspace and restarting eve
 
 I added the following code, which fixed the issue
 
-<img src="assets/images/readme-images/bug-22.2.png" width="75%" alt="The code I used" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/bug-22.2.png" width="50%" alt="The code I used" style="display: inherit; margin: auto; border-radius: 25px;">
 
 <br>
 
