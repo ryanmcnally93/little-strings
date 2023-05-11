@@ -500,7 +500,6 @@ I have tested my web application automatically and manually using Test Driven De
 ### Automated Testing
 
 ### W3C Validation
-<!-- DO AT THE END -->
 
 - HTML [W3C validator](https://validator.w3.org/)
 
@@ -520,17 +519,13 @@ I have tested my web application automatically and manually using Test Driven De
 
 ### Javascript Validation
 
-This test.js contains 62 automatic tests for the guitar game, which all currently pass.
+This test.js contains 80 automatic tests for the guitar game, which all currently pass.
 
 [Guitar Game Jest Test File](/assets/js/guitar-game-script.test.js)
 
-GROWN-UPS TEST SCRIPT
+This test.js contains 13 automatic tests for the lessons page, which test the key-to-chord section and all tests currently pass.
 
-INDEX TEST SCRIPT
-
-LESSONS TEST SCRIPT
-
-EMAIL TEST SCRIPT
+[Lessons Page Jest Test File](/assets/js/lessons-script.test.js)
 
 ### Lighthouse
 
