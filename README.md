@@ -778,7 +778,7 @@ Eventually I emailed Songsterr themselves and asked for their advice, I had a re
 
 I then attempted to add an api for google maps so I could show parents where to park, but there was a very unprofessional looking message across the front which read "For developer purpose only" which I couldn't get rid of, so I didn't include it.
 
-I couldn't find an api relevent to this web application that would have enhanced it in any way and would have been easy to iterate through like the Star Wars api.
+I couldn't find an api relevent to this web application that would have enhanced it in any way.
 
 ### Responsive Design
 

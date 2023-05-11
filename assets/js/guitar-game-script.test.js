@@ -447,5 +447,3 @@ describe("allLetters works correctly, displaying a message when a non-letter is 
     });
 });
 //ALL PASS
-
-// ALL 93 TESTS PASS
