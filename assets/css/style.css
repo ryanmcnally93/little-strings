@@ -717,6 +717,9 @@ body {
     .pink {
         top: 7%;
     }
+    #submit-message {
+        width: 90%;
+    }
 }
 
 .item {
@@ -802,6 +805,8 @@ select {
     text-align: center;
     font-size: 18px;
     font-family: 'Balsamiq Sans', cursive;
+    margin-top: 10px;
+    margin-bottom: -50px;
 }
 
 #email-sent {
