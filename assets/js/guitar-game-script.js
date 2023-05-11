@@ -137,6 +137,7 @@ function changeChord() {
 }
 
 function cssChange() {
+    // I have used a longer if statement as opposed to a for loop due to the fact that there are two important classes that I don't want removed
     // This if statement removes the old classes, meaning that the image cannot be what it was before
     if (game.currentChord == "a") {
         document.getElementById('chord').classList.remove("c", "d", "e", "g");

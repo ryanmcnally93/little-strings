@@ -1004,6 +1004,10 @@ button:focus {
     display: inline-block;
 }
 
+#fullname:focus, #email:focus, #message:focus {
+    outline: 1px solid #3C6916;
+}
+
 #phone {
     margin: 70px auto 15px auto;
 }

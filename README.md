@@ -667,56 +667,119 @@ As you can see the speech image is now behind larry. I fixed this by adding posi
 
 <img src="assets/images/readme-images/fix-7.png" width="75%" alt="Correct layout" style="display: inherit; margin: auto; border-radius: 25px;">
 
-9). When testing the game, I noticed that entering the answers in capital letters (which is how they are displayed throughout the site so may well be how they are entered by users) gave a wrong answer and was not accepted.
+8). When testing the game, I noticed that entering the answers in capital letters (which is how they are displayed throughout the site so may well be how they are entered by users) gave a wrong answer and was not accepted.
 
 I fixed this by adding "lowerAnswer = userAnswer.toLowerCase();" and continuing the code using the output. This worked and both upper and lower case answers are now accepted.
 
-10). The if statement mentioned in bug 4 I felt was a little long-winded. Especially when we have for loops we can use.
+9). The if statement mentioned in bug 4 was a little long-winded. Especially when we have for loops we can use.
 
 In larrysMessage I decided to use a for loop to iterate through the three correct and wrong answers and make sure the correct message is being shown. I expect there is probably a way of doing this with less code but the result is the same either way.
 
-<img src="assets/images/readme-images/fix-10.png" width="75%" alt="For loop used instead" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/fix-9.png" width="75%" alt="For loop used instead" style="display: inherit; margin: auto; border-radius: 25px;">
 
-11). blue border after click, because of :focus outline, set to 0 and give rgb property
+10). I noticed a few of my elements had a border change to the colour blue after they were clicked on and focused on. The border properties however were completely normal so this was coming from somewhere else. This shade of blue wasn't in keeping with the rest of the site colours.
 
+<img src="assets/images/readme-images/bug-10.png" width="75%" alt="Blue 'border'" style="display: inherit; margin: auto; border-radius: 25px;">
 
-12). ccsChange // I have used a longer if statement ass opposed to a for loop due to the fact that there are two important classes that I don't want removed.
-    // I could still have used a for loop but would probably have been as complicated as this is, and I wanted to show I could achieve the same result
-    // in two different ways.
-Two tests not working for containing variables in correct and wrong answer arrays. I have screenshot for this one.
+Using Dev tools I eventually figured out this was a property called outline. On some elements I set the outline to none or 0, and on others, I gave the outline a colour the same as the border or another colour from the sites palette.
 
-13). I had to create two more states in the object game, old message, and new message.
+<img src="assets/images/readme-images/fix-10.png" width="75%" alt="Outline changed" style="display: inherit; margin: auto; border-radius: 25px;">
+
+11). Two tests continuously not working for the variables in correct and wrong answer arrays. The tests did not like the fact that they were variables, and I kept having issues with them not being declared in functions. Any time I tried to write code for the array of variables, it would return the following image, because the array had an "undefined" value.
+
+<img src="assets/images/readme-images/bug-11.png" width="75%" alt="Element is undefined" style="display: inherit; margin: auto; border-radius: 25px;">
+
+I wanted the generator to give me a different answer every time.
+
+I had to create two more states in the object game, old message, and new message.
 I used strings rather than variables in the correct and wrong choices arrays, defining what they were in the functions instead.
 I then created the random message generators, one for wrong, one for right, and two check functions to see if the results obtained were the same as before.
 Now, whenever a message is returned that is the same as before, the generator is run again, meaning that the same message does not appear twice in a row.
 There may well be a much less exhausting way to do this! But this is the way that I fixed the issue.
 
-14). I had an issue where the accordion just flash showed the result. I added the jquery script to my grown ups page and changed the javascript originally written by W3Schools, adding the jquery code so that they slide up and down instead.
+12). I had an issue where the accordion just flash showing the inputs underneath when clicked. I added the jquery script to my grown ups page and changed the javascript originally written by W3Schools, adding the jquery code so that they slide up and down instead.
 
-15). On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference betweem this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this css version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
+<img src="assets/images/readme-images/fix-12.png" width="75%" alt="The code that helped me" style="display: inherit; margin: auto; border-radius: 25px;">
 
-16). Lessons navbar displaying differently, because of all the bootstrap differences. I added some styling to parts of the navbar (padding right and left on navbardropdown to 0, padding-top 5% to list items, height declarations to stop there being differences on different pages).
+13). On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference betweem this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this css version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
 
-17). Tomislav_5P Helped with issue regarding the keys not updating the text underneath on lessons page. adding the change event listener solved this issue.
+<img src="assets/images/readme-images/bug-13.png" width="75%" alt="Bad indicators" style="display: inherit; margin: auto; border-radius: 25px;">
 
-18). Guitars either side of the form were absolute, which worked fine but when the accordions were clicked, and the form pushed down, the guitars stayed where they were, ruining the layout. I wanted the guitars to not appear above and below the titles, but rather be at the side of them, so I decided to put the titles inside the form, which had width: 33%, meaning the guitars could be position: relative and would move with the accordions.
+<br>
 
-19). Explain how and why of mouse over and out on index page! Could affect the circles when hovering over the button.
+<img src="assets/images/readme-images/fix-13.png" width="75%" alt="Good Indicators" style="display: inherit; margin: auto; border-radius: 25px;">
 
-20). I noticed that the burger icon lines were dark originally, not mixing well with my dark green background colour, I fixed this by changing one of the bootstrap classes from "navbar-light" to "navbar-dark", which gave the icon white lines. The button also didn't work, as it was calling on JQuery and that wasn't included within my head element, this has now been fixed.
+14). Tomislav_5P on Slack helped with an issue regarding the key-to-chord element not updating on lessons page. The code I had originally worked in the sense that the desired outcome was decided upon correctly, but the way in which I was event listening was wrong.
 
-Once clicked, the items originally presented themselves with the blue background going across the whole page, I fixed this by placing the background colour attibute to the navbar-nav element instead and adding border, padding and width to it.
+Adding the "change" event listener solved this issue.
 
-21). width property on page titles was pushing whole content phone sizes
+15). Guitars either side of the form were absolute, which worked fine but when the accordions were clicked, and the form pushed down, the guitars stayed where they were, ruining the layout. I wanted the guitars to not appear above and below the titles, but rather be at the side of them, so I decided to put the titles inside the form, which had width: 33%, meaning the guitars could be position: relative and would move with the accordions.
 
-22). Added javascript for show and in on bootstrap lessons navbar
+<img src="assets/images/readme-images/bug-15.png" width="75%" alt="Guitar-of-notes element covered by accordion" style="display: inherit; margin: auto; border-radius: 25px;">
 
-Game-box made pink, issues with centralisation using trick with %es (https://thoughtbot.com/blog/positioning)
-Larry bottom -30px; larrys-speech margin-left 30px;
+<br>
+
+<img src="assets/images/readme-images/fix-15.png" width="75%" alt="All elements visible" style="display: inherit; margin: auto; border-radius: 25px;">
+
+16). I wanted the guitar-game button on the index page to react in a fun way to kids when hovered over. Simple CSS hover changes were simply not working. I tried to say that when one element was hovered over it affected another, as although the button is hovered over, the circles change colour too.
+
+I decided the best way to achieve this was to write some JavaScript for the circles and normal css for the button.
+
+<img src="assets/images/readme-images/fix-16.png" width="75%" alt="JavaScript used on index.html" style="display: inherit; margin: auto; border-radius: 25px;">
+
+17). I noticed that the burger icon lines were dark originally, not mixing well with my dark green background colour, I fixed this by changing one of the bootstrap classes from "navbar-light" to "navbar-dark", which gave the icon white lines. The button also didn't work, as it was calling on JQuery and that wasn't included within my head element, this has now been fixed.
+
+<img src="assets/images/readme-images/bug-17.png" width="75%" alt="Toggler navbar original appearance" style="display: inherit; margin: auto; border-radius: 25px;">
+
+Once clicked, the items originally presented themselves with the blue background going across the whole page, I fixed this by removing the background colour and adding it to the navbar-nav element instead, adding border, padding and width to it.
+
+<img src="assets/images/readme-images/fix-17.png" width="75%" alt="Fixed small screen menu dropdown" style="display: inherit; margin: auto; border-radius: 25px;">
+
+18). On the lessons page, clicking the navbar toggler made the menu appear for a split second and then it disappeared again. I noticed after some DevTools digging that the class of "show" was not being added to navbarNavDropdown but instead, a class of "in", which would most likely be because of the extra bootstrap callings.
+
+<img src="assets/images/readme-images/bug-18.png" width="75%" alt="The 'in' class has been given" style="display: inherit; margin: auto; border-radius: 25px;">
+
+I decided to again add some JavaScript, which looked out for the "in" class being added and removed it, as well as adding the "show" class. A second click removes the "show" class making the menu invisible again.
+
+<img src="assets/images/readme-images/fix-18.png" width="75%" alt="The code I wrote to fix the issue" style="display: inherit; margin: auto; border-radius: 25px;">
+
+19). I also noticed when making responsive changes that the ".game-box" element was moving in a strange way when the page size was changed. I needed the box to be kept central, I made it pink so I could work on it in dev tools.
+
+<img src="assets/images/readme-images/bug-19.png" width="75%" alt="The pink box in the wrong position" style="display: inherit; margin: auto; border-radius: 25px;">
+
+I used the idea mentioned within [this link](https://thoughtbot.com/blog/positioning#centering-using-absolute-position) for my positional changes, giving items a left property of 50% and then a minus margin-left width that equalled half the width of the element, placing the element centrally.
+
+<img src="assets/images/readme-images/fix-19.png" width="75%" alt="The pink box in the right position" style="display: inherit; margin: auto; border-radius: 25px;">
+
+20). The most frustrating issue I had with this project was I forgot to use a template, so the gitignore file was not here. When doing the npm testing, I realised my applications speed reduced dramatically. The port preview speed was also affected. After spending hours waiting for loading times I finally got in touch with a tutor, who managed to get to the bottom of the issue. Node_modules had been pushed to my repository, making it huge in file size.
+
+<img src="assets/images/readme-images/bug-20.png" width="75%" alt="The node_modules folder was causing issues" style="display: inherit; margin: auto; border-radius: 25px;">
+
+The tutor helped me un-push it and after closing my workspace and restarting everything, I could see it was gone and the speed issues were rectified.
+
+<img src="assets/images/readme-images/fix-20.png" width="75%" alt="The repository without the node_modules folder" style="display: inherit; margin: auto; border-radius: 25px;">
+
+21). I attempted to add an image to my workspace that simply would not be accepted. Code Anywhere did not like it, so I posted in slack and received help from jo_ci, who told me my image file sizes were too large and gave me [this link](https://tinypng.com/) to fix the issue, which worked brilliantly.
+
+<img src="assets/images/readme-images/bug-21.png" width="75%" alt="Image file size issue" style="display: inherit; margin: auto; border-radius: 25px;">
+
+22). I had an issue with trying to split the carousel into two, with the textbox on the left and the image on the right. The textbox kept appearing on top of the image.
+
+<img src="assets/images/readme-images/bug-22.1.png" width="75%" alt="Carousel bug" style="display: inherit; margin: auto; border-radius: 25px;">
+
+I added the following code, which fixed the issue
+
+<img src="assets/images/readme-images/bug-22.2.png" width="75%" alt="The code I used" style="display: inherit; margin: auto; border-radius: 25px;">
+
+<br>
+
+<img src="assets/images/readme-images/fix-22.png" width="75%" alt="The carousel, working" style="display: inherit; margin: auto; border-radius: 25px;">
 
 ### Unfixed Bugs
 
 I would have preferred when playing the game on smaller screen sizes, for the whole game including Larry to be visible. As the keyboard rises taking half the screen away, this unfortunately is not possible.
+
+API STUFF
 
 ### Responsive Design
 

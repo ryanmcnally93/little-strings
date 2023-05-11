@@ -9,6 +9,7 @@ for (i = 0; i < acc.length; i++) {
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.nextElementSibling;
+    // This is the part written by me
     if (panel.style.display === "block") {
       $(panel).slideUp();
     } else {
