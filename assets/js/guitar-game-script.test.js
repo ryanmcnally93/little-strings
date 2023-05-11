@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage, randomChordGenerator, randomCorrectGenerator, randomWrongGenerator, checkIfCorrectIsSame, checkIfWrongIsSame } = require("./guitar-game-script");
+const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage, randomChordGenerator, randomCorrectGenerator, randomWrongGenerator, checkIfCorrectIsSame, checkIfWrongIsSame, allLetter } = require("./guitar-game-script");
 
 // This is listening for any error alerts
 jest.spyOn(window, "alert").mockImplementation(() => { });
@@ -63,10 +63,15 @@ describe("game object contains correct keys", () => {
 
 describe("betweenGameAppearance works correctly", () => {
     beforeAll(() => {
+        game.gameTurn = 2;
+        game.LarrysMessage = "W1";
         betweenGameAppearance();
     });
     test('larrysMessage is an empty string', () => {
         expect(game.larrysMessage).toEqual("");
+    });
+    test("gameTurn set to 0", () => {
+        expect(game.gameTurn).toEqual(0);
     });
     test('#play-button display property should be empty, cancelling out the previous display: none property', () => {
         expect(document.getElementById('play-button').style.display).toBe("");
@@ -92,6 +97,11 @@ describe("newGame works correctly", () => {
         game.gameTurn = 9;
         document.getElementById('score').innerText = '42';
         newGame();
+    });
+    test("removes class that adds css styling to 'letter's only please' comment", () => {
+        document.getElementById('larry-welcome').classList.add('finished-game-message-margin-small');
+        newGame();
+        expect(document.getElementById('larry-welcome').classList.contains('finished-game-message-margin-small')).toBe(false);
     });
     test("should set game score to zero", () => {
         expect(game.score).toEqual(0);
@@ -133,13 +143,21 @@ describe("updateScore works correctly", () => {
     beforeAll(() => {
         game.score = 3;
         game.score++;
+        game.gameTurn = 2;
+        game.gameTurn++;
         updateScore();
     });
-    test("Update score should have changed game.score to 4", () => {
+    test("game.score should be 4", () => {
         expect(game.score).toEqual(4);
     });
-    test("The innertext for the element with the if of score should have changed", () => {
+    test("The innertext for the element with the ID of score should have changed", () => {
         expect(document.getElementById('score').innerText).toBe(4);
+    });
+    test("game.gameTurn should be 3", () => {
+        expect(game.gameTurn).toEqual(3);
+    });
+    test("The innertext for the element with the ID of round should have changed", () => {
+        expect(document.getElementById('round').innerText).toBe(3);
     });
 });
 // ALL PASS
@@ -228,48 +246,93 @@ describe("checkAnswer works correctly with wrong answers", () => {
 describe("finishGame works correctly", () => {
     test("Correct message should be shown when score is 0", () => {
         newGame();
+        game.gameTurn = 11;
         game.score = 0;
-        game.gameTurn = 10;
-        changeChord();
+        finishGame();
         expect(document.getElementById('larry-welcome').textContent).toBe("Practice makes perfect! You've scored " + game.score + "/10!");
     });
     test('finishGame should call the betweenGameAppearance function', () => {
+        newGame();
+        game.gameTurn = 11;
+        finishGame();
         expect(betweenGameAppearance).toHaveBeenCalled;
     });
     test("Correct message should be shown when score is 4", () => {
-        newGame()
+        newGame();
+        game.gameTurn = 11;
         game.score = 4
-        game.gameTurn = 10
-        changeChord();
+        finishGame();
         expect(document.getElementById('larry-welcome').textContent).toEqual("Practice makes perfect! You've scored " + game.score + "/10!");
     });
     test("Correct message should be shown when score is 5", () => {
-        newGame()
+        newGame();
+        game.gameTurn = 11;
         game.score = 5
-        game.gameTurn = 10
-        changeChord();
+        finishGame();
         expect(document.getElementById('larry-welcome').textContent).toEqual("Good Score! See if you can beat it! You've scored " + game.score + "/10!");
     });
     test("Correct message should be shown when score is 7", () => {
-        newGame()
+        newGame();
+        game.gameTurn = 11;
         game.score = 7
-        game.gameTurn = 10
-        changeChord();
+        finishGame();
         expect(document.getElementById('larry-welcome').textContent).toEqual("Good Score! See if you can beat it! You've scored " + game.score + "/10!");
     });
     test("Correct message should be shown when score is 8", () => {
         newGame();
+        game.gameTurn = 11;
         game.score = 8
-        game.gameTurn = 10
-        changeChord();
+        finishGame();
         expect(document.getElementById('larry-welcome').textContent).toEqual("Almost perfect! You've scored " + game.score + "/10!");
     });
     test("Correct message should be shown when score is 10", () => {
-        newGame()
+        newGame();
+        game.gameTurn = 11;
         game.score = 10
-        game.gameTurn = 10
-        changeChord();
+        finishGame();
         expect(document.getElementById('larry-welcome').textContent).toEqual("Wow! Congratulations! You've scored " + game.score + "/10!");
+    });
+    test('Should make sure correct-one is not displayed', () => {
+        newGame();
+        game.gameTurn = 11;
+        document.getElementById('larry-correct-one').style.display = "block";
+        finishGame();
+        expect(document.getElementById('larry-correct-one').style.display).toEqual('none');
+    });
+    test('Should make sure correct-two is not displayed', () => {
+        newGame();
+        game.gameTurn = 11;
+        document.getElementById('larry-correct-two').style.display = "block";
+        finishGame();
+        expect(document.getElementById('larry-correct-two').style.display).toEqual('none');
+    });
+    test('Should make sure correct-three is not displayed', () => {
+        newGame();
+        game.gameTurn = 11;
+        document.getElementById('larry-correct-three').style.display = "block";
+        finishGame();
+        expect(document.getElementById('larry-correct-three').style.display).toEqual('none');
+    });
+    test('Should make sure wrong-one is not displayed', () => {
+        newGame();
+        game.gameTurn = 11;
+        document.getElementById('larry-wrong-one').style.display = "block";
+        finishGame();
+        expect(document.getElementById('larry-wrong-one').style.display).toEqual('none');
+    });
+    test('Should make sure wrong-two is not displayed', () => {
+        newGame();
+        game.gameTurn = 11;
+        document.getElementById('larry-wrong-two').style.display = "block";
+        finishGame();
+        expect(document.getElementById('larry-wrong-two').style.display).toEqual('none');
+    });
+    test('Should make sure wrong-three is not displayed', () => {
+        newGame();
+        game.gameTurn = 11;
+        document.getElementById('larry-wrong-three').style.display = "block";
+        finishGame();
+        expect(document.getElementById('larry-wrong-three').style.display).toEqual('none');
     });
 });
 // ALL PASS
@@ -364,9 +427,25 @@ describe("Players can't cheat", () => {
         expect(window.alert).toBeCalledWith("ERROR The game is in play! Don't cheat!");
     });
 });
+// ALL PASS
 
-describe("Incorrect input checks", () => {
-
+describe("allLetters works correctly, displaying a message when a non-letter is entered", () => {
+    test("answer-box contains the number '1'", () => {
+        document.getElementById('answer-box').value = "1";
+        allLetter();
+        expect(document.getElementById('larry-welcome').textContent).toEqual('Letters only please!');
+    });
+    test("answer-box contains the character '?'", () => {
+        document.getElementById('answer-box').value = "?";
+        allLetter();
+        expect(document.getElementById('larry-welcome').textContent).toEqual('Letters only please!');
+    });
+    test("answer-box contains the symbol '@'", () => {
+        document.getElementById('answer-box').value = "@";
+        allLetter();
+        expect(document.getElementById('larry-welcome').textContent).toEqual('Letters only please!');
+    });
 });
+//ALL PASS
 
-// ALL 75 TESTS PASS
+// ALL 93 TESTS PASS

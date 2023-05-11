@@ -73,6 +73,7 @@ let game = {
 
 function betweenGameAppearance() {
     game.larrysMessage = "";
+    // Making the gameTurn 0 at this point means that the alert will not pop up when chord boxes are clicked
     game.gameTurn = 0;
     // Making the game components invisible and displaying the chords, so the user can practice
     document.getElementById('play-button').style.display = null;
@@ -89,6 +90,7 @@ function newGame() {
     document.getElementById('larry-welcome').style.display = "none";
     document.getElementById('larry-first-move').style.display = "block";
     document.getElementById('play-button').style.display = "none";
+    // Removing 'Letter's only please' message CSS
     document.getElementById('larry-welcome').classList.remove('finished-game-message-margin-small');
     // Taking away the chords so the user cannot cheat
     document.getElementById('chords-appear').style.display = "none";
@@ -160,7 +162,8 @@ function checkAnswer() {
     // Gets rid of the 'question' message given on the first chord
     document.getElementById('larry-first-move').style.display = "none";
     document.getElementById('larry-welcome').style.display = "none";
-
+    let message = document.getElementById('larry-welcome');
+    message.classList.remove('letters-only-please');
     if (isCorrect) {
         randomCorrectGenerator()
         // This if statement takes the values given in the larry correct array, and assigns them to the correct id's
@@ -193,6 +196,7 @@ function checkAnswer() {
         }, 500);
     }
     larryMessage();
+    // Checking whether input was a letter or not
     allLetter();
     // Starting the next move
     randomChordGenerator();
@@ -326,4 +330,4 @@ function allLetter() {
     }
 }
 
-module.exports = { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage, randomChordGenerator, randomCorrectGenerator, randomWrongGenerator, checkIfCorrectIsSame, checkIfWrongIsSame };
+module.exports = { game, allLetter, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage, randomChordGenerator, randomCorrectGenerator, randomWrongGenerator, checkIfCorrectIsSame, checkIfWrongIsSame };

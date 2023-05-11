@@ -243,6 +243,9 @@ li {
     .page-links, .footer-box {
         width: 808px !important;
     }
+    .letters-only-please {
+        bottom: 62% !important;
+    }
 }
 
 /* Lessons page IPad responsiveness */
@@ -1226,6 +1229,9 @@ button:focus {
         margin: auto !important;
         left: 0 !important;
     }
+    .letters-only-please {
+        bottom: 65% !important;
+    }
 }
 
 @media (min-width: 768px) {
@@ -1234,9 +1240,6 @@ button:focus {
     }
     #navbarNavDropdown {
         margin-top: 20px !important;
-    }
-    .letters-only-please {
-        bottom: 65% !important;
     }
 }
 
