@@ -12,6 +12,21 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function() {
             if (this.getAttribute("data-type") === "submit") {
                 checkAnswer();
+            } else if (this == document.getElementById("a-chord") && game.gameTurn > 0) {
+                console.log("ERROR The game is in play! Don't cheat!");
+                alert("ERROR The game is in play! Don't cheat!")
+            } else if (this == document.getElementById("c-chord") && game.gameTurn > 0) {
+                console.log("ERROR The game is in play! Don't cheat!");
+                alert("ERROR The game is in play! Don't cheat!")
+            } else if (this == document.getElementById("d-chord") && game.gameTurn > 0) {
+                console.log("ERROR The game is in play! Don't cheat!");
+                alert("ERROR The game is in play! Don't cheat!")
+            } else if (this == document.getElementById("e-chord") && game.gameTurn > 0) {
+                console.log("ERROR The game is in play! Don't cheat!");
+                alert("ERROR The game is in play! Don't cheat!")
+            } else if (this == document.getElementById("g-chord") && game.gameTurn > 0) {
+                console.log("ERROR The game is in play! Don't cheat!");
+                alert("ERROR The game is in play! Don't cheat!")
             } else if (this == document.getElementById("a-chord")) {
                 game.currentChord = "a";
                 cssChange();
@@ -58,6 +73,7 @@ let game = {
 
 function betweenGameAppearance() {
     game.larrysMessage = "";
+    game.gameTurn = 0;
     // Making the game components invisible and displaying the chords, so the user can practice
     document.getElementById('play-button').style.display = null;
     document.getElementById('chords-appear').style.display = null;
@@ -143,6 +159,7 @@ function checkAnswer() {
     let isCorrect = lowerAnswer == actualAnswer;
     // Gets rid of the 'question' message given on the first chord
     document.getElementById('larry-first-move').style.display = "none";
+    document.getElementById('larry-welcome').style.display = "none";
 
     if (isCorrect) {
         randomCorrectGenerator()
@@ -156,8 +173,6 @@ function checkAnswer() {
         }
         // The answer is correct, so the score is increased
         game.score++;
-        // Starting the next move
-        randomChordGenerator();
         // Green shadow on the image, more verification that the answer inserted was correct.
         document.getElementById('chord').classList.add('chord-shadow-green');
         setTimeout(() => {
@@ -172,13 +187,15 @@ function checkAnswer() {
         } else {
             game.larrysMessage = document.getElementById('larry-wrong-three');
         }
-        randomChordGenerator();
         document.getElementById('chord').classList.add('chord-shadow-red');
         setTimeout(() => {
             document.getElementById('chord').classList.remove('chord-shadow-red');
         }, 500);
     }
     larryMessage();
+    allLetter();
+    // Starting the next move
+    randomChordGenerator();
 }
 
 function randomCorrectGenerator() {
@@ -257,6 +274,12 @@ function finishGame() {
     // This if statement controls the finishing statement made by Larry
     // The response he produces depends on the end score of the user
     if (game.gameTurn == 11) {
+        document.getElementById('larry-correct-one').style.display = "none";
+        document.getElementById('larry-correct-two').style.display = "none";
+        document.getElementById('larry-correct-three').style.display = "none";
+        document.getElementById('larry-wrong-one').style.display = "none";
+        document.getElementById('larry-wrong-two').style.display = "none";
+        document.getElementById('larry-wrong-three').style.display = "none";
         let message = document.getElementById('larry-welcome');
         if (game.score < 5) {
             message.textContent ="Practice makes perfect! You've scored " + game.score + "/10!";
@@ -283,6 +306,23 @@ function finishGame() {
             message.classList.add('finished-game-message-margin-small');
             betweenGameAppearance();
         }
+    }
+}
+
+function allLetter() {
+    let message = document.getElementById('larry-welcome');
+    var letters = /^[A-Za-z]+$/;
+    if (document.getElementById('answer-box').value.match(letters)) {
+        return true;
+    } else {
+        document.getElementById('larry-wrong-one').style.display = "none";
+        document.getElementById('larry-wrong-two').style.display = "none";
+        document.getElementById('larry-wrong-three').style.display = "none";
+        message.textContent = "Letters only please!";
+        message.style.display = "block";
+        message.classList.add('letters-only-please');
+        console.log(document.getElementById('answer-box').value);
+        return false;
     }
 }
 

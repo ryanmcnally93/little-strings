@@ -4,6 +4,9 @@
 
 const { game, newGame, updateScore, changeChord, cssChange, checkAnswer, finishGame, betweenGameAppearance, larryMessage, randomChordGenerator, randomCorrectGenerator, randomWrongGenerator, checkIfCorrectIsSame, checkIfWrongIsSame } = require("./guitar-game-script");
 
+// This is listening for any error alerts
+jest.spyOn(window, "alert").mockImplementation(() => { });
+
 beforeAll(() => {
     let fs = require("fs");
     let fileContents = fs.readFileSync("guitar-game.html", "utf-8");
@@ -329,12 +332,41 @@ describe("checkIfWrongIsSame works correctly", () => {
 });
 // ALL PASS
 
-// MAKE SURE ERROR MESSAGES WORK AND ANY INPUT IS COVERED.
-// OUTSIDE THE BOX TESTS
+describe("Players can't cheat", () => {
+    test("Chord box 'a' can't be clicked when game is in play", () => {
+        newGame();
+        document.getElementById('a-chord').click();
+        // Alert listener
+        expect(window.alert).toBeCalledWith("ERROR The game is in play! Don't cheat!");
+    });
+    test("Chord box 'c' can't be clicked when game is in play", () => {
+        newGame();
+        document.getElementById('c-chord').click();
+        // Alert listener
+        expect(window.alert).toBeCalledWith("ERROR The game is in play! Don't cheat!");
+    });
+    test("Chord box 'd' can't be clicked when game is in play", () => {
+        newGame();
+        document.getElementById('d-chord').click();
+        // Alert listener
+        expect(window.alert).toBeCalledWith("ERROR The game is in play! Don't cheat!");
+    });
+    test("Chord box 'e' can't be clicked when game is in play", () => {
+        newGame();
+        document.getElementById('e-chord').click();
+        // Alert listener
+        expect(window.alert).toBeCalledWith("ERROR The game is in play! Don't cheat!");
+    });
+    test("Chord box 'g' can't be clicked when game is in play", () => {
+        newGame();
+        document.getElementById('g-chord').click();
+        // Alert listener
+        expect(window.alert).toBeCalledWith("ERROR The game is in play! Don't cheat!");
+    });
+});
 
-// Visual tests
+describe("Incorrect input checks", () => {
 
-// Shadows on chordbox
-// Correct messages being shown
-// 3 Random generators produce different results everytime
-// Answer has been accepted which means uppercase also works!
+});
+
+// ALL 75 TESTS PASS

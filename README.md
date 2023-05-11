@@ -598,6 +598,13 @@ Accordion testing has also been done automatically.
 
 All Guitar Game testing has been done automatically
 
+// Visual tests
+
+// Shadows on chordbox
+// Correct messages being shown
+// 3 Random generators produce different results everytime
+// Answer has been accepted which means uppercase also works!
+
 ### Fixed Bugs
 
 This is a detailed log of the issues I ran into whilst coding my first project, and how I overcame them.

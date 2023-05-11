@@ -1215,6 +1215,9 @@ button:focus {
     .finished-game-message-margin-small {
         bottom: 10% !important;
     }
+    .letters-only-please {
+        bottom: 12% !important;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 950px) {
@@ -1231,6 +1234,9 @@ button:focus {
     }
     #navbarNavDropdown {
         margin-top: 20px !important;
+    }
+    .letters-only-please {
+        bottom: 65% !important;
     }
 }
 
