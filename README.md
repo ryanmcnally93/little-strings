@@ -226,8 +226,6 @@ I spoke to three different potential users regarding the website. One was a pare
 
 #### Q1 What makes a good website experience for children?
 
-TO DO
-
 Parent of a young child:
 
 - "Response"
@@ -779,7 +777,13 @@ I added the following code, which fixed the issue
 
 I would have preferred when playing the game on smaller screen sizes, for the whole game including Larry to be visible. As the keyboard rises taking half the screen away, this unfortunately is not possible.
 
-API STUFF
+I really wanted to include an api and my original thought was to add one on the lessons page. I was hoping to have an input that the user could insert a song name into, which would return the chords for that song. The best api I could find to do this was called Songsterr. I spent two whole days attempting to iterate through their arrays to find the relevant information; contacing both college and technical tutors to try and get the api to work.
+
+Eventually I emailed Songsterr themselves and asked for their advice, I had a reply two days later to find that their service wasn't provided anymore, and the api wasn't live.
+
+I then attempted to add an api for google maps so I could show parents where to park, but there was a very unprofessional looking message across the front which read "For developer purpose only" which I couldn't get rid of, so I didn't include it.
+
+I couldn't find an api relevent to this web application that would have enhanced it in any way and would have been easy to iterate through like the Star Wars api.
 
 ### Responsive Design
 
@@ -805,40 +809,69 @@ Making the guitar game available on small screens posed a lot of challenges. I f
 
 ### Content 
 
-- The code I used for the accordion, I got from [W3S.](https://www.w3schools.com/howto/howto_js_accordion.asp) I used their template and added my own questions and answers.
+- The code I used for the accordion, I got from [W3S.](https://www.w3schools.com/howto/howto_js_accordion.asp) I used their template and added my own questions and answers, and some JQuery.
 
 - The carousel code was also found on [W3S.](https://www.w3schools.com/bootstrap/bootstrap_carousel.asp) This code uses bootstrap classes to achieve the carousel. I decided to create the divs inside the carousel to split it in half, with information as well as pictures, but the code that makes it work is from bootstrap.
 
-- Whenever I needed to crop an image quickly, I used [iloveimg.](https://www.iloveimg.com/crop-image)
+- The email javascipt was written as I followed the Code Institute course videos, and so has a lot of similarities.
 
-- The accordion was originally copied and pasted from [W3S.](https://www.w3schools.com/howto/howto_js_accordion.asp), although changes were made afterwards.
+- I got the shields idea at the start of my readme from Kera Cudmore's [Quiz Arms Repo.](https://github.com/kera-cudmore/TheQuizArms)
 
-- The email javascipt was written as I followed the Code Institute course videos, and have a lot of similarities.
+- And this is the site for [Shields.](https://shields.io/category/analysis)
 
-https://github.com/kera-cudmore/TheQuizArms
+- I used information on this site for [central positioning.](https://thoughtbot.com/blog/positioning#centering-using-absolute-position)
 
-https://shields.io/category/analysis
+- I compressed images using [tinypng](https://tinypng.com/) given to me by Jo_ci on Slack.
+
+- I resized images using this [simple image resizer.](https://www.simpleimageresizer.com/upload)
+
+- In order to get my guitar game going, I watched the creation of the simple Simon game created by Code Institute and a lot of my ideas came from that.
 
 ### Media
-EXAMPLES
-- All of the following images are from pexels.com, below is a list of the image names and the author who posted them on [pexels.com.](https://pexels.com)
+- All of the following images are from [pexels.](https://pexels.com), below is a list of the image names and the author who posted them.
 
-- 
+- [group-lesson.jpeg](/assets/images/group-lesson.jpeg) - Pavel Danilyuk
 
-- All of the following images are from pngwing.com/ below is a list of the image names and the author who posted them on [pngwing.com.](https://pexels.com)
+- [home-lesson.jpeg](/assets/images/home-lesson.jpeg) - Pavel Danilyuk
 
-- 
+- [home-one.png](/assets/images/home-one.png) - Vlada Karpovich
 
-- Canva creations, chords and logos.
+- [home-two.png](/assets/images/home-two.png) - Yan Krukau
+
+- [one-on-one-lesson.jpeg](/assets/images/one-on-one-lesson.jpeg) - Gustavo Fring
+
+- All of the following images are from [pngwing.](https://pngwing.com) below is a list of the image names, although no authors have been credited on pngwing's webpage.
+
+- [background-notes.png](/assets/images/background-notes.png)
+
+- [blue.png](/assets/images/blue.png)
+
+- [green.png](/assets/images/green.png)
+
+- [guitar-of-notes.png](/assets/images/guitar-of-notes.png)
+
+- [larry.png](/assets/images/larry.png)
+
+- [pink.png](/assets/images/pink.png)
+
+- [speech.png](/assets/images/speech.png)
+
+- [speech-two.png](/assets/images/speech-two.png)
+
+- [yellow.png](/assets/images/yellow.png)
+
+- The two logos and five chord images were created by me on [Canva.](https://www.canva.com/)
+
+- All of the images created for this readme were screenshots from my MacBook, created by me.
 
 ### Acknowledgements
 
 -   My Mentor Jubril Akolade for continuous helpful feedback.
 
--   My college contact Ben Smith.
+-   My college contact Ben Smith for his support throughout.
 
--   My other college contact Pasquale Fasulo for his support throughout.
+-   My other college contact Pasquale Fasulo for his support too.
 
--   Tutor support and the Slack community at Code Institute for their help too, namely Tomislav 5P, OTHERS? and Kera Cudmore who helped answer my questions regularly.
+-   Tutor support and the Slack community at Code Institute for their help, namely Tomislav 5P, Jo_ci, Lavadax and Kera Cudmore who helped answer my questions regularly.
 
 This readme.md was spellchecked using the spell checker extension for Chrome.
