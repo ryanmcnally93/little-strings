@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="Little Strings Grown Ups Page">
+    <meta name="description" content="Little Strings Grown Ups Page">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,15 +10,6 @@
     <script src="https://kit.fontawesome.com/2e8f9e537f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
-    <!--Taken from https://www.emailjs.com/docs/sdk/installation/-->
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-    <script type="text/javascript">
-        (function(){
-        emailjs.init("ja2GRBd8JoosGkPLf");
-        })();
-    </script>
     <title>Little Strings | Grown Ups</title>
 </head>
 <body>
@@ -81,7 +72,7 @@
 
         <div class="row">
             <div class="guitar-of-notes-box">
-                <img src="./assets/images/guitar-of-notes.png" alt="A guitar shape made entirely of musical notes" class="guitar-of-notes">
+                <img src="./assets/images/guitar-of-notes.webp" alt="A guitar shape made entirely of musical notes" class="guitar-of-notes">
             </div>
 
             <form class="contactus-form" onsubmit="return sendMail(this);" method="POST">
@@ -97,7 +88,7 @@
                 <div class="title-box" id="form-title-2"><p class="my-h2" id="phone">Or Phone<br>0123 456 7890</p></div>
             </form>
             <div class="guitar-of-notes-box" id="right-guitar">
-                <img src="./assets/images/guitar-of-notes.png" alt="A guitar shape made entirely of musical notes" class="guitar-of-notes">
+                <img src="./assets/images/guitar-of-notes.webp" alt="A guitar shape made entirely of musical notes" class="guitar-of-notes">
             </div>
     
         <div class="background-image" title="Circle of musical notes"></div>
@@ -111,5 +102,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script src="./assets/js/grown-ups-script.js"></script>
     <script src="./assets/js/send-email.js"></script>
+    <!--Taken from https://www.emailjs.com/docs/sdk/installation/-->
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+        emailjs.init("ja2GRBd8JoosGkPLf");
+        })();
+    </script>
 </body>
 </html>

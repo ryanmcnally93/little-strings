@@ -820,6 +820,8 @@ Making the guitar game available on small screens posed a lot of challenges. I f
 
 - I resized images using this [simple image resizer.](https://www.simpleimageresizer.com/upload)
 
+- I changed the format of my images from jpg, png and jpeg to webp using [ezgif.](https://ezgif.com/png-to-webp)
+
 - In order to get my guitar game going, I watched the creation of the simple Simon game created by Code Institute and a lot of my ideas came from that.
 
 ### Media

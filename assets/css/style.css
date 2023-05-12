@@ -23,7 +23,7 @@
 }
 
 .background-image {
-    background: url(../images/background-notes.png) no-repeat center center;
+    background: url(../images/background-notes.webp) no-repeat center center;
     position: fixed;
     top: 0;
     z-index: 0;
@@ -42,7 +42,7 @@
 }
 
 .logo {
-    background: url(../images/logo.png) no-repeat center left;
+    background: url(../images/logo.webp) no-repeat center left;
     height: 120px;
     margin: auto;
     width: 290px;
@@ -52,7 +52,7 @@
 }
 
 .logo:hover {
-    background: url(../images/logo-color-change.png) no-repeat center left;
+    background: url(../images/logo-color-change.webp) no-repeat center left;
 }
 
 #navbarNavDropdown {
@@ -338,7 +338,7 @@ section {
     background-color: #E2F89C;
     color:#3C6916;
     border: 2px solid;
-    padding: 5px 6px;
+    padding: 5px 4px;
     z-index: 2;
 }
 
@@ -418,11 +418,11 @@ section {
     }
 
     .logo {
-        background: url(../images/logosmaller.png) no-repeat center left;
+        background: url(../images/logosmaller.webp) no-repeat center left;
     }
     
     .logo:hover {
-        background: url(../images/changedlogosmaller.png) no-repeat center left;
+        background: url(../images/changedlogosmaller.webp) no-repeat center left;
     }
 }
 
@@ -454,12 +454,12 @@ section {
 }
 
 #home-image-one {
-    background: url(../images/home-one.png) no-repeat bottom center;
+    background: url(../images/home-one.webp) no-repeat bottom center;
     margin-left: 40px;
 }
 
 #home-image-two {
-    background: url(../images/home-two.png) no-repeat bottom center;
+    background: url(../images/home-two.webp) no-repeat bottom center;
     position: absolute;
     right: 0;
     margin-right: 40px;
@@ -1190,19 +1190,19 @@ button:focus {
         display: block !important;
     }
     .a {
-        background: url(../images/a-smaller.png) no-repeat bottom center !important;
+        background: url(../images/a-smaller.webp) no-repeat bottom center !important;
     }
     .c {
-        background: url(../images/c-smaller.png) no-repeat bottom center !important;
+        background: url(../images/c-smaller.webp) no-repeat bottom center !important;
     }
     .d {
-        background: url(../images/d-smaller.png) no-repeat bottom center !important;
+        background: url(../images/d-smaller.webp) no-repeat bottom center !important;
     }
     .e {
-        background: url(../images/e-smaller.png) no-repeat bottom center !important;
+        background: url(../images/e-smaller.webp) no-repeat bottom center !important;
     }
     .g {
-        background: url(../images/g-smaller.png) no-repeat bottom center !important;
+        background: url(../images/g-smaller.webp) no-repeat bottom center !important;
     }
     #chords-appear {
         width: 100%;
@@ -1416,23 +1416,23 @@ button:focus {
 }
 
 .a {
-    background: url(../images/a.png) no-repeat bottom center;
+    background: url(../images/a.webp) no-repeat bottom center;
 }
 
 .c {
-    background: url(../images/c.png) no-repeat bottom center;
+    background: url(../images/c.webp) no-repeat bottom center;
 }
 
 .d {
-    background: url(../images/d.png) no-repeat bottom center;
+    background: url(../images/d.webp) no-repeat bottom center;
 }
 
 .e {
-    background: url(../images/e.png) no-repeat bottom center;
+    background: url(../images/e.webp) no-repeat bottom center;
 }
 
 .g {
-    background: url(../images/g.png) no-repeat bottom center;
+    background: url(../images/g.webp) no-repeat bottom center;
 }
 
 .chord-shadow-green {
