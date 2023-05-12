@@ -93,7 +93,7 @@
         position: absolute;
         top: 8px;
     }
-    #lessons-navbar-nav {
+    #learning-navbar-nav {
         left: 19px !important;
         padding: 5px 20px !important;
         top: -1px !important;
@@ -154,7 +154,7 @@
     height: 62px;
 }
 
-.lessons-li {
+.learning-li {
     padding-top: 5px;
 }
 
@@ -250,7 +250,7 @@ li {
     }
 }
 
-/* Lessons page IPad responsiveness */
+/* Learning page IPad responsiveness */
 @media (min-width: 768px) and (max-width: 950px) {
     .carousel-box {
         width: 90%;
@@ -568,9 +568,9 @@ section {
     color: #3C6916;
 }
 
-/*Lessons*/
+/*Learning*/
 @media (max-width: 767px) {
-    .lessons-carousel-images {
+    .learning-carousel-images {
         display: none !important;
     }
 
@@ -614,7 +614,7 @@ section {
     #javascript-key {
         font-size: 32px;
     }
-    .lessons-pages {
+    .learning-pages {
         margin: 0;
     }
 }
@@ -639,17 +639,17 @@ body {
     border-bottom: none;
 }
 
-#lessons-image-one {
+#learning-image-one {
     width: 50%;
     display: inline-block;
 }
 
-#lessons-image-two {
+#learning-image-two {
     width: 50%;
     display: inline-block;
 }
 
-#lessons-image-three {
+#learning-image-three {
     width: 50%;
     display: inline-block;
 }
@@ -792,7 +792,7 @@ select {
     position: relative;
 }
 
-#contactus-button-lessons {
+#contactus-button-learning {
     background-color: #3C6916;
     border-radius: 25px;
     color: #E2F89C;
@@ -824,7 +824,7 @@ select {
     margin-top: 10px;
 }
 
-#contactus-button-lessons:hover {
+#contactus-button-learning:hover {
     background-color: #C2E6F5;
     color:#3C6916;
 }
@@ -1585,7 +1585,7 @@ footer {
     position: relative;
 }
 
-#lessons-footer-box {
+#learning-footer-box {
     height: 90px;
 }
 
