@@ -1,94 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="description" content="Little Strings Guitar Game">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" type="text/css">
-    <script src="https://kit.fontawesome.com/2e8f9e537f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./assets/css/style.css">
+  <head>
+    <meta name="description" content="Little Strings Guitar Game" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+      type="text/css"
+    />
+    <script
+      src="https://kit.fontawesome.com/2e8f9e537f.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Little Strings | Guitar Game</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div id="logo-box"><a class="logo" href="index.html" aria-label="Home" title="The Little Strings Logo"></a></div>
-        <div class="row no-gutters navbar-expand-md navbar-dark">
+      <div id="logo-box">
+        <a
+          class="logo"
+          href="index.html"
+          aria-label="Home"
+          title="The Little Strings Logo"
+        ></a>
+      </div>
+      <div class="row no-gutters navbar-expand-md navbar-dark">
+        <button
+          id="burger-icon"
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <button id="burger-icon" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <div class="page-links">
-                    <nav class="navbar">
-                        <ul class="list-inline navbar-nav">
-                            <li>
-                                <a class="pages nav-item" id="home" href="index.html" aria-label="Home"><span><i class="fa-solid fa-house"></i> Home</span></a></li>
-                            <li>
-                                <a class="pages nav-item" id="learning" href="lessons.html" aria-label="Learning"><span><i class="fa-solid fa-graduation-cap"></i> Learning</span></a></li>
-                            <li>
-                                <a class="pages nav-item" id="grown-ups" href="grown-ups.html" aria-label="Grown Ups"><span><i class="fa-solid fa-people-roof"></i> Grown Ups</span></a></li>
-                            <li>
-                                <a class="pages nav-item" id="guitar-game" href="guitar-game.html" aria-label="Guitar Game"><span class="active2"><i class="fa-solid fa-guitar"></i> Guitar Game</span></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <div class="page-links">
+            <nav class="navbar">
+              <ul class="list-inline navbar-nav">
+                <li>
+                  <a
+                    class="pages nav-item"
+                    id="home"
+                    href="index.html"
+                    aria-label="Home"
+                    ><span><i class="fa-solid fa-house"></i> Home</span></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="pages nav-item"
+                    id="learning"
+                    href="lessons.html"
+                    aria-label="Learning"
+                    ><span
+                      ><i class="fa-solid fa-graduation-cap"></i> Learning</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="pages nav-item"
+                    id="grown-ups"
+                    href="grown-ups.html"
+                    aria-label="Grown Ups"
+                    ><span
+                      ><i class="fa-solid fa-people-roof"></i> Grown Ups</span
+                    ></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="pages nav-item"
+                    id="guitar-game"
+                    href="guitar-game.html"
+                    aria-label="Guitar Game"
+                    ><span class="active2"
+                      ><i class="fa-solid fa-guitar"></i> Guitar Game</span
+                    ></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
         </div>
+      </div>
     </header>
 
     <section>
-        <div class="title-box"><h2 class="page-titles">Guitar Game</h2></div>
-        <div class="other-box" id="width-title"><h2 class="my-h2" id="title-larry">With Larry the guitar playing T-Rex!</h2></div>
+      <div class="title-box"><h2 class="page-titles">Guitar Game</h2></div>
+      <div class="other-box" id="width-title">
+        <h2 class="my-h2" id="title-larry">
+          With Larry the guitar playing T-Rex!
+        </h2>
+      </div>
 
-        <div class="game-box"></div>
-        <div id="show-chords">
-                <div class="game game-chord a" id="chord" title="Guitar Chord"></div>
-                <div id ="score-box" class="game score">Round <br id="score-break"><p id="round">0</p>/10<br>Score <p id="score">0</p></div>
-                <div id="play-button" onclick="newGame()" aria-label="Play Game">Play</div>
-                <div id="larrys-speech">
-                    <img src="./assets/images/speech.webp" alt="Larry's speech bubble" id="speech">
-                    <img src="./assets/images/speech-two.webp" alt="Larry's smaller speech bubble" id="speech-two">
-                    <p id="larry-welcome" class="larry-messages">Welcome to the guitar game! Memorise the five chords below and when you're confident, press play!</p>
-                    <p id="larry-first-move" class="larry-messages">Can you figure out this chord?</p>
-                    <p id="larry-correct-one" class="larry-messages">Wow! Look at you go!</p>
-                    <p id="larry-correct-two" class="larry-messages">Incredible! You smashed that one!</p>
-                    <p id="larry-correct-three" class="larry-messages">Amazing! That one was really hard!</p>
-                    <p id="larry-wrong-one" class="larry-messages">Oh dear! That was the wrong chord</p>
-                    <p id="larry-wrong-two" class="larry-messages">Oh no! Better luck with the next one</p>
-                    <p id="larry-wrong-three" class="larry-messages">That's wrong I'm afraid!</p>
-                </div>
-                <img src="./assets/images/larry.webp" alt="Larry, a guitar playing dinosaur" id="larry">
-        
-                <div id="chords-appear" class="chord-box">
-                    <button class="chord" id="a-chord" aria-label="The A Chord">A</button>
-                    <button class="chord" id="c-chord" aria-label="The C Chord">C</button>
-                    <button class="chord" id="d-chord" aria-label="The D Chord">D</button>
-                    <button class="chord" id="e-chord" aria-label="The E Chord">E</button>
-                    <button class="chord" id="g-chord" aria-label="The G Chord">G</button>
-                </div>
-        
-                <div id="my-guess-sentence">
-                        <p id="my-guess" class="my-h2">My guess is
-                        <input id="answer-box" type="text" maxlength="1">
-                        <button data-type="submit" class="btn" id="submit-game" aria-label="Submit Answer">Submit</button>
-                </div>
+      <div class="game-box"></div>
+      <div id="show-chords">
+        <div class="game game-chord a" id="chord" title="Guitar Chord"></div>
+        <div id="score-box" class="game score">
+          Round <br id="score-break" />
+          <p id="round">0</p>
+          /10<br />Score
+          <p id="score">0</p>
+        </div>
+        <div id="play-button" onclick="newGame()" aria-label="Play Game">
+          Play
+        </div>
+        <div id="larrys-speech">
+          <img
+            src="./assets/images/speech.webp"
+            alt="Larry's speech bubble"
+            id="speech"
+          />
+          <img
+            src="./assets/images/speech-two.webp"
+            alt="Larry's smaller speech bubble"
+            id="speech-two"
+          />
+          <p id="larry-welcome" class="larry-messages">
+            Welcome to the guitar game! Memorise the five chords below and when
+            you're confident, press play!
+          </p>
+          <p id="larry-first-move" class="larry-messages">
+            Can you figure out this chord?
+          </p>
+          <p id="larry-correct-one" class="larry-messages">
+            Wow! Look at you go!
+          </p>
+          <p id="larry-correct-two" class="larry-messages">
+            Incredible! You smashed that one!
+          </p>
+          <p id="larry-correct-three" class="larry-messages">
+            Amazing! That one was really hard!
+          </p>
+          <p id="larry-wrong-one" class="larry-messages">
+            Oh dear! That was the wrong chord
+          </p>
+          <p id="larry-wrong-two" class="larry-messages">
+            Oh no! Better luck with the next one
+          </p>
+          <p id="larry-wrong-three" class="larry-messages">
+            That's wrong I'm afraid!
+          </p>
+        </div>
+        <img
+          src="./assets/images/larry.webp"
+          alt="Larry, a guitar playing dinosaur"
+          id="larry"
+        />
 
+        <div id="chords-appear" class="chord-box">
+          <button class="chord" id="a-chord" aria-label="The A Chord">A</button>
+          <button class="chord" id="c-chord" aria-label="The C Chord">C</button>
+          <button class="chord" id="d-chord" aria-label="The D Chord">D</button>
+          <button class="chord" id="e-chord" aria-label="The E Chord">E</button>
+          <button class="chord" id="g-chord" aria-label="The G Chord">G</button>
         </div>
 
-        <div class="background-image" title="Circle of musical notes"></div>
+        <div id="my-guess-sentence">
+          <p id="my-guess" class="my-h2">
+            My guess is
+            <input id="answer-box" type="text" maxlength="1" />
+            <button
+              data-type="submit"
+              class="btn"
+              id="submit-game"
+              aria-label="Submit Answer"
+            >
+              Submit
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="background-image" title="Circle of musical notes"></div>
     </section>
-    
+
     <footer>
-        <div class="footer-box">
-            <a class="btn" href="grown-ups.html#contact-us" id="contactus-button" aria-label="Contact Us">Contact Us</a>
-            <p>Copyright @ 2013-2023 Little Strings Limited. All rights reserved.</p>
-        </div>
+      <div class="footer-box">
+        <a
+          class="btn"
+          href="grown-ups.html#contact-us"
+          id="contactus-button"
+          aria-label="Contact Us"
+          >Contact Us</a
+        >
+        <p>
+          Copyright @ 2013-2023 Little Strings Limited. All rights reserved.
+        </p>
+      </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="./assets/js/guitar-game-script.js"></script>
-</body>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="./assets/js/guitar-game-script.js"></script>
+  </body>
 </html>
