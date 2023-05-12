@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <div id="logo-box"><a class="logo" href="index.html"></a></div>
+        <div id="logo-box"><a class="logo" href="index.html" aria-label="Home"></a></div>
         <div class="row no-gutters navbar-expand-md navbar-dark">
 
             <button id="burger-icon" class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,13 +23,13 @@
                     <nav class="navbar">
                         <ul class="list-inline navbar-nav">
                             <li>
-                                <a class="pages nav-item" id="home" href="index.html"><span><i class="fa-solid fa-house"></i> Home</span></a></li>
+                                <a class="pages nav-item" id="home" href="index.html" aria-label="Home"><span><i class="fa-solid fa-house"></i> Home</span></a></li>
                             <li>
-                                <a class="pages nav-item" id="lessons" href="lessons.html"><span><i class="fa-solid fa-graduation-cap"></i> Lessons</span></a></li>
+                                <a class="pages nav-item" id="lessons" href="lessons.html" aria-label="Lessons"><span><i class="fa-solid fa-graduation-cap"></i> Lessons</span></a></li>
                             <li>
-                                <a class="pages nav-item" id="grown-ups" href="grown-ups.html"><span><i class="fa-solid fa-people-roof"></i> Grown Ups</span></a></li>
+                                <a class="pages nav-item" id="grown-ups" href="grown-ups.html" aria-label="Grown Ups"><span><i class="fa-solid fa-people-roof"></i> Grown Ups</span></a></li>
                             <li>
-                                <a class="pages nav-item" id="guitar-game" href="guitar-game.html"><span class="active2"><i class="fa-solid fa-guitar"></i> Guitar Game</span></a></li>
+                                <a class="pages nav-item" id="guitar-game" href="guitar-game.html" aria-label="Guitar Game"><span class="active2"><i class="fa-solid fa-guitar"></i> Guitar Game</span></a></li>
                         </ul>
                     </nav>
                 </div>
@@ -45,7 +45,7 @@
         <div id="show-chords">
                 <div class="game game-chord a" id="chord"></div>
                 <div id ="score-box" class="game score">Round <br id="score-break"><p id="round">0</p>/10<br>Score <p id="score">0</p></div>
-                <div id="play-button" onclick="newGame()">Play</div>
+                <div id="play-button" onclick="newGame()" aria-label="Play Game">Play</div>
                 <div id="larrys-speech">
                     <img src="./assets/images/speech.png" alt="Larry's speech bubble" id="speech">
                     <img src="./assets/images/speech-two.png" alt="Larry's speech bubble" id="speech-two">
@@ -61,17 +61,17 @@
                 <img src="./assets/images/larry.png" alt="Larry, a guitar playing dinosaur" id="larry">
         
                 <div id="chords-appear" class="chord-box">
-                    <button class="chord" id="a-chord">A</button>
-                    <button class="chord" id="c-chord">C</button>
-                    <button class="chord" id="d-chord">D</button>
-                    <button class="chord" id="e-chord">E</button>
-                    <button class="chord" id="g-chord">G</button>
+                    <button class="chord" id="a-chord" aria-label="The A Chord">A</button>
+                    <button class="chord" id="c-chord" aria-label="The C Chord">C</button>
+                    <button class="chord" id="d-chord" aria-label="The D Chord">D</button>
+                    <button class="chord" id="e-chord" aria-label="The E Chord">E</button>
+                    <button class="chord" id="g-chord" aria-label="The G Chord">G</button>
                 </div>
         
                 <div id="my-guess-sentence">
                         <p id="my-guess" class="my-h2">My guess is
                         <input id="answer-box" type="text" maxlength="1">
-                        <button data-type="submit" class="btn" id="submit-game">Submit</button>
+                        <button data-type="submit" class="btn" id="submit-game" aria-label="Submit Answer">Submit</button>
                 </div>
 
         </div>
@@ -81,7 +81,7 @@
     
     <footer>
         <div class="footer-box">
-            <a class="btn" href="grown-ups.html#contact-us" id="contactus-button">Contact Us</a>
+            <a class="btn" href="grown-ups.html#contact-us" id="contactus-button" aria-label="Contact Us">Contact Us</a>
             <p>Copyright @ 2013-2023 Little Strings Limited. All rights reserved.</p>
         </div>
     </footer>

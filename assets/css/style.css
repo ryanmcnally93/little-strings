@@ -410,7 +410,8 @@ section {
         display: block !important;
     }
     #larry-two {
-        height: 140px;
+        height: 140px !important;
+        width: 183.49px !important;
         left: 50%;
         position: absolute;
         top: 20px;
@@ -551,6 +552,8 @@ section {
 
 #larry-two {
     z-index: 2;
+    height: 180px;
+    width: 235.92px;
 }
 
 .guitar-button span {
@@ -1139,6 +1142,7 @@ button:focus {
     }
     #larry {
         width: 140px !important;
+        height: 106.81px !important;
         top: 80%;
         left: 50%;
         margin-left: -140px;
@@ -1304,6 +1308,7 @@ button:focus {
 #larry {
     grid-area: larry;
     width: 300px;
+    height: 228.88px;
     z-index: 2;
     position: relative;
 }
