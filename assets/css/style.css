@@ -6,6 +6,12 @@
   overflow-y: visible;
 }
 
+.fa-chevron-left,
+.fa-chevron-right {
+  margin-top: 200px;
+  font-size: 32px;
+}
+
 .navbar-toggler-icon {
   width: 30px;
   height: 25px;

@@ -39,10 +39,10 @@ Rather than creating this product entirely for children it would be good to also
 - Learn how to play guitar
 - Have fun
 
-| Goals | How are they achieved? |
-| :--- | :--- |
+| Goals                    | How are they achieved?                                                                                                                        |
+| :----------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
 | Learn how to play guitar | The key to chord javascript teaches students what chords we can use in every key, the game also teaches students the most basic chord shapes. |
-| Have fun | The colours and design features have this in mind, and the game also adds fun to the web application too. |
+| Have fun                 | The colours and design features have this in mind, and the game also adds fun to the web application too.                                     |
 
 #### Parent Goals
 
@@ -51,10 +51,10 @@ Parents most importantly need to know their children will be safe in this enviro
 - To place my child in a safe learning environment
 - To feel at ease with my choice of tutor
 
-| Goals | How are they achieved? |
-| :--- | :--- |
-| To place my child in a safe learning environment | On the homepage it's explained that the company has over 10 years of experience, any there are questions answered on the accordion. |
-| To feel at ease with my choice of tutor | If the parent is not happy with the amount of information given regarding safegarding of tutors they can ask more questions on the contact form. |
+| Goals                                            | How are they achieved?                                                                                                                           |
+| :----------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
+| To place my child in a safe learning environment | On the homepage it's explained that the company has over 10 years of experience, any there are questions answered on the accordion.              |
+| To feel at ease with my choice of tutor          | If the parent is not happy with the amount of information given regarding safegarding of tutors they can ask more questions on the contact form. |
 
 #### Developer and Business Goals
 
@@ -71,16 +71,17 @@ Kids need to be able to see the benefits of learning, and how it can open doors 
 - To reassure parents that their children are in a safe, learning environment
 - To teach users basic music knowledge like chord shapes
 
-| Goals | How are they achieved? |
-| :--- | :--- |
-| To attract the attention of young people and children | The design elements are all aimed towards being fun, and the guitar playing dinosaur in particular will be fun for kids|
-| To teach wherever possible on the web application | The key to chord selector mixed with the game page have this covered |
-| To reassure parents that their children are in a safe, learning environment | Most relevant questions are on the site, and a contact form is there if needed |
-| To teach users basic music knowledge like chord shapes | The game successfully teaches users the basic shapes associated with guitar playing, these shapes can be used up and down the fretboard to produce even more chords |
+| Goals                                                                       | How are they achieved?                                                                                                                                              |
+| :-------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| To attract the attention of young people and children                       | The design elements are all aimed towards being fun, and the guitar playing dinosaur in particular will be fun for kids                                             |
+| To teach wherever possible on the web application                           | The key to chord selector mixed with the game page have this covered                                                                                                |
+| To reassure parents that their children are in a safe, learning environment | Most relevant questions are on the site, and a contact form is there if needed                                                                                      |
+| To teach users basic music knowledge like chord shapes                      | The game successfully teaches users the basic shapes associated with guitar playing, these shapes can be used up and down the fretboard to produce even more chords |
 
 ### User Stories
 
 As a child, I want to see:
+
 - Bright colours
 - A game to interact with
 - Simple imagery, not too busy, basic shapes
@@ -88,10 +89,12 @@ As a child, I want to see:
 - No complicated sentences
 
 I want to:
+
 - Click and play
 - Learn instruments
 
 So that:
+
 - I have fun
 - I can play my favourite songs
 
@@ -103,11 +106,13 @@ For Teens
 - To learn guitar, this is a cool thing to teens
 
 As a parent I want to see:
+
 - Interactive learning on the app
 - Basic music knowledge on screen
 - A child-friendly webpage
 
 I want:
+
 - To be able to contact with questions and worries
 - Safety information
 - Information on lessons taught
@@ -117,6 +122,7 @@ I want:
 - Checks done on tutors
 
 So that:
+
 - I can rest knowing my children are safe
 - I know my childs time is being used optimally
 
@@ -340,7 +346,6 @@ Cons:
 - The title "Guitar Teacher" is written at the top left and this is clearly an error of some sort as it dissappears letter by letter when made smaller.
 - All of the information is on one page. The navigation doesn't take you to another page, so if you are on a section, you have to scroll to get back to where you were apart from one button at the very bottom which says back to top.
 
-
 [Your Guitar Academy](https://yourguitaracademy.com/guitar-lessons-locations/leicester/)
 
 Cons:
@@ -366,48 +371,47 @@ Contacts could've had clickable divs with an image on the front to help sell the
 
 This roadmap indicates the importance and viability of specific opportunities.
 
-| Opportunities/Problems      | Importance | Viability   |
-| ----------- | ----------- | ----------- |
-| Carousel advertising options      | 4       | 5
-| Gallery of images from classes    | 2 |5
-| Key to chord info   | 3        | 4
-| Q&A section for grown ups   | 5        | 5
-| Contact form for parents   | 5        | 5
-| Game to introduce kids to the guitar   | 4        | 4
-| Keyboard game | 3     | 3
+| Opportunities/Problems               | Importance | Viability |
+| ------------------------------------ | ---------- | --------- |
+| Carousel advertising options         | 4          | 5         |
+| Gallery of images from classes       | 2          | 5         |
+| Key to chord info                    | 3          | 4         |
+| Q&A section for grown ups            | 5          | 5         |
+| Contact form for parents             | 5          | 5         |
+| Game to introduce kids to the guitar | 4          | 4         |
+| Keyboard game                        | 3          | 3         |
 
-
-## Features 
+## Features
 
 ### Existing Features
 
-- __Navigation Bar__
+- **Navigation Bar**
 
   - I've opted this time to use a navbar that sits under the logo. The responsiveness of a navbar that sits at the top of a page can be tricky, but also I wanted the options on this page to be more visible than hidden away in a corner, as young children may be using this web application.
 
-- __Footer__
+- **Footer**
 
   - I wanted the footer to be fairly symmetrical to the navbar, so gave it the save width, and curved edges.
-  
+
   - On pages where there isn't a link to the contact us section, I've placed a button in the footer.
 
 <img src="assets/images/readme-images/footer.png" width="75%" alt="The web application's footer element" style="display: inherit; margin: auto; border-radius: 25px;">
 
-- __Logo__
+- **Logo**
 
   - I created the logo using Canva. I wanted a coloured guitar silhouette with the words "Little Strings" inside, using the font used across the site. This logo isn't too complicated, is to the point, is consistent in colour and text, and looks fun.
 
   - The colour darkens whenever hovered over.
-<div style="display: flex;">
-<img src="assets/images/logo.png" width="40%" alt="The web application's footer element" style="background-color: #fafafa; border-radius: 25px; margin-left: 5%; margin-right: 5%">
-<img src="assets/images/logo-color-change.png" width="40%" alt="The web application's footer element" style="background-color: #fafafa; border-radius: 25px; margin-left: 5%; margin-right: 5%">
-</div>
+  <div style="display: flex;">
+  <img src="assets/images/logo.png" width="40%" alt="The web application's footer element" style="background-color: #fafafa; border-radius: 25px; margin-left: 5%; margin-right: 5%">
+  <img src="assets/images/logo-color-change.png" width="40%" alt="The web application's footer element" style="background-color: #fafafa; border-radius: 25px; margin-left: 5%; margin-right: 5%">
+  </div>
 
-- __The landing page info boxes__
+- **The landing page info boxes**
 
   - Short sentences, to the point, nothing too complicated for children, with large font.
 
-- __The landing page guitar game button__
+- **The landing page guitar game button**
 
   - The guitar game button is massive. It is designed to attract the attention of the younger audience, with the dinosaur image inserted and a colour change on hover.
 
@@ -419,17 +423,17 @@ This roadmap indicates the importance and viability of specific opportunities.
 
 <img src="assets/images/readme-images/guitar-button-blue.png" width="75%" alt="The guitar button hover effect" style="display: inherit; margin: auto; border-radius: 25px;">
 
-- __The lessons page Carousel__
+- **The lessons page Carousel**
 
   - I used the W3Schools bootstrap carousel page for the initial template of my carousel.
 
   - I decided to split it down the middle and have image on one side and text on the other, so that the images wouldn't distract the text, but also to add some fun illustration to the text side.
 
   - I added musical notes of varying colours and kept the colour scheme used throughout the site for the text and textbox.
-  
+
 <img src="assets/images/readme-images/carousel.png" width="100%" alt="The lessons page bootstrap carousel" style="display: inherit; margin: auto; border-radius: 25px;">
 
-- __The lessons page key to chord searcher__
+- **The lessons page key to chord searcher**
 
   - Learning the guitar really is as easy as remembering the six chords you can use in the key you're playing in. As the key you're playing in progresses, so does the chords.
 
@@ -439,7 +443,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 
 <img src="assets/images/readme-images/key-to-chord.png" width="100%" alt="The lessons page bootstrap carousel" style="display: inherit; margin: auto; border-radius: 25px;">
 
-- __The grown ups page accordion__
+- **The grown ups page accordion**
 
   - As expected once the question is clicked on the + changes to a - and the message is displayed underneath.
 
@@ -449,7 +453,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 
 <img src="assets/images/readme-images/accordion.png" width="80%" alt="The accordion, with one of the questions clicked on" style="display: inherit; margin: auto;">
 
-- __The grown ups page contact form__
+- **The grown ups page contact form**
 
   - The contact form sits centrally between two guitars made of musical notes.
 
@@ -459,7 +463,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 
 <img src="assets/images/readme-images/contactus.png" width="80%" alt="The contact form for parents" style="display: inherit; margin: auto;">
 
-- __The guitar game__
+- **The guitar game**
 
   - This is the opening page, which calls the betweenGameAppearance function:
 
@@ -485,15 +489,15 @@ This roadmap indicates the importance and viability of specific opportunities.
 
 ### Features Left to Implement
 
-- __Other Instruments__
+- **Other Instruments**
 
-    - We could eventually add learning other instruments to the business. The other 'gateway' instrument being keys, which are also easy to learn and used heavily in music MIDI production.
+  - We could eventually add learning other instruments to the business. The other 'gateway' instrument being keys, which are also easy to learn and used heavily in music MIDI production.
 
-- __Videos__
+- **Videos**
 
-    - We could add instructive videos to the application so users can learn a little more before committing to the in-person lessons.
+  - We could add instructive videos to the application so users can learn a little more before committing to the in-person lessons.
 
-## Testing 
+## Testing
 
 I have tested my web application automatically and manually using Test Driven Development and Behaviour Driven Development.
 
@@ -538,7 +542,9 @@ This test.js contains 13 automatic tests for the lessons page, which test the ke
 ### Manual Testing
 
 This project has been tested using the following browsers:
+
 <!--Chrome, Safari & Edge-->
+
 On the following devices
 Desktop Macbook
 Ipad Air Simulator on Dev Tools
@@ -546,51 +552,51 @@ Smallest phone size IPhone 5/SE simulator on Dev Tools
 
 `Homepage`
 
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| Navbar links | Links take user to correct pages, CSS changes on hover | Clicked Links | All four links work, CSS changes on hover | Pass
-| All five other buttons (including logo) | Take user to the correct page, CSS changes on hover | Clicked Buttons | All links work and change colour when hovered over | Pass |
-| Burger icon on IPhone 5/SE | Item is clickable and navbar readable | Clicked burger icon | Navbar opens vertically, links work | Pass |
-| Page layout | Layout changes to accomodate for smaller devices | Opened site on IPhone 5/SE simulator | Every element visible through scrolling, links work | Pass |
+| Feature                                 | Expected Outcome                                       | Testing Performed                    | Result                                              | Pass/Fail |
+| --------------------------------------- | ------------------------------------------------------ | ------------------------------------ | --------------------------------------------------- | --------- |
+| Navbar links                            | Links take user to correct pages, CSS changes on hover | Clicked Links                        | All four links work, CSS changes on hover           | Pass      |
+| All five other buttons (including logo) | Take user to the correct page, CSS changes on hover    | Clicked Buttons                      | All links work and change colour when hovered over  | Pass      |
+| Burger icon on IPhone 5/SE              | Item is clickable and navbar readable                  | Clicked burger icon                  | Navbar opens vertically, links work                 | Pass      |
+| Page layout                             | Layout changes to accomodate for smaller devices       | Opened site on IPhone 5/SE simulator | Every element visible through scrolling, links work | Pass      |
 
 `Lessons`
 
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| The same buttons from Homepage | Take user to the correct page, hover changes CSS | Clicked Buttons | All work, same as homepage | Pass |
-| Carousel | Rolls on its own | Waiting upon loading page | Carousel rolls through items | Pass |
-| Carousel | Left and Right buttons navigate correctly | Clicked left and right controls | Navigates correctly | Pass |
-| Selector | Has options A, C, D, E, G | Clicked Selector | Has correct options | Pass |
-| Selector output | When a user chooses a key, the correct chords appear on the line below | Clicked C | The correct 6 chords were shown | Pass |
-| IPhone 5/SE carousel | Only has the text side showing, to make content readable | Opened webpage on simulator | Carousel textbox is visible, images are not, carousel works as should | Pass |
+| Feature                        | Expected Outcome                                                       | Testing Performed               | Result                                                                | Pass/Fail |
+| ------------------------------ | ---------------------------------------------------------------------- | ------------------------------- | --------------------------------------------------------------------- | --------- |
+| The same buttons from Homepage | Take user to the correct page, hover changes CSS                       | Clicked Buttons                 | All work, same as homepage                                            | Pass      |
+| Carousel                       | Rolls on its own                                                       | Waiting upon loading page       | Carousel rolls through items                                          | Pass      |
+| Carousel                       | Left and Right buttons navigate correctly                              | Clicked left and right controls | Navigates correctly                                                   | Pass      |
+| Selector                       | Has options A, C, D, E, G                                              | Clicked Selector                | Has correct options                                                   | Pass      |
+| Selector output                | When a user chooses a key, the correct chords appear on the line below | Clicked C                       | The correct 6 chords were shown                                       | Pass      |
+| IPhone 5/SE carousel           | Only has the text side showing, to make content readable               | Opened webpage on simulator     | Carousel textbox is visible, images are not, carousel works as should | Pass      |
 
 `Grown Ups`
 
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| The same buttons from Homepage | Take user to the correct page, hover changes CSS | Clicked Buttons | All work, same as homepage | Pass |
-| Accordion | CSS changes on hover | Hovered over options | CSS changes | Pass |
-| Accordions open | When clicked, accordion slides open its input | Clicked on accordion | CSS changes | Pass |
-| Accordions close | When opened, clicking on accordion closes them | Clicked on open accordion | It closed | Pass |
-| Contact Form and images | They move down when the accordion is opened | Clicked accordions open | The elements moved down with the open accordions | Pass |
-| Form | Must have data in all 3 inputs | Tried to submit without | Shows correct error message | Pass |
-| Form | Must not accept incorrect email format | Typed different format | Shows correct error message | Pass |
-| Submit Button | Send's data, hover changes CSS | Clicked Button | CSS changed, data sent to my email address | Pass |
-| Submit Button text | Green successful message is displayed when email is sent | Sent a message | Green message was displayed | Pass |
-| IPhone 5/SE contact form section | The guitar of notes images disappear on smaller screens | Opened webpage on simulator | Images were not visible | Pass |
+| Feature                          | Expected Outcome                                         | Testing Performed           | Result                                           | Pass/Fail |
+| -------------------------------- | -------------------------------------------------------- | --------------------------- | ------------------------------------------------ | --------- |
+| The same buttons from Homepage   | Take user to the correct page, hover changes CSS         | Clicked Buttons             | All work, same as homepage                       | Pass      |
+| Accordion                        | CSS changes on hover                                     | Hovered over options        | CSS changes                                      | Pass      |
+| Accordions open                  | When clicked, accordion slides open its input            | Clicked on accordion        | CSS changes                                      | Pass      |
+| Accordions close                 | When opened, clicking on accordion closes them           | Clicked on open accordion   | It closed                                        | Pass      |
+| Contact Form and images          | They move down when the accordion is opened              | Clicked accordions open     | The elements moved down with the open accordions | Pass      |
+| Form                             | Must have data in all 3 inputs                           | Tried to submit without     | Shows correct error message                      | Pass      |
+| Form                             | Must not accept incorrect email format                   | Typed different format      | Shows correct error message                      | Pass      |
+| Submit Button                    | Send's data, hover changes CSS                           | Clicked Button              | CSS changed, data sent to my email address       | Pass      |
+| Submit Button text               | Green successful message is displayed when email is sent | Sent a message              | Green message was displayed                      | Pass      |
+| IPhone 5/SE contact form section | The guitar of notes images disappear on smaller screens  | Opened webpage on simulator | Images were not visible                          | Pass      |
 
 Accordion testing has also been done automatically.
 
 `Guitar Game`
 
-| Feature | Expected Outcome | Testing Performed | Result | Pass/Fail |
-| --- | --- | --- | --- | --- |
-| The same buttons from Homepage | Take user to the correct page, hover changes CSS | Clicked Buttons | All work, same as homepage | Pass |
-| Five chord buttons, play button | CSS changes on hover | Hovered over Element | CSS changes | Pass |
-| Five chord buttons, play button | Activate when clicked | Clicked buttons | Chords change image, play button sarts the game | Pass |
-| Picture of chord | Green shadow is added when answer is right | Typed in A on a chord | Green shadow was added | Pass |
-| Picture of chord | Red shadow is added when answer is wrong | Typed in C on e chord | Red shadow was added | Pass |
-| The a chord | Answer is still accepted in uppercase | Typed in "A" on a chord | Game recognised "A" as correct answer | Pass |
+| Feature                         | Expected Outcome                                 | Testing Performed       | Result                                          | Pass/Fail |
+| ------------------------------- | ------------------------------------------------ | ----------------------- | ----------------------------------------------- | --------- |
+| The same buttons from Homepage  | Take user to the correct page, hover changes CSS | Clicked Buttons         | All work, same as homepage                      | Pass      |
+| Five chord buttons, play button | CSS changes on hover                             | Hovered over Element    | CSS changes                                     | Pass      |
+| Five chord buttons, play button | Activate when clicked                            | Clicked buttons         | Chords change image, play button sarts the game | Pass      |
+| Picture of chord                | Green shadow is added when answer is right       | Typed in A on a chord   | Green shadow was added                          | Pass      |
+| Picture of chord                | Red shadow is added when answer is wrong         | Typed in C on e chord   | Red shadow was added                            | Pass      |
+| The a chord                     | Answer is still accepted in uppercase            | Typed in "A" on a chord | Game recognised "A" as correct answer           | Pass      |
 
 In order to test the correct and wrong messages displaying correctly and not repeating, I had to continually test the game by playing it and adding deliberately correct or incorrect answers in a row to see the outcome over 3 games.
 
@@ -800,9 +806,9 @@ The grown ups page was a lot simpler, I removed the guitar of notes to give more
 
 Making the guitar game available on small screens posed a lot of challenges. I first had to change the grid layout to allow for the score, game turn, chord image and answer box to be visible at once. I also made text and images smaller. With Larry, I had to create a different speech bubble. I chose one that sits above him and fills most of the screens width, so to give room to the messages inside.
 
-## Credits 
+## Credits
 
-### Content 
+### Content
 
 - The code I used for the accordion, I got from [W3S.](https://www.w3schools.com/howto/howto_js_accordion.asp) I used their template and added my own questions and answers, and some JQuery.
 
@@ -825,6 +831,7 @@ Making the guitar game available on small screens posed a lot of challenges. I f
 - In order to get my guitar game going, I watched the creation of the simple Simon game created by Code Institute and a lot of my ideas came from that.
 
 ### Media
+
 - All of the following images are from [pexels.](https://pexels.com), below is a list of the image names and the author who posted them.
 
 - [group-lesson.jpeg](/assets/images/group-lesson.jpeg) - Pavel Danilyuk
@@ -863,12 +870,16 @@ Making the guitar game available on small screens posed a lot of challenges. I f
 
 ### Acknowledgements
 
--   My Mentor Jubril Akolade for continuous helpful feedback.
+- My Mentor Jubril Akolade for continuous helpful feedback.
 
--   My college contact Ben Smith for his support throughout.
+- My college contact Ben Smith for his support throughout.
 
--   My other college contact Pasquale Fasulo for his support too.
+- My other college contact Pasquale Fasulo for his support too.
 
--   Tutor support and the Slack community at Code Institute for their help, namely Tomislav 5P, Jo_ci, Lavadax and Kera Cudmore who helped answer my questions regularly.
+- Tutor support and the Slack community at Code Institute for their help, namely Tomislav 5P, Jo_ci, Lavadax and Kera Cudmore who helped answer my questions regularly.
 
 This readme.md was spellchecked using the spell checker extension for Chrome.
+
+loading lazy
+module exports
+unused css trial of smaller bootstrap file, dodgy on opening
