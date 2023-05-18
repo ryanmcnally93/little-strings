@@ -886,3 +886,5 @@ unused css trial of smaller bootstrap file, dodgy on opening
 I used a stack overflow to fix the woff2 error coming up - https://stackoverflow.com/questions/69127435/how-to-fix-ensure-text-remains-visible-during-webfont-load-bootstrap-icons-woff/69311017#69311017
 
 Explain that to make accordions and carousels work in future you will not use massive bootstrap documents
+
+Would it be more beneficial for page speeds to have separate css files for different pages?

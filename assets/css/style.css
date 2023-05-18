@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Exo&display=swap");
 
+body {
+  margin: 0;
+  background-color: #fafafa;
+}
+
 /* Header */
 
 header {
@@ -83,14 +88,6 @@ header {
 
 .learning-li {
   padding-top: 5px;
-}
-
-.active-page {
-  border-bottom-style: solid;
-}
-
-body {
-  margin: 0;
 }
 
 .page-links {
@@ -549,105 +546,9 @@ li {
   .footer-box {
     width: 808px !important;
   }
-  .letters-only-please {
-    bottom: 62% !important;
-  }
 }
 
 /* Learning Page */
-
-.fa-chevron-left,
-.fa-chevron-right {
-  margin-top: 200px;
-  font-size: 32px;
-}
-
-/* Learning Page Tablet Responsiveness */
-
-@media (min-width: 768px) and (max-width: 950px) {
-  .carousel-box {
-    width: 90%;
-  }
-}
-
-/* Learning Page Desktop Responsiveness */
-
-@media (min-width: 950px) {
-  .carousel-box {
-    width: 75%;
-  }
-}
-
-/*Learning*/
-@media (max-width: 767px) {
-  .learning-carousel-images {
-    display: none !important;
-  }
-
-  #myCarousel {
-    width: 100%;
-    height: 346px;
-    padding-top: 15%;
-    padding-bottom: 15%;
-  }
-
-  .carousel-textbox {
-    vertical-align: middle !important;
-  }
-  .yellow {
-    left: 78% !important;
-    top: 0% !important;
-  }
-
-  .green {
-    bottom: 0 !important;
-  }
-
-  .blue {
-    left: 10% !important;
-    top: 0 !important;
-  }
-
-  .pink {
-    left: 78% !important;
-    bottom: 0% !important;
-  }
-
-  .title-box {
-    width: 90% !important;
-  }
-
-  .key-interact {
-    font-size: 32px !important;
-  }
-
-  #javascript-key {
-    font-size: 32px;
-  }
-  .learning-pages {
-    margin: 0;
-  }
-}
-
-body {
-  background-color: #fafafa;
-}
-
-.page-titles {
-  color: #3c6916;
-  text-align: center;
-  font-size: 48px;
-  font-family: "Balsamiq Sans", cursive;
-  margin: 0 0 20px 0;
-  margin-top: 40px;
-  z-index: 2;
-  position: relative;
-  padding: 10px;
-}
-
-.item.active {
-  border-bottom: none;
-}
 
 #learning-image-one {
   width: 50%;
@@ -722,21 +623,10 @@ body {
   left: 10%;
 }
 
-@media (min-width: 768px) {
-  .green {
-    top: 55%;
-  }
-
-  .pink {
-    top: 7%;
-  }
-  #submit-message {
-    width: 90%;
-  }
-}
-
-.item {
-  text-align: center;
+.fa-chevron-left,
+.fa-chevron-right {
+  margin-top: 200px;
+  font-size: 32px;
 }
 
 .carousel-inner > .item > a > img,
@@ -769,12 +659,6 @@ body {
 
 .key-interact {
   margin: 0 20px 20px 20px;
-}
-
-@media (min-width: 1000px) {
-  #key-break {
-    display: none;
-  }
 }
 
 #select-key {
@@ -816,9 +700,119 @@ select {
   font-size: 24px;
 }
 
-#contact-us {
-  padding: 10px;
+#contactus-button-learning:hover {
+  background-color: #c2e6f5;
+  color: #3c6916;
 }
+
+.carousel-control.right,
+.carousel-control.left {
+  border-radius: 50px;
+}
+
+.carousel .carousel-indicators li {
+  background-color: #c2e6f5;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.carousel .carousel-indicators li.active {
+  background-color: #3c6916;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  margin: 1px 3px;
+}
+
+.carousel-indicators {
+  margin: auto;
+  margin-bottom: 20px;
+}
+.carousel-indicators li {
+  border: none;
+}
+
+/* Learning Page Mobile Responsiveness */
+
+@media (max-width: 767px) {
+  .learning-carousel-images {
+    display: none !important;
+  }
+  #myCarousel {
+    width: 100%;
+    height: 346px;
+    padding-top: 15%;
+    padding-bottom: 15%;
+  }
+  .carousel-textbox {
+    vertical-align: middle !important;
+  }
+  .yellow {
+    left: 78% !important;
+    top: 0% !important;
+  }
+  .green {
+    bottom: 0 !important;
+  }
+  .blue {
+    left: 10% !important;
+    top: 0 !important;
+  }
+  .pink {
+    left: 78% !important;
+    bottom: 0% !important;
+  }
+  .title-box {
+    width: 90% !important;
+  }
+  .key-interact {
+    font-size: 32px !important;
+  }
+  #javascript-key {
+    font-size: 32px;
+  }
+  .learning-pages {
+    margin: 0;
+  }
+}
+
+/* Learning Page Tablet Responsiveness */
+
+@media (min-width: 768px) and (max-width: 950px) {
+  .carousel-box {
+    width: 90%;
+  }
+}
+
+@media (min-width: 768px) {
+  .green {
+    top: 55%;
+  }
+
+  .pink {
+    top: 7%;
+  }
+  #submit-message {
+    width: 90%;
+  }
+}
+
+/* Learning Page Desktop Responsiveness */
+
+@media (min-width: 950px) {
+  .carousel-box {
+    width: 75%;
+  }
+}
+
+@media (min-width: 1000px) {
+  #key-break {
+    display: none;
+  }
+}
+
+/* Grown Ups Page */
 
 #submit-message {
   text-align: center;
@@ -840,52 +834,6 @@ select {
   margin-top: 10px;
 }
 
-#contactus-button-learning:hover {
-  background-color: #c2e6f5;
-  color: #3c6916;
-}
-
-.carousel-control.right,
-.carousel-control.left {
-  border-radius: 50px;
-}
-
-/* Grown Ups */
-
-@media (max-width: 767px) {
-  .guitar-of-notes,
-  .guitar-of-notes-box {
-    display: none !important;
-  }
-  .contactus-form {
-    width: 75% !important;
-    height: 675px;
-    bottom: 50px;
-  }
-  .carousel-control.right,
-  .carousel-control.left {
-    border-radius: 30px;
-    height: 314px;
-    top: 16px;
-  }
-}
-
-@media (min-width: 768px) {
-  .contactus-form {
-    height: 300px;
-    bottom: 220px;
-  }
-}
-
-.title-box {
-  background-color: rgba(250, 250, 250, 0.85);
-  width: 500px;
-  margin: auto;
-  z-index: 2;
-  position: relative;
-  border-radius: 25px;
-}
-
 #form-title-1 {
   width: 100%;
   margin-bottom: 70px;
@@ -894,20 +842,6 @@ select {
 
 #form-title-2 {
   width: 100%;
-}
-
-.empty-space {
-  height: 30px;
-}
-
-.other-box {
-  background-color: rgba(250, 250, 250, 0.85);
-  margin: auto;
-  z-index: 2;
-  position: relative;
-  border-radius: 25px;
-  width: 90%;
-  max-width: 800px;
 }
 
 .my-h2 {
@@ -986,29 +920,6 @@ button:focus {
   margin-bottom: 0;
 }
 
-.carousel .carousel-indicators li {
-  background-color: #c2e6f5;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-}
-
-.carousel .carousel-indicators li.active {
-  background-color: #3c6916;
-  border-radius: 50%;
-  width: 12px;
-  height: 12px;
-  margin: 1px 3px;
-}
-
-.carousel-indicators {
-  margin: auto;
-  margin-bottom: 20px;
-}
-.carousel-indicators li {
-  border: none;
-}
-
 .guitar-of-notes-box {
   height: 600px;
   width: 33%;
@@ -1082,7 +993,36 @@ button:focus {
   color: #fafafa;
 }
 
-/* Guitar Game */
+/* Grown Ups Page Mobile Responsiveness */
+
+@media (max-width: 767px) {
+  .guitar-of-notes,
+  .guitar-of-notes-box {
+    display: none !important;
+  }
+  .contactus-form {
+    width: 75% !important;
+    height: 675px;
+    bottom: 50px;
+  }
+  .carousel-control.right,
+  .carousel-control.left {
+    border-radius: 30px;
+    height: 314px;
+    top: 16px;
+  }
+}
+
+/* Grown Ups Page Tablet and Desktop Responsiveness */
+
+@media (min-width: 768px) {
+  .contactus-form {
+    height: 300px;
+    bottom: 220px;
+  }
+}
+
+/* Guitar Game Page */
 
 .game-box {
   position: absolute;
@@ -1121,169 +1061,6 @@ button:focus {
   height: 500px;
   z-index: 2;
   position: relative;
-}
-
-@media (min-width: 768px) and (max-width: 1200px) {
-  #show-chords {
-    grid-template-columns: 5fr 1.5fr 4fr;
-    grid-template-rows: 0.5fr 1fr 0.5fr;
-    height: 520px;
-  }
-  .score {
-    margin: 0 auto 0 -7rem !important;
-  }
-  #score-box {
-    bottom: 30px !important;
-  }
-  #my-guess-sentence {
-    bottom: 60px;
-  }
-}
-
-@media (max-width: 767px) {
-  #show-chords {
-    grid-template-columns: 3fr 2fr;
-    grid-template-rows: 2fr 1fr 1.5fr 2fr 2fr;
-    grid-template-areas:
-      "chords-appear chords-appear"
-      "chord score"
-      "chord score"
-      "larrys-speech larrys-speech"
-      "larry larry";
-    margin-bottom: 60px;
-  }
-  #chord {
-    right: 10px !important;
-    height: 182px;
-    width: 180px;
-  }
-  #width-title {
-    width: 80% !important;
-  }
-  .chord-box {
-    padding: 0 !important;
-  }
-  #larry {
-    width: 140px !important;
-    height: 106.81px !important;
-    top: 80%;
-    left: 50%;
-    margin-left: -140px;
-  }
-  #larrys-speech {
-    width: 200px !important;
-  }
-  .game-box {
-    width: 100%;
-    left: 0 !important;
-    margin: auto !important;
-  }
-  .larry-messages {
-    width: 275px !important;
-    left: 50%;
-    padding: 17px 20px 20px 20px !important;
-    margin-left: -137px;
-  }
-  #larry-first-move,
-  #larry-correct-one,
-  #larry-wrong-three {
-    margin-top: 45px !important;
-    margin-bottom: none !important;
-  }
-  #larry-correct-three,
-  #larry-correct-two,
-  #larry-wrong-one,
-  #larry-wrong-two {
-    margin-top: 42px !important;
-  }
-  #play-button {
-    width: 5rem !important;
-    height: 3rem !important;
-    font-size: 24px !important;
-    margin: 20px 10px !important;
-  }
-  .chord {
-    height: 3rem !important;
-    width: 3rem !important;
-    font-size: 24px !important;
-    margin: 1% !important;
-  }
-  .game-chord {
-    margin: 0 !important;
-  }
-  #speech {
-    display: none;
-  }
-  #speech-two {
-    display: block !important;
-  }
-  .a {
-    background: url(../images/a-smaller.webp) no-repeat bottom center !important;
-  }
-  .c {
-    background: url(../images/c-smaller.webp) no-repeat bottom center !important;
-  }
-  .d {
-    background: url(../images/d-smaller.webp) no-repeat bottom center !important;
-  }
-  .e {
-    background: url(../images/e-smaller.webp) no-repeat bottom center !important;
-  }
-  .g {
-    background: url(../images/g-smaller.webp) no-repeat bottom center !important;
-  }
-  #chords-appear {
-    width: 100%;
-  }
-  .score {
-    width: 6rem !important;
-    height: 6rem !important;
-    font-size: 18px !important;
-    margin: 10px auto 0 auto !important;
-  }
-  #my-guess-sentence {
-    grid-area: chords-appear;
-  }
-  #my-guess {
-    font-size: 24px !important;
-    margin-top: 40px;
-  }
-  #submit-game {
-    margin-left: 10px;
-  }
-  #score-box {
-    left: 10px;
-    position: absolute;
-  }
-  #larry-welcome {
-    bottom: 4%;
-  }
-  .finished-game-message-margin-small {
-    bottom: 10% !important;
-  }
-  .letters-only-please {
-    bottom: 12% !important;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 950px) {
-  .game-box {
-    width: 100% !important;
-    margin: auto !important;
-    left: 0 !important;
-  }
-  .letters-only-please {
-    bottom: 65% !important;
-  }
-}
-
-@media (min-width: 768px) {
-  #my-guess-sentence {
-    grid-area: chords-appear;
-  }
-  #navbarNavDropdown {
-    margin-top: 20px !important;
-  }
 }
 
 #title-larry {
@@ -1493,7 +1270,193 @@ button:focus {
   grid-area: score;
 }
 
+#play-button:hover {
+  color: #e2f89c;
+  border: 2px solid #3c6916;
+  background-color: #3c6916;
+}
+
+#answer-box {
+  width: 60px;
+  color: #3c6916;
+  text-align: center;
+  margin-left: 10px;
+  outline-color: #0f4457;
+  border: 2px solid #0f4457;
+  border-radius: 10px;
+}
+
+#submit-game {
+  margin-left: 30px;
+  color: #3c6916;
+  background-color: #fafafa;
+  border-radius: 5px;
+  border: 2px solid;
+  margin-bottom: 5px;
+}
+
+#submit-game:hover {
+  color: #e2f89c;
+  border: 2px solid #3c6916;
+  background-color: #3c6916;
+}
+
+/* Guitar Game Page Mobile Responsiveness */
+
+@media (max-width: 767px) {
+  #show-chords {
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 2fr 1fr 1.5fr 2fr 2fr;
+    grid-template-areas:
+      "chords-appear chords-appear"
+      "chord score"
+      "chord score"
+      "larrys-speech larrys-speech"
+      "larry larry";
+    margin-bottom: 60px;
+  }
+  #chord {
+    right: 10px !important;
+    height: 182px;
+    width: 180px;
+  }
+  #width-title {
+    width: 80% !important;
+  }
+  .chord-box {
+    padding: 0 !important;
+  }
+  #larry {
+    width: 140px !important;
+    height: 106.81px !important;
+    top: 80%;
+    left: 50%;
+    margin-left: -140px;
+  }
+  #larrys-speech {
+    width: 200px !important;
+  }
+  .game-box {
+    width: 100%;
+    left: 0 !important;
+    margin: auto !important;
+  }
+  .larry-messages {
+    width: 275px !important;
+    left: 50%;
+    padding: 17px 20px 20px 20px !important;
+    margin-left: -137px;
+  }
+  #larry-first-move,
+  #larry-correct-one,
+  #larry-wrong-three {
+    margin-top: 45px !important;
+    margin-bottom: none !important;
+  }
+  #larry-correct-three,
+  #larry-correct-two,
+  #larry-wrong-one,
+  #larry-wrong-two {
+    margin-top: 42px !important;
+  }
+  #play-button {
+    width: 5rem !important;
+    height: 3rem !important;
+    font-size: 24px !important;
+    margin: 20px 10px !important;
+  }
+  .chord {
+    height: 3rem !important;
+    width: 3rem !important;
+    font-size: 24px !important;
+    margin: 1% !important;
+  }
+  .game-chord {
+    margin: 0 !important;
+  }
+  #speech {
+    display: none;
+  }
+  #speech-two {
+    display: block !important;
+  }
+  .a {
+    background: url(../images/a-smaller.webp) no-repeat bottom center !important;
+  }
+  .c {
+    background: url(../images/c-smaller.webp) no-repeat bottom center !important;
+  }
+  .d {
+    background: url(../images/d-smaller.webp) no-repeat bottom center !important;
+  }
+  .e {
+    background: url(../images/e-smaller.webp) no-repeat bottom center !important;
+  }
+  .g {
+    background: url(../images/g-smaller.webp) no-repeat bottom center !important;
+  }
+  #chords-appear {
+    width: 100%;
+  }
+  .score {
+    width: 6rem !important;
+    height: 6rem !important;
+    font-size: 18px !important;
+    margin: 10px auto 0 auto !important;
+  }
+  #my-guess-sentence {
+    grid-area: chords-appear;
+  }
+  #my-guess {
+    font-size: 24px !important;
+    margin-top: 40px;
+  }
+  #submit-game {
+    margin-left: 10px;
+  }
+  #score-box {
+    left: 10px;
+    position: absolute;
+  }
+  #larry-welcome {
+    bottom: 4%;
+  }
+  .finished-game-message-margin-small {
+    bottom: 10% !important;
+  }
+  .letters-only-please {
+    bottom: 12% !important;
+  }
+}
+
+/* Guitar Game Page Tablet Responsiveness */
+
+@media (min-width: 768px) and (max-width: 950px) {
+  .game-box {
+    width: 100% !important;
+    margin: auto !important;
+    left: 0 !important;
+  }
+  .letters-only-please {
+    bottom: 65% !important;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 1200px) {
+  #show-chords {
+    grid-template-columns: 5fr 1.5fr 4fr;
+    grid-template-rows: 0.5fr 1fr 0.5fr;
+    height: 520px;
+  }
+  .score {
+    margin: 0 auto 0 -7rem !important;
+  }
+  #score-box {
+    bottom: 30px !important;
+  }
+  #my-guess-sentence {
+    bottom: 60px;
+  }
   #show-chords {
     margin-bottom: 60px;
   }
@@ -1553,6 +1516,17 @@ button:focus {
   }
 }
 
+@media (min-width: 768px) {
+  #my-guess-sentence {
+    grid-area: chords-appear;
+  }
+  #navbarNavDropdown {
+    margin-top: 20px !important;
+  }
+}
+
+/* Guitar Game Page Desktop Responsiveness */
+
 @media (min-width: 1200px) {
   .game-box {
     height: 550px;
@@ -1562,35 +1536,10 @@ button:focus {
   }
 }
 
-#play-button:hover {
-  color: #e2f89c;
-  border: 2px solid #3c6916;
-  background-color: #3c6916;
-}
-
-#answer-box {
-  width: 60px;
-  color: #3c6916;
-  text-align: center;
-  margin-left: 10px;
-  outline-color: #0f4457;
-  border: 2px solid #0f4457;
-  border-radius: 10px;
-}
-
-#submit-game {
-  margin-left: 30px;
-  color: #3c6916;
-  background-color: #fafafa;
-  border-radius: 5px;
-  border: 2px solid;
-  margin-bottom: 5px;
-}
-
-#submit-game:hover {
-  color: #e2f89c;
-  border: 2px solid #3c6916;
-  background-color: #3c6916;
+@media (min-width: 950px) {
+  .letters-only-please {
+    bottom: 62% !important;
+  }
 }
 
 /* Bootstrap row fix */
@@ -1605,6 +1554,53 @@ button:focus {
 section {
   background-color: #fafafa;
   padding-bottom: 40px;
+}
+
+/* Title Boxes */
+
+.page-titles {
+  color: #3c6916;
+  text-align: center;
+  font-size: 48px;
+  font-family: "Balsamiq Sans", cursive;
+  margin: 0 0 20px 0;
+  margin-top: 40px;
+  z-index: 2;
+  position: relative;
+  padding: 10px;
+}
+
+.other-box {
+  background-color: rgba(250, 250, 250, 0.85);
+  margin: auto;
+  z-index: 2;
+  position: relative;
+  border-radius: 25px;
+  width: 90%;
+  max-width: 800px;
+}
+
+.title-box {
+  background-color: rgba(250, 250, 250, 0.85);
+  width: 500px;
+  margin: auto;
+  z-index: 2;
+  position: relative;
+  border-radius: 25px;
+}
+
+/* Active Classes */
+
+.item.active {
+  border-bottom: none;
+}
+
+.item {
+  text-align: center;
+}
+
+.active-page {
+  border-bottom-style: solid;
 }
 
 /* Footer */
@@ -1650,6 +1646,14 @@ footer {
   color: #3c6916;
 }
 
+#contact-us {
+  padding: 10px;
+}
+
+.empty-space {
+  height: 30px;
+}
+
 footer p {
   text-align: center;
   color: #3c6916;
@@ -1657,9 +1661,13 @@ footer p {
   font-size: 16px;
 }
 
+/* Footer Mobile Responsiveness */
+
 @media (max-width: 767px) {
   .footer-box {
     width: 100%;
     padding-top: 20px !important;
   }
 }
+
+/* This document was formatted using "Prettier" */
