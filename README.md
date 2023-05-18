@@ -534,11 +534,49 @@ This test.js contains 13 automatic tests for the lessons page, which test the ke
 
 ### Lighthouse
 
-<!--AT END RESULTS-->
+Homepage Lighthouse score
+
+<img src="assets/images/readme-images/homepage-lighthouse.png" width="75%" alt="The lighthouse scores for my homepage" style="display: inherit; margin: auto; border-radius: 25px;">
+
+Learning Lighthouse score
+
+<img src="assets/images/readme-images/learning-lighthouse.png" width="75%" alt="The lighthouse scores for my learning page" style="display: inherit; margin: auto; border-radius: 25px;">
+
+Grown Ups Lighthouse score
+
+<img src="assets/images/readme-images/grownups-lighthouse.png" width="75%" alt="The lighthouse scores for my grown ups page" style="display: inherit; margin: auto; border-radius: 25px;">
+
+Guitar Game Lighthouse score
+
+<img src="assets/images/readme-images/guitar-game-lighthouse.png" width="75%" alt="The lighthouse scores for my guitar game page" style="display: inherit; margin: auto; border-radius: 25px;">
 
 #### Mobile Lighthouse
 
-<!--AT END RESULTS-->
+Homepage mobile Lighthouse score
+
+<img src="assets/images/readme-images/homepage-mobile-lighthouse.png" width="75%" alt="The lighthouse scores for my homepage on mobile" style="display: inherit; margin: auto; border-radius: 25px;">
+
+Learning mobile Lighthouse score
+
+<img src="assets/images/readme-images/learning-mobile-lighthouse.png" width="75%" alt="The lighthouse scores for my learning page on mobile" style="display: inherit; margin: auto; border-radius: 25px;">
+
+This is the error and reason for my lower score.
+
+<img src="assets/images/readme-images/learning-mobile-lighthouse.png" width="75%" alt="The lighthouse scores for my learning page on mobile" style="display: inherit; margin: auto; border-radius: 25px;">
+
+The Bootstrap and JQuery documents are affecting the html speed.
+
+Grown Ups mobile Lighthouse score
+
+<img src="assets/images/readme-images/learning-lighthouse-issues" width="75%" alt="Loading issues" style="display: inherit; margin: auto; border-radius: 25px;">
+
+The Grown Ups Page has a similar issue.
+
+<img src="assets/images/readme-images/grownups-lighthouse-issues" width="75%" alt="Loading issues" style="display: inherit; margin: auto; border-radius: 25px;">
+
+Guitar Game mobile Lighthouse score
+
+<img src="assets/images/readme-images/guitar-game-mobile-lighthouse.png" width="75%" alt="The lighthouse scores for my guitar game page on mobile" style="display: inherit; margin: auto; border-radius: 25px;">
 
 ### Manual Testing
 
@@ -781,7 +819,11 @@ I added the following code, which fixed the issue
 
 24). Using module.exports inside my JavaScript documents worked fine when Jest testing them, however it returned a console log error message. This was the case on both my learning page and my guitar game page.
 
+<img src="assets/images/readme-images/bug-24.png" width="75%" alt="The console log error" style="display: inherit; margin: auto; border-radius: 25px;">
+
 Tutor support helped me come up with an if statement that bypases Lighthouse whilst also allowing the document to be tested, as I used it it also brought forward some mistakes make in my code. For example, wherever I had mention "i = 0", I had forgotten to add the word "let".
+
+<img src="assets/images/readme-images/fix-24.png" width="75%" alt="The if statement that helped" style="display: inherit; margin: auto; border-radius: 25px;">
 
 25). I had an issue called "Ensure text remains visible during webfont load". It had an issue with bootstraps glyphicon font family.
 
