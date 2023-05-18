@@ -55,7 +55,7 @@ Parents most importantly need to know their children will be safe in this enviro
 | Goals                                            | How are they achieved?                                                                                                                           |
 | :----------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
 | To place my child in a safe learning environment | On the homepage it's explained that the company has over 10 years of experience, any there are questions answered on the accordion.              |
-| To feel at ease with my choice of tutor          | If the parent is not happy with the amount of information given regarding safegarding of tutors they can ask more questions on the contact form. |
+| To feel at ease with my choice of tutor          | If the parent is not happy with the amount of information given regarding safeguarding of tutors they can ask more questions on the contact form. |
 
 #### Developer and Business Goals
 
@@ -344,7 +344,7 @@ Pros:
 Cons:
 
 - Wix.com bar along the top makes it look amateur.
-- The title "Guitar Teacher" is written at the top left and this is clearly an error of some sort as it dissappears letter by letter when made smaller.
+- The title "Guitar Teacher" is written at the top left and this is clearly an error of some sort as it disappears letter by letter when made smaller.
 - All of the information is on one page. The navigation doesn't take you to another page, so if you are on a section, you have to scroll to get back to where you were apart from one button at the very bottom which says back to top.
 
 <a href="https://yourguitaracademy.com/guitar-lessons-locations/leicester/" target="_blank">Your Guitar Academy</a>
@@ -460,7 +460,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - The form works, and sends an email to my email address ryanwinton6@gmail.com.
 
-  - The form also produces a message in green or red to say that the message was sent sucessfully.
+  - The form also produces a message in green or red to say that the message was sent successfully.
 
 <img src="assets/images/readme-images/contactus.png" width="80%" alt="The contact form for parents" style="display: inherit; margin: auto;">
 
@@ -596,7 +596,7 @@ Smallest phone size IPhone 5/SE simulator on Dev Tools
 | Navbar links                            | Links take user to correct pages, CSS changes on hover | Clicked Links                        | All four links work, CSS changes on hover           | Pass      |
 | All five other buttons (including logo) | Take user to the correct page, CSS changes on hover    | Clicked Buttons                      | All links work and change colour when hovered over  | Pass      |
 | Burger icon on IPhone 5/SE              | Item is clickable and navbar readable                  | Clicked burger icon                  | Navbar opens vertically, links work                 | Pass      |
-| Page layout                             | Layout changes to accomodate for smaller devices       | Opened site on IPhone 5/SE simulator | Every element visible through scrolling, links work | Pass      |
+| Page layout                             | Layout changes to accommodate for smaller devices       | Opened site on IPhone 5/SE simulator | Every element visible through scrolling, links work | Pass      |
 
 `Lessons`
 
@@ -632,10 +632,10 @@ Accordion testing has also been done automatically.
 | ------------------------------- | ------------------------------------------------ | ----------------------- | ----------------------------------------------- | --------- |
 | The same buttons from Homepage  | Take user to the correct page, hover changes CSS | Clicked Buttons         | All work, same as homepage                      | Pass      |
 | Five chord buttons, play button | CSS changes on hover                             | Hovered over Element    | CSS changes                                     | Pass      |
-| Five chord buttons, play button | Activate when clicked                            | Clicked buttons         | Chords change image, play button sarts the game | Pass      |
+| Five chord buttons, play button | Activate when clicked                            | Clicked buttons         | Chords change image, play button starts the game | Pass      |
 | Picture of chord                | Green shadow is added when answer is right       | Typed in A on a chord   | Green shadow was added                          | Pass      |
 | Picture of chord                | Red shadow is added when answer is wrong         | Typed in C on e chord   | Red shadow was added                            | Pass      |
-| The a chord                     | Answer is still accepted in uppercase            | Typed in "A" on a chord | Game recognised "A" as correct answer           | Pass      |
+| The a chord                     | Answer is still accepted in uppercase            | Typed in "A" on a chord | Game recognized "A" as correct answer           | Pass      |
 
 In order to test the correct and wrong messages displaying correctly and not repeating, I had to continually test the game by playing it and adding deliberately correct or incorrect answers in a row to see the outcome over 3 games.
 
@@ -655,7 +655,7 @@ Manual testing was also completed on the sending of the emails. I have sent vari
 
 This is a detailed log of the issues I ran into whilst coding my first project, and how I overcame them.
 
-1). The first issue I found was trying to create the grid layout on my homepage. I spent a while changing classes and moving elements only to realise I'd forgotten to identify the classes as grid areas in CSS. I then noticed when this still didn't work, that my closing div tag of the homepage-one div was inline with the opening tag, rather than after the content.
+1). The first issue I found was trying to create the grid layout on my homepage. I spent a while changing classes and moving elements only to realize I'd forgotten to identify the classes as grid areas in CSS. I then noticed when this still didn't work, that my closing div tag of the homepage-one div was inline with the opening tag, rather than after the content.
 
 <img src="assets/images/readme-images/bug-1.png" width="65%" alt="Incorrect grid layout" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -675,7 +675,7 @@ As you can see, the items are at the top of the element, not centered. The issue
 
 <img src="assets/images/readme-images/bug-3.png" width="65%" alt="The array was an array" style="display: inherit; margin: auto; border-radius: 25px;">
 
-In the end I used the help of a tutor to get to the bottom of the issue, which wasn't my code, but the test itself. The test was using the beforeall function to set the array, which was only containing one piece of data, and I had it set to a string. By setting the array to a string in the test, the test was failing. I changed this to an array, and actually realised later on that this array would only ever hold one piece of data, and so a string was the right way to go about it in the end. I got rid of the push and splice functions and used the equals sign instead.
+In the end I used the help of a tutor to get to the bottom of the issue, which wasn't my code, but the test itself. The test was using the beforeall function to set the array, which was only containing one piece of data, and I had it set to a string. By setting the array to a string in the test, the test was failing. I changed this to an array, and actually realized later on that this array would only ever hold one piece of data, and so a string was the right way to go about it in the end. I got rid of the push and splice functions and used the equals sign instead.
 
 After this the test passed.
 
@@ -683,7 +683,7 @@ After this the test passed.
 
 <img src="assets/images/readme-images/fix-4.png" width="75%" alt="If statement that fixed issue" style="display: inherit; margin: auto; border-radius: 25px;">
 
-5). My navbars initial repsonsiveness was a nightmare, when I made the screemn size smaller, I'd lose some of the text to the left. When made central it didn't sit right with the logo and at times even overlapped it.
+5). My navbars initial responsiveness was a nightmare, when I made the screen size smaller, I'd lose some of the text to the left. When made central it didn't sit right with the logo and at times even overlapped it.
 
 <img src="assets/images/readme-images/bug-5.1.png" width="100%" alt="Navbar responsiveness issues" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -739,7 +739,7 @@ There may well be a much less exhausting way to do this! But this is the way tha
 
 <img src="assets/images/readme-images/fix-12.png" width="50%" alt="The code that helped me" style="display: inherit; margin: auto; border-radius: 25px;">
 
-13). On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference betweem this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this CSS version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
+13). On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference between this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this CSS version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
 
 <img src="assets/images/readme-images/bug-13.png" width="50%" alt="Bad indicators" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -789,7 +789,7 @@ I used the idea mentioned within <a href="https://thoughtbot.com/blog/positionin
 
 <img src="assets/images/readme-images/fix-19.png" width="75%" alt="The pink box in the right position" style="display: inherit; margin: auto; border-radius: 25px;">
 
-20). The most frustrating issue I had with this project was I forgot to use a template, so the gitignore file was not here. When doing the npm testing, I realised my applications speed reduced dramatically. The port preview speed was also affected. After spending hours waiting for loading times I finally got in touch with a tutor, who managed to get to the bottom of the issue. Node_modules had been pushed to my repository, making it huge in file size.
+20). The most frustrating issue I had with this project was I forgot to use a template, so the gitignore file was not here. When doing the npm testing, I realized my applications speed reduced dramatically. The port preview speed was also affected. After spending hours waiting for loading times I finally got in touch with a tutor, who managed to get to the bottom of the issue. Node_modules had been pushed to my repository, making it huge in file size.
 
 <img src="assets/images/readme-images/bug-20.png" width="65%" alt="The node_modules folder was causing issues" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -821,7 +821,7 @@ I added the following code, which fixed the issue
 
 <img src="assets/images/readme-images/bug-24.png" width="75%" alt="The console log error" style="display: inherit; margin: auto; border-radius: 25px;">
 
-Tutor support helped me come up with an if statement that bypases Lighthouse whilst also allowing the document to be tested, as I used it it also brought forward some mistakes make in my code. For example, wherever I had mention "i = 0", I had forgotten to add the word "let".
+Tutor support helped me come up with an if statement that bypasses Lighthouse whilst also allowing the document to be tested, as I used it it also brought forward some mistakes make in my code. For example, wherever I had mention "i = 0", I had forgotten to add the word "let".
 
 <img src="assets/images/readme-images/fix-24.png" width="75%" alt="The if statement that helped" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -853,7 +853,7 @@ I couldn't find an api relevent to this web application that would have enhanced
 
 #### Ipad Air screen resolution
 
-The index page was mostly kept the same, I changed the width of the navbar so it would accomodate smallest IPad sizes. The only change I made on the lessons page was adding a "br" element to the sentence, which display changes to block when screen size is medium, as at times the question mark was appearing alone on the lower line.
+The index page was mostly kept the same, I changed the width of the navbar so it would accommodate smallest IPad sizes. The only change I made on the lessons page was adding a "br" element to the sentence, which display changes to block when screen size is medium, as at times the question mark was appearing alone on the lower line.
 
 The grown ups page just needed width properties as percentages to make them responsive, the contact form has plenty of room to fill. The guitar game's score box and play button moves underneath the game, so the messages and larry can move closer together.
 
@@ -891,7 +891,7 @@ Making the guitar game available on small screens posed a lot of challenges. I f
 
 - The colours were chosen using <a href="https://coolors.co/" target="_blank">Coolors.</a>
 
-- The contarst was then checked using this contrast checker <a href="https://webaim.org/resources/contrastchecker/" target="_blank">Webaim</a>
+- The contrast was then checked using this contrast checker <a href="https://webaim.org/resources/contrastchecker/" target="_blank">Webaim</a>
 
 - I changed the format of my images from jpg, png and jpeg to webp using <a href="https://ezgif.com/png-to-webp" target="_blank">ezgif.</a>
 
