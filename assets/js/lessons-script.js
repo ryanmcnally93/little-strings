@@ -8,11 +8,18 @@ document.addEventListener("DOMContentLoaded", function () {
       let dropdown = document.getElementById("navbarNavDropdown");
       if (dropdown.classList.contains("show")) {
         dropdown.classList.remove("show");
+        $( "#navbarNavDropdown" ).slideUp( "fast", function() {
+            // Lessons navbar wasn't sliding up as it should, this fixes that
+          });
         console.log("taking away show class");
+
       } else {
         dropdown.classList.add("show");
         console.log("adding show class");
         dropdown.classList.remove("in");
+        $( "#navbarNavDropdown" ).slideDown( "fast", function() {
+            // Lessons navbar wasn't sliding down as it should, this fixes that
+          });
       }
     });
 });

@@ -880,6 +880,9 @@ Making the guitar game available on small screens posed a lot of challenges. I f
 
 This readme.md was spellchecked using the spell checker extension for Chrome.
 
-loading lazy
-module exports
+loading lazy used to defer the loading of off-screen images on mobile lighthouse score
+module exports for console.log error
 unused css trial of smaller bootstrap file, dodgy on opening
+I used a stack overflow to fix the woff2 error coming up - https://stackoverflow.com/questions/69127435/how-to-fix-ensure-text-remains-visible-during-webfont-load-bootstrap-icons-woff/69311017#69311017
+
+Explain that to make accordions and carousels work in future you will not use massive bootstrap documents
