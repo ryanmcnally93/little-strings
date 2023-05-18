@@ -20,9 +20,10 @@ This web application was built using Gitpod at first, and then moving onto Code 
 
 Once I had neared completion, I clicked settings and GitHub Pages, changed branch to "Main" and saved. I then placed the URL on my repos description.
 
-[Little Strings](https://ryanmcnally93.github.io/project-two-little-strings/)
+<a href="https://ryanmcnally93.github.io/project-two-little-strings/" target="_blank">Little Strings</a>
 
 ![GitHub pages deployment](https://img.shields.io/github/deployments/ryanmcnally93/project-two-little-strings/github-pages)
+
 
 ## UX
 
@@ -130,17 +131,17 @@ So that:
 
 The overall experience needs to be fun, colourful and exciting. I have looked at the following sites for inspiration:
 
-[Fun Bain](https://www.funbrain.com/)
+<a href="https://www.funbrain.com/" target="_blank">Fun Brain</a>
 
-[The Kidz Page](http://thekidzpage.com/)
+<a href="http://thekidzpage.com/" target="_blank">The Kidz Page</a>
 
-[Starfall](https://www.starfall.com/h/)
+<a href="https://www.starfall.com/h/" target="_blank">Starfall</a>
 
-[National Geographic](https://kids.nationalgeographic.com/)
+<a href="https://kids.nationalgeographic.com/" target="_blank">National Geographic</a>
 
-[PBS Kids](https://pbskids.org/)
+<a href="https://pbskids.org/" target="_blank">PBS Kids</a>
 
-[Coolmath.com](https://www.coolmath.com/)
+<a href="https://www.coolmath.com/" target="_blank">Coolmath.com</a>
 
 From these I can see a consistency in colours, using greens, yellows and blues. Bright solid colours are often used on backgrounds.
 I can also see fun, large smooth bubble letters in the fonts used.
@@ -163,8 +164,8 @@ Some of these sites even have audio to grab the kids attention.
 - Throughout the sites I looked at, I noticed primary colours being used heavily throughout. Any space deemed "boring" by kids but professional by adults is filled with exciting imagery and colours, and my web application is no exception!
 - I have chosen green and blue to grab kids attention, as well as a darker green and blue for text and borders, which change when you hover over them.
 - Some elements have also had the green and blue swapped around, to add some difference to the site, and the guitar button of the homepage changes from one to the other when you hover on it.
-- The exact shades I used were decided using [Coolors](https://coolors.co/).
-- I then used the contrast checker on [Webaim](https://webaim.org/resources/contrastchecker/) to ensure the text was readable.
+- The exact shades I used were decided using <a href="https://coolors.co/" target="_blank">Coolors</a>.
+- I then used the contrast checker on <a href="https://webaim.org/resources/contrastchecker/" target="_blank">Webaim</a> to ensure the text was readable.
 
 <img src="assets/images/readme-images/colours.png" width="75%" alt="An image of my colours, picked in coolors" style="display: inherit; margin: auto;">
 
@@ -210,21 +211,21 @@ Some of these sites even have audio to grab the kids attention.
 
 ### Wireframes
 
-These wireframes were created using [Balsamiq Wireframes:](https://balsamiq.com/wireframes/?gad=1&gclid=Cj0KCQjwmN2iBhCrARIsAG_G2i4B-7yK8ylaMm-EgPZyIat6rzJi5BBNRLhY50Ej2SbjAHbQF2LMZocaAj9nEALw_wcB)
+These wireframes were created using <a href="https://balsamiq.com/wireframes/?gad=1&gclid=Cj0KCQjwmN2iBhCrARIsAG_G2i4B-7yK8ylaMm-EgPZyIat6rzJi5BBNRLhY50Ej2SbjAHbQF2LMZocaAj9nEALw_wcB" target="_blank">Balsamiq Wireframes:</a>
 
-[Homepage](/assets/images/readme-images/index-wireframe.png)
+<img src="/assets/images/readme-images/index-wireframe.png" width="50%" alt="Homepage" style="display: inherit; margin: auto;">
 
-[Lessons](/assets/images/readme-images/lessons-wireframe.png)
+<img src="/assets/images/readme-images/lessons-wireframe.png" width="50%" alt="Lessons (Later called Learning)" style="display: inherit; margin: auto;">
 
-[Grown Ups](/assets/images/readme-images/grown-ups-wireframe.png)
+<img src="/assets/images/readme-images/grown-ups-wireframe.png" width="50%" alt="Grown Ups" style="display: inherit; margin: auto;">
 
-[Guitar Game](/assets/images/readme-images/guitar-game-wireframe.png)
+<img src="/assets/images/readme-images/guitar-game-wireframe.png" width="50%" alt="Guitar Game" style="display: inherit; margin: auto;">
 
 ### Prototype
 
 This prototype of index.html was created on figma.com. From this I designed the original header and footer and colours, a lot of which would later change but gave me something to get started on. I did however keep the styling properties of the divs and of course, the logo.
 
-[Index Prototype](/assets/images/readme-images/figma-prototype.png)
+<img src="/assets/images/readme-images/figma-prototype.png" width="50%" alt="Index Prototype" style="display: inherit; margin: auto;">
 
 ### Q and A of Potential Users
 
@@ -332,7 +333,7 @@ Teacher:
 
 Who else is there local to Leicester that has similar goals? Well, I found a few guitar teachers, but none near Leicester aimed specifically towards younger people. Here are three examples.
 
-[John Joslin](https://johnjoslinguitarlessonsleicester.com/)
+<a href="https://johnjoslinguitarlessonsleicester.com/" target="_blank">John Joslin</a>
 
 Pros:
 
@@ -346,14 +347,14 @@ Cons:
 - The title "Guitar Teacher" is written at the top left and this is clearly an error of some sort as it dissappears letter by letter when made smaller.
 - All of the information is on one page. The navigation doesn't take you to another page, so if you are on a section, you have to scroll to get back to where you were apart from one button at the very bottom which says back to top.
 
-[Your Guitar Academy](https://yourguitaracademy.com/guitar-lessons-locations/leicester/)
+<a href="https://yourguitaracademy.com/guitar-lessons-locations/leicester/" target="_blank">Your Guitar Academy</a>
 
 Cons:
 
 - Couldn't even access the site because of a message that says fully booked, which you can't get past unless you enter details. If you haven't engaged the audience, why would they sign up to you?
 - Whether they are booked or not, the site should still attempt to show content of some sort. At the very least the fully booked box should have a close tab.
 
-[Intasound](https://www.intasound-music.co.uk/our-services/music-lessons/guitar-lessons/)
+<a href="https://www.intasound-music.co.uk/our-services/music-lessons/guitar-lessons/" target="_blank">Intasound</a>
 
 Pros:
 
@@ -505,11 +506,11 @@ I have tested my web application automatically and manually using Test Driven De
 
 ### W3C Validation
 
-- HTML [W3C validator](https://validator.w3.org/)
+- HTML <a href="https://validator.w3.org/" target="_blank">W3C validator</a>
 
   - RESULTS
 
-- CSS [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/)
+- CSS <a href="https://jigsaw.w3.org/css-validator/" target="_blank">Jigsaw Validator</a>
 
 - RESULTS
 
@@ -525,11 +526,11 @@ I have tested my web application automatically and manually using Test Driven De
 
 This test.js contains 80 automatic tests for the guitar game, which all currently pass.
 
-[Guitar Game Jest Test File](/assets/js/guitar-game-script.test.js)
+<a href="/assets/js/guitar-game-script.test.js" target="_blank">Guitar Game Jest Test File</a>
 
 This test.js contains 13 automatic tests for the lessons page, which test the key-to-chord section and all tests currently pass.
 
-[Lessons Page Jest Test File](/assets/js/lessons-script.test.js)
+<a href="/assets/js/lessons-script.test.js" target="_blank">Lessons Page Jest Test File</a>
 
 ### Lighthouse
 
@@ -746,7 +747,7 @@ I decided to again add some JavaScript, which looked out for the "in" class bein
 
 <img src="assets/images/readme-images/bug-19.png" width="75%" alt="The pink box in the wrong position" style="display: inherit; margin: auto; border-radius: 25px;">
 
-I used the idea mentioned within [this link](https://thoughtbot.com/blog/positioning#centering-using-absolute-position) for my positional changes, giving items a left property of 50% and then a minus margin-left width that equalled half the width of the element, placing the element centrally.
+I used the idea mentioned within <a href="https://thoughtbot.com/blog/positioning#centering-using-absolute-position" target="_blank">this link</a> for my positional changes, giving items a left property of 50% and then a minus margin-left width that equalled half the width of the element, placing the element centrally.
 
 <img src="assets/images/readme-images/fix-19.png" width="75%" alt="The pink box in the right position" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -758,7 +759,7 @@ The tutor helped me un-push it and after closing my workspace and restarting eve
 
 <img src="assets/images/readme-images/fix-20.png" width="65%" alt="The repository without the node_modules folder" style="display: inherit; margin: auto; border-radius: 25px;">
 
-21). I attempted to add an image to my workspace that simply would not be accepted. Code Anywhere did not like it, so I posted in slack and received help from jo_ci, who told me my image file sizes were too large and gave me [this link](https://tinypng.com/) to fix the issue, which worked brilliantly.
+21). I attempted to add an image to my workspace that simply would not be accepted. Code Anywhere did not like it, so I posted in slack and received help from jo_ci, who told me my image file sizes were too large and gave me <a href="https://tinypng.com/" target="_blank">this link</a> to fix the issue, which worked brilliantly.
 
 <img src="assets/images/readme-images/bug-21.png" width="75%" alt="Image file size issue" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -784,13 +785,13 @@ Tutor support helped me come up with an if statement that bypases Lighthouse whi
 
 25). I had an issue called "Ensure text remains visible during webfont load". It had an issue with bootstraps glyphicon font family.
 
-I used a [this](https://stackoverflow.com/questions/69127435/how-to-fix-ensure-text-remains-visible-during-webfont-load-bootstrap-icons-woff/69311017#69311017) stack overflow to fix the problem, creating a CSS document for the issue.
+I used <a href="https://stackoverflow.com/questions/69127435/how-to-fix-ensure-text-remains-visible-during-webfont-load-bootstrap-icons-woff/69311017#69311017" target="_blank">this</a> stack overflow to fix the problem, creating a CSS document for the issue.
 
 ### Unfixed Bugs
 
 1). I had a major issue when loading lighthouse on all pages, but in particular, the learning page. If I ever create an accordion or carousel again I will definitely look to code it myself rather than use bootstrap.
 
-Loading these documents of huge sizes and only using a small amount to make one element work was really slowing down the page. I attempted to use [uncss-online](https://uncss-online.com/), and created two bootstrap documents that only contain the necessary CSS.
+Loading these documents of huge sizes and only using a small amount to make one element work was really slowing down the page. I attempted to use <a href="https://uncss-online.com/" target="_blank">uncss-online</a>, and created two bootstrap documents that only contain the necessary CSS.
 
 This didn't work for the Javascript bootstrap documents or JQuery however, and I couldn't find a fix there.
 
@@ -830,61 +831,65 @@ Making the guitar game available on small screens posed a lot of challenges. I f
 
 ### Content
 
-- The code I used for the accordion, I got from [W3S.](https://www.w3schools.com/howto/howto_js_accordion.asp) I used their template and added my own questions and answers, and some JQuery.
+- The code I used for the accordion, I got from <a href="https://www.w3schools.com/howto/howto_js_accordion.asp" target="_blank">W3S.</a> I used their template and added my own questions and answers, and some JQuery.
 
-- The carousel code was also found on [W3S.](https://www.w3schools.com/bootstrap/bootstrap_carousel.asp) This code uses bootstrap classes to achieve the carousel. I decided to create the divs inside the carousel to split it in half, with information as well as pictures, but the code that makes it work is from bootstrap.
+- The carousel code was also found on <a href="https://www.w3schools.com/bootstrap/bootstrap_carousel.asp" target="_blank">W3S.</a> This code uses bootstrap classes to achieve the carousel. I decided to create the divs inside the carousel to split it in half, with information as well as pictures, but the code that makes it work is from bootstrap.
 
 - The email javascipt was written as I followed the Code Institute course videos, and so has a lot of similarities.
 
-- I got the shields idea at the start of my readme from Kera Cudmore's [Quiz Arms Repo.](https://github.com/kera-cudmore/TheQuizArms)
+- I got the shields idea at the start of my readme from Kera Cudmore's <a href="https://github.com/kera-cudmore/TheQuizArms" target="_blank">Quiz Arms Repo.</a>
 
-- And this is the site for [Shields.](https://shields.io/category/analysis)
+- And this is the site for <a href="https://shields.io/category/analysis" target="_blank">Shields.</a>
 
-- I used information on this site for [central positioning.](https://thoughtbot.com/blog/positioning#centering-using-absolute-position)
+- I used information on this site for <a href="https://thoughtbot.com/blog/positioning#centering-using-absolute-position" target="_blank">central positioning.</a>
 
-- I compressed images using [tinypng](https://tinypng.com/) given to me by Jo_ci on Slack.
+- I compressed images using <a href="https://tinypng.com/" target="_blank">tinypng</a> given to me by Jo_ci on Slack.
 
-- I resized images using this [simple image resizer.](https://www.simpleimageresizer.com/upload)
+- I resized images using this <a href="https://www.simpleimageresizer.com/upload" target="_blank">simple image resizer.</a>
 
-- I changed the format of my images from jpg, png and jpeg to webp using [ezgif.](https://ezgif.com/png-to-webp)
+- The colours were chosen using <a href="https://coolors.co/" target="_blank">Coolors.</a>
+
+- The contarst was then checked using this contrast checker <a href="https://webaim.org/resources/contrastchecker/" target="_blank">Webaim</a>
+
+- I changed the format of my images from jpg, png and jpeg to webp using <a href="https://ezgif.com/png-to-webp" target="_blank">ezgif.</a>
 
 - In order to get my guitar game going, I watched the creation of the simple Simon game created by Code Institute and a lot of my ideas came from that.
 
 ### Media
 
-- All of the following images are from [pexels.](https://pexels.com), below is a list of the image names and the author who posted them.
+- All of the following images are from <a href="https://pexels.com" target="_blank">pexels.</a>, below is a list of the image names and the author who posted them.
 
-- [group-lesson.jpeg](/assets/images/group-lesson.jpeg) - Pavel Danilyuk
+- <a href="/assets/images/group-lesson.jpeg" target="_blank">group-lesson.jpeg</a> - Pavel Danilyuk
 
-- [home-lesson.jpeg](/assets/images/home-lesson.jpeg) - Pavel Danilyuk
+- <a href="/assets/images/home-lesson.jpeg" target="_blank">home-lesson.jpeg</a> - Pavel Danilyuk
 
-- [home-one.png](/assets/images/home-one.png) - Vlada Karpovich
+- <a href="/assets/images/home-one.png" target="_blank">home-one.png</a> - Vlada Karpovich
 
-- [home-two.png](/assets/images/home-two.png) - Yan Krukau
+- <a href="/assets/images/home-two.png" target="_blank">home-two.png</a> - Yan Krukau
 
-- [one-on-one-lesson.jpeg](/assets/images/one-on-one-lesson.jpeg) - Gustavo Fring
+- <a href="/assets/images/one-on-one-lesson.jpeg" target="_blank">one-on-one-lesson.jpeg</a> - Gustavo Fring
 
-- All of the following images are from [pngwing.](https://pngwing.com) below is a list of the image names, although no authors have been credited on pngwing's webpage.
+- All of the following images are from <a href="https://pngwing.com" target="_blank">pngwing.</a> below is a list of the image names, although no authors have been credited on pngwing's webpage.
 
-- [background-notes.png](/assets/images/background-notes.png)
+- <a href="/assets/images/background-notes.png" target="_blank">background-notes.png</a> 
 
-- [blue.png](/assets/images/blue.png)
+- <a href="/assets/images/blue.png" target="_blank">blue.png</a> 
 
-- [green.png](/assets/images/green.png)
+- <a href="/assets/images/green.png" target="_blank">green.png</a> 
 
-- [guitar-of-notes.png](/assets/images/guitar-of-notes.png)
+- <a href="/assets/images/guitar-of-notes.png" target="_blank">guitar-of-notes.png</a> 
 
-- [larry.png](/assets/images/larry.png)
+- <a href="/assets/images/larry.png" target="_blank">larry.png</a> 
 
-- [pink.png](/assets/images/pink.png)
+- <a href="/assets/images/pink.png" target="_blank">pink.png</a> 
 
-- [speech.png](/assets/images/speech.png)
+- <a href="/assets/images/speech.png" target="_blank">speech.png</a> 
 
-- [speech-two.png](/assets/images/speech-two.png)
+- <a href="/assets/images/speech-two.png" target="_blank">speech-two.png</a> 
 
-- [yellow.png](/assets/images/yellow.png)
+- <a href="/assets/images/yellow.png" target="_blank">yellow.png</a> 
 
-- The two logos and five chord images were created by me on [Canva.](https://www.canva.com/)
+- The two logos and five chord images were created by me on <a href="https://www.canva.com/" target="_blank">Canva.g</a> 
 
 - All of the images created for this readme were screenshots from my MacBook, created by me.
 
