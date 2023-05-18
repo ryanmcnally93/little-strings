@@ -223,25 +223,8 @@ describe("cssChange works correctly", () => {
     game.currentChord = "c";
     cssChange();
   });
-  test("cssChange has added currentChord value to classList", () => {
-    expect(game.currentChord).toEqual(
-      document.getElementById("chord").classList[2]
-    );
-  });
-  test("None of the following classes should be in the classList 'a', 'd', 'e', 'g' - but 'c' should", () => {
-    expect(document.getElementById("chord").classList.contains("a")).toBe(
-      false
-    );
-    expect(document.getElementById("chord").classList.contains("c")).toBe(true);
-    expect(document.getElementById("chord").classList.contains("d")).toBe(
-      false
-    );
-    expect(document.getElementById("chord").classList.contains("e")).toBe(
-      false
-    );
-    expect(document.getElementById("chord").classList.contains("g")).toBe(
-      false
-    );
+  test("cssChange has changed the image to the correct chord", () => {
+    expect(document.getElementById('java-chord').src).toEqual("http://localhost/assets/images/c.webp");
   });
 });
 // ALL PASS

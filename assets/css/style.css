@@ -1220,24 +1220,10 @@ button:focus {
   border-radius: 25px;
 }
 
-.a {
-  background: url(../images/a.webp) no-repeat bottom center;
-}
-
-.c {
-  background: url(../images/c.webp) no-repeat bottom center;
-}
-
-.d {
-  background: url(../images/d.webp) no-repeat bottom center;
-}
-
-.e {
-  background: url(../images/e.webp) no-repeat bottom center;
-}
-
-.g {
-  background: url(../images/g.webp) no-repeat bottom center;
+#java-chord {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 25px;
 }
 
 .chord-shadow-green {
@@ -1379,21 +1365,6 @@ button:focus {
   }
   #speech-two {
     display: block !important;
-  }
-  .a {
-    background: url(../images/a-smaller.webp) no-repeat bottom center !important;
-  }
-  .c {
-    background: url(../images/c-smaller.webp) no-repeat bottom center !important;
-  }
-  .d {
-    background: url(../images/d-smaller.webp) no-repeat bottom center !important;
-  }
-  .e {
-    background: url(../images/e-smaller.webp) no-repeat bottom center !important;
-  }
-  .g {
-    background: url(../images/g-smaller.webp) no-repeat bottom center !important;
   }
   #chords-appear {
     width: 100%;

@@ -165,21 +165,18 @@ function changeChord() {
 }
 
 function cssChange() {
-  // I have used a longer if statement as opposed to a for loop due to the fact that there are two important classes that I don't want removed
-  // This if statement removes the old classes, meaning that the image cannot be what it was before
+  // This if statement changes the image source, so it is the same as the game.currentChord
   if (game.currentChord == "a") {
-    document.getElementById("chord").classList.remove("c", "d", "e", "g");
+    document.getElementById("java-chord").src = "./assets/images/a.webp";
   } else if (game.currentChord == "c") {
-    document.getElementById("chord").classList.remove("a", "d", "e", "g");
+    document.getElementById("java-chord").src = "./assets/images/c.webp";
   } else if (game.currentChord == "d") {
-    document.getElementById("chord").classList.remove("a", "c", "e", "g");
+    document.getElementById("java-chord").src = "./assets/images/d.webp";
   } else if (game.currentChord == "e") {
-    document.getElementById("chord").classList.remove("a", "c", "d", "g");
+    document.getElementById("java-chord").src = "./assets/images/e.webp";
   } else {
-    document.getElementById("chord").classList.remove("a", "c", "d", "e");
+    document.getElementById("java-chord").src = "./assets/images/g.webp";
   }
-  // This sets the new image class, for the new chord created
-  document.getElementById("chord").classList.add(game.currentChord);
 }
 
 function checkAnswer() {
@@ -206,9 +203,9 @@ function checkAnswer() {
     // The answer is correct, so the score is increased
     game.score++;
     // Green shadow on the image, more verification that the answer inserted was correct.
-    document.getElementById("chord").classList.add("chord-shadow-green");
+    document.getElementById("java-chord").classList.add("chord-shadow-green");
     setTimeout(() => {
-      document.getElementById("chord").classList.remove("chord-shadow-green");
+      document.getElementById("java-chord").classList.remove("chord-shadow-green");
     }, 500);
   } else {
     randomWrongGenerator();
@@ -219,9 +216,9 @@ function checkAnswer() {
     } else {
       game.larrysMessage = document.getElementById("larry-wrong-three");
     }
-    document.getElementById("chord").classList.add("chord-shadow-red");
+    document.getElementById("java-chord").classList.add("chord-shadow-red");
     setTimeout(() => {
-      document.getElementById("chord").classList.remove("chord-shadow-red");
+      document.getElementById("java-chord").classList.remove("chord-shadow-red");
     }, 500);
   }
   larryMessage();

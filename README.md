@@ -229,7 +229,7 @@ This prototype of index.html was created on figma.com. From this I designed the 
 
 ### Q and A of Potential Users
 
-I spoke to three different potential users regarding the website. One was a parent of a young child, one was a 10 year old, and the other was a music teacher. I showed them what I had made and asked them the following questions:
+I spoke to three different potential users regarding the website. One was a parent of a young child. The younger person was my nephew, a 10 year old. The other was a friend I have who is a music teacher. I showed them what I had made and asked them the following questions:
 
 #### Q1 What makes a good website experience for children?
 
@@ -237,13 +237,15 @@ Parent of a young child:
 
 - "Response"
 
-Younger person:
-
-- "Response"
-
 Teacher:
 
-- "Response"
+- "A website that is easy and intuitive to read and use makes a good experience for children."
+
+#### Q1 What makes a good website fun?
+
+Younger person:
+
+- "Bright colours"
 
 #### Q2 What information would you be looking for?
 
@@ -253,11 +255,11 @@ Parent of a young child:
 
 Younger person:
 
-- "Response"
+- "A larger explanation of the website"
 
 Teacher:
 
-- "Response"
+- "They'd be looking for any information about anything in my opinion. I know they are attracted to things which are entertaining and showy."
 
 #### Q3 Would you use this?
 
@@ -267,11 +269,11 @@ Parent of a young child:
 
 Younger person:
 
-- "Response"
+- "Yes"
 
 Teacher:
 
-- "Response"
+- "Yes"
 
 #### Q4 Why?
 
@@ -281,11 +283,11 @@ Parent of a young child:
 
 Younger person:
 
-- "Response"
+- "I would use the website it would be fun to use at home"
 
 Teacher:
 
-- "Response"
+- "If I had a child this seems informative and fun for them and teaches them a valuable skill."
 
 #### Q5 What changes can I make?
 
@@ -295,11 +297,11 @@ Parent of a young child:
 
 Younger person:
 
-- "Response"
+- "More explanation on the learning of the guitar"
 
 Teacher:
 
-- "Response"
+- "Fewer exclamation marks for a more professional look, it could be clearer what is clickable and what isn't, the T-Rex is a little scary (notably the teeth), and the pictures of the chords could be clearer"
 
 #### Q6 What other questions might parents have?
 
@@ -307,13 +309,9 @@ Parent of a young child:
 
 - "Response"
 
-Younger person:
-
-- "Response"
-
 Teacher:
 
-- "Response"
+- "I think they'd like more information, context, and suggestions how they can help their child to learn"
 
 #### Q7 What did you think of the game? Could it be improved?
 
@@ -323,11 +321,17 @@ Parent of a young child:
 
 Younger person:
 
-- "Response"
+- "The game was a bit difficult would like some sounds, I didn't learn anything new but only because I'm already learning the guitar!"
 
 Teacher:
 
-- "Response"
+- "I don't consider quizzes to be games, personally, and I don't find them fun on general. But it does the job of a quiz well, the T-Rex giving encouragement when you get it wrong is a nice touch."
+
+#### Q8 Do you think the games design would help a child learn to play the guitar?
+
+Teacher:
+
+- "I think a quiz is ok but could do maybe with different levels and some other activities"
 
 ### Competitor Review
 
@@ -524,7 +528,7 @@ I have tested my web application automatically and manually using Test Driven De
 
 ### Javascript Validation
 
-This test.js contains 80 automatic tests for the guitar game, which all currently pass.
+This test.js contains 79 automatic tests for the guitar game, which all currently pass.
 
 <a href="/assets/js/guitar-game-script.test.js" target="_blank">Guitar Game Jest Test File</a>
 
