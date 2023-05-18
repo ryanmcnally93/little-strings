@@ -415,7 +415,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - The guitar game button is massive. It is designed to attract the attention of the younger audience, with the dinosaur image inserted and a colour change on hover.
 
-  - Getting the circles to change colour when hovered was very difficult in css, so I instead wrote some javascript code to get it working.
+  - Getting the circles to change colour when hovered was very difficult in CSS, so I instead wrote some javascript code to get it working.
 
 <img src="assets/images/readme-images/guitar-button-green.png" width="75%" alt="The guitar button on the homepage" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -449,7 +449,7 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - I've added some jquery to make the message slide down rather than flash on and off.
 
-  - I've also added some hover css, changing the light colour over from green to blue but keeping the darker colour the same.
+  - I've also added some hover CSS, changing the light colour over from green to blue but keeping the darker colour the same.
 
 <img src="assets/images/readme-images/accordion.png" width="80%" alt="The accordion, with one of the questions clicked on" style="display: inherit; margin: auto;">
 
@@ -517,7 +517,7 @@ I have tested my web application automatically and manually using Test Driven De
   <a href="http://jigsaw.w3.org/css-validator/check/referer">
     <img  style="border:0;width:88px;height:31px;margin:auto;display:flex;"
           src="http://jigsaw.w3.org/css-validator/images/vcss"
-          alt="Valid CSS!" />
+          alt="Valid css!" />
     </a>
 </p>-->
 
@@ -616,7 +616,7 @@ Manual testing was also completed on the sending of the emails. I have sent vari
 
 This is a detailed log of the issues I ran into whilst coding my first project, and how I overcame them.
 
-1). The first issue I found was trying to create the grid layout on my homepage. I spent a while changing classes and moving elements only to realise I'd forgotten to identify the classes as grid areas in css. I then noticed when this still didn't work, that my closing div tag of the homepage-one div was inline with the opening tag, rather than after the content.
+1). The first issue I found was trying to create the grid layout on my homepage. I spent a while changing classes and moving elements only to realise I'd forgotten to identify the classes as grid areas in CSS. I then noticed when this still didn't work, that my closing div tag of the homepage-one div was inline with the opening tag, rather than after the content.
 
 <img src="assets/images/readme-images/bug-1.png" width="65%" alt="Incorrect grid layout" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -700,7 +700,7 @@ There may well be a much less exhausting way to do this! But this is the way tha
 
 <img src="assets/images/readme-images/fix-12.png" width="50%" alt="The code that helped me" style="display: inherit; margin: auto; border-radius: 25px;">
 
-13). On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference betweem this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this css version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
+13). On the lessons page, the guitar logo changed colour only when hovered on the very bottom of it. The only difference betweem this and other pages was the bootstrap callings being made to make the carousel work. I tried to place the bootstrap link that I am using on the other pages last, and this worked, however, it changed the carousel indicators. My guess is this CSS version doesn't support whatever styling was being used on the indicators, so I styled them myself. Now the guitar hover works, and the indicators are better than before, as their colour matches that of the rest of the application.
 
 <img src="assets/images/readme-images/bug-13.png" width="50%" alt="Bad indicators" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -722,7 +722,7 @@ Adding the "change" event listener solved this issue.
 
 16). I wanted the guitar-game button on the index page to react in a fun way to kids when hovered over. Simple CSS hover changes were simply not working. I tried to say that when one element was hovered over it affected another, as although the button is hovered over, the circles change colour too.
 
-I decided the best way to achieve this was to write some JavaScript for the circles and normal css for the button.
+I decided the best way to achieve this was to write some JavaScript for the circles and normal CSS for the button.
 
 <img src="assets/images/readme-images/fix-16.png" width="75%" alt="JavaScript used on index.html" style="display: inherit; margin: auto; border-radius: 25px;">
 
@@ -774,11 +774,31 @@ I added the following code, which fixed the issue
 
 <img src="assets/images/readme-images/fix-22.png" width="75%" alt="The carousel, working" style="display: inherit; margin: auto; border-radius: 25px;">
 
+#### Lighthouse Bugs
+
+23). My score was affected as I needed to defer off-screen images, something I didn't fully understand or know how to do. After searching online for the fix I found that adding loading: lazy to the CSS of the images that were mentioned resolved the issue.
+
+24). Using module.exports inside my JavaScript documents worked fine when Jest testing them, however it returned a console log error message. This was the case on both my learning page and my guitar game page.
+
+Tutor support helped me come up with an if statement that bypases Lighthouse whilst also allowing the document to be tested, as I used it it also brought forward some mistakes make in my code. For example, wherever I had mention "i = 0", I had forgotten to add the word "let".
+
+25). I had an issue called "Ensure text remains visible during webfont load". It had an issue with bootstraps glyphicon font family.
+
+I used a [this](https://stackoverflow.com/questions/69127435/how-to-fix-ensure-text-remains-visible-during-webfont-load-bootstrap-icons-woff/69311017#69311017) stack overflow to fix the problem, creating a CSS document for the issue.
+
 ### Unfixed Bugs
 
-I would have preferred when playing the game on smaller screen sizes, for the whole game including Larry to be visible. As the keyboard rises taking half the screen away, this unfortunately is not possible.
+1). I had a major issue when loading lighthouse on all pages, but in particular, the learning page. If I ever create an accordion or carousel again I will definitely look to code it myself rather than use bootstrap.
 
-I really wanted to include an api and my original thought was to add one on the lessons page. I was hoping to have an input that the user could insert a song name into, which would return the chords for that song. The best api I could find to do this was called Songsterr. I spent two whole days attempting to iterate through their arrays to find the relevant information; contacing both college and technical tutors to try and get the api to work.
+Loading these documents of huge sizes and only using a small amount to make one element work was really slowing down the page. I attempted to use [uncss-online](https://uncss-online.com/), and created two bootstrap documents that only contain the necessary CSS.
+
+This didn't work for the Javascript bootstrap documents or JQuery however, and I couldn't find a fix there.
+
+A future idea I had would be to make individual CSS documents for each page in future, as this would mean the level of unused CSS from the main CSS document being called would be much less too.
+
+2). I would have preferred when playing the game on smaller screen sizes, for the whole game including Larry to be visible. As the keyboard rises taking half the screen away, this unfortunately is not possible.
+
+3). I really wanted to include an api and my original thought was to add one on the lessons page. I was hoping to have an input that the user could insert a song name into, which would return the chords for that song. The best api I could find to do this was called Songsterr. I spent two whole days attempting to iterate through their arrays to find the relevant information; contacing both college and technical tutors to try and get the api to work.
 
 Eventually I emailed Songsterr themselves and asked for their advice, I had a reply two days later to find that their service wasn't provided anymore, and the api wasn't live.
 
@@ -879,12 +899,3 @@ Making the guitar game available on small screens posed a lot of challenges. I f
 - Tutor support and the Slack community at Code Institute for their help, namely Tomislav 5P, Jo_ci, Lavadax and Kera Cudmore who helped answer my questions regularly.
 
 This readme.md was spellchecked using the spell checker extension for Chrome.
-
-loading lazy used to defer the loading of off-screen images on mobile lighthouse score
-module exports for console.log error
-unused css trial of smaller bootstrap file, dodgy on opening
-I used a stack overflow to fix the woff2 error coming up - https://stackoverflow.com/questions/69127435/how-to-fix-ensure-text-remains-visible-during-webfont-load-bootstrap-icons-woff/69311017#69311017
-
-Explain that to make accordions and carousels work in future you will not use massive bootstrap documents
-
-Would it be more beneficial for page speeds to have separate css files for different pages?
