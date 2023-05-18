@@ -24,7 +24,6 @@ Once I had neared completion, I clicked settings and GitHub Pages, changed branc
 
 ![GitHub pages deployment](https://img.shields.io/github/deployments/ryanmcnally93/project-two-little-strings/github-pages)
 
-
 ## UX
 
 ### Project Goal
@@ -52,9 +51,9 @@ Parents most importantly need to know their children will be safe in this enviro
 - To place my child in a safe learning environment
 - To feel at ease with my choice of tutor
 
-| Goals                                            | How are they achieved?                                                                                                                           |
-| :----------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------- |
-| To place my child in a safe learning environment | On the homepage it's explained that the company has over 10 years of experience, any there are questions answered on the accordion.              |
+| Goals                                            | How are they achieved?                                                                                                                            |
+| :----------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------ |
+| To place my child in a safe learning environment | On the homepage it's explained that the company has over 10 years of experience, any there are questions answered on the accordion.               |
 | To feel at ease with my choice of tutor          | If the parent is not happy with the amount of information given regarding safeguarding of tutors they can ask more questions on the contact form. |
 
 #### Developer and Business Goals
@@ -189,25 +188,25 @@ Some of these sites even have audio to grab the kids attention.
 
 - Divs with opacity at 0.85% have been put around titles so that the image isn't distracting over them.
 
-<img src="assets/images/background-notes.png" width="80%" alt="The background image, used throughout my web application" style="display: inherit; margin: auto;">
+<img src="assets/images/background-notes.webp" width="80%" alt="The background image, used throughout my web application" style="display: inherit; margin: auto;">
 
 #### Images
 
 - The guitar game chord images were created by me on canva, illustrating each chord from A to G, with bright colours.
 
-<img src="assets/images/g.png" width="50%" alt="The G chord, an image created by me on Canva" style="border-radius: 25px; display: inherit; margin: auto;">
+<img src="assets/images/g.webp" width="50%" alt="The G chord, an image created by me on Canva" style="border-radius: 25px; display: inherit; margin: auto;">
 
 - There is an image of a dinosaur playing the guitar, who I've given the name Larry, for fun.
 
-<img src="assets/images/larry.png" width="50%" alt="Larry, the guitar playing dinosaur" style="background-color: #fafafa; border-radius: 25px; display: inherit; margin: auto;">
+<img src="assets/images/larry.webp" width="50%" alt="Larry, the guitar playing dinosaur" style="background-color: #fafafa; border-radius: 25px; display: inherit; margin: auto;">
 
 - There are guitars made of notes, and relevant images in the carousel. The first is a child being taught, the second, is a group of children in a class, whilst the third is a child practicing at home.
 
-<img src="assets/images/guitar-of-notes.png" width="20%" alt="A guitar made of musical notes" style="background-color: #fafafa; border-radius: 25px; padding: 10px; display: inherit; margin: auto;">
+<img src="assets/images/guitar-of-notes.webp" width="20%" alt="A guitar made of musical notes" style="background-color: #fafafa; border-radius: 25px; padding: 10px; display: inherit; margin: auto;">
 
 - The images on the front are also related to children and young people playing and learning the guitar.
 
-<img src="assets/images/home-one.png" width="50%" alt="A young girl playing a very small guitar" style="display: inherit; margin: auto;">
+<img src="assets/images/home-one.webp" width="50%" alt="A young girl playing a very small guitar" style="display: inherit; margin: auto;">
 
 ### Wireframes
 
@@ -408,8 +407,8 @@ This roadmap indicates the importance and viability of specific opportunities.
 
   - The colour darkens whenever hovered over.
   <div style="display: flex;">
-  <img src="assets/images/logo.png" width="40%" alt="The web application's footer element" style="background-color: #fafafa; border-radius: 25px; margin-left: 5%; margin-right: 5%">
-  <img src="assets/images/logo-color-change.png" width="40%" alt="The web application's footer element" style="background-color: #fafafa; border-radius: 25px; margin-left: 5%; margin-right: 5%">
+  <img src="assets/images/logo.webp" width="40%" alt="The web application's footer element" style="background-color: #fafafa; border-radius: 25px; margin-left: 5%; margin-right: 5%">
+  <img src="assets/images/logo-color-change.webp" width="40%" alt="The web application's footer element" style="background-color: #fafafa; border-radius: 25px; margin-left: 5%; margin-right: 5%">
   </div>
 
 - **The landing page info boxes**
@@ -600,7 +599,7 @@ Smallest phone size IPhone 5/SE simulator on Dev Tools
 | Navbar links                            | Links take user to correct pages, CSS changes on hover | Clicked Links                        | All four links work, CSS changes on hover           | Pass      |
 | All five other buttons (including logo) | Take user to the correct page, CSS changes on hover    | Clicked Buttons                      | All links work and change colour when hovered over  | Pass      |
 | Burger icon on IPhone 5/SE              | Item is clickable and navbar readable                  | Clicked burger icon                  | Navbar opens vertically, links work                 | Pass      |
-| Page layout                             | Layout changes to accommodate for smaller devices       | Opened site on IPhone 5/SE simulator | Every element visible through scrolling, links work | Pass      |
+| Page layout                             | Layout changes to accommodate for smaller devices      | Opened site on IPhone 5/SE simulator | Every element visible through scrolling, links work | Pass      |
 
 `Lessons`
 
@@ -632,14 +631,14 @@ Accordion testing has also been done automatically.
 
 `Guitar Game`
 
-| Feature                         | Expected Outcome                                 | Testing Performed       | Result                                          | Pass/Fail |
-| ------------------------------- | ------------------------------------------------ | ----------------------- | ----------------------------------------------- | --------- |
-| The same buttons from Homepage  | Take user to the correct page, hover changes CSS | Clicked Buttons         | All work, same as homepage                      | Pass      |
-| Five chord buttons, play button | CSS changes on hover                             | Hovered over Element    | CSS changes                                     | Pass      |
+| Feature                         | Expected Outcome                                 | Testing Performed       | Result                                           | Pass/Fail |
+| ------------------------------- | ------------------------------------------------ | ----------------------- | ------------------------------------------------ | --------- |
+| The same buttons from Homepage  | Take user to the correct page, hover changes CSS | Clicked Buttons         | All work, same as homepage                       | Pass      |
+| Five chord buttons, play button | CSS changes on hover                             | Hovered over Element    | CSS changes                                      | Pass      |
 | Five chord buttons, play button | Activate when clicked                            | Clicked buttons         | Chords change image, play button starts the game | Pass      |
-| Picture of chord                | Green shadow is added when answer is right       | Typed in A on a chord   | Green shadow was added                          | Pass      |
-| Picture of chord                | Red shadow is added when answer is wrong         | Typed in C on e chord   | Red shadow was added                            | Pass      |
-| The a chord                     | Answer is still accepted in uppercase            | Typed in "A" on a chord | Game recognized "A" as correct answer           | Pass      |
+| Picture of chord                | Green shadow is added when answer is right       | Typed in A on a chord   | Green shadow was added                           | Pass      |
+| Picture of chord                | Red shadow is added when answer is wrong         | Typed in C on e chord   | Red shadow was added                             | Pass      |
+| The a chord                     | Answer is still accepted in uppercase            | Typed in "A" on a chord | Game recognized "A" as correct answer            | Pass      |
 
 In order to test the correct and wrong messages displaying correctly and not repeating, I had to continually test the game by playing it and adding deliberately correct or incorrect answers in a row to see the outcome over 3 games.
 
@@ -905,37 +904,37 @@ Making the guitar game available on small screens posed a lot of challenges. I f
 
 - All of the following images are from <a href="https://pexels.com" target="_blank">pexels.</a>, below is a list of the image names and the author who posted them.
 
-- <a href="/assets/images/group-lesson.jpeg" target="_blank">group-lesson.jpeg</a> - Pavel Danilyuk
+- <a href="/assets/images/group-lesson.webp" target="_blank">group-lesson.jpeg</a> - Pavel Danilyuk
 
-- <a href="/assets/images/home-lesson.jpeg" target="_blank">home-lesson.jpeg</a> - Pavel Danilyuk
+- <a href="/assets/images/home-lesson.webp" target="_blank">home-lesson.jpeg</a> - Pavel Danilyuk
 
-- <a href="/assets/images/home-one.png" target="_blank">home-one.png</a> - Vlada Karpovich
+- <a href="/assets/images/home-one.webp" target="_blank">home-one.png</a> - Vlada Karpovich
 
-- <a href="/assets/images/home-two.png" target="_blank">home-two.png</a> - Yan Krukau
+- <a href="/assets/images/home-two.webp" target="_blank">home-two.png</a> - Yan Krukau
 
-- <a href="/assets/images/one-on-one-lesson.jpeg" target="_blank">one-on-one-lesson.jpeg</a> - Gustavo Fring
+- <a href="/assets/images/one-on-one-lesson.webp" target="_blank">one-on-one-lesson.jpeg</a> - Gustavo Fring
 
 - All of the following images are from <a href="https://pngwing.com" target="_blank">pngwing.</a> below is a list of the image names, although no authors have been credited on pngwing's webpage.
 
-- <a href="/assets/images/background-notes.png" target="_blank">background-notes.png</a> 
+- <a href="/assets/images/background-notes.webp" target="_blank">background-notes.png</a>
 
-- <a href="/assets/images/blue.png" target="_blank">blue.png</a> 
+- <a href="/assets/images/blue.webp" target="_blank">blue.png</a>
 
-- <a href="/assets/images/green.png" target="_blank">green.png</a> 
+- <a href="/assets/images/green.webp" target="_blank">green.png</a>
 
-- <a href="/assets/images/guitar-of-notes.png" target="_blank">guitar-of-notes.png</a> 
+- <a href="/assets/images/guitar-of-notes.webp" target="_blank">guitar-of-notes.png</a>
 
-- <a href="/assets/images/larry.png" target="_blank">larry.png</a> 
+- <a href="/assets/images/larry.webp" target="_blank">larry.png</a>
 
-- <a href="/assets/images/pink.png" target="_blank">pink.png</a> 
+- <a href="/assets/images/pink.webp" target="_blank">pink.png</a>
 
-- <a href="/assets/images/speech.png" target="_blank">speech.png</a> 
+- <a href="/assets/images/speech.webp" target="_blank">speech.png</a>
 
-- <a href="/assets/images/speech-two.png" target="_blank">speech-two.png</a> 
+- <a href="/assets/images/speech-two.webp" target="_blank">speech-two.png</a>
 
-- <a href="/assets/images/yellow.png" target="_blank">yellow.png</a> 
+- <a href="/assets/images/yellow.webp" target="_blank">yellow.png</a>
 
-- The two logos and five chord images were created by me on <a href="https://www.canva.com/" target="_blank">Canva.g</a> 
+- The two logos and five chord images were created by me on <a href="https://www.canva.com/" target="_blank">Canva.g</a>
 
 - All of the images created for this readme were screenshots from my MacBook, created by me.
 

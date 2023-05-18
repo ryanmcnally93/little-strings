@@ -205,7 +205,9 @@ function checkAnswer() {
     // Green shadow on the image, more verification that the answer inserted was correct.
     document.getElementById("java-chord").classList.add("chord-shadow-green");
     setTimeout(() => {
-      document.getElementById("java-chord").classList.remove("chord-shadow-green");
+      document
+        .getElementById("java-chord")
+        .classList.remove("chord-shadow-green");
     }, 500);
   } else {
     randomWrongGenerator();
@@ -218,7 +220,9 @@ function checkAnswer() {
     }
     document.getElementById("java-chord").classList.add("chord-shadow-red");
     setTimeout(() => {
-      document.getElementById("java-chord").classList.remove("chord-shadow-red");
+      document
+        .getElementById("java-chord")
+        .classList.remove("chord-shadow-red");
     }, 500);
   }
   larryMessage();

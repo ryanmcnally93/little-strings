@@ -1026,7 +1026,7 @@ button:focus {
 /* Guitar Game Page */
 
 .game-section {
-    margin-bottom: 90px;
+  margin-bottom: 90px;
 }
 
 .game-box {
@@ -1226,9 +1226,9 @@ button:focus {
 }
 
 #java-chord {
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 25px;
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 25px;
 }
 
 .chord-shadow-green {

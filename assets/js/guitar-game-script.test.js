@@ -224,7 +224,9 @@ describe("cssChange works correctly", () => {
     cssChange();
   });
   test("cssChange has changed the image to the correct chord", () => {
-    expect(document.getElementById('java-chord').src).toEqual("http://localhost/assets/images/c.webp");
+    expect(document.getElementById("java-chord").src).toEqual(
+      "http://localhost/assets/images/c.webp"
+    );
   });
 });
 // ALL PASS
