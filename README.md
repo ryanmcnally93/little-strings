@@ -235,7 +235,7 @@ I spoke to three different potential users regarding the website. One was a pare
 
 Parent of a young child:
 
-- "Response"
+- "Bright colours, simple text, easy to follow instructions. A fun story/picture to relate with"
 
 Teacher:
 
@@ -251,7 +251,7 @@ Younger person:
 
 Parent of a young child:
 
-- "Response"
+- "My child personally would go straight for the fun stuff"
 
 Younger person:
 
@@ -265,7 +265,7 @@ Teacher:
 
 Parent of a young child:
 
-- "Response"
+- "Yes"
 
 Younger person:
 
@@ -279,7 +279,7 @@ Teacher:
 
 Parent of a young child:
 
-- "Response"
+- "Seems straight forward enough, nothing too complicated, not bombarded. Just want a simple website to find out what I need"
 
 Younger person:
 
@@ -293,7 +293,7 @@ Teacher:
 
 Parent of a young child:
 
-- "Response"
+- "Slide show is slower so I can read it, prices shown for me"
 
 Younger person:
 
@@ -307,7 +307,7 @@ Teacher:
 
 Parent of a young child:
 
-- "Response"
+- "Could include any vouchers, off price, discounts for more than one family member joining from the same household."
 
 Teacher:
 
@@ -317,7 +317,7 @@ Teacher:
 
 Parent of a young child:
 
-- "Response"
+- "It's an informative game, I learned a few chords"
 
 Younger person:
 

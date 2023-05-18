@@ -625,8 +625,9 @@ li {
 
 .fa-chevron-left,
 .fa-chevron-right {
-  margin-top: 200px;
   font-size: 32px;
+  position: relative;
+  top: 45%;
 }
 
 .carousel-inner > .item > a > img,
@@ -1023,6 +1024,10 @@ button:focus {
 }
 
 /* Guitar Game Page */
+
+.game-section {
+    margin-bottom: 90px;
+}
 
 .game-box {
   position: absolute;
