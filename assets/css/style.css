@@ -148,7 +148,7 @@ li {
   }
   .navbar-dark {
     position: fixed;
-    top: 10px;
+    top: 40px;
     z-index: 4;
   }
   .navbar-nav > li {
@@ -647,7 +647,7 @@ li {
 }
 
 .carousel-box {
-  margin: auto;
+  margin: auto !important;
   z-index: 1;
   position: relative;
   background: #b1def2;
@@ -1351,7 +1351,7 @@ button:focus {
   #larry-correct-one,
   #larry-wrong-three {
     margin-top: 45px !important;
-    margin-bottom: none !important;
+    margin-bottom: 0 !important;
   }
   #larry-correct-three,
   #larry-correct-two,
@@ -1551,7 +1551,7 @@ button:focus {
 
 /* Sections */
 
-section {
+.section {
   background-color: #fafafa;
   padding-bottom: 40px;
 }

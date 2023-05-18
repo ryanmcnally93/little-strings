@@ -508,19 +508,19 @@ I have tested my web application automatically and manually using Test Driven De
 
 - HTML <a href="https://validator.w3.org/" target="_blank">W3C validator</a>
 
-  - RESULTS
+  - The only issue that showed was a warning of my use of an aria-label in the Guitar Game for the play button, which it calls a "possible misuse".
 
 - CSS <a href="https://jigsaw.w3.org/css-validator/" target="_blank">Jigsaw Validator</a>
 
-- RESULTS
+- All four of the CSS documents came back with 0 errors and the following badge:
 
-<!--<p>
+<p>
   <a href="http://jigsaw.w3.org/css-validator/check/referer">
     <img  style="border:0;width:88px;height:31px;margin:auto;display:flex;"
           src="http://jigsaw.w3.org/css-validator/images/vcss"
           alt="Valid css!" />
     </a>
-</p>-->
+</p>
 
 ### Javascript Validation
 
@@ -536,47 +536,47 @@ This test.js contains 13 automatic tests for the lessons page, which test the ke
 
 Homepage Lighthouse score
 
-<img src="assets/images/readme-images/homepage-lighthouse.png" width="75%" alt="The lighthouse scores for my homepage" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/homepage-lighthouse.png" width="100%" alt="The lighthouse scores for my homepage" style="display: inherit; margin: auto; border-radius: 10px;">
 
 Learning Lighthouse score
 
-<img src="assets/images/readme-images/learning-lighthouse.png" width="75%" alt="The lighthouse scores for my learning page" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/learning-lighthouse.png" width="100%" alt="The lighthouse scores for my learning page" style="display: inherit; margin: auto; border-radius: 10px;">
 
 Grown Ups Lighthouse score
 
-<img src="assets/images/readme-images/grownups-lighthouse.png" width="75%" alt="The lighthouse scores for my grown ups page" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/grownups-lighthouse.png" width="100%" alt="The lighthouse scores for my grown ups page" style="display: inherit; margin: auto; border-radius: 10px;">
 
 Guitar Game Lighthouse score
 
-<img src="assets/images/readme-images/guitar-game-lighthouse.png" width="75%" alt="The lighthouse scores for my guitar game page" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/guitar-game-lighthouse.png" width="100%" alt="The lighthouse scores for my guitar game page" style="display: inherit; margin: auto; border-radius: 10px;">
 
 #### Mobile Lighthouse
 
 Homepage mobile Lighthouse score
 
-<img src="assets/images/readme-images/homepage-mobile-lighthouse.png" width="75%" alt="The lighthouse scores for my homepage on mobile" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/homepage-mobile-lighthouse.png" width="100%" alt="The lighthouse scores for my homepage on mobile" style="display: inherit; margin: auto; border-radius: 10px;">
 
 Learning mobile Lighthouse score
 
-<img src="assets/images/readme-images/learning-mobile-lighthouse.png" width="75%" alt="The lighthouse scores for my learning page on mobile" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/learning-mobile-lighthouse.png" width="100%" alt="The lighthouse scores for my learning page on mobile" style="display: inherit; margin: auto; border-radius: 10px;">
 
 This is the error and reason for my lower score.
 
-<img src="assets/images/readme-images/learning-mobile-lighthouse.png" width="75%" alt="The lighthouse scores for my learning page on mobile" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/learning-lighthouse-issues.png" width="100%" alt="Loading issues" style="display: inherit; margin: auto; border-radius: 10px;">
 
 The Bootstrap and JQuery documents are affecting the html speed.
 
 Grown Ups mobile Lighthouse score
 
-<img src="assets/images/readme-images/learning-lighthouse-issues" width="75%" alt="Loading issues" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/grownups-mobile-lighthouse.png" width="100%" alt="The lighthouse scores for my learning page on mobile" style="display: inherit; margin: auto; border-radius: 10px;">
 
 The Grown Ups Page has a similar issue.
 
-<img src="assets/images/readme-images/grownups-lighthouse-issues" width="75%" alt="Loading issues" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/grownups-lighthouse-issues.png" width="100%" alt="Loading issues" style="display: inherit; margin: auto; border-radius: 10px;">
 
 Guitar Game mobile Lighthouse score
 
-<img src="assets/images/readme-images/guitar-game-mobile-lighthouse.png" width="75%" alt="The lighthouse scores for my guitar game page on mobile" style="display: inherit; margin: auto; border-radius: 25px;">
+<img src="assets/images/readme-images/guitar-game-mobile-lighthouse.png" width="100%" alt="The lighthouse scores for my guitar game page on mobile" style="display: inherit; margin: auto; border-radius: 10px;">
 
 ### Manual Testing
 
