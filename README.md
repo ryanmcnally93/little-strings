@@ -546,6 +546,35 @@ This test.js contains 13 automatic tests for the lessons page, which test the ke
 
 <a href="/assets/js/lessons-script.test.js" target="_blank">Lessons Page Jest Test File</a>
 
+#### JSHint
+
+All of my script files were ran through the [JS Validator](https://jshint.com/)
+
+Index Script
+
+Explains that the two variables mentioned are uncalled, but this isn't an issue as they are called within the HTML that calls the script.
+
+Lessons Script
+
+Returned a couple of warnings regarding ES6 useage:
+"'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz)."
+No real issues with the code.
+
+Grown Ups Script
+
+Had this error return and didn't fully understand the issue:
+"Functions declared within loops referencing an outer scoped variable may lead to confusing semantics. ($)"
+
+Guitar Game Script
+
+Returned a couple of warnings regarding ES6 useage:
+'let' is available in ES6 (use 'esversion: 6') or Mozilla JS extensions (use moz).
+No other issues with the code.
+
+Send Email
+
+Mentions that sendMail isn't called anywhere, but it is in HTML.
+
 ### Lighthouse
 
 Homepage Lighthouse score
