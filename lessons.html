@@ -23,6 +23,7 @@
       rel="stylesheet preload"
       as="style"
    >
+    <!--JQuery, needed as the Bootstrap files use it-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script
@@ -30,6 +31,7 @@
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
+    <!--My script file, for the key-to-chord section-->
     <script src="./assets/js/lessons-script.js"></script>
     <script
       src="https://kit.fontawesome.com/2e8f9e537f.js"
@@ -39,8 +41,11 @@
     <title>Little Strings | Learning</title>
   </head>
   <body>
+
+    <!--Header-->
     <header>
       <div id="logo-box">
+        <!--Logo-->
         <a
           class="logo"
           href="index.html"
@@ -64,6 +69,7 @@
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <div class="page-links">
+            <!--Navbar-->
             <nav class="navbar" id="learning-navbar">
               <ul class="list-inline navbar-nav" id="learning-navbar-nav">
                 <li class="learning-li">
@@ -115,9 +121,11 @@
       </div>
     </header>
 
-    <section>
+    <main>
+        <!--Page Title-->
       <div class="title-box"><h2 class="page-titles">Learning</h2></div>
       <div class="row carousel-box">
+        <!--Carousel-->
         <div id="myCarousel" class="carousel slide" data-ride="carousel">
           <!-- Indicators -->
           <ol class="carousel-indicators">
@@ -129,7 +137,7 @@
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
             <div class="item active">
-              <!--Text side-->
+              <!--1st Text side-->
               <img
                 src="./assets/images/blue.webp"
                 class="blue"
@@ -157,7 +165,7 @@
                   peaceful, relaxed environment.
                 </p>
               </div>
-              <!--Image side-->
+              <!--1st Image side-->
               <img
                 id="learning-image-one"
                 class="learning-carousel-images"
@@ -168,6 +176,7 @@
             </div>
 
             <div class="item">
+              <!--2nd Text side-->
               <img
                 src="./assets/images/blue.webp"
                 class="blue"
@@ -195,6 +204,7 @@
                   tutors in a fun-to-learn environment.
                 </p>
               </div>
+              <!--2nd Image side-->
               <img
                 id="learning-image-two"
                 loading="lazy"
@@ -205,6 +215,7 @@
             </div>
 
             <div class="item">
+              <!--3rd Text side-->
               <img
                 src="./assets/images/blue.webp"
                 class="blue"
@@ -232,6 +243,7 @@
                   favourite songs, or even come up with songs of their own!
                 </p>
               </div>
+              <!--3rd Image side-->
               <img
                 id="learning-image-three"
                 loading="lazy"
@@ -263,36 +275,43 @@
           </a>
         </div>
       </div>
-
       <div class="empty-space"></div>
-      <div class="other-box" id="key-to-chord">
-        <h2 class="key-interact page-titles">
-          What chords can we <br id="key-break">use in the key of
-          <select id="select-key">
-            <option value="A">A</option>
-            <option value="A#">A#</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="C#">C#</option>
-            <option value="D">D</option>
-            <option value="D#">D#</option>
-            <option value="E">E</option>
-            <option value="F">F</option>
-            <option value="F#">F#</option>
-            <option value="G">G</option>
-            <option value="G#">G#</option>
-          </select>
-          ?
-        </h2>
-      </div>
 
-      <div class="other-box">
-        <h2 class="page-titles" id="javascript-key">JAVASCRIPT OUTPUT</h2>
-      </div>
+      <!--Key to Chord section-->
+      <section>
+        <!--Title-->
+        <div class="other-box" id="key-to-chord">
+            <h2 class="key-interact page-titles">
+            What chords can we <br id="key-break">use in the key of
+            <!--Select Box-->
+            <select id="select-key">
+                <option value="A">A</option>
+                <option value="A#">A#</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="C#">C#</option>
+                <option value="D">D</option>
+                <option value="D#">D#</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="F#">F#</option>
+                <option value="G">G</option>
+                <option value="G#">G#</option>
+            </select>
+            ?
+            </h2>
+        </div>
 
+        <div class="other-box">
+            <h2 class="page-titles" id="javascript-key">JAVASCRIPT OUTPUT</h2>
+        </div>
+        </section>
+
+      <!--Contact Information-->
       <div class="other-box">
         <h2 class="interested">
           Interested in our learning?
+          <!--Button for Contact Section-->
           <a
             class="btn"
             href="grown-ups.html#contact-us"
@@ -302,9 +321,11 @@
           >
         </h2>
       </div>
+      <!--Background circle of notes image-->
       <div class="background-image" title="Circle of musical notes"></div>
-    </section>
+    </main>
 
+    <!--Footer-->
     <footer>
       <div class="footer-box" id="learning-footer-box">
         <p>
