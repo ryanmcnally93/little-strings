@@ -8,15 +8,15 @@ The site contains information about the classes on offer, a Q&A section with a c
 
 <p align="center">
 
-<img src="https://img.shields.io/github/stars/ryanmcnally93/project-two-little-strings?style=social" style="max-width: 100%; margin: 0 10px 10px 0;" alt="Stars">
+<img src="https://img.shields.io/github/stars/ryanmcnally93/little-strings?style=social" style="max-width: 100%; margin: 0 10px 10px 0;" alt="Stars">
 
-<img src="https://img.shields.io/github/repo-size/ryanmcnally93/project-two-little-strings" style="max-width: 100%; height: 20px; margin: 0 0 10px 10px;" alt="Size of repo">
+<img src="https://img.shields.io/github/repo-size/ryanmcnally93/little-strings" style="max-width: 100%; height: 20px; margin: 0 0 10px 10px;" alt="Size of repo">
 
 <br>
 
-<img src="https://img.shields.io/github/issues-raw/ryanmcnally93/project-two-little-strings" style="max-width: 100%; height: 20px margin-right: 10px;" alt="Open issues">
+<img src="https://img.shields.io/github/issues-raw/ryanmcnally93/little-strings" style="max-width: 100%; height: 20px margin-right: 10px;" alt="Open issues">
 
-<img src="https://img.shields.io/github/last-commit/ryanmcnally93/project-two-little-strings?color=green&style=for-the-badge" style="max-width: 100%; height: 20px; margin-left: 10px;" alt="GitHub last commit">
+<img src="https://img.shields.io/github/last-commit/ryanmcnally93/little-strings?color=green&style=for-the-badge" style="max-width: 100%; height: 20px; margin-left: 10px;" alt="GitHub last commit">
 
 </p>
 
@@ -27,11 +27,11 @@ This web application was built using Gitpod at first, and then moving onto Code 
 Once I had neared completion, I clicked settings and GitHub Pages, changed branch to "Main" and saved. I then placed the URL on my repos description.
 
 <p align="center">
-<a href="https://ryanmcnally93.github.io/project-two-little-strings/" style="max-width: 100%;">Little Strings</a>
+<a href="https://ryanmcnally93.github.io/little-strings/" style="max-width: 100%;">Little Strings</a>
 
 <br>
 
-<img src="https://img.shields.io/github/deployments/ryanmcnally93/project-two-little-strings/github-pages" style="max-width: 100%; height: 20px; margin-top: 10px;" alt="GitHub pages deployment">
+<img src="https://img.shields.io/github/deployments/ryanmcnally93/little-strings/github-pages" style="max-width: 100%; height: 20px; margin-top: 10px;" alt="GitHub pages deployment">
 
 </p>
 
